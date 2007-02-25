@@ -10,3 +10,4 @@ ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vend
 ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/schema_validations
 ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/system_settings
 ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/environment_check
+ruby script\plugin install http://svn.protocool.com/rails/plugins/enumerations_mixin/trunk  enumerations_mixin
