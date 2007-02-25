@@ -1,0 +1,23 @@
+[REVISION 20061202]
+
+[CHANGED] Use Rails 1.2 alias_method_chain.
+
+[CHANGED] Separate modules into individual files.
+
+[REVISION 20061013]
+
+[NEW] install.rb informs user of missing dependencies.
+
+[REVISION 20060909]
+
+[CHANGED] Replaced dependence on defunct Schema Defining plugin with one on RedHill on Rails Core.
+
+[REVISION 200606004]
+
+[FIXED] Don't add row version columns when ActiveRecord::Schema.define is running.
+
+[CHANGED] This plugin now depends on Schema Defining!
+
+[REVISION 20060602]
+
+[NEW] Initial version.

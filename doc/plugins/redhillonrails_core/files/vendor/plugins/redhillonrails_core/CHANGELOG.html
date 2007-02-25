@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: CHANGELOG</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>CHANGELOG</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>vendor/plugins/redhillonrails_core/CHANGELOG
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Tue Feb 20 18:08:43 -0500 2007</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+[REVISION 20070221]
+</p>
+<dl>
+<dt>NEW</dt><dd>Where possible, determine if a column is case sensitive (or not) based on
+the presence of case-insensitive indexes.
+
+</dd>
+</dl>
+<p>
+[REVISION 20070220]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>:ignore_case =&gt; true option when creating indexes change to
+:case_sensitive =&gt; false in keeping with the new Rails 1.2 option of the
+same name on validates_uniqueness_of. You may need to re-create your
+schema.rb (by using rake db:schema:dump) to pickup the new syntax.
+
+</dd>
+<dt>FIXED</dt><dd>Multi-column, case-insensitive indexes only selecting one of the columns!
+
+</dd>
+</dl>
+<p>
+[REVISION 20070219]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Can&#8216;t drop table referenced in a foreign-key. All reverse foreign
+keys are now dropped before dropping the table.
+
+</dd>
+<dt>CHANGED</dt><dd>Upgrade to Rails 1.2.2.
+
+</dd>
+</dl>
+<p>
+[REVISION 20070217]
+</p>
+<dl>
+<dt>NEW</dt><dd>Support reverse_foreign_keys for MySQL using the (typically bastardised)
+MySQL flavour of information_schema.
+
+</dd>
+<dt>CHANGED</dt><dd>Merged ForiegnKey and ForeignKeyDefinition as they were practically the
+same.
+
+</dd>
+</dl>
+<p>
+[REVISION 20070214]
+</p>
+<dl>
+<dt>NEW</dt><dd>:name option when creating foreign keys.
+
+</dd>
+<dt>FIXED</dt><dd>Foreign key names are preserved in schema dumps. This means they will be
+copied from one database to another rather than leaving it up to the target
+database to make one up.
+
+</dd>
+<dt>NEW</dt><dd>Foreign keys are automatically assigned a name
+(fkey_&lt;tablename&gt;_col1_and_col2_and_col3) if none is specified.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061206]
+</p>
+<dl>
+<dt>NEW</dt><dd>Added :ignore_case option to add_index in PostgreSQL to support
+case-insensitive indexes. The generated indexes are actually expression
+indexes of the form: lower(column_name).
+
+</dd>
+</dl>
+<p>
+[REVISION 20061206]
+</p>
+<dl>
+<dt>NEW</dt><dd>reverse_foreign_keys methods.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061202]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Use Rails 1.2 alias_method_chain.
+
+</dd>
+<dt>CHANGED</dt><dd>Separate modules into individual files.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061129]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Foreign-key ON DELETE and ON UPDATE flipped in schema dump.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061121]
+</p>
+<dl>
+<dt>FIXED</dt><dd>MySQL doesn&#8216;t support SQL92 &#8216;DROP CONSTRAINT SYNTAX&#8217;; use
+&#8216;DROP FOREIGN KEY&#8217; instead.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061116]
+</p>
+<dl>
+<dt>FIXED</dt><dd>&#8216;DROP FOREIGN KEY&#8217; should be &#8216;DROP CONSTRAINT&#8217;.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061114]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Removed Column.required as it didn&#8216;t handle updates correctly.
+Instead we now have Column.required_on which returns an appropriate event
+(nil, :save, :update).
+
+</dd>
+</dl>
+<p>
+[REVISION 20061110]
+</p>
+<dl>
+<dt>FIXED</dt><dd>MySQL driver uses single AND double quotes around identifiers.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061028]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Syntax error when generating schema under MySQL when a foreign key
+specifies both ON UPDATE and ON DELETE.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061024]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Foreign key associations for key-word table-names are quoted in postgresql.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061011]
+</p>
+<dl>
+<dt>NEW</dt><dd>ActiveRecord::Base.base_class? returns true if the class is a base class;
+false otherwise.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061009]
+</p>
+<dl>
+<dt>NEW</dt><dd>ActiveRecord::Base.abstract_class? returns true if class name starts with
+&#8216;Abstract&#8217;; false otherwise.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061001]
+</p>
+<dl>
+<dt>NEW</dt><dd>remove_foreign_key for completeness.
+
+</dd>
+<dt>FIXED</dt><dd>MySQL barfs when attempting to drop a column that participates in a foreign
+key constraint.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060921]
+</p>
+<dl>
+<dt>FIXED</dt><dd>add_foreign_key doesn&#8216;t support on_delete or on_update&#8212;It
+doesn&#8216;t do anything with the options hash.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060919]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Column.unique is now derived based on the presence of Column.unique_scope
+(which is an empty array for single column unique indexes).
+
+</dd>
+</dl>
+<p>
+[REVISION 20060915]
+</p>
+<dl>
+<dt>NEW</dt><dd>Unique columns contain scoping meta-data for multi-column unique indexes.
+The column to be marked as unique is either the last column not ending in
+&#8216;_id&#8217; or simply the last column. This follows the typical
+composite unique index column ordering where the scoping is specified first
+but will attempt to find the last non-foreign-key column just-in-case. Eg,
+both add_index :states, [:country_id, :name] and add_index :states, [:name,
+:country_id] would result in the name column marked as unique with a scope
+of [:country_id].
+
+</dd>
+</dl>
+<p>
+[REVISION 20060913]
+</p>
+<dl>
+<dt>NEW</dt><dd>Column.required: returns true if a column is marked as not allowing null
+and has no default.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060911]
+</p>
+<dl>
+<dt>NEW</dt><dd>Patch rails MysqlColumn so that empty string defaults are treated as nil
+when a column is marked as NOT NULL. This primarily affects schema dumps
+incorrectly assigning a default of 0 to numbers and &#8217;&#8217; to
+strings when none was originally specified.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060909]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Renamed from Foreign Key Support.
+
+</dd>
+<dt>NEW</dt><dd>ActiveRecord::Base.indexes.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060906]
+</p>
+<dl>
+<dt>FIXED</dt><dd>:on_update with :on_delete producing invalid SQL.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060905]
+</p>
+<dl>
+<dt>NEW</dt><dd>Schema dumper outputs foreign keys when available.
+
+</dd>
+<dt>NEW</dt><dd>Foreign-key meta-data for: PostgreSQL; and MySQL. (Still needs a bit of
+DRY-ing up but it works which is the first step.)
+
+</dd>
+</dl>
+<p>
+[REVISION 20060901]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Incorrect generation of ON UPDATE/ON DELETE clauses.
+
+</dd>
+<dt>NEW</dt><dd>Support :restrict in ON UPDATE/ON DELETE clauses.
+
+</dd>
+<dt>NEW</dt><dd>Preliminary support for querying foreign-keys in PostgreSQL.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060831]
+</p>
+<dl>
+<dt>NEW</dt><dd>Initial version.
+
+</dd>
+</dl>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

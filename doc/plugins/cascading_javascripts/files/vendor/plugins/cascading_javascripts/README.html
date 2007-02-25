@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: README</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>README</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>vendor/plugins/cascading_javascripts/README
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Sun Sep 10 19:40:05 -0400 2006</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <h1>Cascading Javascripts</h1>
+<p>
+Cascading Javascripts is a plugin that enhances the behaviour of the
+built-in <tt>javascript_include_tag</tt> macro. If <tt>:defaults</tt> is
+passed as a parameter, the <tt>javascript_include_tag</tt> macro will load
+the following javascript files (if present) in order:
+</p>
+<ol>
+<li><tt>application.js</tt>; and
+
+</li>
+<li><tt>#{controller_name/action_name}.js</tt> (eg. <tt>home/index.js</tt>,
+<tt>customers/new.js</tt>, etc.).
+
+</li>
+</ol>
+<p>
+This allows you to define application-wide and page-specific javascript
+files without needing to manually include each one.
+</p>
+<p>
+To use, simply call <tt>javascript_include_tag</tt> from
+<tt>application.rhtml</tt> including <tt>:defaults</tt> as a (or the only)
+parameter:
+</p>
+<pre>
+  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;
+          &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+  &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en&quot; xml:lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+      ...
+      &lt;%= javascript_include_tag :defaults %&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      ...
+    &lt;/body&gt;
+  &lt;/html&gt;
+</pre>
+<h3>See Also</h3>
+<ul>
+<li>Cascading Stylesheets (cascading_stylesheets).
+
+</li>
+</ul>
+<h3>License</h3>
+<p>
+This plugin is copyright 2006 by RedHill Consulting, Pty. Ltd. and is
+released under the MIT license.
+</p>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: CHANGELOG</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>CHANGELOG</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>vendor/plugins/foreign_key_migrations/CHANGELOG
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Fri Dec 01 23:10:33 -0500 2006</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+[REVISION 20061202]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Use Rails 1.2 alias_method_chain.
+
+</dd>
+<dt>CHANGED</dt><dd>Separate modules into individual files.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061013]
+</p>
+<dl>
+<dt>NEW</dt><dd>install.rb informs user of missing dependencies.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060909]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Replaced dependence on defunct Foreign Key Support and Schema Defining
+plugins with a single dependece on RedHill on Rails Core.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060831]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Separated out generic foreign-key functionality into new foreign key
+support plugin.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060629]
+</p>
+<dl>
+<dt>NEW</dt><dd>Added foreign_key method to table to allow t.foreign_key(columns,
+references_table_name, references_column_names, options).
+
+</dd>
+<dt>NEW</dt><dd>Support foreign keys in add_column as we do for initial table columns.
+
+</dd>
+<dt>NEW</dt><dd>Support :on_update and :on_delete as options&#8212;with values of
+:set_null, :cascade, or :restrict&#8212;for all foreign key creation
+mechanisms.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060627]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Reverted to overloaded column method with optional :references as the
+preferred mechanism with belongs_to a &quot;nicety&quot;. This is really as
+a result of using it in a large-scale production application where
+belongs_to just didn&#8216;t feel right in many cases and was semantically
+ambiguous.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060824]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Replaced method and column option :references with :belongs_to in keeping
+with the rails model keywords. The references variations are still
+available but have been deprecated and will be removed.
+
+</dd>
+<dt>NEW</dt><dd>Added options :dependent =&gt; :nullify to SET NULL or :dependent =&gt;
+:delete_all | :destroy to CASCADE DELETE.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060812]
+</p>
+<dl>
+<dt>NEW</dt><dd>Added new table method references(table, options) which is essentially an
+alias for column(:table_id, :integer, options).
+
+</dd>
+</dl>
+<p>
+[REVISION 20060803]
+</p>
+<dl>
+<dt>FIXED</dt><dd>The method proper_pluralized_table_name tries to call pluralize_table_name
+where it should call pluralized_table_name.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060623]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Another try at a hack-around for a &quot;feature&quot; of pluralize that
+when called to pluralize a word that is already in the plural, acts as
+singularize.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060616]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Hack-around for a &quot;feature&quot; of pluralize that when called to
+pluralize a word that is already in the plural, acts as singularize. Ie.
+&quot;countries&quot;.pluralize becomes &quot;country&quot;!
+
+</dd>
+</dl>
+<p>
+[REVISION 200606004]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>This plugin now depends on Schema Defining!
+
+</dd>
+</dl>
+<p>
+[REVISION 20060602]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Simplified static method overriding thanks to Ryan Tomayko.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060525]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Disabled foreign-key generation when executing a schema dump. This is a
+temporary measure until I get around to batching up the foreign keys at the
+end of the script.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060523]
+</p>
+<dl>
+<dt>NEW</dt><dd>Support :references =&gt; nil to prevent unwanted foreign-keys.
+
+</dd>
+<dt>FIXED</dt><dd>Pluralization.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060522]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Infinite recursion caused by bug in 1.8.4 method_alias on windows.
+
+</dd>
+</dl>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

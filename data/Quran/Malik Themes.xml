@@ -1,0 +1,3385 @@
+<?xml version="1.0"?>
+<aml>
+<quran>
+	<catalog id="FMT">
+		<names full="F. Malik Quran Themes" short="Quran Themes" />
+		<content type="quran" subtype="themes"/>
+	</catalog>
+	
+	<sura num="1">
+		<theme startAyah="1" endAyah="7">
+			Supplication to Allah for guidance taught by Allah Himself
+		</theme>
+	</sura>
+	<sura num="2">
+		<theme startAyah="1" endAyah="5">
+			Claim of Al-Quran that there it contains no doubtful statement and Al-Quran is a guide for those who are God-conscious
+		</theme>
+		<theme startAyah="6" endAyah="7">
+			Warning is of no use for those who reject faith
+		</theme>
+		<theme startAyah="8" endAyah="16">
+			Hypocrites and the consequences of hypocrisy
+		</theme>
+		<theme startAyah="17" endAyah="20">
+			Examples of hypocrite's deeds
+		</theme>
+		<theme startAyah="21" endAyah="22">
+			Allah's demand to worship Him
+		</theme>
+		<theme startAyah="23" endAyah="24">
+			Claim of Al-Quran to be the Book of Allah
+		</theme>
+		<theme ayah="25">
+			Reward for the believers
+		</theme>
+		<theme startAyah="26" endAyah="27">
+			Parable of gnat may confound many and enlighten many
+		</theme>
+		<theme startAyah="28" endAyah="29">
+			How can you deny Allah?
+		</theme>
+		<theme ayah="30">
+			The story of Adam's creation
+		</theme>
+		<theme startAyah="31" endAyah="33">
+			Victory of knowledge
+		</theme>
+		<theme startAyah="34" endAyah="35">
+			Angels show respect to Adam
+		</theme>
+		<theme ayah="36">
+			Shaitan caused Adam to lose paradise
+		</theme>
+		<theme ayah="37">
+			Adam's repentance and his forgiveness
+		</theme>
+		<theme startAyah="38" endAyah="39">
+			Need of Allah's revelations for guidance
+		</theme>
+		<theme startAyah="40" endAyah="43">
+			Allah's covenants with the Children of Israel
+		</theme>
+		<theme ayah="44">
+			Do you advise others and forget yourselves?
+		</theme>
+		<theme startAyah="45" endAyah="46">
+			Allah's help come with patience and Salah
+		</theme>
+		<theme startAyah="47" endAyah="48">
+			Criminals will find no way out on the Day of Judgement
+		</theme>
+		<theme startAyah="49" endAyah="50">
+			Israelites deliverance from Pharaoh's persecution
+		</theme>
+		<theme startAyah="51" endAyah="52">
+			Their sin of worshipping the Calf
+		</theme>
+		<theme startAyah="53" endAyah="54">
+			Their repentance through slaying the culprits
+		</theme>
+		<theme startAyah="55" endAyah="57">
+			Those who wanted to see Allah face to face were put to death, then Allah gave them life again and provided them with heavenly food
+		</theme>
+		<theme startAyah="58" endAyah="59">
+			Their discontent and disbelief
+		</theme>
+		<theme ayah="60">
+			Miracle of providing water in the desert from a rock
+		</theme>
+		<theme ayah="61">
+			Israelites rejected the heavenly food and their disobedience and transgression
+		</theme>
+		<theme ayah="62">
+			Real believers have nothing to fear or to regret
+		</theme>
+		<theme startAyah="63" endAyah="64">
+			Israelites covenant with Allah
+		</theme>
+		<theme startAyah="65" endAyah="66">
+			Punishment for the violation of Sabbath
+		</theme>
+		<theme startAyah="67" endAyah="71">
+			Their attitude in sacrificing a cow on Allah's command
+		</theme>
+		<theme startAyah="72" endAyah="74">
+			Miracle of putting the dead body alive and their reaction to the miracle
+		</theme>
+		<theme startAyah="75" endAyah="77">
+			Jews are hopeless victims of hypocrisy
+		</theme>
+		<theme startAyah="78" endAyah="79">
+			Some of them attributed their own writings to Allah
+		</theme>
+		<theme startAyah="80" endAyah="82">
+			Their false claim and its punishment
+		</theme>
+		<theme ayah="83">
+			Israelites made a covenant with Allah and broke it
+		</theme>
+		<theme startAyah="84" endAyah="86">
+			Their behavior with their own people and their punishment for breaking the covenant
+		</theme>
+		<theme startAyah="87" endAyah="88">
+			Advent of the Prophet Isa (Jesus)
+		</theme>
+		<theme startAyah="89" endAyah="90">
+			Jews rejected the truth knowingly
+		</theme>
+		<theme startAyah="91" endAyah="92">
+			Nature of the Jews' belief
+		</theme>
+		<theme ayah="93">
+			Israelites love for the calf was more than their love for Allah
+		</theme>
+		<theme startAyah="94" endAyah="96">
+			Jews' claim of exclusive right to inherit paradise is put to test
+		</theme>
+		<theme startAyah="97" endAyah="98">
+			Their animosity for Gabriel and other angels
+		</theme>
+		<theme startAyah="99" endAyah="100">
+			Their faithlessness
+		</theme>
+		<theme startAyah="101" endAyah="103">
+			Their accusation against Prophet Solomon (Sulaiman) and their learning of witchcraft
+		</theme>
+		<theme startAyah="104" endAyah="105">
+			Etiquettes to address the Prophet of Allah
+		</theme>
+		<theme startAyah="106" endAyah="107">
+			Abrogation and / or substitution of the verses of Al-Quran
+		</theme>
+		<theme ayah="108">
+			Questioning the Prophet
+		</theme>
+		<theme ayah="109">
+			Envy of Jews and Christian
+		</theme>
+		<theme ayah="110">
+			Open-end credit account for the Hereafter
+		</theme>
+		<theme startAyah="111" endAyah="112">
+			Jews' and Christians' false claim to inherit paradise
+		</theme>
+		<theme ayah="113">
+			Religious prejudice of the Jews and the Christians
+		</theme>
+		<theme ayah="114">
+			Order not to prevent people from coming to the Masajid
+		</theme>
+		<theme ayah="115">
+			All directions belong to Allah
+		</theme>
+		<theme startAyah="116" endAyah="117">
+			Accusation against Allah of having a son
+		</theme>
+		<theme startAyah="118" endAyah="119">
+			Al-Quran is the knowledge of truth
+		</theme>
+		<theme startAyah="120" endAyah="121">
+			Jews and Christians will never be pleased with you (Muslims)
+		</theme>
+		<theme startAyah="122" endAyah="123">
+			Accountability on the Day of Judgement
+		</theme>
+		<theme ayah="124">
+			Ibrahim was made the Leader of mankind by Allah
+		</theme>
+		<theme startAyah="125" endAyah="126">
+			Importance of the Ka'bah and Prayer of Ibrahim for the city of Makkah
+		</theme>
+		<theme startAyah="127" endAyah="129">
+			Ibrahim and Isma`il pray for the appointment of a Prophet from the City of Makkah
+		</theme>
+		<theme startAyah="130" endAyah="132">
+			Islam, the religion of Ibrahim and Ibrahim's advice to his sons
+		</theme>
+		<theme ayah="133">
+			Ya'qoob's advice to his sons
+		</theme>
+		<theme ayah="135">
+			Jews and Christians Vs Faith of Ibrahim
+		</theme>
+		<theme startAyah="136" endAyah="137">
+			Order of Allah to believe in all Prophets without discrimination
+		</theme>
+		<theme ayah="138">
+			Baptism is from Allah
+		</theme>
+		<theme startAyah="139" endAyah="141">
+			Ibrahim and his sons were neither Jews nor Christians but were Muslims
+		</theme>
+		<theme ayah="142">
+			Qiblah (direction in prayers)
+		</theme>
+		<theme ayah="143">
+			Order of Allah to change Qiblah
+		</theme>
+		<theme startAyah="144" endAyah="147">
+			Ka'bah in Makkah was made the new Qiblah
+		</theme>
+		<theme startAyah="148" endAyah="152">
+			Order to face towards Ka'bah as Qiblah durin Salah (prayers)
+		</theme>
+		<theme ayah="153">
+			Prescription to seek Allah's help
+		</theme>
+		<theme ayah="154">
+			Martyrs are not dead
+		</theme>
+		<theme startAyah="155" endAyah="157">
+			Allah will test the Believer's belief
+		</theme>
+		<theme ayah="158">
+			Safa and Marwah are the symbols of Allah
+		</theme>
+		<theme startAyah="159" endAyah="163">
+			Curse of Allah, the angels and all mankind is on those who conceal the truth
+		</theme>
+		<theme ayah="164">
+			Signs from nature to recognize Allah
+		</theme>
+		<theme startAyah="165" endAyah="167">
+			Mushrikin will have sever punishment and Followers of misguided leaders will regret on the Day of Judgement
+		</theme>
+		<theme startAyah="168" endAyah="169">
+			Do not follow the footsteps of Shaitan
+		</theme>
+		<theme startAyah="170" endAyah="171">
+			Do not profess the faith blindly
+		</theme>
+		<theme startAyah="172" endAyah="173">
+			Prohibited (Haram) food
+		</theme>
+		<theme startAyah="174" endAyah="176">
+			Those who hide the truth for worldly gain swallow nothing but fire
+		</theme>
+		<theme ayah="177">
+			 Definition of righteousness?
+		</theme>
+		<theme startAyah="178" endAyah="179">
+			The Islamic laws of retribution
+		</theme>
+		<theme startAyah="180" endAyah="182">
+			Commandment of Allah to make a 'Will'
+		</theme>
+		<theme startAyah="183" endAyah="184">
+			Obligation of fasting
+		</theme>
+		<theme ayah="185">
+			Revelation of the Quran and fasting in the month of Ramadhan
+		</theme>
+		<theme ayah="186">
+			Allah is very close to His devotees
+		</theme>
+		<theme ayah="187">
+			Nights of the Fasting month and Timings of fasting
+		</theme>
+		<theme ayah="188">
+			Bribe is a sin
+		</theme>
+		<theme ayah="189">
+			The moon is to determine Time periods
+		</theme>
+		<theme startAyah="190" endAyah="193">
+			Order to fight for a just cause
+		</theme>
+		<theme ayah="194">
+			Retaliation in the sacred months
+		</theme>
+		<theme ayah="195">
+			Order to give charity
+		</theme>
+		<theme ayah="196">
+			Hajj and Umrah (pilgrimage to Makkah)
+		</theme>
+		<theme startAyah="197" endAyah="203">
+			Restrictions during Hajj and Performance of Hajj (pilgrimage)
+		</theme>
+		<theme startAyah="204" endAyah="207">
+			Hypocrisy vs True belief
+		</theme>
+		<theme startAyah="208" endAyah="210">
+			O believers enter into Islam completely
+		</theme>
+		<theme startAyah="211" endAyah="212">
+			Believers will rank over the unbelievers
+		</theme>
+		<theme ayah="213">
+			Mankind was one nation having one religion
+		</theme>
+		<theme ayah="214">
+			Way to Paradise passes through trials
+		</theme>
+		<theme startAyah="215" endAyah="216">
+			Charity and Fighting (for just cause) is made obligatory
+		</theme>
+		<theme startAyah="217" endAyah="218">
+			Fighting in the Sacred Month and Punishment for "murtad"- who turn back from Islam
+		</theme>
+		<theme startAyah="219" endAyah="220">
+			Drinking and gambling are sinful and Dealings with orphans
+		</theme>
+		<theme ayah="221">
+			It is unlawful to marry a mushrik
+		</theme>
+		<theme startAyah="222" endAyah="223">
+			Question about menstruation
+		</theme>
+		<theme startAyah="224" endAyah="225">
+			Do not misuse oaths taken in the name of Allah
+		</theme>
+		<theme startAyah="226" endAyah="227">
+			Limitation for renouncing conjugal rights
+		</theme>
+		<theme ayah="228">
+			Waiting period after divorce
+		</theme>
+		<theme startAyah="229" endAyah="230">
+			Laws relating to divorce
+		</theme>
+		<theme ayah="231">
+			Treatment to the divorced women
+		</theme>
+		<theme ayah="232">
+			There is no restriction on divorcees to remarry
+		</theme>
+		<theme startAyah="233" endAyah="234">
+			Requirement of breast feeding babies and Waiting period for widows
+		</theme>
+		<theme ayah="235">
+			There is no restriction on the remarriage of widows
+		</theme>
+		<theme startAyah="236" endAyah="237">
+			Dowry and divorce
+		</theme>
+		<theme startAyah="238" endAyah="239">
+			Guarding the Salah (Prayers)
+		</theme>
+		<theme startAyah="240" endAyah="242">
+			Obligation of executing the "Last Will and Testament"
+		</theme>
+		<theme startAyah="243" endAyah="244">
+			There is no escape from death
+		</theme>
+		<theme startAyah="245" endAyah="246">
+			Spending in the Way of Allah and Israelites demand for a king
+		</theme>
+		<theme startAyah="247" endAyah="248">
+			Allah appointed Talut to be their king
+		</theme>
+		<theme ayah="249">
+			Test of Israelites' belief and obedience
+		</theme>
+		<theme startAyah="250" endAyah="251">
+			Victory is not by numbers and Prayer of the believers for victory
+		</theme>
+		<theme ayah="252">
+			Reaffirming the Prophethood of Muhammad (pbuh)
+		</theme>
+		<theme ayah="253">
+			Ranks of Rasools
+		</theme>
+		<theme ayah="254">
+			Spending in charity
+		</theme>
+		<theme ayah="255">
+			Allah's attributes and "Ayat-al-Kursi"
+		</theme>
+		<theme startAyah="256" endAyah="257">
+			There is no compulsion in religion and Wali of Allah vs Wali of Shaitan
+		</theme>
+		<theme ayah="258">
+			Confrontation of Ibrahim and Namrud
+		</theme>
+		<theme ayah="259">
+			Example of bringing dead to life
+		</theme>
+		<theme ayah="260">
+			Ibrahim's question of life after death
+		</theme>
+		<theme startAyah="261" endAyah="263">
+			Parable of spending in Charity
+		</theme>
+		<theme ayah="264">
+			What makes charity worthless
+		</theme>
+		<theme startAyah="265" endAyah="266">
+			Charity vs Showing off
+		</theme>
+		<theme startAyah="267" endAyah="269">
+			Spend the best portion of your wealth and Allah's promise vs Shaitan's promise
+		</theme>
+		<theme startAyah="270" endAyah="273">
+			Giving charity in public and private and Who is eligible for charity
+		</theme>
+		<theme ayah="274">
+			Reward for charity
+		</theme>
+		<theme startAyah="275" endAyah="276">
+			Prohibition of usury
+		</theme>
+		<theme startAyah="277" endAyah="281">
+			Taking usury is like declaring war against Allah and His Rasool
+		</theme>
+		<theme ayah="282">
+			All business dealings must be reduced to writing and Witnesses are required in all major business transactions
+		</theme>
+		<theme ayah="283">
+			If writing is not possible, take a security deposit
+		</theme>
+		<theme ayah="284">
+			Allah will call to account
+		</theme>
+		<theme startAyah="285" endAyah="286">
+			True belief of Prophets and Muslims and Believer's supplication
+		</theme>
+	</sura>
+	<sura num="3">
+		<theme startAyah="1" endAyah="6">
+			It is Allah Who has revealed Torah, Gospel and Al-Quran
+		</theme>
+		<theme startAyah="7" endAyah="9">
+			Decisive vs Allegorical verses and Supplication of the Believers
+		</theme>
+		<theme startAyah="10" endAyah="13">
+			Warning to the unbelievers and Lesson from the Battle of Badr
+		</theme>
+		<theme startAyah="14" endAyah="17">
+			Comforts of this life vs The life in Hereafter
+		</theme>
+		<theme startAyah="18" endAyah="20">
+			Testimony of Allah about Himself and that the True Religio in the sight of Allah is Al-Islam
+		</theme>
+		<theme startAyah="21" endAyah="25">
+			Warning to the Unbelievers and Faith of the Jews and Christians
+		</theme>
+		<theme startAyah="26" endAyah="27">
+			Allah is the One Who controls the kingdom and honor
+		</theme>
+		<theme startAyah="28" endAyah="30">
+			Prohibition of taking unbelievers as protectors
+		</theme>
+		<theme startAyah="31" endAyah="32">
+			Order to obey and follow the Prophet
+		</theme>
+		<theme startAyah="33" endAyah="34">
+			High ranking Prophets
+		</theme>
+		<theme startAyah="35" endAyah="37">
+			Birth and growth of Maryem (Mary)
+		</theme>
+		<theme startAyah="38" endAyah="41">
+			Supplication of Zakariya for his son Yahya (John)
+		</theme>
+		<theme startAyah="42" endAyah="44">
+			Status of Maryem (Mary) among the women of the world
+		</theme>
+		<theme startAyah="45" endAyah="46">
+			News of Isa (Jesus) birth
+		</theme>
+		<theme startAyah="47" endAyah="51">
+			Birth of Isa (Jesus) son of Maryem and Miracles given to Isa (Jesus)
+		</theme>
+		<theme startAyah="52" endAyah="53">
+			Followers of Isa (Jesus) were Muslims
+		</theme>
+		<theme ayah="54">
+			Plot to kill Isa (Jesus)
+		</theme>
+		<theme startAyah="55" endAyah="57">
+			Allah's promise to Isa (Jesus)
+		</theme>
+		<theme startAyah="58" endAyah="63">
+			Birth of Isa (Jesus) is compared to the creation of Adam and "Mubahla" Calling Allah's decision if Isa (Jesus) birth is disputed
+		</theme>
+		<theme startAyah="64" endAyah="71">
+			Call for unity with Jews and Christians on what is common between them and Muslims and Religion of Ibrahim was Islam and Muslims are the followers of Ibrahim
+		</theme>
+		<theme startAyah="72" endAyah="74">
+			Hypocrites among Jews and Christians
+		</theme>
+		<theme startAyah="75" endAyah="78">
+			There are some good Jews and Christians and there are some bad and they cheat in quoting their Holy Book
+		</theme>
+		<theme startAyah="79" endAyah="80">
+			Isa (Jesus) never said to worship him instead of Allah
+		</theme>
+		<theme startAyah="81" endAyah="82">
+			Covenant of Allah with all the Prophets concerning the Last Prophet Muhammad pbuh
+		</theme>
+		<theme startAyah="83" endAyah="85">
+			No religion is acceptable to Allah other than Al-Islam
+		</theme>
+		<theme startAyah="86" endAyah="91">
+			Curse of Allah, the Angels and all mankind on the unbelievers and fate of the unbelievers who die as unbelievers
+		</theme>
+		<theme ayah="92">
+			Criteria for righteousness 
+		</theme>
+		<theme startAyah="93" endAyah="95">
+			Lawful and unlawful food for the Children of Israel
+		</theme>
+		<theme startAyah="96" endAyah="97">
+			First House of Allah on earth
+		</theme>
+		<theme startAyah="98" endAyah="101">
+			Disbelief of the Jews and Christians and do not obey the Jews or Christians
+		</theme>
+		<theme startAyah="102" endAyah="103">
+			Live Islam, die as a Muslim, and be not divided amon yourselves
+		</theme>
+		<theme startAyah="104" endAyah="109">
+			Punishment for those who divide Muslims into sects
+		</theme>
+		<theme startAyah="110" endAyah="115">
+			Muslims are the best nation ever evolved to enjoin good and forbid evil and Some righteous People of the Book
+		</theme>
+		<theme startAyah="116" endAyah="120">
+			Hypocritical charity and Intimate friendship should be only with the believers
+		</theme>
+		<theme startAyah="121" endAyah="129">
+			Lessons from the Battle of Uhud and Allah's help to the believers and Prophet does not have the authority to pardon the sinners
+		</theme>
+		<theme startAyah="130" endAyah="136">
+			Prohibition of usury and Allah loves the charitable people
+		</theme>
+		<theme startAyah="137" endAyah="141">
+			Believers are promised to have upper hand
+		</theme>
+		<theme startAyah="142" endAyah="143">
+			No paradise without trial
+		</theme>
+		<theme startAyah="144" endAyah="145">
+			Muhammad (pbuh) is no more than a Rasool of Allah
+		</theme>
+		<theme startAyah="146" endAyah="148">
+			Prophets and their followers and Supplication of the believers
+		</theme>
+		<theme startAyah="149" endAyah="151">
+			Do not follow the unbelievers
+		</theme>
+		<theme startAyah="152" endAyah="153">
+			Result of disobeying the Rasool
+		</theme>
+		<theme startAyah="154" endAyah="155">
+			After grief Allah bestowed peace and There is no escape from death
+		</theme>
+		<theme startAyah="156" endAyah="158">
+			Life and death is from Allah
+		</theme>
+		<theme ayah="159">
+			Consult before making a decision, once decision is made then be firm
+		</theme>
+		<theme startAyah="160" endAyah="161">
+			Put your trust in Allah
+		</theme>
+		<theme startAyah="162" endAyah="164">
+			Dignity of Rasool
+		</theme>
+		<theme startAyah="165" endAyah="171">
+			Lessons to be learned from the Battle of Uhud and Those who are slain in the cause of Allah are not dead
+		</theme>
+		<theme startAyah="172" endAyah="175">
+			Character of the believers at Uhud
+		</theme>
+		<theme startAyah="176" endAyah="178">
+			Punishment for bartering belief for unbelief
+		</theme>
+		<theme ayah="179">
+			Adverse conditions are a test from Allah
+		</theme>
+		<theme ayah="180">
+			Punishment for the niggardly
+		</theme>
+		<theme startAyah="181" endAyah="184">
+			Jews insulted Allah and uttered a lie against Him
+		</theme>
+		<theme ayah="185">
+			Everyone has to die
+		</theme>
+		<theme ayah="186">
+			Test of the believers
+		</theme>
+		<theme startAyah="187" endAyah="189">
+			Punishment for claiming credit for some thing you have not done
+		</theme>
+		<theme startAyah="190" endAyah="194">
+			Signs from Nature and Supplication of the believers
+		</theme>
+		<theme ayah="195">
+			Acceptance of supplication by Allah
+		</theme>
+		<theme startAyah="196" endAyah="200">
+			Do not be deceived by the unbelievers and Be patient and excel in patience
+		</theme>
+	</sura>
+	<sura num="4">
+		<theme ayah="1">
+			Creation of mankind
+		</theme>
+		<theme ayah="2">
+			Property of the orphans
+		</theme>
+		<theme ayah="3">
+			Restrictions on number of wives
+		</theme>
+		<theme ayah="4">
+			Obligation of dowry
+		</theme>
+		<theme ayah="5">
+			Do not trust property to feebleminded people
+		</theme>
+		<theme ayah="6">
+			Train the orphans to manage their properties
+		</theme>
+		<theme startAyah="7" endAyah="10">
+			Laws of inheritance
+		</theme>
+		<theme ayah="11">
+			Prescribed shares in inheritance
+		</theme>
+		<theme ayah="12">
+			Inheritance of spouse's property
+		</theme>
+		<theme startAyah="13" endAyah="14">
+			Commandment to abide by the limit of Allah
+		</theme>
+		<theme startAyah="15" endAyah="16">
+			Initial order relating to the punishment for women guilty o fornication
+		</theme>
+		<theme startAyah="17" endAyah="18">
+			Acceptable vs Unacceptable repentance
+		</theme>
+		<theme ayah="19">
+			Women should not be treated as a part of Estate
+		</theme>
+		<theme startAyah="20" endAyah="21">
+			Do not take dowry back from women
+		</theme>
+		<theme ayah="22">
+			Prohibition from marring the wife of one's father
+		</theme>
+		<theme ayah="23">
+			Women that are prohibited for marriage - "Mahram" relations
+		</theme>
+		<theme ayah="24">
+			Prohibited and permitted marriages continued
+		</theme>
+		<theme ayah="25">
+			Permission for marriage with slave girls
+		</theme>
+		<theme startAyah="26" endAyah="28">
+			Allah wishes to guide and forgive
+		</theme>
+		<theme startAyah="29" endAyah="30">
+			Respect the ownership of one another's properties
+		</theme>
+		<theme startAyah="31" endAyah="32">
+			Avoid heinous sins and do not be jealous
+		</theme>
+		<theme ayah="33">
+			Laws of inheritance are fixed
+		</theme>
+		<theme startAyah="34" endAyah="35">
+			Men are given authority over women and Corrective measures for disobedient women and Arbitration in family disputes
+		</theme>
+		<theme startAyah="36" endAyah="38">
+			Huquq-al-Ibad (rights of other human beings)
+		</theme>
+		<theme startAyah="39" endAyah="42">
+			Witnesses of the Rasools on the Day of Judgement
+		</theme>
+		<theme ayah="43">
+			Prohibition of drinking liquor - 2nd Order and Tayammum - a substitute for ablution
+		</theme>
+		<theme startAyah="44" endAyah="46">
+			Behavior of the People of the Book
+		</theme>
+		<theme startAyah="47" endAyah="50">
+			Invitation of Iman to the People of the Book and Mushrikin will not be forgiven
+		</theme>
+		<theme startAyah="51" endAyah="55">
+			People of the Book tend to take side of Shaitan
+		</theme>
+		<theme startAyah="56" endAyah="59">
+			Fate of the unbelievers and the believers and Who should the believers obey?
+		</theme>
+		<theme startAyah="60" endAyah="63">
+			Hypocrites' attitude towards the decision of the Prophet
+		</theme>
+		<theme startAyah="64" endAyah="68">
+			One who disputes the decision of the Prophet is not a believer
+		</theme>
+		<theme startAyah="69" endAyah="70">
+			Believers will be in excellent company in the hereafter
+		</theme>
+		<theme startAyah="71" endAyah="74">
+			Be prepared for armed conflict (Jihad)
+		</theme>
+		<theme startAyah="75" endAyah="76">
+			Make Jihad to help the oppressed
+		</theme>
+		<theme startAyah="77" endAyah="79">
+			Fear Allah and not the people and There is no escape from death
+		</theme>
+		<theme startAyah="80" endAyah="81">
+			Obedience of the Rasool is in fact the obedience of Allah
+		</theme>
+		<theme startAyah="82" endAyah="84">
+			Proof of Al-Quran being the Divine revelation and report the important news to responsible persons
+		</theme>
+		<theme startAyah="85" endAyah="87">
+			Respond to greetings with even better greetings
+		</theme>
+		<theme startAyah="88" endAyah="91">
+			Fight against hypocrisy and hypocrites
+		</theme>
+		<theme startAyah="92" endAyah="93">
+			Punishment for killing a believer and laws of bloodwit
+		</theme>
+		<theme ayah="94">
+			Investigate properly before jumping to conclusion
+		</theme>
+		<theme startAyah="95" endAyah="96">
+			Ranks of Mujahideen over Non-Mujahideen
+		</theme>
+		<theme startAyah="97" endAyah="100">
+			Oppressed should migrate if possible and Reward for migration in the cause of Allah
+		</theme>
+		<theme startAyah="101" endAyah="104">
+			Salat-al-Qasr, Shortening of Salah during travel and Salah in the state of war and Salah is obligatory at its prescribed times
+		</theme>
+		<theme startAyah="105" endAyah="112">
+			Establish justice based on Divine guidance and Warning against Slander and against falsely charging innocents
+		</theme>
+		<theme startAyah="113" endAyah="115">
+			Allah's special favors to the Prophet and Prohibition of secret counsel and its limited exception
+		</theme>
+		<theme startAyah="116" endAyah="121">
+			Shirk is and unforgivable sin and Pledge and Promises of Shaitan
+		</theme>
+		<theme startAyah="122" endAyah="124">
+			Promise of Allah - who can be truer than Allah in promise?
+		</theme>
+		<theme startAyah="125" endAyah="126">
+			No one is better than a Muslim
+		</theme>
+		<theme startAyah="127" endAyah="130">
+			Establishment of justice for women
+		</theme>
+		<theme startAyah="131" endAyah="134">
+			Have fear of Allah in your dealings
+		</theme>
+		<theme ayah="135">
+			Stand firm for justice
+		</theme>
+		<theme startAyah="136" endAyah="141">
+			Believers are required to believe wholeheartedly and Boycott un-Islamic gatherings and Hypocrites have double standards
+		</theme>
+		<theme startAyah="142" endAyah="147">
+			Characteristics of hypocrites and the acts of hypocrisy and Hypocrites will be in the lowest depths of hellfire
+		</theme>
+		<theme startAyah="148" endAyah="152">
+			Do not utter evil words and Do not draw a line between Allah and His Rasools in obedience
+		</theme>
+		<theme startAyah="153" endAyah="159">
+			Jews are habitual sinners and violators of Allah's commandments and Jesus was neither killed nor crucified
+		</theme>
+		<theme startAyah="160" endAyah="162">
+			Punishment to Jews for their iniquities and Their only salvation is to become Muslims
+		</theme>
+		<theme startAyah="163" endAyah="166">
+			This Quran carries the same message as was sent to Noah, Abraham, Moses and Jesus and Al-Quran's authenticity is verified by Allah Himself
+		</theme>
+		<theme startAyah="167" endAyah="171">
+			Believe in this authentic revelation if you want to attain felicity and Stop saying "Trinity" Allah is the One and Only Deity
+		</theme>
+		<theme startAyah="172" endAyah="173">
+			Jesus was a Prophet and worshipper of Allah
+		</theme>
+		<theme startAyah="174" endAyah="175">
+			Mankind is asked to believe in the message of Al-Quran
+		</theme>
+		<theme ayah="176">
+			Legal decision relating to the inheritance of childless persons
+		</theme>
+	</sura>
+	<sura num="5">
+		<theme startAyah="1" endAyah="2">
+			Fulfil your obligations, promises and agreements and Cooperate in piety and not in transgression
+		</theme>
+		<theme ayah="3">
+			Haram - (Forbidden) meat and Al-Islam is declared to be the complete and perfect Deen (way of life)
+		</theme>
+		<theme startAyah="4" endAyah="5">
+			All good and clean things are made lawful and Food of the People of the Book is made lawful and marriage with their women is permitted
+		</theme>
+		<theme ayah="6">
+			Order for making wudhu (ablution) and Permission of Tayammum
+		</theme>
+		<theme startAyah="7" endAyah="11">
+			Stand for true witness and establish justice and Plot of Jews to kill the Prophet and his eminent companions
+		</theme>
+		<theme startAyah="12" endAyah="13">
+			Salah and Zakah were obligatory for Jews and Jews habit of being deceitful
+		</theme>
+		<theme startAyah="14" endAyah="16">
+			Christians too have neglected most of their Book and Jews and Christians are asked to become Muslims
+		</theme>
+		<theme ayah="17">
+			Jesus son of Mary is not God or son of God
+		</theme>
+		<theme startAyah="18" endAyah="19">
+			False claim of Jews and Christians to be the children of God and Invitation to Jews and Christians to become Muslims
+		</theme>
+		<theme startAyah="20" endAyah="26">
+			Behavior of Jews with their own Prophet Musa (Moses) and Curse of Allah on the Jews for 40 years
+		</theme>
+		<theme startAyah="27" endAyah="31">
+			Story of Adam's two sons (Abel and Cain)
+		</theme>
+		<theme ayah="32">
+			Decree of Allah regarding the killing of a human being
+		</theme>
+		<theme startAyah="33" endAyah="34">
+			Punishment of waging war against Allah and His Rasool
+		</theme>
+		<theme startAyah="35" endAyah="37">
+			Jihad is the way to success and No ransom will save the unbelievers from the punishment
+		</theme>
+		<theme startAyah="38" endAyah="40">
+			Punishment for theft
+		</theme>
+		<theme startAyah="41" endAyah="43">
+			Do not provide lip-service; be true believers and If Allah intends to punish, the Rasool cannot save
+		</theme>
+		<theme startAyah="44" endAyah="45">
+			Laws of Taurat (Torah) and Those who do not judge by the laws of Allah, They are unbelievers, They are wrongdoers
+		</theme>
+		<theme startAyah="46" endAyah="47">
+			c) They are transgressors
+		</theme>
+		<theme startAyah="48" endAyah="50">
+			Diversity of human race and Establish justice based on Allah's revelations
+		</theme>
+		<theme startAyah="51" endAyah="53">
+			Do not take Jews or Christians as your protectors
+		</theme>
+		<theme startAyah="54" endAyah="56">
+			Your protecting friends are Allah, His Rasool, and your fellow believers
+		</theme>
+		<theme startAyah="57" endAyah="60">
+			Do not befriend those people who make a mockery of your religion
+		</theme>
+		<theme startAyah="61" endAyah="66">
+			Jews deceiving behavior and Jews slander against Allah and If only the people of the Book had believed, They could have had the best of the both worlds
+		</theme>
+		<theme startAyah="67" endAyah="69">
+			Rasool's mission is to deliver Allah's Message
+		</theme>
+		<theme startAyah="70" endAyah="71">
+			Attitude of Jews towards Rasools
+		</theme>
+		<theme startAyah="72" endAyah="74">
+			Those who say Jesus is God are disbelievers
+		</theme>
+		<theme startAyah="75" endAyah="77">
+			Who was Jesus son of Mary?
+		</theme>
+		<theme startAyah="78" endAyah="82">
+			Disbelievers among the Children of Israel were cursed by the tongues of David and Jesus and Christians are closer to Muslims than the Jews and Pagans
+		</theme>
+		<theme startAyah="83" endAyah="86">
+			Good Christians recognize the truth and become Muslims
+		</theme>
+		<theme startAyah="87" endAyah="89">
+			Do not make Halal things Haram on your own and Kaffarah (penalty) for breaking the oath
+		</theme>
+		<theme startAyah="90" endAyah="93">
+			Prohibition of intoxicants (liquor and drugs) and gambling and Rasool's duty is only to pass on the Message of Allah
+		</theme>
+		<theme startAyah="94" endAyah="96">
+			Prohibition of hunting during Hajj Ihram (wearing pilgrim garb) and Kaffarah (penalty) for hunting during Hajj Ihram
+		</theme>
+		<theme startAyah="97" endAyah="100">
+			Sacred elements of Hajj
+		</theme>
+		<theme startAyah="101" endAyah="104">
+			Do not ask questions like the nation of Musa (Moses) and Superstitions are prohibited in Islam
+		</theme>
+		<theme startAyah="105" endAyah="108">
+			Last will and testament, and testimony of witnesses
+		</theme>
+		<theme startAyah="109" endAyah="115">
+			Favors of Allah upon Jesus and the miracles he was given and Disciples of Jesus asked for a Table Spread of food as a miracle
+		</theme>
+		<theme startAyah="116" endAyah="120">
+			Testimony of Jesus on the Day of Judgement about the Christians
+		</theme>
+	</sura>
+	<sura num="6">
+		<theme startAyah="1" endAyah="6">
+			Allah is the same One God Almighty in both heaven and earth
+		</theme>
+		<theme startAyah="7" endAyah="10">
+			If Allah had sent a written Book and and angel with it the unbelievers still would not have believed
+		</theme>
+		<theme startAyah="11" endAyah="18">
+			Allah has decreed mercy for Himself that is why He does not punish any one in this world and Punishment will be on the Day of Judgement
+		</theme>
+		<theme startAyah="19" endAyah="20">
+			Al-Quran is revealed to admonish and to declare that there is Only One God Allah
+		</theme>
+		<theme startAyah="21" endAyah="26">
+			Prejudice has made the people worship deities other than Allah
+		</theme>
+		<theme startAyah="27" endAyah="30">
+			For sure there is a life after death?
+		</theme>
+		<theme startAyah="31" endAyah="35">
+			Those who deny Prophet Muhammad, in fact deny Allah's revelations
+		</theme>
+		<theme startAyah="36" endAyah="41">
+			Those who listen will accept the Truth and Use your common sense to learn from the signs of nature and Do you not call Allah alone in real distress?
+		</theme>
+		<theme startAyah="42" endAyah="45">
+			Prosperity in this world is not a reward but a respite
+		</theme>
+		<theme startAyah="46" endAyah="50">
+			Who can restore your hearing and sight if Allah takes them away? And Rasools never claimed that they know the unseen or that they are angels
+		</theme>
+		<theme startAyah="51" endAyah="55">
+			Admonish the unbelievers with this Al-Quran and Real belief is a favor of Allah and is irrespective of worldly status
+		</theme>
+		<theme startAyah="56" endAyah="60">
+			Allah alone has the authority of passing judgement and He alone knows the unseen
+		</theme>
+		<theme startAyah="61" endAyah="62">
+			Allah has appointed guardian angles over you
+		</theme>
+		<theme startAyah="63" endAyah="67">
+			Allah is the One Who delivers you from the calamities
+		</theme>
+		<theme startAyah="68" endAyah="69">
+			Do not sit with those who argue about Allah's revelations
+		</theme>
+		<theme ayah="70">
+			Do not associate with those who take their religion as a matter of amusement
+		</theme>
+		<theme startAyah="71" endAyah="73">
+			Believers are commanded to become Muslims, to establish Salah and to fear Allah alone
+		</theme>
+		<theme startAyah="74" endAyah="79">
+			Ibrahim learned faith through the study of nature with his common sense
+		</theme>
+		<theme startAyah="80" endAyah="82">
+			Arguments of Mushrikin with Ibrahim about Allah
+		</theme>
+		<theme startAyah="83" endAyah="90">
+			Descendants of Prophet Ibrahim including Musa, Isa and Muhammad, none of them were Mushrikin
+		</theme>
+		<theme ayah="91">
+			Allah is the One Who revealed the Taurat and Al-Quran
+		</theme>
+		<theme startAyah="92" endAyah="94">
+			Those who invent a lie against Allah will face a disgraceful punishment
+		</theme>
+		<theme startAyah="95" endAyah="100">
+			Examples from Allah's creation are clearly spelled out for the understanding of mankind
+		</theme>
+		<theme startAyah="101" endAyah="107">
+			How could Allah have a son without a spouse? And Clear proofs have come to you if only you could care to understand
+		</theme>
+		<theme startAyah="108" endAyah="110">
+			Do not insult the deities to whom the Mushrikin offer their worship and Guidance depend on the attitude of individuals
+		</theme>
+		<theme startAyah="111" endAyah="115">
+			All Rasools of Allah had opposition from Shaitan and his followers
+		</theme>
+		<theme startAyah="116" endAyah="121">
+			Eat only that meat on which Allah's name has been pronounced
+		</theme>
+		<theme startAyah="122" endAyah="124">
+			When good and bad are treated alike, criminals are appointed as their ringleaders
+		</theme>
+		<theme startAyah="125" endAyah="127">
+			Whomever Allah wants to guide, He opens up his chest to Islam
+		</theme>
+		<theme startAyah="128" endAyah="129">
+			Jinns, and human beings who are misled by them, will all be cast into Hell
+		</theme>
+		<theme startAyah="130" endAyah="135">
+			On the Day of Judgement kafirs (unbelievers) will confess that they were indeed kafirs
+		</theme>
+		<theme startAyah="136" endAyah="140">
+			Mushrikin give their deities preference over Allah and Mushrikin falsely attribute their self-imposed prohibitions to Allah
+		</theme>
+		<theme startAyah="141" endAyah="142">
+			Give Zakah of agriculture on the harvest day
+		</theme>
+		<theme startAyah="143" endAyah="144">
+			Falsely attributed prohibition of livestock are clarified
+		</theme>
+		<theme startAyah="145" endAyah="147">
+			Correct prohibitions of livestock are spelled out and Explanation of the Jewish prohibitions of live stock
+		</theme>
+		<theme startAyah="148" endAyah="150">
+			Mushrikin' excuse for being Mushrikin
+		</theme>
+		<theme startAyah="151" endAyah="154">
+			In Islam forbidden things are based on fundamental moral principles
+		</theme>
+		<theme startAyah="155" endAyah="158">
+			The Book of Allah has come to you for your guidance so that there may be no excuse about the true Word of Allah
+		</theme>
+		<theme startAyah="159" endAyah="160">
+			Those who divide the religion into sects are not Muslims
+		</theme>
+		<theme startAyah="161" endAyah="165">
+			Declare, "My Salah, my devotion, my life and my death are all for Allah"
+		</theme>
+	</sura>
+	<sura num="7">
+		<theme startAyah="1" endAyah="10">
+			The Rasools as well as the people to whom they were sent shall be questioned on the Day of Judgement and a Scale of justice shall be established
+		</theme>
+		<theme startAyah="11" endAyah="18">
+			Story of Adam and Iblees (Shaitan) and Shaitan vowed to mislead Adam and his descendants
+		</theme>
+		<theme startAyah="19" endAyah="25">
+			Shaitan cunningly seduced Adam and Eve to disobey Allah and Their repentance and Allah's conditional acceptance
+		</theme>
+		<theme startAyah="26" endAyah="31">
+			Children of Adam are warned not to fall into the trap of Shaitan like Adam and Allah never commands what is shameful
+		</theme>
+		<theme startAyah="32" endAyah="34">
+			Command of Allah to wear decent proper dress and eat good food
+		</theme>
+		<theme startAyah="35" endAyah="39">
+			Children of Adam are directed to follow the Guidance of Allah provided to them through His Rasools
+		</theme>
+		<theme startAyah="40" endAyah="41">
+			Gates of heaven shall not be opened for the disbelievers
+		</theme>
+		<theme startAyah="42" endAyah="43">
+			Only believers shall enter paradise
+		</theme>
+		<theme startAyah="44" endAyah="47">
+			Dialogue between the residents of paradise and the inmates of hell
+		</theme>
+		<theme startAyah="48" endAyah="53">
+			Dialogue between the people of A'raf and the inmates of hell and Inmates of hell shall beg for water and food from the residents of paradise
+		</theme>
+		<theme startAyah="54" endAyah="58">
+			Allah is the One Who created this universe and Pray to Allah with fear and hope
+		</theme>
+		<theme startAyah="59" endAyah="64">
+			Prophet Nuh's address to his people, their disbelief and their fate
+		</theme>
+		<theme startAyah="65" endAyah="72">
+			Prophet Hud's address to his people, their disbelief and their fate
+		</theme>
+		<theme startAyah="73" endAyah="79">
+			Prophet Saleh's address to his people, their disbelief and their fate
+		</theme>
+		<theme startAyah="80" endAyah="84">
+			Prophet Lut's address to his people, their disbelief and their fate
+		</theme>
+		<theme startAyah="85" endAyah="87">
+			Prophet Shu'aib's address to his people, their disbelief and their fate
+		</theme>
+		<theme startAyah="88" endAyah="93">
+			Behavior of the unbelievers with Prophet Shu'aib
+		</theme>
+		<theme startAyah="94" endAyah="99">
+			Adversity and affluence are reminders from Allah
+		</theme>
+		<theme startAyah="100" endAyah="102">
+			Stories of prior nations are narrated to teach a lesson
+		</theme>
+		<theme startAyah="103" endAyah="108">
+			Prophet Moses was sent for the guidance of Pharaoh and his chiefs
+		</theme>
+		<theme startAyah="109" endAyah="126">
+			Moses' confrontation with the magicians of Pharaoh
+		</theme>
+		<theme startAyah="127" endAyah="129">
+			Pharaoh's revenge against the people of Moses
+		</theme>
+		<theme startAyah="130" endAyah="137">
+			Scourge of Allah against Pharaoh and his chiefs, and their final destruction
+		</theme>
+		<theme startAyah="138" endAyah="141">
+			Allah rescued the Children of Israel but they still disbelieved in One God
+		</theme>
+		<theme startAyah="142" endAyah="144">
+			Musa's communication with Allah
+		</theme>
+		<theme startAyah="145" endAyah="147">
+			Musa was given the written tablets of Taurat (Torah) and Arrogant people cannot get guidance
+		</theme>
+		<theme startAyah="148" endAyah="151">
+			Israelites started worshipping calf after witnessing their miraculous deliverance
+		</theme>
+		<theme startAyah="152" endAyah="156">
+			Worshippers of the calf incurred the wrath of Allah
+		</theme>
+		<theme ayah="157">
+			Advent of Prophet Muhammad was described in Torah and Gospel
+		</theme>
+		<theme ayah="158">
+			Muhammad (pbuh) is the Prophet for the whole of mankind
+		</theme>
+		<theme startAyah="159" endAyah="162">
+			Allah provided food and water in the desert to the people of Musa
+		</theme>
+		<theme startAyah="163" endAyah="168">
+			Jewish Sabbath, the violation, and Allah's scourge
+		</theme>
+		<theme startAyah="169" endAyah="171">
+			Jews' wrong belief about Allah's forgiveness
+		</theme>
+		<theme startAyah="172" endAyah="174">
+			Mankind's testimony that Allah is their Rabb at the time of Adam's creation
+		</theme>
+		<theme startAyah="175" endAyah="178">
+			Example of those who deny Allah's revelations
+		</theme>
+		<theme startAyah="179" endAyah="181">
+			Misguided people are like animals or even worse
+		</theme>
+		<theme startAyah="182" endAyah="188">
+			Those who deny Allah's revelations are drawing closer to destruction and Prophet himself has no power to benefit anyone or to avert any harm
+		</theme>
+		<theme startAyah="189" endAyah="198">
+			Allah created the whole of mankind from a single soul and Reality of those gods whom people worship beside Allah and Allah is the Protecting Friend of the righteous
+		</theme>
+		<theme startAyah="199" endAyah="206">
+			Show forgiveness, speak for justice and avoid the ignorant and When the Quran is being recited listen to it with complete silence
+		</theme>
+	</sura>
+	<sura num="8">
+		<theme startAyah="1" endAyah="10">
+			Commandment relating to the spoils of war (booty) and Battle of Badr, a battle between truth and falsehood
+		</theme>
+		<theme startAyah="11" endAyah="19">
+			Allah's help during the Battle of Badr and Allah's decision between Muslims and kafirs
+		</theme>
+		<theme startAyah="20" endAyah="28">
+			Worst people in the sight of Allah are those who do not use their common sense and Guard yourselves against temptations of Shaitan
+		</theme>
+		<theme startAyah="29" endAyah="37">
+			If you become Godfearing, Allah will grant you wisdom to judge between right and wrong and Lawful guardians of Ka'bah are those who have fear of Allah
+		</theme>
+		<theme startAyah="38" endAyah="40">
+			Unbelievers, who embrace Islam, their past is forgiven
+		</theme>
+		<theme startAyah="41" endAyah="44">
+			Rules about the distribution of the spoils of war
+		</theme>
+		<theme startAyah="45" endAyah="48">
+			Order of Allah to remain firm during combat against enemy
+		</theme>
+		<theme startAyah="49" endAyah="52">
+			Victory of the believers and the painful death of the unbelievers
+		</theme>
+		<theme startAyah="53" endAyah="54">
+			Allah does not change His blessings unless people change themselves
+		</theme>
+		<theme startAyah="55" endAyah="58">
+			Treaties must be honored unless broken with proper notification
+		</theme>
+		<theme startAyah="59" endAyah="64">
+			Order to remain prepared for war against the unbelievers and Make peace if enemy is willing to make peace
+		</theme>
+		<theme startAyah="65" endAyah="69">
+			Allah's promise to make the believers victorious over armies TWO to TEN times larger in quantity than believers
+		</theme>
+		<theme startAyah="70" endAyah="71">
+			Treatment to prisoners of war who embrace Islam
+		</theme>
+		<theme startAyah="72" endAyah="75">
+			Duties and obligations of the Islamic State towards Muslims living in a non-Muslim country
+		</theme>
+	</sura>
+	<sura num="9">
+		<theme startAyah="1" endAyah="6">
+			Proclamation to dissolve the "Treaty of Hudeybiyah"
+		</theme>
+		<theme startAyah="7" endAyah="11">
+			Commandment of Allah to honor the treaty so long as the unbelievers honor it
+		</theme>
+		<theme startAyah="12" endAyah="16">
+			If the unbelievers violate the treaty, then fight against their ringleaders
+		</theme>
+		<theme startAyah="17" endAyah="18">
+			Mushrikin are forbidden to be the caretakers of Masajid
+		</theme>
+		<theme startAyah="19" endAyah="22">
+			Service to pilgrims is not equal to true belief in Allah, the Last Day, and Jihad
+		</theme>
+		<theme startAyah="23" endAyah="24">
+			Do not take your fathers and brothers as your friends if they prefer Kufr (unbelief) over Iman (belief)
+		</theme>
+		<theme startAyah="25" endAyah="27">
+			Allah's help is with the quality and not the quantity of the believers
+		</theme>
+		<theme startAyah="28" endAyah="29">
+			Prohibition of Mushrikin from entering Masjid-al-Haram
+		</theme>
+		<theme startAyah="30" endAyah="33">
+			Mushrik are the Jews and Christians who call Azra and Jesus the sons of God
+		</theme>
+		<theme startAyah="34" endAyah="35">
+			Do not be like Rabbis and Priests who misappropriate the wealth of people
+		</theme>
+		<theme startAyah="36" endAyah="37">
+			The number of months in the book of Allah is 12, of which 4 are sacred
+		</theme>
+		<theme startAyah="38" endAyah="42">
+			Allah's order to bear arms against the unbelievers, if necessary
+		</theme>
+		<theme startAyah="43" endAyah="48">
+			Those who do not participate in Jihad are hypocrites
+		</theme>
+		<theme startAyah="49" endAyah="59">
+			Excuses of the hypocrites for not bearing arms against the unbelievers
+		</theme>
+		<theme ayah="60">
+			Categories for the distribution of Zakah
+		</theme>
+		<theme startAyah="61" endAyah="63">
+			Order of Allah not to molest the Prophet
+		</theme>
+		<theme startAyah="64" endAyah="66">
+			Punishment for those who make fun of the religion
+		</theme>
+		<theme startAyah="67" endAyah="70">
+			Hypocritical actions and their punishment
+		</theme>
+		<theme startAyah="71" endAyah="72">
+			Believers' actions and their rewards
+		</theme>
+		<theme startAyah="73" endAyah="74">
+			Allah's order to make Jihad against hypocrites and unbelievers
+		</theme>
+		<theme startAyah="75" endAyah="80">
+			Behavior of the hypocrites
+		</theme>
+		<theme startAyah="81" endAyah="89">
+			Hypocrites did not join the war against the unbelievers and Prohibition of offering Funeral prayer for the Hypocrites
+		</theme>
+		<theme startAyah="90" endAyah="93">
+			Genuine exemptions from the battlefront
+		</theme>
+		<theme startAyah="94" endAyah="99">
+			Those who make excuses to avoid serving in armed struggle for the cause of Allah when needed, are hypocrites
+		</theme>
+		<theme startAyah="100" endAyah="110">
+			Categories of hypocrites and Commandment for the collection of Az-Zakah and Hypocrites' masjid for mischievous motives, called "Masjid-e-Zirar"
+		</theme>
+		<theme startAyah="111" endAyah="112">
+			Allah has purchased the persons and wealth of the Believers in lieu of granting them the Paradise
+		</theme>
+		<theme startAyah="113" endAyah="116">
+			Do not seek forgiveness for the Mushrikin
+		</theme>
+		<theme startAyah="117" endAyah="118">
+			Allah forgave those three who lagged behind but were sincere
+		</theme>
+		<theme startAyah="119" endAyah="122">
+			Believers are those who prefer the life of the Rasool over their own and requirement of obtaining understanding of religion
+		</theme>
+		<theme startAyah="123" endAyah="127">
+			Qur'anic verses do increase the faith of the believers
+		</theme>
+		<theme startAyah="128" endAyah="129">
+			Character of Prophet Muhammad (pbuh) and Prayer taught by Allah
+		</theme>
+	</sura>
+	<sura num="10">
+		<theme startAyah="1" endAyah="2">
+			Al-Quran is the book of wisdom
+		</theme>
+		<theme startAyah="3" endAyah="5">
+			Allah is the One Who created this universe and He is the One Who originates the creation and repeats it
+		</theme>
+		<theme startAyah="6" endAyah="10">
+			There are signs of His manifestation in the creation of heaven, earth, sun, moon, day and night
+		</theme>
+		<theme startAyah="11" endAyah="17">
+			Behavior of the wrong doers towards Allah and His revelations
+		</theme>
+		<theme startAyah="18" endAyah="20">
+			Deities other than Allah can neither harm nor benefit you and Mankind was one nation until they invented different creeds
+		</theme>
+		<theme startAyah="21" endAyah="23">
+			Mankind call upon Allah in their sufferings but plot against Him in their happiness
+		</theme>
+		<theme ayah="24">
+			Example of this worldly life
+		</theme>
+		<theme startAyah="25" endAyah="30">
+			Allah invites you to the Home of Peace and Deities whom they worship are not even aware of their worship
+		</theme>
+		<theme startAyah="31" endAyah="36">
+			Truth about Allah vs other gods invented by the Mushrikin
+		</theme>
+		<theme startAyah="37" endAyah="40">
+			This Quran is the revelation of Allah
+		</theme>
+		<theme startAyah="41" endAyah="46">
+			Those who disbelieve in this Quran shall be the losers in the hereafter
+		</theme>
+		<theme startAyah="47" endAyah="53">
+			Every nation was sent a Rasool for their guidance
+		</theme>
+		<theme startAyah="54" endAyah="56">
+			There shall be no way out for the unbelievers on the Day of Judgement
+		</theme>
+		<theme startAyah="57" endAyah="60">
+			Al-Quran is a mercy, blessing, and cure for the problems of mankind
+		</theme>
+		<theme startAyah="61" endAyah="65">
+			Whatever you do, Allah is a witness to it
+		</theme>
+		<theme startAyah="66" endAyah="70">
+			Mushrikin follow nothing but conjecture, preach nothing but falsehood
+		</theme>
+		<theme startAyah="71" endAyah="73">
+			Story of Prophet Nuh and his people
+		</theme>
+		<theme startAyah="74" endAyah="82">
+			Rasools were sent to the descendants of Prophet Nuh - similarly Prophet Musa and Haroon were sent to Pharaoh
+		</theme>
+		<theme startAyah="83" endAyah="92">
+			Story of Musa and Fir'on (Pharaoh) and Children of Israel were delivered from the bondage of Fir'on
+		</theme>
+		<theme startAyah="93" endAyah="95">
+			Children of Israel were provided with good dwellings and food
+		</theme>
+		<theme startAyah="96" endAyah="98">
+			Belief after seeing the scourge did not benefit any nation except the nation of Yunus
+		</theme>
+		<theme startAyah="99" endAyah="103">
+			Forcing someone to convert to Islam is prohibited
+		</theme>
+		<theme startAyah="104" endAyah="107">
+			No one other than Allah can harm or benefit you
+		</theme>
+		<theme startAyah="108" endAyah="109">
+			Declare that guidance has come - now to follow or not to follow is your choice
+		</theme>
+	</sura>
+	<sura num="11">
+		<theme startAyah="1" endAyah="5">
+			Teachings of Al-Quran
+		</theme>
+		<theme startAyah="6" endAyah="8">
+			Allah is the Sustainer of all creatures
+		</theme>
+		<theme startAyah="9" endAyah="14">
+			Mankind is ever ungrateful to Allah except the believers and Al-Quran is not forged by the Prophet Muhammad (pbuh)
+		</theme>
+		<theme startAyah="15" endAyah="24">
+			People of the Book (Jews and Christians) are of two kinds, those who can see the Truth, and those who choose not to
+		</theme>
+		<theme startAyah="25" endAyah="35">
+			Nuh's address to his people and Nuh's people challenged him and asked for the scourge of Allah
+		</theme>
+		<theme startAyah="36" endAyah="39">
+			Allah commanded Nuh to build and ark
+		</theme>
+		<theme startAyah="40" endAyah="41">
+			Allah commanded Nuh to embark and gather on board the believers and a pair from every species
+		</theme>
+		<theme startAyah="42" endAyah="49">
+			Dialogue between Nuh, his son, and Allah
+		</theme>
+		<theme startAyah="50" endAyah="60">
+			Prophet Hud's address to his people, their disbelief and its consequences
+		</theme>
+		<theme startAyah="61" endAyah="68">
+			Prophet Salah's address to his people, their disbelief and its consequences
+		</theme>
+		<theme startAyah="69" endAyah="76">
+			Good news for Prophet Ibrahim, he will have a son (Isaac) and beyond him a grandson (Jacob)
+		</theme>
+		<theme startAyah="77" endAyah="83">
+			Prophet Lut's address to his people, their disbelief and its consequences
+		</theme>
+		<theme startAyah="84" endAyah="95">
+			Prophet Shu'aib's address to his people who were cheating in their business transactions and Their disbelief and its consequences
+		</theme>
+		<theme startAyah="96" endAyah="109">
+			Fate of Fir'on and his chiefs who were warned but they gave no heed
+		</theme>
+		<theme startAyah="110" endAyah="113">
+			Differences arose about Torah given to Musa for his followers' lack of belief
+		</theme>
+		<theme startAyah="114" endAyah="117">
+			Virtues remove evils, Allah does not let the reward of the righteous be wasted
+		</theme>
+		<theme startAyah="118" endAyah="123">
+			Freedom of choice given to mankind is the Will of Allah
+		</theme>
+	</sura>
+	<sura num="12">
+		<theme startAyah="1" endAyah="3">
+			Al-Quran is revealed in the Arabic language
+		</theme>
+		<theme startAyah="4" endAyah="6">
+			Story of Prophet Yusuf (Joseph)
+		</theme>
+		<theme startAyah="7" endAyah="10">
+			There are lessons in this story for the inquirers
+		</theme>
+		<theme startAyah="11" endAyah="15">
+			Stepbrothers of Yusuf asked their father to send him with them on a hunting trip and threw him in a dark well
+		</theme>
+		<theme startAyah="16" endAyah="18">
+			They told their father that Yusuf was eaten by a wolf
+		</theme>
+		<theme startAyah="19" endAyah="20">
+			One caravan kidnapped him, brought him to Egypt, and sold him
+		</theme>
+		<theme startAyah="21" endAyah="22">
+			The Egyptian who bought him was a nice man
+		</theme>
+		<theme startAyah="23" endAyah="29">
+			His master's wife tried to seduce him but Allah saved him
+		</theme>
+		<theme startAyah="30" endAyah="35">
+			Women of the town started pointing fingers at her, she invited them to a banquet and asked Yusuf to appear before them and Yusuf was sent to prison
+		</theme>
+		<theme startAyah="36" endAyah="42">
+			Two prison inmates had dreams and asked Yusuf for interpretation and Yusuf's address to his fellow inmates
+		</theme>
+		<theme startAyah="43" endAyah="49">
+			King of Egypt had a dream and asked for its interpretation and Yusuf's interpretation of the King's dream
+		</theme>
+		<theme startAyah="50" endAyah="52">
+			King of Egypt heard the case of Yusuf and declared him innocent
+		</theme>
+		<theme startAyah="53" endAyah="57">
+			Yusuf's appointment as King's cabinet member
+		</theme>
+		<theme startAyah="58" endAyah="62">
+			Yusuf's brothers came to Egypt to get food and grain and Yusuf asked them to bring Benjamin (Yusuf's younger brother)
+		</theme>
+		<theme startAyah="63" endAyah="68">
+			They asked their father to send Benjamin with them in order to get more grain and Ya'qoob's advice to his sons
+		</theme>
+		<theme startAyah="69" endAyah="79">
+			Yusuf introduced himself to his brother and plotted to retain him and Benjamin was accused of stealing so that he could be retained
+		</theme>
+		<theme startAyah="80" endAyah="87">
+			Yusuf's brothers went back and told their father about the incident of Benjamin's stealing and retention and Their father sent them back
+		</theme>
+		<theme startAyah="88" endAyah="93">
+			They came to Yusuf and begged for food and some charity and Yusuf disclosed his identity and He forgave his brothers and sent for his family
+		</theme>
+		<theme startAyah="94" endAyah="98">
+			Ya'qoob got the good news of his son Yusuf
+		</theme>
+		<theme startAyah="99" endAyah="104">
+			Thus his family relocated from Ken'and to Egypt and Yusuf's prayer to live and die as a Muslim
+		</theme>
+		<theme startAyah="105" endAyah="108">
+			Most of the ignorant people who believe in Allah also commit shirk
+		</theme>
+		<theme startAyah="109" endAyah="111">
+			All Rasools were human beings and Story of Yusuf is confirmation of previous scriptures
+		</theme>
+	</sura>
+	<sura num="13">
+		<theme startAyah="1" endAyah="3">
+			Al-Quran is revealed by Allah, the Creator of the heavens and the earth
+		</theme>
+		<theme startAyah="4" endAyah="7">
+			Trees, fruit, vegetables and their tastes are the signs of Allah and For every nation Allah sent a guide (Rasool)
+		</theme>
+		<theme startAyah="8" endAyah="15">
+			Allah never changes the condition of a people unless they want to change themselves and Pray to Allah alone
+		</theme>
+		<theme startAyah="16" endAyah="18">
+			Deities besides Allah have no control over any harm or benefit and Those who do not respond to the call of their Rabb will have escape
+		</theme>
+		<theme startAyah="19" endAyah="26">
+			Those who fulfil their pledge with Allah will have and excellent home in the hereafter and Those who break their pledge will have the curse and a terrible home
+		</theme>
+		<theme startAyah="27" endAyah="29">
+			It is the remembrance of Allah that provides tranquility to hearts
+		</theme>
+		<theme startAyah="30" endAyah="31">
+			There is no God but Him, all things are subject to His command
+		</theme>
+		<theme startAyah="32" endAyah="34">
+			Allah watches minutely each and every soul
+		</theme>
+		<theme startAyah="35" endAyah="37">
+			Al-Quran is revealed in Arabic for easy understanding
+		</theme>
+		<theme startAyah="38" endAyah="43">
+			Rasool has no power to show any miracle without the sanction of Allah and When Allah commands, there is none to reverse it and That Allah is the Master of all planning
+		</theme>
+	</sura>
+	<sura num="14">
+		<theme startAyah="1" endAyah="3">
+			This Book is revealed to bring the mankind out from darkness into light
+		</theme>
+		<theme ayah="4">
+			All Rasools speak the language of their own people
+		</theme>
+		<theme startAyah="5" endAyah="6">
+			Prophet Musa was sent to lead his people out from darkness into light
+		</theme>
+		<theme startAyah="7" endAyah="12">
+			If all the dwellers of earth become nonbelievers, it makes no difference to Allah and In Allah let the believers put their trust
+		</theme>
+		<theme startAyah="13" endAyah="17">
+			Allah punishes the wrongdoers and blesses those who dread His eminence
+		</theme>
+		<theme startAyah="18" endAyah="21">
+			Allah has based the creation of the heavens and the earth on Truth
+		</theme>
+		<theme ayah="22">
+			Shaitan has no power over human beings - he only invites and people follow
+		</theme>
+		<theme ayah="23">
+			Greetings in Paradise will be 'Peace'
+		</theme>
+		<theme startAyah="24" endAyah="27">
+			Example of a "good word" and a "bad word"
+		</theme>
+		<theme startAyah="28" endAyah="34">
+			Those who show ingratitude towards Allah's favors shall be cast into Hell and Allah has given you countless favors
+		</theme>
+		<theme startAyah="35" endAyah="41">
+			The prayer of Prophet Ibrahim for the city of Mecca and its residents and The prayer of Prophet Ibrahim which is made a part of five daily prayers
+		</theme>
+		<theme startAyah="42" endAyah="51">
+			Never think that Allah is unaware of the unjust, or that He will ever break His promise made to His Rasools
+		</theme>
+		<theme ayah="52">
+			Allah is the One and Only God
+		</theme>
+	</sura>
+	<sura num="15">
+		<theme ayah="1">
+			Al-Quran is the Divine Book
+		</theme>
+		<theme startAyah="2" endAyah="15">
+			On the Day of Judgement, the unbelievers will wish that they were Muslims and Allah Himself has taken the responsibility of preserving Al-Quran
+		</theme>
+		<theme startAyah="16" endAyah="25">
+			Allah created and decorated the heavens and also created everything suitable for human life on earth
+		</theme>
+		<theme startAyah="26" endAyah="44">
+			Story of Adam's creation; prostration of the angels before him and the refusal of Shaitan to prostrate and Shaitan and his followers are destined for hell
+		</theme>
+		<theme startAyah="45" endAyah="50">
+			The righteous will be awarded paradise
+		</theme>
+		<theme startAyah="51" endAyah="60">
+			Prophet Ibrahim is given the good news of a son by two angels
+		</theme>
+		<theme startAyah="61" endAyah="79">
+			The same angels came to Prophet Lut and executed Allah's decree of stoning to death the nation of homosexuals
+		</theme>
+		<theme startAyah="80" endAyah="86">
+			Punishment to the people of Hijr for their disbelief
+		</theme>
+		<theme startAyah="87" endAyah="99">
+			Al-Fatiha is also called, "Seven verses worthy of oft-recitation" And Proclaim the commandments of Allah publicly and turn away from the Mushrikin
+		</theme>
+	</sura>
+	<sura num="16">
+		<theme startAyah="1" endAyah="9">
+			Allah has sent down His revelations to warn that there is no god but Him and He has created cattle for the benefit of human beings
+		</theme>
+		<theme startAyah="10" endAyah="21">
+			It is He Who sends down water from the sky for drinking and agriculture and He set mountains to stabilize earth and Allah has bestowed so many favors that you cannot even count them
+		</theme>
+		<theme startAyah="22" endAyah="25">
+			Unbelievers are arrogant and they will be held responsible for that attitude
+		</theme>
+		<theme startAyah="26" endAyah="34">
+			On the Day of Judgement Allah will humiliate the arrogant and cast them into hell, while the righteous will be awarded paradise
+		</theme>
+		<theme startAyah="35" endAyah="40">
+			Allah has sent the Rasools to warn against the unbelievers excuse, "If Allah wanted, we would have not worshipped anyone else"
+		</theme>
+		<theme startAyah="41" endAyah="44">
+			Allah has promised a good abode for those who migrate for His sake
+		</theme>
+		<theme startAyah="45" endAyah="50">
+			Do the unbelievers feel secure against the wrath of Allah
+		</theme>
+		<theme startAyah="51" endAyah="60">
+			Whenever unbelievers are in distress they call upon Allah alone; no sooner does He relieve them that they start committing shirk
+		</theme>
+		<theme startAyah="61" endAyah="65">
+			If Allah were to punish for wrong doings, He would not leave even and animal around the wrongdoers and As water gives life to dead land so does Al-Quran to the human soul
+		</theme>
+		<theme startAyah="66" endAyah="70">
+			There is a lesson for mankind in the lives of animals ie, milk-producing animals and the honeybee
+		</theme>
+		<theme startAyah="71" endAyah="76">
+			There is a lesson in the process of your own creation; Why then, believe in deities who have no power to create anything and disbelieve in Allah, the Creator
+		</theme>
+		<theme startAyah="77" endAyah="83">
+			There are also signs of Allah in the lives of the birds and the animals
+		</theme>
+		<theme startAyah="84" endAyah="89">
+			On the Day of Judgement a witness will be called from each nation and the unbelievers will face the reality of their invented false gods
+		</theme>
+		<theme startAyah="90" endAyah="94">
+			Allah commands to do justice, do good to others, and give to near relatives; and He forbids indecency, wickedness, and rebellion
+		</theme>
+		<theme startAyah="95" endAyah="100">
+			What is with you is transitory; and what is with Allah is everlasting and When you recite Al-Quran, seek Allah's protection against Shaitan
+		</theme>
+		<theme startAyah="101" endAyah="110">
+			Unbelievers accused Muhammad (pbuh) of being taught Al-Quran by a certain man, but the man they allude to is non-Arab while Al-Quran is in eloquent Arabic
+		</theme>
+		<theme startAyah="111" endAyah="119">
+			Do not declare with your tongue what is Halal (lawful) and what is Haram (unlawful) - Halal and Haram are from Allah
+		</theme>
+		<theme startAyah="120" endAyah="124">
+			Ibrahim was a nation in himself
+		</theme>
+		<theme startAyah="125" endAyah="128">
+			Call towards the Way of Allah with wisdom; advise and reason in a courteous manner
+		</theme>
+	</sura>
+	<sura num="17">
+		<theme ayah="1">
+			Allah took Muhammad (pbuh) on a tour of the universe
+		</theme>
+		<theme startAyah="2" endAyah="10">
+			Allah fulfilled the prophecy made in the Holy Book of the Israelites that they will create mischief in the land twice and each time they will be punished and Al-Quran guides to the perfectly Straight Way
+		</theme>
+		<theme startAyah="11" endAyah="14">
+			The book of his own deeds shall be given to each individual on the Day of Judgement
+		</theme>
+		<theme startAyah="15" endAyah="17">
+			He that seeks guidance does so to his own good and he who goes astray does so to his own loss
+		</theme>
+		<theme startAyah="18" endAyah="22">
+			He that desires the transitory things of this life is given here, but in the hereafter he shall be condemned to hell 
+		</theme>
+		<theme startAyah="23" endAyah="30">
+			Some commandments of Allah for the believers including proper behavior with parents, relatives, and the community at large
+		</theme>
+		<theme startAyah="31" endAyah="40">
+			The commandments continue   
+		</theme>
+		<theme startAyah="41" endAyah="44">
+			If there were other gods besides Allah, they would have tried to dethrone Him
+		</theme>
+		<theme startAyah="45" endAyah="52">
+			Belief in the hereafter is necessary to understand Al-Quran and Hereafter is Life after death
+		</theme>
+		<theme startAyah="53" endAyah="55">
+			Believers should speak only good words
+		</theme>
+		<theme startAyah="56" endAyah="57">
+			Invented gods have no power to relieve you from any distress
+		</theme>
+		<theme startAyah="58" endAyah="60">
+			Why the signs are not sent to Muhammad (pbuh) like prior prophets
+		</theme>
+		<theme startAyah="61" endAyah="65">
+			Shaitan, his enmity with human beings, and his vow to seduce them
+		</theme>
+		<theme startAyah="66" endAyah="70">
+			Allah has provided conveyance for you on land and sea
+		</theme>
+		<theme startAyah="71" endAyah="72">
+			Accountability of every community and its leaders
+		</theme>
+		<theme startAyah="73" endAyah="77">
+			No compromise is allowed in matters of Islamic law and principles
+		</theme>
+		<theme startAyah="78" endAyah="84">
+			Five times daily Salah (prayers) and and extra prayer called Tahajjud for the Holy Prophet and Al-Quran is a healing and mercy for the believers
+		</theme>
+		<theme startAyah="85" endAyah="88">
+			Ar-Ruh (Spirit) is at the command of Allah and No one can produce a Quran like this
+		</theme>
+		<theme startAyah="89" endAyah="93">
+			In Al-Quran Allah has used different methods to make people understand His Message
+		</theme>
+		<theme startAyah="94" endAyah="100">
+			Allah has sent a human Rasool to human beings; if the dwellers of earth had been Angels, Allah would have sent and angel as a Rasool and Only disbelievers can doubt life after death
+		</theme>
+		<theme startAyah="101" endAyah="104">
+			Musa was given NINE signs; people still did not believe him
+		</theme>
+		<theme startAyah="105" endAyah="111">
+			Al-Quran is revealed in truth and with the truth it has come dow in sections to suit each occasion, for easy deliberation Offer Salah neither too loud nor too low a voice, adopt the middle course
+		</theme>
+	</sura>
+	<sura num="18">
+		<theme startAyah="1" endAyah="6">
+			Those who say Allah has begotten a son are uttering a monstrous lie
+		</theme>
+		<theme startAyah="7" endAyah="12">
+			Story of the Companions of the Cave
+		</theme>
+		<theme startAyah="13" endAyah="17">
+			They were young men who declared the truth about the Oneness of Allah and They had to run away and take refuge in a cave
+		</theme>
+		<theme startAyah="18" endAyah="20">
+			They are in a state of sleep and They were waken up by Allah after hundreds of year
+		</theme>
+		<theme startAyah="21" endAyah="22">
+			Their identity was disclosed to resolve the disputed issue of life after death, What a shame that instead of getting the point people are disputing about their numbers
+		</theme>
+		<theme startAyah="23" endAyah="26">
+			Whenever you promise to do something in future, always say, "Insha Allah (If Allah wills)"
+		</theme>
+		<theme startAyah="27" endAyah="31">
+			No one is authorized to change the Word of Allah and Proclaim, "Truth from Allah has come, choice is yours, believe or disbelieve"
+		</theme>
+		<theme startAyah="32" endAyah="44">
+			Parable of a believer and a disbeliever
+		</theme>
+		<theme startAyah="45" endAyah="49">
+			Similitude of worldly life and its relationship with the life of hereafter
+		</theme>
+		<theme startAyah="50" endAyah="53">
+			Fate of those who follow the Shaitan and commit shirk
+		</theme>
+		<theme startAyah="54" endAyah="59">
+			Allah has given all kinds of examples in the Quran, so that the people may understand His Message
+		</theme>
+		<theme startAyah="60" endAyah="70">
+			Prophet Musa travelled to find Khizer to learn some of the knowledge given to him by Allah Almighty and Khizer warned Musa that he would not be able to bear with him
+		</theme>
+		<theme startAyah="71" endAyah="74">
+			Prophet Musa could not resist questioning Khizer when he made a hole in boat, and when he killed a boy with no apparent reason
+		</theme>
+		<theme startAyah="75" endAyah="82">
+			Story of Prophet Musa and Khizer
+		</theme>
+		<theme startAyah="83" endAyah="101">
+			Story of king Zul-Qarnain
+		</theme>
+		<theme startAyah="102" endAyah="108">
+			Fate of the Mushrikin and the Believers on the Day of Judgement
+		</theme>
+		<theme ayah="109">
+			Words of Allah are countless and can not be recorded
+		</theme>
+		<theme ayah="110">
+			Muhammad is but a human being like you
+		</theme>
+	</sura>
+	<sura num="19">
+		<theme startAyah="1" endAyah="15">
+			The story of Zakariya and the birth and youth of Yahya (John)
+		</theme>
+		<theme startAyah="16" endAyah="26">
+			The story of Maryem and the miraculous birth of Isa (Jesus)
+		</theme>
+		<theme startAyah="27" endAyah="34">
+			Maryem brought her baby (Jesus) to her people, and the baby spoke to his people in the cradle to defend his mother and proclaim his assignment to be their Prophet
+		</theme>
+		<theme startAyah="35" endAyah="40">
+			Isa (Jesus) is not the son of God, it is not befitting to the Majesty of God that He needs to beget a son for name, fame, help or continuity of race
+		</theme>
+		<theme startAyah="41" endAyah="50">
+			Story of Ibrahim and his idol worshipping father
+		</theme>
+		<theme startAyah="51" endAyah="57">
+			Prophethood of Musa, Isma`il and Idris
+		</theme>
+		<theme startAyah="58" endAyah="65">
+			All prophets of Allah were Divine Guided and chosen
+		</theme>
+		<theme startAyah="66" endAyah="82">
+			Believers and unbelievers' life in this world and their life in the Hereafter
+		</theme>
+		<theme startAyah="83" endAyah="98">
+			No god other than Allah will be able to save you on the Day of Judgement and Those who say Allah has begotten as son preach such a monstrous lie that even the heavens may crack, earth split and mountains crumble to pieces and Allah has made the Quran easy for Mankind
+		</theme>
+	</sura>
+	<sura num="20">
+		<theme startAyah="1" endAyah="8">
+			Al-Quran is a reminder for those who fear Allah, the Creator of the heavens and earth
+		</theme>
+		<theme startAyah="9" endAyah="16">
+			Prophet Musa went to the sacred valley of 'Tuwa' at mount Tur
+		</theme>
+		<theme startAyah="17" endAyah="24">
+			Allah chose him as His Rasool and assigned him towards Fir'on (Pharaoh)
+		</theme>
+		<theme startAyah="25" endAyah="48">
+			Prophet Musa prayed to Allah to open his heart, easy his task and remove the impediment from his speech so that people may understand, what he says Allah granted his request and reminded him about His favors
+		</theme>
+		<theme startAyah="49" endAyah="54">
+			Dialogue between Musa and Fir'on
+		</theme>
+		<theme ayah="55">
+			Human life cycle
+		</theme>
+		<theme startAyah="56" endAyah="64">
+			Fir'on disbelieved Musa by calling his miracles a magician trick and challenged him to confront his magicians in public - Musa accepted the challenge
+		</theme>
+		<theme startAyah="65" endAyah="76">
+			Confrontation of Musa and Fir'on's magicians, after witnessing Musa's miracle Magicians accepted Islam and Dialogue between Magicians and Fir'on
+		</theme>
+		<theme startAyah="77" endAyah="82">
+			Deliverance of the Children of Israel from the bondage of Fir'on
+		</theme>
+		<theme startAyah="83" endAyah="89">
+			When Prophet Musa went to Mount Tur for communion with Allah - Israelites started worshipping calf in his absence
+		</theme>
+		<theme startAyah="90" endAyah="98">
+			Musa's inquiry about the idol worshipping, his decision about Samiri, Golden Calf and his address to his people
+		</theme>
+		<theme startAyah="99" endAyah="104">
+			AL-Quran is but a reminder and the life of this world shall appears to be no longer than one day in the Hereafter
+		</theme>
+		<theme startAyah="105" endAyah="112">
+			A scene from the Day of judgement
+		</theme>
+		<theme startAyah="113" endAyah="115">
+			AL-Quran is sent in Arabic to teach and to remind, so read and say, "O Rabb increase my Knowledge"
+		</theme>
+		<theme startAyah="116" endAyah="128">
+			Story of Adam's creation and Shaitan's temptation and Allah forgave Adam's sin, chose him and guided him to the right Way and Those who do not read AL-Quran and follow its guidance shall be raise as blind on the Day of Resurrection
+		</theme>
+		<theme startAyah="129" endAyah="132">
+			Do not envy others in worldly benefits, rather seek Allah's pleasure if you want to attain the blessed end
+		</theme>
+		<theme startAyah="133" endAyah="135">
+			AL-Quran is a sign from Allah so there can be no excuse for the unbelievers on the Day of Judgement
+		</theme>
+	</sura>
+	<sura num="21">
+		<theme startAyah="1" endAyah="10">
+			The day of accountability is getting closer but the disbelievers are still heedless to the admonition and disputing as to how Rasool can be a human beings
+		</theme>
+		<theme startAyah="11" endAyah="15">
+			Prior nations were destroyed due to similar iniquities
+		</theme>
+		<theme startAyah="16" endAyah="18">
+			The creation of heavens and earth is not a game
+		</theme>
+		<theme startAyah="19" endAyah="24">
+			If there were more than One God, the heavens and earth would have been in a state of disorder
+		</theme>
+		<theme startAyah="25" endAyah="29">
+			All Rasools were sent with the same Message, "There is no god but Allah, so worship Him alone
+		</theme>
+		<theme startAyah="30" endAyah="33">
+			The skies and earth once were once one mass, Allah split them asunder, and He created all living things from water
+		</theme>
+		<theme startAyah="34" endAyah="41">
+			Allah has not granted immortality to any human being If Rasools are destined to die, how disbelievers are going to live for ever!
+		</theme>
+		<theme startAyah="42" endAyah="47">
+			Invented gods can not even defend themselves, how they will defend them against Allah and Scale of justice shall be set up on the Day of Judgement
+		</theme>
+		<theme startAyah="48" endAyah="50">
+			Musa was given AL-Furqan (the criterion of right and wrong), so is this AL-Quran
+		</theme>
+		<theme startAyah="51" endAyah="71">
+			Ibrahim questioned the idol worshiping of his father and his people and Ibrahim broke all their idols to show, that the gods who can not even defend themselves, how they can be of any benefit to them and They decided to burn him alive but Allah commanded the fire to be cool and comfortable for Ibrahim
+		</theme>
+		<theme startAyah="72" endAyah="75">
+			Allah blessed Ibrahim with son (Ishaq) and then a grandson (Ya'qoob) and made each of them Prophets
+		</theme>
+		<theme startAyah="76" endAyah="77">
+			Allah accepted the prayer of Nuh against the unbelievers
+		</theme>
+		<theme startAyah="78" endAyah="82">
+			Allah blessed Prophets Dawood and Sulaiman with wisdom, knowledge and kingdoms
+		</theme>
+		<theme startAyah="83" endAyah="84">
+			Allah accepted Prophet Ayub's prayer and removed his affliction
+		</theme>
+		<theme startAyah="85" endAyah="91">
+			Allah accepted the prayers and blessed Prophets Isma`il, Zulkifl, Yunus, Zakariya and also blessed Maryem
+		</theme>
+		<theme startAyah="92" endAyah="93">
+			Mankind is but one brotherhood
+		</theme>
+		<theme startAyah="94" endAyah="97">
+			Whoever does good deeds, provided he is a believer, his endeavor will not be rejected
+		</theme>
+		<theme startAyah="98" endAyah="106">
+			The Day of Judgement and the fate of the disbelievers and the believers
+		</theme>
+		<theme startAyah="107" endAyah="112">
+			Allah has sent Muhammad (pbuh) as a blessing for all the worlds (Humans, Jinns and others)
+		</theme>
+	</sura>
+	<sura num="22">
+		<theme startAyah="1" endAyah="4">
+			A scene from the Hour of Doom
+		</theme>
+		<theme startAyah="5" endAyah="7">
+			Life cycle, life in this world and the life in the Hereafter
+		</theme>
+		<theme startAyah="8" endAyah="10">
+			People invoke other deities besides Allah, without knowledge and guidance
+		</theme>
+		<theme startAyah="11" endAyah="14">
+			Behavior of those who are standing at the verge of faith
+		</theme>
+		<theme startAyah="15" endAyah="18">
+			Allah always help His Rasools and All the dwellers of the heavens and the earth prostrate before Allah
+		</theme>
+		<theme startAyah="19" endAyah="22">
+			Disbelievers will have garment of fire, boiling water and maces of iron to lash them with
+		</theme>
+		<theme startAyah="23" endAyah="25">
+			Allah has given equal rights to all believers for Masjid-al-Haram whether they are natives or foreigners
+		</theme>
+		<theme startAyah="26" endAyah="30">
+			Allah identified the sight of Sacred House to Ibrahim, commanded him to built Ka'bah then call mankind to come for Hajj (Pilgrimage)
+		</theme>
+		<theme startAyah="31" endAyah="33">
+			Committing shirk is as though he had fallen from the sky and his body is snatched away by the birds
+		</theme>
+		<theme startAyah="34" endAyah="38">
+			It is not the meat or the blood of the sacrificed animals that reaches Allah, it is your piety that reaches Him
+		</theme>
+		<theme startAyah="39" endAyah="41">
+			Permission is granted to the believers to fight in self defence, and for the cause of Allah
+		</theme>
+		<theme startAyah="42" endAyah="45">
+			O Muhammad, "you are not the only one being denied, all Prophets were denied before you"
+		</theme>
+		<theme startAyah="46" endAyah="48">
+			A day of your Rabb is equal to one thousand year of your calculation
+		</theme>
+		<theme startAyah="49" endAyah="51">
+			Acceptors of Truth shall be forgiven, while others punished
+		</theme>
+		<theme startAyah="52" endAyah="57">
+			Shaitan tempered with the wishes of all Rasools but Allah abrogated such interjection and On the Day of Judgement Allah Himself shall be the Judge for all
+		</theme>
+		<theme startAyah="58" endAyah="64">
+			Those who migrated for the sake of Allah shall be generously rewarded and Allah is the only One who is real, all other deities are false
+		</theme>
+		<theme startAyah="65" endAyah="67">
+			Allah is the One Who has given you life, cause you to die and will bring you back to life for passing on His Judgement
+		</theme>
+		<theme startAyah="68" endAyah="72">
+			Allah will Judge between you concerning those matter in which you differ
+		</theme>
+		<theme startAyah="73" endAyah="74">
+			Gods besides Allah has no power to create even a creature like fly
+		</theme>
+		<theme startAyah="75" endAyah="78">
+			Allah named the believers as Muslims in the prior Scriptures and also in this (AL-Quran)
+		</theme>
+	</sura>
+	<sura num="23">
+		<theme startAyah="1" endAyah="11">
+			Characteristics of true believers
+		</theme>
+		<theme startAyah="12" endAyah="16">
+			Stages of human creation
+		</theme>
+		<theme startAyah="17" endAyah="22">
+			Allah has made the heavens, vegetation, trees and Animals for the benefit of human beings
+		</theme>
+		<theme startAyah="23" endAyah="30">
+			Prophet Nuh was sent to guide his people, they disbelieved him, as a result Allah drowned all disbelievers in great flood
+		</theme>
+		<theme startAyah="31" endAyah="32">
+			After prophet Nuh, Allah sent Hud to guide his people
+		</theme>
+		<theme startAyah="33" endAyah="44">
+			They called Hud and imposter; as a result Allah destroyed them all in a mighty blast and After Hud Allah sent Rasools to other people, those people also denied and faced a similar punishment
+		</theme>
+		<theme startAyah="45" endAyah="50">
+			Musa was sent to Fir'on and his chiefs; they also disbelieved and faced destruction
+		</theme>
+		<theme startAyah="51" endAyah="61">
+			Allah has said, "In fact, your religion is one religion; I am your Rabb, so fear Me alone"
+		</theme>
+		<theme startAyah="62" endAyah="77">
+			Allah has not charged any soul with more than it can bear and Those who do not believe in the hereafter will stray from the Right Path
+		</theme>
+		<theme startAyah="78" endAyah="83">
+			Allah has given you ears, eyes, and hearts, but you seldom show gratitude
+		</theme>
+		<theme startAyah="84" endAyah="90">
+			Even the disbelievers recognize the existence of Allah
+		</theme>
+		<theme startAyah="91" endAyah="92">
+			Allah has never begotten a son, nor there is any other god besides Him
+		</theme>
+		<theme startAyah="93" endAyah="98">
+			Repel evil with good Seek refuge with Allah against the temptations of Shaitan
+		</theme>
+		<theme startAyah="99" endAyah="111">
+			Wrongdoers will wish that they be sent back to this world to adopt the Right Way, but it will be too late
+		</theme>
+		<theme startAyah="112" endAyah="115">
+			On the day of Judgement it will appear as if the life of this world was less than a day
+		</theme>
+		<theme startAyah="116" endAyah="118">
+			Unbelievers will never attain salvation
+		</theme>
+	</sura>
+	<sura num="24">
+		<theme startAyah="1" endAyah="2">
+			Punishment for rape or fornication
+		</theme>
+		<theme startAyah="3" endAyah="5">
+			Punishment for false witness
+		</theme>
+		<theme startAyah="6" endAyah="10">
+			Layan (accusing wife when there is no other witness in a case of adultery)
+		</theme>
+		<theme startAyah="11" endAyah="20">
+			Slander against a wife of the Holy Prophet and Allah declared the Prophet's wife to be innocent
+		</theme>
+		<theme startAyah="21" endAyah="26">
+			Allah commanded the believers not to follow Shaitan and not take Juz in false accusations and slanders
+		</theme>
+		<theme startAyah="27" endAyah="29">
+			Etiquettes for entering the houses other than your own
+		</theme>
+		<theme startAyah="30" endAyah="31">
+			Required behavior of a Muslim in mixed traffic and gatherings of males and females
+		</theme>
+		<theme startAyah="32" endAyah="34">
+			Allah's order for single people to get married and Allah's order to grant liberty to those slaves who seek to buy their freedom
+		</theme>
+		<theme ayah="35">
+			Allah is the Light of the heavens and the earth
+		</theme>
+		<theme startAyah="36" endAyah="38">
+			Allah's Light is found in the places of worship which are built for his remembrance by His devotees
+		</theme>
+		<theme startAyah="39" endAyah="40">
+			Deeds of unbelievers are like a mirage in a sandy desert
+		</theme>
+		<theme startAyah="41" endAyah="45">
+			Every thing in the heaven and earth glorify and praise Allah and Allah has created every living creature from water
+		</theme>
+		<theme startAyah="46" endAyah="50">
+			Those who claim to be the believers but do not demonstrate their belief through actions are not true believers
+		</theme>
+		<theme startAyah="51" endAyah="57">
+			True believers are those who, when called towards Allah and His Rasool, say, "We hear and we obey" 
+		</theme>
+		<theme startAyah="58" endAyah="59">
+			Etiquettes of seeking permission to enter the room of married couple
+		</theme>
+		<theme startAyah="60" endAyah="61">
+			Etiquettes of eating at houses other than your own
+		</theme>
+		<theme startAyah="62" endAyah="64">
+			Requirement of attending meetings which require collective action
+		</theme>
+	</sura>
+	<sura num="25">
+		<theme startAyah="1" endAyah="9">
+			Blessed is Allah Who revealed this Al-Quran, the criterion to distinguish right from wrong and Wrongdoers are those who reject the truth and disbelieve a Rasool be cause he is a human being
+		</theme>
+		<theme startAyah="10" endAyah="16">
+			Those who deny the Hour and life after death will be cast in the blazing fire
+		</theme>
+		<theme startAyah="17" endAyah="20">
+			On the day of Judgement, those deities whom the Mushrikin invoke will deny any claim of divinity and hold the Mushrikin responsible for their shirk
+		</theme>
+		<theme startAyah="21" endAyah="24">
+			Unbelievers who ask for angels today will ask for a stone barrier between them and the angels of punishment
+		</theme>
+		<theme startAyah="25" endAyah="31">
+			Disbelievers shall regret on the Day of Judgement not adopting the Right Path
+		</theme>
+		<theme startAyah="32" endAyah="34">
+			Allah explains the wisdom behind revealing Al-Quran piecemeal rather than all at once
+		</theme>
+		<theme startAyah="35" endAyah="44">
+			All nations which rejected Allah's revelations and His Rasools were utterly destroyed and Those who have taken their desires as their gods are nothing but animals
+		</theme>
+		<theme startAyah="45" endAyah="50">
+			Allah has made the night a mantle, sleep to rest, and the day to work
+		</theme>
+		<theme startAyah="51" endAyah="60">
+			Do not yield to the unbelievers; make Jihad against them with Al-Quran and Put your trust in Ever-Living (Allah), Who will never die
+		</theme>
+		<theme startAyah="61" endAyah="77">
+			Characteristics of the True Servants (believers) of Allah
+		</theme>
+	</sura>
+	<sura num="26">
+		<theme startAyah="1" endAyah="10">
+			Dedication of Prophet Muhammad (pbuh) for the guidance of mankind
+		</theme>
+		<theme startAyah="11" endAyah="33">
+			Assignment of Musa as a Rasool and his dialogue with Fir'on and Miracles of Prophet Musa
+		</theme>
+		<theme startAyah="34" endAyah="51">
+			Fir'on took Prophet Musa's miracles as magic and summoned the magicians to compete and After witnessing a miracle, all the magicians embraced Islam
+		</theme>
+		<theme startAyah="52" endAyah="68">
+			Deliverance of the Children of Israel and the destruction of Fir'on and his chiefs
+		</theme>
+		<theme startAyah="69" endAyah="104">
+			Story of Prophet Ibrahim and his arguments against idol worshipping and Prayer of Prophet Ibrahim for this life and the life hereafter and Mushrikin and their gods both will be toppled into hell
+		</theme>
+		<theme startAyah="105" endAyah="122">
+			Story of Prophet Nuh, his dialogue with his people, they disbelieved and as a result faced destruction
+		</theme>
+		<theme startAyah="123" endAyah="140">
+			Story of Prophet Hud, his address to his people, they disbelieved and as a result faced destruction
+		</theme>
+		<theme startAyah="141" endAyah="159">
+			Story of Prophet Saleh, his address to his people, they disbelieved and as a result faced destruction
+		</theme>
+		<theme startAyah="160" endAyah="175">
+			Story of Prophet Lut, his address to his people, they disbelieved and as a result faced destruction
+		</theme>
+		<theme startAyah="176" endAyah="191">
+			Story of Prophet Shu'aib, his address to his people, they disbelieved and as a result faced destruction
+		</theme>
+		<theme startAyah="192" endAyah="207">
+			Al-Quran is revealed in plain Arabic by Allah through angel Gabriel, those people who do not want to believe will not believe
+		</theme>
+		<theme startAyah="208" endAyah="220">
+			Al-Quran is not brought down by shaitans, it is neither in their interest nor in their power
+		</theme>
+		<theme startAyah="221" endAyah="227">
+			Shaitans descend on slandering sinners, who listen to hearsay and are liars
+		</theme>
+	</sura>
+	<sura num="27">
+		<theme startAyah="1" endAyah="6">
+			Al-Quran is a Guide and Good News to the Believers
+		</theme>
+		<theme startAyah="7" endAyah="14">
+			Story of Prophet Musa's selection as a Rasool and Nine signs were shown to Fir'on but he still disbelieved and incurred Allah's punishment
+		</theme>
+		<theme startAyah="15" endAyah="19">
+			Story of Prophet Sulaiman, to whom Allah gave rule over jinns, men, birds and winds
+		</theme>
+		<theme startAyah="20" endAyah="31">
+			The hoopoe brought him the news about the Queen of Sheba and Letter from King Sulaiman to the Queen of Sheba
+		</theme>
+		<theme startAyah="32" endAyah="37">
+			Communications between Queen of Sheba and Sulaiman
+		</theme>
+		<theme startAyah="38" endAyah="44">
+			A man who had the 'Knowledge of the Book' brought Throne of the Queen to king Sulaiman in twinkling of and eye and Queen of Sheba and her people embraced Islam
+		</theme>
+		<theme startAyah="45" endAyah="53">
+			Story of Prophet Saleh and his address to his people and Saleh's people plotted to kill him but Allah saved him and destroyed the disbelievers
+		</theme>
+		<theme startAyah="54" endAyah="58">
+			Prophet Lut admonished his people but they paid no heed so they faced the scourge of Allah
+		</theme>
+		<theme ayah="59">
+			Praise to Allah and peace be on His Rasools
+		</theme>
+		<theme startAyah="60" endAyah="66">
+			Just think, is there any god besides Allah Who has created anything in the universe, answer the oppressed or guides to the Right Way?
+		</theme>
+		<theme startAyah="67" endAyah="82">
+			Disbelievers doubt Allah's power of creation and Al-Quran clarifies those matters in which the Israelites differ and A sign from the signs of doomsday
+		</theme>
+		<theme startAyah="83" endAyah="86">
+			Do not deny Allah's revelations without gaining their comprehensive knowledge
+		</theme>
+		<theme startAyah="87" endAyah="93">
+			A scene from the scenes of Doomsday and Those who accept guidance do so to their own good and those who go astray do so to their own peril
+		</theme>
+	</sura>
+	<sura num="28">
+		<theme startAyah="1" endAyah="3">
+			Story of Prophet Musa
+		</theme>
+		<theme startAyah="4" endAyah="13">
+			Fir'on plotted to kill the sons of the Israelites to save his kingship, while Allah planned to bring up one of them in Fir'on's own household
+		</theme>
+		<theme startAyah="14" endAyah="21">
+			Musa's youth, his folly of killing a man, and his escape from Fir'on's retribution
+		</theme>
+		<theme startAyah="22" endAyah="28">
+			His arrival at Madyan, acceptance of ten years term employment, and marriage
+		</theme>
+		<theme startAyah="29" endAyah="35">
+			His arrival at Mount Tur, seeing a fire, conversation with Allah, and his appointment as a Rasool to Fir'on and his chiefs
+		</theme>
+		<theme startAyah="36" endAyah="42">
+			Fir'on and his chiefs disbelieved; as result Allah destroyed them but saved the Children of Israel
+		</theme>
+		<theme startAyah="43" endAyah="50">
+			Information about the destruction of prior generations is given to teach a lesson
+		</theme>
+		<theme startAyah="51" endAyah="55">
+			Righteous Jews and Christians can recognize the truth of Al-Quran and feel that they were Muslims even before hearing it
+		</theme>
+		<theme startAyah="56" endAyah="60">
+			Prophets cannot give guidance, it is Allah who gives guidance
+		</theme>
+		<theme startAyah="61" endAyah="67">
+			On the Day of Judgement disbelievers will wish that they had accepted Guidance
+		</theme>
+		<theme startAyah="68" endAyah="75">
+			Allah's powers are not in the hands of Mushrikin, that they can assign them to whomever they want
+		</theme>
+		<theme startAyah="76" endAyah="82">
+			Story of Qarun, the rich man, who was from the people of Musa but he rebelled against the guidance of Allah
+		</theme>
+		<theme startAyah="83" endAyah="88">
+			Revelation of Al-Quran is the mercy of Allah, let no one turn you away from it
+		</theme>
+	</sura>
+	<sura num="29">
+		<theme startAyah="1" endAyah="7">
+			Allah tests the believers to see who is truthful and who is a liar
+		</theme>
+		<theme startAyah="8" endAyah="13">
+			Be kind to your parents but do not obey them in the matter of shirk and Those who say, "Follow us we will bear your burden," are liars
+		</theme>
+		<theme startAyah="14" endAyah="22">
+			Nuh admonished his people not to commit shirk for 950 years Likewise, Ibrahim admonished his people not to commit shirk
+		</theme>
+		<theme startAyah="23" endAyah="27">
+			The people of Ibrahim even tried to burn him alive but Allah saved him and Lut (his nephew) is the only one who affirmed his belief with him
+		</theme>
+		<theme startAyah="28" endAyah="30">
+			Lut was appointed as a Rasool towards the nation of homosexuals
+		</theme>
+		<theme startAyah="31" endAyah="35">
+			They rejected Allah's guidance; as a result Allah destroyed them all
+		</theme>
+		<theme startAyah="36" endAyah="40">
+			Likewise the Nations of 'Ad, Thamud, Madyan and Fir'on rejected the Rasools of Allah, which resulted in their destruction
+		</theme>
+		<theme startAyah="41" endAyah="44">
+			Parable of those who take protectors other than Allah
+		</theme>
+		<theme startAyah="45" endAyah="51">
+			Salah keeps one away from the shameful deeds and Do not argue with the People of the Book except in good taste
+		</theme>
+		<theme startAyah="52" endAyah="63">
+			Those who believe in falsehood and disbelieve Allah shall be the losers and How many creatures are there who do not carry their provisions with them ? Allah provides them as He provides you
+		</theme>
+		<theme startAyah="64" endAyah="69">
+			The life of this world is nothing but a pastime, the real life is the life Hereafter and Those who strive in Our cause, We do guide them to Our Way
+		</theme>
+	</sura>
+	<sura num="30">
+		<theme startAyah="1" endAyah="10">
+			Romans (Christians) defeat at the hands of Persian (Pagans) was taken as a sign of the Muslims defeat at the hands of Arab's unbelievers, so Allah gave good tidings for Roman's victory as well as Muslims victory in a few year
+		</theme>
+		<theme startAyah="11" endAyah="19">
+			It is Allah Who originates the creation and then repeats it and to Him everyone will be brought for the final Judgement
+		</theme>
+		<theme startAyah="20" endAyah="27">
+			Creation of Man, his consort, heavens, earth, language, colors, sleep, quest for work, lightening, rain and growth of vegetation are all from the signs of Allah
+		</theme>
+		<theme startAyah="28" endAyah="32">
+			Wrongdoers are led by their own appetites without real knowledge and	 True faith and the nature of sects
+		</theme>
+		<theme startAyah="33" endAyah="37">
+			When and affliction befalls people they call upon Allah, but when He relieves them, lo! They start committing shirk
+		</theme>
+		<theme startAyah="38" endAyah="40">
+			Commandment to give the relatives their due and likewise to the poor and the travellers in need
+		</theme>
+		<theme startAyah="41" endAyah="45">
+			Mischief in the land is the result of Man's own misdeeds, that's how Allah let them taste the fruit of their deeds
+		</theme>
+		<theme startAyah="46" endAyah="53">
+			Allah sent His Rasools for the guidance of people, some believed while other rejected, Allah subjected the guilty to His retribution and helped the Believers and O Prophet you cannot make the dead to hear you
+		</theme>
+		<theme startAyah="54" endAyah="60">
+			It is Allah Who has created you and shall bring you to justice on the Day of Judgement
+		</theme>
+	</sura>
+	<sura num="31">
+		<theme startAyah="1" endAyah="11">
+			AL-Quran is the Book of Wisdom, a Guide and a Blessing for the Righteous
+		</theme>
+		<theme startAyah="12" endAyah="13">
+			Luqman advised his son not to commit Shirk
+		</theme>
+		<theme startAyah="14" endAyah="15">
+			Rights of mother and the parents and	 Obey your parents but not in the matters of Shirk
+		</theme>
+		<theme startAyah="16" endAyah="19">
+			Advise of Luqman about moral behavior and interaction
+		</theme>
+		<theme startAyah="20" endAyah="24">
+			Main reason of misguidance is the blind following of ones forefathers
+		</theme>
+		<theme startAyah="25" endAyah="30">
+			If all the trees were pens and the oceans and ink, Allah's words could not be put to writing and	 Allah is the only reality, all others to whom people invoke besides Him are false
+		</theme>
+		<theme startAyah="31" endAyah="34">
+			O Mankind, fear that Day when no father shall avail his son nor a son his father Let not the Shaitan deceive you concerning this fact
+		</theme>
+	</sura>
+	<sura num="32">
+		<theme startAyah="1" endAyah="11">
+			AL-Quran is beyond all doubts, revealed to Muhammad, so that he may warn those people to whom no Warner has come before
+		</theme>
+		<theme startAyah="12" endAyah="14">
+			On the Day of Judgement the unbelievers shall believe but that belief will be of no benefit to them
+		</theme>
+		<theme startAyah="15" endAyah="22">
+			There is a special reward for those who forsake their beds and invoke their Rabb with fear and hope and spend in charity
+		</theme>
+		<theme startAyah="23" endAyah="30">
+			AL-Quran is the similar Book as the Book which was given to Prophet Musa
+		</theme>
+	</sura>
+	<sura num="33">
+		<theme startAyah="1" endAyah="3">
+			Fear Allah and do not obey the unbelievers and hypocrites
+		</theme>
+		<theme startAyah="4" endAyah="5">
+			By words of mouth neither your wives become your mothers nor adopted sons become your real sons
+		</theme>
+		<theme startAyah="6" endAyah="8">
+			Prophet's wives are believers' mothers and Blood relations have greater claims than others in the Book of Allah
+		</theme>
+		<theme startAyah="9" endAyah="11">
+			Favors of Allah during the battle of Trench
+		</theme>
+		<theme startAyah="12" endAyah="15">
+			Attitude of the Hypocrites during the battle of Trench
+		</theme>
+		<theme startAyah="16" endAyah="20">
+			Those who discourage others from participating in fight against the unbelievers and don't participate in such a war themselves have no faith and all their deeds will be void
+		</theme>
+		<theme startAyah="21" endAyah="24">
+			The Life of Rasool Allah (Muhammad) is the best Model for you
+		</theme>
+		<theme startAyah="25" endAyah="27">
+			Allah helped the Muslims to gain victory over the unbelievers and the Jewish tribes in Madinah and Khayber
+		</theme>
+		<theme startAyah="28" endAyah="30">
+			Admonition to the wives of Prophet Muhammad (pbuh)
+		</theme>
+		<theme startAyah="31" endAyah="34">
+			Allah's commandment to the wives of Prophet Muhammad
+		</theme>
+		<theme startAyah="35" endAyah="36">
+			It is not fitting for believers to have option in what has been decided by Allah and His Rasool
+		</theme>
+		<theme startAyah="37" endAyah="40">
+			Allah commanded Prophet Muhammad to marry the divorced wife of his adopted son Zaid and Muhammad is not the father of any of your men but a Rasool and Seal of the Prophethood
+		</theme>
+		<theme startAyah="41" endAyah="48">
+			Prophet is sent as a bearer of good news, a Warner and a lamp spreading light
+		</theme>
+		<theme startAyah="49" endAyah="52">
+			Divorce when no Iddat (waiting period for remarriage) is required and Special permission for Prophet Muhammad to marry more than four wives and Restriction on Prophet to marry or exchange the present wives after this commandment
+		</theme>
+		<theme startAyah="53" endAyah="55">
+			Do not enter the houses of the Prophet without permission, and if invited do not seek long conversation and Do not marry Rasool's wives after his death
+		</theme>
+		<theme startAyah="56" endAyah="58">
+			Allah Himself and His angels send blessings on the Prophet, O Believers invoke Allah's blessings for him
+		</theme>
+		<theme ayah="59">
+			Commandment of Hijab (dress code) for women
+		</theme>
+		<theme startAyah="60" endAyah="62">
+			Punishment for the Hypocrites and scandal mongers
+		</theme>
+		<theme startAyah="63" endAyah="68">
+			In Hell the unbelievers shall ask double punishment for their leaders
+		</theme>
+		<theme startAyah="69" endAyah="73">
+			O Believers! Fear Allah and always say the right thing and Heavens, Earth and Mountains refuse to take Allah's Trust but the Man took it
+		</theme>
+	</sura>
+	<sura num="34">
+		<theme startAyah="1" endAyah="5">
+			The Hour is surely going to come and the Day of Judgement shall be established to reward the believers and punish those who discredit Allah's revelations
+		</theme>
+		<theme startAyah="6" endAyah="9">
+			Those who do not believe in the Hereafter are doomed
+		</theme>
+		<theme startAyah="10" endAyah="14">
+			Mountains and birds use to sing Allah's Rhymes with Prophet Dawood and Allah subjected the winds and Jinns to Prophet Sulaiman and Claim of people that Jinns know the unseen is wrong
+		</theme>
+		<theme startAyah="15" endAyah="21">
+			The people of Saba rejected Allah's blessings and disbelieved in the Hereafter so Allah made them merely a tale of the past
+		</theme>
+		<theme startAyah="22" endAyah="30">
+			No intercession before Allah can avail any one except for 	 whom He permits it and Prophet Muhammad is sent for the entire mankind
+		</theme>
+		<theme startAyah="31" endAyah="36">
+			Those who disbelieve in AL-Quran and prior scriptures will be subjected to yokes around their necks before tossing them into Hell and Wealth and children are not the indications of Allah's pleasure
+		</theme>
+		<theme startAyah="37" endAyah="45">
+			It is belief that brings you close to Allah not the wealth or children and Whatever you spend in charity, Allah will pay you back and Unbeliever's statements about the Prophet and AL-Quran 
+		</theme>
+		<theme startAyah="46" endAyah="50">
+			Unbelievers are asked to ponder upon their wrong statements and Truth has come, falsehood neither originates nor restores anything
+		</theme>
+		<theme startAyah="51" endAyah="54">
+			On the Day of Judgement unbelievers would like to believe but it will be of no avail to them
+		</theme>
+	</sura>
+	<sura num="35">
+		<theme startAyah="1" endAyah="7">
+			None can withhold or award blessings besides Allah and Shaitan is your enemy, so take him as your enemy
+		</theme>
+		<theme startAyah="8" endAyah="9">
+			That person who consider his evil deeds to be good cannot be guided to the Right Path
+		</theme>
+		<theme startAyah="10" endAyah="11">
+			Let all those who are seeking honor know that real honor is in the obedience of Allah
+		</theme>
+		<theme startAyah="12" endAyah="14">
+			Allah has created water, day, night, sun and moon for man's benefit and Deities besides Allah can neither hear, nor response nor yet own even a thread of a date-stone
+		</theme>
+		<theme startAyah="15" endAyah="18">
+			Mankind is in need of Allah, while He is not in need of any one
+		</theme>
+		<theme startAyah="19" endAyah="26">
+			Living and dead are not alike You cannot make those who are buried in the grave hear you
+		</theme>
+		<theme startAyah="27" endAyah="37">
+			Those who recite AL-Quran, establish Salah and give charity may hope for Allah's blessings and rewards and Those who disbelieve shall have a painful punishment in the Hell-Fire forever
+		</theme>
+		<theme startAyah="38" endAyah="41">
+			Allah has not sent any Book which has a provision of Shirk (worshipping any one else besides Allah)
+		</theme>
+		<theme startAyah="42" endAyah="45">
+			Plotting evil recoil none but the author of it and If Allah was to punish people for their wrong doings, He would have not left even and animal around
+		</theme>
+	</sura>
+	<sura num="36">
+		<theme startAyah="1" endAyah="12">
+			AL-Quran is revealed by the Allah to warn people and Prophet is told that he could warn only those people who have the fear of Allah
+		</theme>
+		<theme startAyah="13" endAyah="21">
+			And example of three Prophets who were sent to one town, all denied them except one man who came from cross the town
+		</theme>
+		<theme startAyah="22" endAyah="32">
+			Allah blessed the man who believed with Paradise and destroyed the disbelievers
+		</theme>
+		<theme startAyah="33" endAyah="36">
+			Allah has created all things in pair
+		</theme>
+		<theme startAyah="37" endAyah="40">
+			Day, night, sun and moon; all are being regulated by Allah
+		</theme>
+		<theme startAyah="41" endAyah="50">
+			Disbeliever's attitude towards spending in the way of Allah
+		</theme>
+		<theme startAyah="51" endAyah="54">
+			A scene from the Day of Judgement
+		</theme>
+		<theme startAyah="55" endAyah="58">
+			Allah's greeting to the residents of Paradise
+		</theme>
+		<theme startAyah="59" endAyah="67">
+			Allah's address to the criminal sinners and On the Day of judgement hands and feet shall testify
+		</theme>
+		<theme startAyah="68" endAyah="76">
+			AL-Quran is to warn those who are alive and to establish charge against the disbelievers
+		</theme>
+		<theme startAyah="77" endAyah="83">
+			Allah, Who has created the man, shall give him life again, for accountability on the Day of Judgement
+		</theme>
+	</sura>
+	<sura num="37">
+		<theme startAyah="1" endAyah="11">
+			Allah testifies that your God is one God and that shaitans do not have and excess to the exalted assembly of angels
+		</theme>
+		<theme startAyah="12" endAyah="21">
+			Life in the Hereafter and the Day of Judgement are real
+		</theme>
+		<theme startAyah="22" endAyah="39">
+			A scene from the Day of Judgement and a treatment for the wrongdoers and A dialogue between the followers and the leaders who mislead them
+		</theme>
+		<theme startAyah="40" endAyah="61">
+			A scene from the scenes of Paradise and And example of conversation from a resident of Paradise
+		</theme>
+		<theme startAyah="62" endAyah="74">
+			A scene from the scenes of Hell
+		</theme>
+		<theme startAyah="75" endAyah="82">
+			Prophet Nuh prayed and Allah respond to his prayers
+		</theme>
+		<theme startAyah="83" endAyah="98">
+			Story of Prophet Ibrahim, "The Friend of Allah"
+		</theme>
+		<theme startAyah="99" endAyah="113">
+			Prophet Ibrahim was asked to offer his only son in sacrifice as a test and he fulfilled it
+		</theme>
+		<theme startAyah="114" endAyah="122">
+			Allah bestowed His favors on Prophets Musa and Haroon
+		</theme>
+		<theme startAyah="123" endAyah="130">
+			Ilyas (Elias) was one of the Rasools of Allah
+		</theme>
+		<theme startAyah="131" endAyah="138">
+			Lut was also a Rasool of Allah
+		</theme>
+		<theme startAyah="139" endAyah="148">
+			Story of Prophet Yunus (Jonah)
+		</theme>
+		<theme startAyah="149" endAyah="166">
+			Mushrik's claim of Angels being daughters of Allah and Jinns having blood relations with Allah are utterly false
+		</theme>
+		<theme startAyah="167" endAyah="182">
+			Allah has promised to help His Rasools and His devotees
+		</theme>
+	</sura>
+	<sura num="38">
+		<theme startAyah="1" endAyah="14">
+			AL-Quran is full of admonition Unbelievers are in sheer arrogance for calling the Prophet as liars
+		</theme>
+		<theme startAyah="15" endAyah="26">
+			Story of Prophet Dawood -mountains and birds used to sing the rhymes of Allah and Story of the two litigants who came to Dawood for a decision
+		</theme>
+		<theme startAyah="27" endAyah="29">
+			Allah has not created the heavens and the earth in vain
+		</theme>
+		<theme startAyah="30" endAyah="40">
+			Story of Sulaiman's inspection of steeds to be used in Jihad and	 Prophet Sulaiman's prayer of granting him a kingdom, similar of which may not be granted to any one else
+		</theme>
+		<theme startAyah="41" endAyah="48">
+			Story of Ayub (Job), his sickness and relief
+		</theme>
+		<theme startAyah="49" endAyah="64">
+			AL-Quran is but a reminder about the reward of Paradise and punishment of the hellfire
+		</theme>
+		<theme startAyah="65" endAyah="70">
+			The mission of the Rasools' is to warn people and declare that there is no divinity except Allah
+		</theme>
+		<theme startAyah="71" endAyah="88">
+			Story of the creation of Adam and disobedience of Iblees (Shaitan)
+		</theme>
+	</sura>
+	<sura num="39">
+		<theme startAyah="1" endAyah="9">
+			Mushrikin try to justify their worship to saints saying that it may bring us closer to Allah and On the Day of Judgement no bearer of burden shall bear the burden of another
+		</theme>
+		<theme startAyah="10" endAyah="18">
+			Believers who cannot practice their faith (Islam) should migrate to other places where they can and The real losers are those who shall lose their souls and their families on the Day of Judgement
+		</theme>
+		<theme startAyah="19" endAyah="21">
+			No one can rescue the one against whom the sentence of punishment has been decreed
+		</theme>
+		<theme startAyah="22" endAyah="31">
+			AL-Quran is consistent in its verses yet repeats its teachings in different ways and Allah has cited every kind of parable in AL-Quran so that people may learn a lesson
+		</theme>
+		<theme startAyah="32" endAyah="41">
+			Who can be more wicked than the one who invent a lie against Allah? And If Allah intends to harm you, no one can save you and if He intends to bestow His blessings, no one can withhold
+		</theme>
+		<theme startAyah="42" endAyah="46">
+			It is Allah Who recall the souls of people upon their death and of the living people during their sleep
+		</theme>
+		<theme startAyah="47" endAyah="52">
+			If the wrong doers possess all the treasures of the earth and much more besides it, they will gladly offer it as a ransom to redeem themselves on the Day of Judgement
+		</theme>
+		<theme startAyah="53" endAyah="63">
+			Those who have transgressed against their souls should not despair of Allah's mercy, they should repent while they can
+		</theme>
+		<theme startAyah="64" endAyah="70">
+			Worship Allah and be among His thankful servants and On the Day of Judgement the Book of Deeds will be lai open and justice will be done with all fairness
+		</theme>
+		<theme startAyah="71" endAyah="75">
+			After Judgement unbelievers will driven to Hell and the righteous will be led to Paradise 
+		</theme>
+	</sura>
+	<sura num="40">
+		<theme startAyah="1" endAyah="9">
+			No one disputes the revelations of Allah except the kafirs (unbelievers) and The angels who bear the Throne of Allah pray for those who repent and follow the Right Way
+		</theme>
+		<theme startAyah="10" endAyah="20">
+			A scene from the Day of Judgement and Furtive looks and the secret thoughts
+		</theme>
+		<theme startAyah="21" endAyah="22">
+			Those who denied the Prophets and Allah's revelations were all destroyed
+		</theme>
+		<theme startAyah="23" endAyah="27">
+			Prophet Musa was sent to Fir'on, Haman and Qarun and Fir'on intended to kill Prophet Musa
+		</theme>
+		<theme startAyah="28" endAyah="37">
+			And excellent speech of one of the relatives of Fir'on in the favor of Prophet Musa
+		</theme>
+		<theme startAyah="38" endAyah="50">
+			Allah saved that believer from the plots of Fir'on and destroyed the people of Fir'on, now they are presented before the fire of Hell morning and evening (punishment of the graves)
+		</theme>
+		<theme startAyah="51" endAyah="60">
+			Allah does help His Rasools and the believers in this world's life and will help them in the life Hereafter and Your Rabb says, "Call on Me, I will answer your prayers"
+		</theme>
+		<theme startAyah="62" endAyah="68">
+			No one has the right to be worshipped except Allah, the Creator and the Rabb of the worlds
+		</theme>
+		<theme startAyah="69" endAyah="78">
+			Those who argue about the revelations of Allah, will soon fin out the Truth and	 Allah has sent many Rasools before Muhammad; some are mentioned in AL-Quran and some are not
+		</theme>
+		<theme startAyah="79" endAyah="85">
+			Cattle are the signs of Allah for the people of understanding and Belief after seeing the scourge of Allah is of no avail to the disbelievers
+		</theme>
+	</sura>
+	<sura num="41">
+		<theme startAyah="1" endAyah="8">
+			AL-Quran is a giver of good news and and admonition and Woe to those who deny the Hereafter and do not pay Zakah
+		</theme>
+		<theme startAyah="9" endAyah="12">
+			Story of the creation of earth, mountains, seasons, skies and heavens
+		</theme>
+		<theme startAyah="13" endAyah="18">
+			Warning to the disbelievers and the example of Allah's scourge upon the nations of A'd and Thamud
+		</theme>
+		<theme startAyah="19" endAyah="25">
+			On the Day of Judgement people's own ears, eyes and skins will bear witness against them relating to their misdeeds
+		</theme>
+		<theme startAyah="26" endAyah="32">
+			Those who do not listen to Al-Quran shall be sternly punished 	 and those who do not listen to those who say our God is Allah and then stay firm on it, angels are assigned for their protection
+		</theme>
+		<theme startAyah="33" endAyah="44">
+			The best in speech is the one who calls people towards Allah, do good deeds and say, "I am a Muslim" And Example of Allah's signs and Nothing is said to Muhammad which was not said to the prior Prophets and AL-Quran is a guide and healing for the believers
+		</theme>
+		<theme startAyah="45" endAyah="46">
+			The Book given to Prophet Musa was similar to AL-Quran
+		</theme>
+		<theme startAyah="47" endAyah="51">
+			On the Day of Judgement all other gods to whom people worship besides Allah shall vanish
+		</theme>
+		<theme startAyah="52" endAyah="54">
+			Have you ever considered that if Al-Quran is really from Allah and you deny it, what will happen to you
+		</theme>
+	</sura>
+	<sura num="42">
+		<theme startAyah="1" endAyah="9">
+			The heavens might have broken apart from above those who elevate Allah's creatures to His rank if the angels were not begging forgiveness for the residents of earth
+		</theme>
+		<theme startAyah="10" endAyah="19">
+			Islam is the same Deen (way of life) which was enjoined on Nuh, Ibrahim, Musa (Moses) and Isa (Jesus) They were all ordered to establish Deen-al-Islam and do not create division (sects) in it
+		</theme>
+		<theme startAyah="20" endAyah="29">
+			He who desires the harvest in the hereafter shall be given many folds, but he who desires in this life shall be given a portion here but shall have no share in the hereafter
+		</theme>
+		<theme startAyah="30" endAyah="43">
+			Whatever afflictions befall upon people are the result of their own misdeeds and True believers are those who establish Salah, give charit and defend themselves when oppressed
+		</theme>
+		<theme startAyah="44" endAyah="48">
+			The real losers are those who will lose on the Day of Resurrection
+		</theme>
+		<theme startAyah="49" endAyah="50">
+			It is Allah Who gives daughters and sons as He pleases
+		</theme>
+		<theme startAyah="51" endAyah="53">
+			It is not vouchsafed for any human being that Allah should speak to him face to face
+		</theme>
+	</sura>
+	<sura num="43">
+		<theme startAyah="1" endAyah="8">
+			Al-Quran is a transcript from the Mother Book which is in Allah's keeping
+		</theme>
+		<theme startAyah="9" endAyah="15">
+			Even the Mushrikin believe that heavens, earth and all therein is created by Allah and Supplication before riding a conveyance
+		</theme>
+		<theme startAyah="16" endAyah="25">
+			Some Mushrikin regard the angels to be the female divinities being the daughters of Allah
+		</theme>
+		<theme startAyah="26" endAyah="35">
+			Prophet Ibrahim recognized the Oneness of Allah and rejected Shirk (Polytheism) and If it were not that all mankind will become one race of unbelievers, Allah would have given the unbeliever houses made with sterling silver
+		</theme>
+		<theme startAyah="36" endAyah="45">
+			He who turns away from the remembrance of Allah, Allah appoints a Shaitan to be his intimate friend and Hold fast to Al-Quran if you want to be rightly guided
+		</theme>
+		<theme startAyah="46" endAyah="56">
+			Prophet Musa was sent to Fir'on and his chiefs with signs but they ridicule him and the signs as a result Allah drowned them all
+		</theme>
+		<theme startAyah="57" endAyah="67">
+			Prophet Isa (Jesus) was no more than a mortal whom Allah favored and made him and example for the Children of Israel
+		</theme>
+		<theme startAyah="68" endAyah="89">
+			On the Day of Judgement believers will have no fear or regret, they will be warded paradise and made happy and O Prophet tell the Christians, if Allah had a son, I would have been the first one to worship him
+		</theme>
+	</sura>
+	<sura num="44">
+		<theme startAyah="1" endAyah="16">
+			Allah revealed this Quran in the Blessed Night (Layla-tul-Qadr) in which all matters are decided wisely by His command
+		</theme>
+		<theme startAyah="17" endAyah="29">
+			Lessons to be learned from the story of Prophet Musa and the people of Fir'on
+		</theme>
+		<theme startAyah="30" endAyah="42">
+			Allah delivered the Children of Israel and chose them over the nations of the world inspite of their weaknesses and Day of Sorting Out is the time appointed for resurrection
+		</theme>
+		<theme startAyah="43" endAyah="50">
+			Food and drink for the sinners in hell
+		</theme>
+		<theme startAyah="51" endAyah="59">
+			Food and entertainment for the righteous in paradise
+		</theme>
+	</sura>
+	<sura num="45">
+		<theme startAyah="1" endAyah="11">
+			Food for thought to those who are seeking the signs of Allah and If they do not believe in Allah and His revelations then in what report will they believe?
+		</theme>
+		<theme startAyah="12" endAyah="17">
+			Allah has subjected the seas and all that is between the heavens and the earth for human beings and	 Israelites made sects in their religion after the knowledge has come to them through Torah
+		</theme>
+		<theme startAyah="18" endAyah="21">
+			Wrongdoers are protectors of one another while the protector of righteous is Allah Himself
+		</theme>
+		<theme startAyah="22" endAyah="26">
+			He who has made his own desires as his god, Allah let him go astray and set a seal upon his ears and heart
+		</theme>
+		<theme startAyah="27" endAyah="37">
+			Allah's address to the disbelievers on the day of judgement
+		</theme>
+	</sura>
+	<sura num="46">
+		<theme startAyah="1" endAyah="6">
+			Allah created the heavens, earth and all that lies between them to manifest the truth and Those deities to whom Mushrikin invoke are not even aware that they are being invoked
+		</theme>
+		<theme startAyah="7" endAyah="10">
+			Al-Quran is the word of Allah, not the Prophet and Prophet is but a plain Warner
+		</theme>
+		<theme startAyah="11" endAyah="14">
+			Al-Quran conforms the revelation of Torah given to Prophet Musa
+		</theme>
+		<theme startAyah="15" endAyah="20">
+			Those who treat their parents with kindness shall be rewarded and those who rebuke their parents shall be punished
+		</theme>
+		<theme startAyah="21" endAyah="26">
+			Nation of A'd rejected Allah's message, as a result she faced destruction
+		</theme>
+		<theme startAyah="27" endAyah="28">
+			No deity can save people from the wrath of Allah
+		</theme>
+		<theme startAyah="29" endAyah="34">
+			A group of jinns embraced Islam after hearing Al-Quran and became the preachers to their folk
+		</theme>
+		<theme ayah="35">
+			Keep on passing the message of Allah and bear the disbelievers with patience
+		</theme>
+	</sura>
+	<sura num="47">
+		<theme startAyah="1" endAyah="3">
+			Allah void the deeds of the disbelievers
+		</theme>
+		<theme startAyah="4" endAyah="6">
+			In case of war thoroughly subdue the unbelievers before taking prisoners of war
+		</theme>
+		<theme startAyah="7" endAyah="11">
+			If you help the cause of Allah, Allah will help and protect you
+		</theme>
+		<theme startAyah="12" endAyah="14">
+			Believers do not follow their own desires
+		</theme>
+		<theme ayah="15">
+			Parable of paradise and hell
+		</theme>
+		<theme startAyah="16" endAyah="19">
+			Hypocrites are those on whose heart Allah has set a seal
+		</theme>
+		<theme startAyah="20" endAyah="28">
+			Promise of obedience (Islam) and good talk which is not followed by action is cursed by Allah
+		</theme>
+		<theme startAyah="29" endAyah="34">
+			Allah put the believers to test in order to know the valiant and the resolute
+		</theme>
+		<theme startAyah="35" endAyah="36">
+			In the case of war Allah is on the side of the believers
+		</theme>
+		<theme startAyah="37" endAyah="38">
+			Do not be niggardly if you are asked to give in the cause of Allah
+		</theme>
+	</sura>
+	<sura num="48">
+		<theme startAyah="1" endAyah="10">
+			Allah granted the Muslims a manifest victory through the treaty of Hudeybiyah and Swearing allegiance to the Prophet is considered swearing allegiance to Allah
+		</theme>
+		<theme startAyah="11" endAyah="17">
+			Beduin Arabs who did not go with the Prophet for war between Islam and Kufr are condemned for lagging behind and Only blind, lame and sick are exempt from war
+		</theme>
+		<theme startAyah="18" endAyah="26">
+			Allah was well pleased with those swore allegiance to the Prophet before the treaty of Hudeybiyah and	 Had there not been believers in Makkah, Allah would have allowed the Muslims to fight against Qureysh
+		</theme>
+		<theme startAyah="27" endAyah="29">
+			Vision to conquer Makkah is shown to the Holy Prophet and Characteristics of Muhammad (pbuh) and his followers
+		</theme>
+	</sura>
+	<sura num="49">
+		<theme startAyah="1" endAyah="10">
+			Allah's commandment to lower the voice in the presence of Holy Prophet and Make peace between the believers if they fell into fighting among themselves
+		</theme>
+		<theme startAyah="11" endAyah="13">
+			Islamic etiquettes of moral behavior and	 Mankind is created from a single male and a female and noblest is he who is the most righteous
+		</theme>
+		<theme startAyah="14" endAyah="18">
+			Difference between a real Believer and a Muslim
+		</theme>
+	</sura>
+	<sura num="50">
+		<theme startAyah="1" endAyah="15">
+			Life after death is a reality and there is nothing strange about it
+		</theme>
+		<theme startAyah="16" endAyah="29">
+			Allah has assigned two angels to each person for noting down each single word that he utters and	 Every stubborn disbeliever will be thrown into hell
+		</theme>
+		<theme startAyah="30" endAyah="35">
+			Hell shall be asked, "Are you full" Hell will answer, "Are there any more?"
+		</theme>
+		<theme startAyah="36" endAyah="45">
+			Admonish the unbelievers and bear with them in patience and Admonish with Al-Quran
+		</theme>
+	</sura>
+	<sura num="51">
+		<theme startAyah="1" endAyah="23">
+			Surely the day of judgement shall come to pass, only the perverse persons turn away from this truth
+		</theme>
+		<theme startAyah="24" endAyah="30">
+			Story of Prophet Ibrahim, when he was given a good news of having a son
+		</theme>
+		<theme startAyah="31" endAyah="37">
+			The same angels who gave good news to Ibrahim annihilated the nation of homosexuals
+		</theme>
+		<theme startAyah="38" endAyah="46">
+			There is a lesson in the stories of Fir'on, A'd, Thamud and people of Nuh
+		</theme>
+		<theme startAyah="47" endAyah="60">
+			Allah, Who built the heavens and spread out the earth, has assigned Prophet Muhammad to be a Warner for mankind
+		</theme>
+	</sura>
+	<sura num="52">
+		<theme startAyah="1" endAyah="28">
+			Deniers of truth will be put in the fire of hell and Reward for the righteous will be paradise in which they will show gratitude for Allah's graciousness
+		</theme>
+		<theme startAyah="29" endAyah="49">
+			Mission of the Prophet and the response to the disbelievers' arguments
+		</theme>
+	</sura>
+	<sura num="53">
+		<theme startAyah="1" endAyah="18">
+			Scene of the 1st Revelation, brought by angel Gabriel to Prophet Muhammad and Allah gave him a tour of heavens, paradise and other great signs
+		</theme>
+		<theme startAyah="19" endAyah="25">
+			Lat, Uzza and Manat (goddesses of Arabs) are nothing but names invented by pagan Arabs
+		</theme>
+		<theme startAyah="26" endAyah="32">
+			Angels have no share in divinity, nor they can intercede without permission and	 Do not claim piety for yourselves, Allah knows who is Godfearing and pious
+		</theme>
+		<theme startAyah="33" endAyah="62">
+			No soul shall bear the burden of another, there shall be nothing for a person except what he strived for
+		</theme>
+	</sura>
+	<sura num="54">
+		<theme startAyah="1" endAyah="8">
+			The day of judgment is drawing near yet the unbelievers ate not paying heed to the signs of Allah
+		</theme>
+		<theme startAyah="9" endAyah="22">
+			We have made the Quran easy to understand the admonition, so is there any who would take the admonition?
+		</theme>
+		<theme startAyah="23" endAyah="40">
+			Story of Thamud and Lut who called their Prophet liars to show how terrible was Allah's scourge and how clear was His warning?
+		</theme>
+		<theme startAyah="41" endAyah="44">
+			People of Fir'on were seized for disbelieving Allah's warning The same warning has come to you, will you not take admonition?
+		</theme>
+	</sura>
+	<sura num="55">
+		<theme startAyah="1" endAyah="14">
+			It is Allah Who created man, taught the Quran and taught him how to convey his feelings and thoughts
+		</theme>
+		<theme startAyah="15" endAyah="25">
+			Allah is the Rabb of the easts and wests and put the laws to regulate oceans, its products and ships
+		</theme>
+		<theme startAyah="26" endAyah="32">
+			All that exist will perish except Allah, Who is busy in heavy tasks all the time
+		</theme>
+		<theme startAyah="33" endAyah="45">
+			No one can run away from the jurisdiction of Allah and Sinners will be punished in hell
+		</theme>
+		<theme startAyah="46" endAyah="55">
+			Righteous will be rewarded in paradise with lush gardens, springs, fruits, bashful virgins and much more
+		</theme>
+	</sura>
+	<sura num="56">
+		<theme startAyah="1" endAyah="26">
+			Scene of the doomsday when mankind will be divided into three groups, A Reward for the forehand group
+		</theme>
+		<theme startAyah="27" endAyah="38">
+			Reward for the right-hand group
+		</theme>
+		<theme startAyah="39" endAyah="56">
+			Punishment for the left-hand group
+		</theme>
+		<theme startAyah="57" endAyah="74">
+			Admonition to the disbelievers with the examples of creation
+		</theme>
+		<theme startAyah="75" endAyah="96">
+			Testimony of Allah about the Quran
+		</theme>
+	</sura>
+	<sura num="57">
+		<theme startAyah="1" endAyah="10">
+			All that is in the heavens and earth glorifies Allah, Who created the heavens and earth in six periods and has the knowledge of everything and Those who spend in charity will be richly rewarded
+		</theme>
+		<theme startAyah="11" endAyah="19">
+			On that day the true believers will have their light shining before them while the hypocrites will have their fate no different than the disbelievers and Those who spend in charity will be repaid manyfold and also be given liberal reward besides it
+		</theme>
+		<theme startAyah="20" endAyah="25">
+			Life of this world is but a play, amusement and illusion and	 Do not grieve for the things that you miss, nor overjoy at what you gain
+		</theme>
+		<theme startAyah="26" endAyah="29">
+			Prophets Nuh, Ibrahim and Isa (Jesus) were sent for the guidance to the Right Path, as for the monasticism, people instituted it themselves
+		</theme>
+	</sura>
+	<sura num="58">
+		<theme startAyah="1" endAyah="6">
+			Pagans practice of divorce through 'Zihar' (calling his wife as his mother) is prohibited and Penalty for practicing 'Zihar'
+		</theme>
+		<theme startAyah="7" endAyah="13">
+			Etiquettes of holding a meeting and Order to spend in charity before consulting the Rasool in private
+		</theme>
+		<theme startAyah="14" endAyah="22">
+			Those who befriend those who are under the wrath of Allah will be severely punished and True believers do not befriend those who oppose Allah and His Rasool
+		</theme>
+	</sura>
+	<sura num="59">
+		<theme startAyah="1" endAyah="5">
+			Jewish tribe of Banu Al-Nadir are given the order of exile for their mutiny against the Islamic State
+		</theme>
+		<theme startAyah="6" endAyah="10">
+			Distribution of the belongings of Banu Al-Nadir and Good qualities of true immigrants and good qualities of true Ansar (the residents of Madinah)
+		</theme>
+		<theme startAyah="11" endAyah="17">
+			Hypocrites conspiracy with the people of the Book and Parable of a Shaitan vs a disbeliever
+		</theme>
+		<theme startAyah="18" endAyah="20">
+			Let each soul see what it is sending for the hereafter
+		</theme>
+		<theme ayah="21">
+			Al-Quran could even affect a mountain
+		</theme>
+		<theme startAyah="22" endAyah="24">
+			Fifteen exclusive attributes of Allah
+		</theme>
+	</sura>
+	<sura num="60">
+		<theme startAyah="1" endAyah="3">
+			Do not be friend with those who are enemies of Allah and the Muslims
+		</theme>
+		<theme startAyah="4" endAyah="6">
+			Ibrahim and his companions are and excellent example for the believers and Prayer of Ibrahim and his companions
+		</theme>
+		<theme startAyah="7" endAyah="9">
+			Exception to the prohibition of friendship with unbelievers who had neither fought against the believers nor expelled them from their homes
+		</theme>
+		<theme startAyah="10" endAyah="11">
+			Women that become believers, test their Iman, and if you find them truthful do not return them to their unbelieving husbands
+		</theme>
+		<theme ayah="12">
+			Women's Bai'ah (oath of allegiance)
+		</theme>
+		<theme ayah="13">
+			Do not befriend with whom Allah is angry
+		</theme>
+	</sura>
+	<sura num="61">
+		<theme startAyah="1" endAyah="9">
+			O believers, do not say something that you don't do and Prophet Isa (Jesus) gave a good news of a Rasool coming after him whose name is Ahmed (Muhammad)
+		</theme>
+		<theme startAyah="10" endAyah="14">
+			A bargain to save oneself from the hellfire and Believers are commanded to be the helper of Allah like the disciples of Isa (Jesus)
+		</theme>
+	</sura>
+	<sura num="62">
+		<theme startAyah="1" endAyah="4">
+			Allah appointed Muhammad as a Rasool
+		</theme>
+		<theme startAyah="5" endAyah="8">
+			Allah rebutted the claim of Jews to be the favorites of God to the exclusion of others
+		</theme>
+		<theme startAyah="9" endAyah="11">
+			Commandment relating to the obligation of Friday Prayers
+		</theme>
+	</sura>
+	<sura num="63">
+		<theme startAyah="1" endAyah="8">
+			Hypocrites are such enemies of Islam and Muslims that even Rasool's prayer cannot obtain forgiveness for them from Allah
+		</theme>
+		<theme startAyah="9" endAyah="11">
+			Let not your riches or children divert you from the remembrance of Allah, lest you become a real loser
+		</theme>
+	</sura>
+	<sura num="64">
+		<theme startAyah="1" endAyah="10">
+			To Allah belongs the kingdom of heavens and earth, and He knows all that you conceal and reveal and Surely there will be life after death, day of judgement and reward for good and bad deeds
+		</theme>
+		<theme startAyah="11" endAyah="18">
+			No affliction can ever befall except by the leave of Allah and Among your wives and children there are some who are your enemies, be aware of them
+		</theme>
+	</sura>
+	<sura num="65">
+		<theme startAyah="1" endAyah="7">
+			Laws of divorce and Iddat (waiting period) before the divorce 	 take effect and Iddat (waiting period) is three menstruation periods or three months and delivery in case of pregnancy
+		</theme>
+		<theme startAyah="8" endAyah="12">
+			Rebellion against Allah's commandment may bring stern reckoning or exemplary punishment, so fear Allah and adhere to His laws
+		</theme>
+	</sura>
+	<sura num="66">
+		<theme startAyah="1" endAyah="7">
+			Do not make something unlawful which Allah has made lawful and Wives of the Holy Prophet are admonished on their behavior with him
+		</theme>
+		<theme startAyah="8" endAyah="12">
+			O believers! Turn to Allah in sincere repentance if you want to be forgiven and Example of the wives of Nuh and Lut who will go to hell and example of Fir'on's wife and Maryem who will go to paradise
+		</theme>
+	</sura>
+	<sura num="67">
+		<theme startAyah="1" endAyah="14">
+			Kingdom of the universe belong to Allah and Lower heaven is decorated with the lamps (stars) and Conversation between the dwellers of hell and her guards
+		</theme>
+		<theme startAyah="15" endAyah="30">
+			No one can help you against Allah and No one can provide you sustenance besides Allah and No one can save you from the punishment of Allah
+		</theme>
+	</sura>
+	<sura num="68">
+		<theme startAyah="1" endAyah="16">
+			Allah has declared Muhammad to be of the highest moral character and Do not yield any disbelieving oath monger, slanderer and wicked person
+		</theme>
+		<theme startAyah="17" endAyah="33">
+			What happened to the arrogant stingy owners of a garden who did not want to pay charity?
+		</theme>
+		<theme startAyah="34" endAyah="43">
+			Allah is not going to treat the Muslims as He will treat the guilty Why disbelievers do not understand this?
+		</theme>
+		<theme startAyah="44" endAyah="52">
+			Those who do not believe in Allah's revelations are led step by step towards destruction
+		</theme>
+	</sura>
+	<sura num="69">
+		<theme startAyah="1" endAyah="18">
+			Description of the day of resurrection and the day of judgement
+		</theme>
+		<theme startAyah="19" endAyah="37">
+			Fortunate people and their reward and Unfortunate people and their punishment
+		</theme>
+		<theme startAyah="38" endAyah="52">
+			Al-Quran is the word of Allah and not of the Prophet, and is a reminder for those who fear Allah (God)
+		</theme>
+	</sura>
+	<sura num="70">
+		<theme startAyah="1" endAyah="35">
+			The day of judgement will be equal to fifty thousand years and Disbelievers will wish to save themselves from the punishment at the expense of their children, wives, brothers and relatives, but it will not happen
+		</theme>
+		<theme startAyah="36" endAyah="44">
+			Paradise is not for the disbelievers and Disbelievers will have downcast eyes and countenances distorted with shame
+		</theme>
+	</sura>
+	<sura num="71">
+		<theme startAyah="1" endAyah="20">
+			Prophet Nuh's preaching and submission to Allah after exhausting all his efforts
+		</theme>
+		<theme startAyah="21" endAyah="28">
+			Prophet Nuh's prayer not to leave any unbeliever on the surface of the earth and Allah granted his wish
+		</theme>
+	</sura>
+	<sura num="72">
+		<theme startAyah="1" endAyah="15">
+			A beautiful speech of the jinns who embraced Islam after hearing Al-Quran and Jinns also have different religions and sects, among jinns there are some Muslims and some deviators from the Truth
+		</theme>
+		<theme startAyah="16" endAyah="19">
+			Mosques are built for the worship of Allah, so invoke no one else besides Him
+		</theme>
+		<theme startAyah="20" endAyah="28">
+			Rasools do not have the power to harm or benefit anyone, his mission is just to convey Allah's message and Only Allah knows the unseen, He reveals it to whom He chooses from
+		</theme>
+	</sura>
+	<sura num="73">
+		<theme startAyah="1" endAyah="19">
+			Allah ordered the Prophet not to stand in prayer the whole night and Those who oppose the Prophet will be treated with heavy fetters and blazing fire and Al-Quran is a reminder for those who want to find the Right Way
+		</theme>
+		<theme ayah="20">
+			Read from the Quran as much as you easily can and	 Whatever you spend in the way of Allah, you will find it in the hereafter
+		</theme>
+	</sura>
+	<sura num="74">
+		<theme startAyah="1" endAyah="7">
+			Instructions to the Prophet for cleanliness and patience
+		</theme>
+		<theme startAyah="8" endAyah="31">
+			The day of judgement will be very difficult especially for those who deny Allah's revelations and oppose His cause
+		</theme>
+		<theme startAyah="32" endAyah="56">
+			Actions which lead to hellfire are, Not to offer Salah, not to feed the poor, waste time in vain talk and to deny the day of judgement
+		</theme>
+	</sura>
+	<sura num="75">
+		<theme startAyah="1" endAyah="15">
+			Be aware of the day of resurrection and judgement, there is no escape from it
+		</theme>
+		<theme startAyah="16" endAyah="30">
+			Allah Himself took the responsibility of Al-Quran and Last moments of disbeliever's death
+		</theme>
+		<theme startAyah="31" endAyah="40">
+			Disbelievers do not believe because they never took Al-Islam seriously
+		</theme>
+	</sura>
+	<sura num="76">
+		<theme startAyah="1" endAyah="12">
+			Universe was there before mankind, then Allah created man, provided him guidance and let him use his free will, either to believe or to disbelieve
+		</theme>
+		<theme startAyah="13" endAyah="22">
+			Exemplary life in paradise for those who choose to believe
+		</theme>
+		<theme startAyah="23" endAyah="31">
+			Allah sent this Quran gradually according to the issues faced by mankind and This is and admonition for those who want to adopt the way to their Rabb (God)
+		</theme>
+	</sura>
+	<sura num="77">
+		<theme startAyah="1" endAyah="28">
+			Allah swears in the name of life giving winds, rain and angels that the day of judgement will be established and Woe on that day to the disbelievers!
+		</theme>
+		<theme startAyah="29" endAyah="40">
+			On that day, The disbelievers will be asked to walk towards hell which they used to deny
+		</theme>
+		<theme startAyah="41" endAyah="45">
+			The righteous will be given all that they desire
+		</theme>
+		<theme startAyah="46" endAyah="50">
+			A warning to the disbelievers
+		</theme>
+	</sura>
+	<sura num="78">
+		<theme startAyah="1" endAyah="30">
+			Creation of heavens , earth, mountains and vegetation clearly points out towards the day of judgement and Resurrection and man's accountability in the court of Allah
+		</theme>
+		<theme startAyah="31" endAyah="40">
+			The righteous will be well pleased and disbelievers will wish that they could remain merely dust
+		</theme>
+	</sura>
+	<sura num="79">
+		<theme startAyah="1" endAyah="14">
+			Duties of angels and the day of resurrection
+		</theme>
+		<theme startAyah="15" endAyah="26">
+			Story of Musa when he called Fir'on to his Rabb, he denied and was seized for punishment
+		</theme>
+		<theme startAyah="27" endAyah="33">
+			Creation of man is not harder than the creation of heavens, earth and its contents
+		</theme>
+		<theme startAyah="34" endAyah="46">
+			Punishment and reward on the day of judgement
+		</theme>
+	</sura>
+	<sura num="80">
+		<theme startAyah="1" endAyah="16">
+			Seekers of guidance should be given preference in conveying Allah's message
+		</theme>
+		<theme startAyah="17" endAyah="32">
+			Recognize your Creator and fulfil your obligations
+		</theme>
+		<theme startAyah="33" endAyah="42">
+			On the day of judgement no one shall care about his own mother, father, brother or children
+		</theme>
+	</sura>
+	<sura num="81">
+		<theme startAyah="1" endAyah="14">
+			A scene from the scenes of the doomsday
+		</theme>
+		<theme startAyah="15" endAyah="29">
+			Al-Quran is conveyed to the Prophet through angel Gabriel and This message is for all the people of the world
+		</theme>
+	</sura>
+	<sura num="82">
+		<theme startAyah="1" endAyah="19">
+			Description of What will happen on the day of judgement and Guardian angels are recording all actions and Allah Himself will be the Judge
+		</theme>
+	</sura>
+	<sura num="83">
+		<theme startAyah="1" endAyah="28">
+			Defrauders will be called to account and punished while the righteous will be rewarded with soft couches, choicest wine and special spring water
+		</theme>
+		<theme startAyah="29" endAyah="36">
+			Today disbelievers laugh at the believers , a day will come when they will be laughed at
+		</theme>
+	</sura>
+	<sura num="84">
+		<theme startAyah="1" endAyah="19">
+			On doomsday heaven will split asunder and earth will be spread out, and Books of deeds will be distributed, righteous will be happy while disbelievers will be calling for death
+		</theme>
+		<theme startAyah="20" endAyah="25">
+			People are asked to believe while they have time
+		</theme>
+	</sura>
+	<sura num="85">
+		<theme startAyah="1" endAyah="22">
+			Those who torture the believers will be given the punishment of conflagration on the day of judgement and He Who created you for the first time will out you back to life again for accountability
+		</theme>
+	</sura>
+	<sura num="86">
+		<theme startAyah="1" endAyah="17">
+			Over each soul there is and appointed guardian angel and Al-Quran is a decisive word of Allah
+		</theme>
+	</sura>
+	<sura num="87">
+		<theme startAyah="1" endAyah="19">
+			Glorify Allah, Al-Quran will remain as is, those who heed its reminders will be successful in the hereafter
+		</theme>
+	</sura>
+	<sura num="88">
+		<theme startAyah="1" endAyah="16">
+			What will be the condition of the disbelievers and the believers on the day of judgement
+		</theme>
+		<theme startAyah="17" endAyah="26">
+			Wonders of nature, admonition and accountability
+		</theme>
+	</sura>
+	<sura num="89">
+		<theme startAyah="1" endAyah="14">
+			Admonition for social welfare through the examples of prior nations
+		</theme>
+		<theme startAyah="15" endAyah="20">
+			What should be avoided to do real social welfare
+		</theme>
+		<theme startAyah="21" endAyah="30">
+			Day of judgement will be too late to heed the admonition and Allah's address to the believers
+		</theme>
+	</sura>
+	<sura num="90">
+		<theme startAyah="1" endAyah="20">
+			Admonition to the disbelievers of Makkah and Allah has given you one tongue and two lips to hold it and Qualities of righteous person
+		</theme>
+	</sura>
+	<sura num="91">
+		<theme startAyah="1" endAyah="10">
+			Success depends on keeping the soul pure and failure depends on corrupting it
+		</theme>
+		<theme startAyah="11" endAyah="15">
+			People of Thamud who corrupted, were levelled to the ground
+		</theme>
+	</sura>
+	<sura num="92">
+		<theme startAyah="1" endAyah="21">
+			For good people Allah will facilitate the easy way and for the wicked the hard way, and What benefit will he get from wealth, if he himself is doomed
+		</theme>
+	</sura>
+	<sura num="93">
+		<theme startAyah="1" endAyah="11">
+			Good news to Muhammad (pbuh) that later period will be better for him than the earlier
+		</theme>
+	</sura>
+	<sura num="94">
+		<theme startAyah="1" endAyah="8">
+			Allah expanded the chest of Prophet, lighten his burden and exalted his fame
+		</theme>
+	</sura>
+	<sura num="95">
+		<theme startAyah="1" endAyah="8">
+			Man is made the best creatures of all except the disbelievers
+		</theme>
+	</sura>
+	<sura num="96">
+		<theme startAyah="1" endAyah="19">
+			Read in the name of Allah, Who created man and taught him by the pen and Those who forbid from the worship of Allah will be dragged to hell by their forelock
+		</theme>
+	</sura>
+	<sura num="97">
+		<theme startAyah="1" endAyah="5">
+			The night of Qadr is better than one thousand months
+		</theme>
+	</sura>
+	<sura num="98">
+		<theme startAyah="1" endAyah="8">
+			People of the Book did not get divided into sets until after receiving the guidance and People of the Book were also commanded to establish Salah and pay Zakah
+		</theme>
+	</sura>
+	<sura num="99">
+		<theme startAyah="1" endAyah="8">
+			Earth will report whatever happened on her and men shall be shown their Books of Deeds
+		</theme>
+	</sura>
+	<sura num="100">
+		<theme startAyah="1" endAyah="11">
+			Example of horses who are more grateful to their owners than men to their Rabb
+		</theme>
+	</sura>
+	<sura num="101">
+		<theme startAyah="1" endAyah="11">
+			A scene explaining the day of judgement
+		</theme>
+	</sura>
+	<sura num="102">
+		<theme startAyah="1" endAyah="8">
+			Man's cause of destruction is mutual rivalry of worldly gains, and real success is in working for the life hereafter
+		</theme>
+	</sura>
+	<sura num="103">
+		<theme startAyah="1" endAyah="3">
+			Formula for the way to salvation
+		</theme>
+	</sura>
+	<sura num="104">
+		<theme startAyah="1" endAyah="9">
+			Slanderer, defamer and stingy shall be thrown into the blazing fire
+		</theme>
+	</sura>
+	<sura num="105">
+		<theme startAyah="1" endAyah="5">
+			A reminder that Allah can defeat and army with elephants through the flock of birds
+		</theme>
+	</sura>
+	<sura num="106">
+		<theme startAyah="1" endAyah="4">
+			Believe in Allah Who is the provider of your sustenance
+		</theme>
+	</sura>
+	<sura num="107">
+		<theme startAyah="1" endAyah="7">
+			Disbelieve in the hereafter is the main cause of moral decay and lack of caring about others
+		</theme>
+	</sura>
+	<sura num="108">
+		<theme startAyah="1" endAyah="3">
+			Allah has made Muhammad's name everlasting
+		</theme>
+	</sura>
+	<sura num="109">
+		<theme startAyah="1" endAyah="6">
+			Command not to compromise in the matters of religion
+		</theme>
+	</sura>
+	<sura num="110">
+		<theme startAyah="1" endAyah="3">
+			Victory comes with the help of Allah
+		</theme>
+	</sura>
+	<sura num="111">
+		<theme startAyah="1" endAyah="5">
+			Curse of Allah on Abu Lahab and his wife, the opponents of the Holy Prophet
+		</theme>
+	</sura>
+	<sura num="112">
+		<theme startAyah="1" endAyah="4">
+			Unique attributes of Allah
+		</theme>
+	</sura>
+	<sura num="113">
+		<theme startAyah="1" endAyah="5">
+			Seek refuge with Allah from all evils
+		</theme>
+	</sura>
+	<sura num="114">
+		<theme startAyah="1" endAyah="6">
+			Seek refuge with Allah from the slinking whisperers
+		</theme>
+	</sura>
+</quran>
+</aml>

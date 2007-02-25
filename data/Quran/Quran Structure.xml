@@ -1,0 +1,1192 @@
+<?xml version="1.0"?>
+<aml>
+<quran type="structure" title="Default Quran Structure" shortname="Quran Structure" id="QSU">
+	<sajdatilawa>
+		<sajda num="1" sura="7" ayah="206" />
+		<sajda num="2" sura="13" ayah="15" />
+		<sajda num="3" sura="16" ayah="49" />
+		<sajda num="4" sura="16" ayah="50" />
+		<sajda num="5" sura="17" ayah="109" />
+		<sajda num="6" sura="19" ayah="58" />
+		<sajda num="7" sura="22" ayah="18" />
+		<sajda num="8" sura="22" ayah="77" />
+		<sajda num="9" sura="25" ayah="60" />
+		<sajda num="10" sura="27" ayah="25" />
+		<sajda num="11" sura="27" ayah="26" />
+		<sajda num="12" sura="32" ayah="15" />
+		<sajda num="13" sura="38" ayah="24" />
+		<sajda num="14" sura="38" ayah="25" />
+		<sajda num="15" sura="41" ayah="38" />
+		<sajda num="16" sura="53" ayah="62" />
+		<sajda num="17" sura="84" ayah="20" />
+		<sajda num="18" sura="84" ayah="21" />
+		<sajda num="19" sura="96" ayah="19" />		
+	</sajdatilawa>
+	<ajza>
+		<juz num="1" sura="2" ayah="1" />
+		<juz num="2" sura="2" ayah="142" />
+		<juz num="3" sura="2" ayah="253" />
+		<juz num="4" sura="3" ayah="92" />
+		<juz num="5" sura="4" ayah="24" />
+		<juz num="6" sura="4" ayah="148" />
+		<juz num="7" sura="5" ayah="83" />
+		<juz num="8" sura="6" ayah="111" />
+		<juz num="9" sura="7" ayah="88" />
+		<juz num="10" sura="8" ayah="41" />
+		<juz num="11" sura="9" ayah="94" />
+		<juz num="12" sura="11" ayah="6" />
+		<juz num="13" sura="12" ayah="53" />
+		<juz num="14" sura="15" ayah="2" />
+		<juz num="15" sura="17" ayah="1" />
+		<juz num="16" sura="18" ayah="75" />
+		<juz num="17" sura="21" ayah="1" />
+		<juz num="18" sura="23" ayah="1" />
+		<juz num="19" sura="25" ayah="21" />
+		<juz num="20" sura="27" ayah="60" />
+		<juz num="21" sura="29" ayah="45" />
+		<juz num="22" sura="33" ayah="31" />
+		<juz num="23" sura="36" ayah="22" />
+		<juz num="24" sura="39" ayah="32" />
+		<juz num="25" sura="41" ayah="47" />
+		<juz num="26" sura="46" ayah="2" />
+		<juz num="27" sura="51" ayah="31" />
+		<juz num="28" sura="58" ayah="1" />
+		<juz num="29" sura="67" ayah="1" />
+		<juz num="30" sura="78" ayah="2" />
+	</ajza>
+	<suras>
+		<sura num="1" ayahcount="7">
+			<name language="literal">Al-Fathiha</name>
+			<revealed num="5" city="Mecca"/>
+		</sura>
+		<sura num="2" ayahcount="286">
+			<name language="literal">Al-Baqara</name>
+			<revealed num="87" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="7"/>
+				<ruku num="2" startayah="8" endayah="20"/>
+				<ruku num="3" startayah="21" endayah="29"/>
+				<ruku num="4" startayah="30" endayah="39"/>
+				<ruku num="5" startayah="40" endayah="46"/>
+				<ruku num="6" startayah="47" endayah="59"/>
+				<ruku num="7" startayah="60" endayah="61"/>
+				<ruku num="8" startayah="62" endayah="71"/>
+				<ruku num="9" startayah="72" endayah="82"/>
+				<ruku num="10" startayah="83" endayah="86"/>
+				<ruku num="11" startayah="87" endayah="96"/>
+				<ruku num="12" startayah="97" endayah="103"/>
+				<ruku num="13" startayah="104" endayah="112"/>
+				<ruku num="14" startayah="113" endayah="121"/>
+				<ruku num="15" startayah="122" endayah="129"/>
+				<ruku num="16" startayah="130" endayah="141"/>
+				<ruku num="17" startayah="142" endayah="147"/>
+				<ruku num="18" startayah="148" endayah="152"/>
+				<ruku num="19" startayah="153" endayah="163"/>
+				<ruku num="20" startayah="164" endayah="167"/>
+				<ruku num="21" startayah="168" endayah="176"/>
+				<ruku num="22" startayah="177" endayah="182"/>
+				<ruku num="23" startayah="183" endayah="188"/>
+				<ruku num="24" startayah="189" endayah="196"/>
+				<ruku num="25" startayah="197" endayah="210"/>
+				<ruku num="26" startayah="211" endayah="216"/>
+				<ruku num="27" startayah="217" endayah="221"/>
+				<ruku num="28" startayah="222" endayah="228"/>
+				<ruku num="29" startayah="229" endayah="231"/>
+				<ruku num="30" startayah="232" endayah="235"/>
+				<ruku num="31" startayah="236" endayah="242"/>
+				<ruku num="32" startayah="243" endayah="248"/>
+				<ruku num="33" startayah="249" endayah="253"/>
+				<ruku num="34" startayah="254" endayah="257"/>
+				<ruku num="35" startayah="258" endayah="260"/>
+				<ruku num="36" startayah="261" endayah="266"/>
+				<ruku num="37" startayah="267" endayah="273"/>
+				<ruku num="38" startayah="274" endayah="281"/>
+				<ruku num="39" startayah="282" endayah="283"/>
+				<ruku num="40" startayah="284" endayah="286"/>
+			</rukus>
+		</sura>
+		<sura num="3" ayahcount="200">
+			<name language="literal">Al-i'Imran</name>
+			<revealed num="89" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="9"/>
+				<ruku num="2" startayah="10" endayah="20"/>
+				<ruku num="3" startayah="21" endayah="30"/>
+				<ruku num="4" startayah="31" endayah="41"/>
+				<ruku num="5" startayah="42" endayah="63"/>
+				<ruku num="6" startayah="64" endayah="71"/>
+				<ruku num="7" startayah="72" endayah="80"/>
+				<ruku num="8" startayah="81" endayah="91"/>
+				<ruku num="9" startayah="92" endayah="101"/>
+				<ruku num="10" startayah="102" endayah="109"/>
+				<ruku num="11" startayah="110" endayah="120"/>
+				<ruku num="12" startayah="121" endayah="129"/>
+				<ruku num="13" startayah="130" endayah="143"/>
+				<ruku num="14" startayah="144" endayah="148"/>
+				<ruku num="15" startayah="149" endayah="155"/>
+				<ruku num="16" startayah="156" endayah="171"/>
+				<ruku num="17" startayah="172" endayah="180"/>
+				<ruku num="18" startayah="181" endayah="189"/>
+				<ruku num="19" startayah="190" endayah="200"/>
+			</rukus>
+		</sura>
+		<sura num="4" ayahcount="176">
+			<name language="literal">An-Nisaa</name>
+			<revealed num="92" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="14"/>
+				<ruku num="3" startayah="15" endayah="22"/>
+				<ruku num="4" startayah="23" endayah="25"/>
+				<ruku num="5" startayah="26" endayah="33"/>
+				<ruku num="6" startayah="34" endayah="42"/>
+				<ruku num="7" startayah="43" endayah="50"/>
+				<ruku num="8" startayah="51" endayah="59"/>
+				<ruku num="9" startayah="60" endayah="70"/>
+				<ruku num="10" startayah="71" endayah="76"/>
+				<ruku num="11" startayah="77" endayah="87"/>
+				<ruku num="12" startayah="88" endayah="91"/>
+				<ruku num="13" startayah="92" endayah="96"/>
+				<ruku num="14" startayah="97" endayah="100"/>
+				<ruku num="15" startayah="101" endayah="104"/>
+				<ruku num="16" startayah="105" endayah="112"/>
+				<ruku num="17" startayah="113" endayah="115"/>
+				<ruku num="18" startayah="116" endayah="126"/>
+				<ruku num="19" startayah="127" endayah="134"/>
+				<ruku num="20" startayah="135" endayah="141"/>
+				<ruku num="21" startayah="142" endayah="152"/>
+				<ruku num="22" startayah="153" endayah="162"/>
+				<ruku num="23" startayah="163" endayah="171"/>
+				<ruku num="24" startayah="172" endayah="176"/>
+			</rukus>
+		</sura>
+		<sura num="5" ayahcount="120">
+			<name language="literal">Al-Maida</name>
+			<revealed num="112" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="6"/>
+				<ruku num="2" startayah="7" endayah="12"/>
+				<ruku num="3" startayah="13" endayah="21"/>
+				<ruku num="4" startayah="22" endayah="29"/>
+				<ruku num="5" startayah="30" endayah="37"/>
+				<ruku num="6" startayah="38" endayah="46"/>
+				<ruku num="7" startayah="47" endayah="53"/>
+				<ruku num="8" startayah="54" endayah="59"/>
+				<ruku num="9" startayah="60" endayah="69"/>
+				<ruku num="10" startayah="70" endayah="80"/>
+				<ruku num="11" startayah="81" endayah="89"/>
+				<ruku num="12" startayah="90" endayah="96"/>
+				<ruku num="13" startayah="97" endayah="103"/>
+				<ruku num="14" startayah="104" endayah="111"/>
+				<ruku num="15" startayah="112" endayah="118"/>
+				<ruku num="16" startayah="119" endayah="120"/>
+			</rukus>
+		</sura>
+		<sura num="6" ayahcount="165">
+			<name language="literal">Al-An'am</name>
+			<revealed num="55" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="20"/>
+				<ruku num="3" startayah="21" endayah="30"/>
+				<ruku num="4" startayah="31" endayah="41"/>
+				<ruku num="5" startayah="42" endayah="50"/>
+				<ruku num="6" startayah="51" endayah="55"/>
+				<ruku num="7" startayah="56" endayah="60"/>
+				<ruku num="8" startayah="61" endayah="70"/>
+				<ruku num="9" startayah="71" endayah="82"/>
+				<ruku num="10" startayah="83" endayah="90"/>
+				<ruku num="11" startayah="91" endayah="94"/>
+				<ruku num="12" startayah="95" endayah="100"/>
+				<ruku num="13" startayah="101" endayah="110"/>
+				<ruku num="14" startayah="111" endayah="121"/>
+				<ruku num="15" startayah="122" endayah="129"/>
+				<ruku num="16" startayah="130" endayah="140"/>
+				<ruku num="17" startayah="141" endayah="144"/>
+				<ruku num="18" startayah="145" endayah="150"/>
+				<ruku num="19" startayah="151" endayah="154"/>
+				<ruku num="20" startayah="155" endayah="165"/>
+			</rukus>
+		</sura>
+		<sura num="7" ayahcount="206">
+			<name language="literal">Al-A'raf</name>
+			<revealed num="39" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="25"/>
+				<ruku num="3" startayah="26" endayah="31"/>
+				<ruku num="4" startayah="32" endayah="39"/>
+				<ruku num="5" startayah="40" endayah="47"/>
+				<ruku num="6" startayah="48" endayah="53"/>
+				<ruku num="7" startayah="54" endayah="58"/>
+				<ruku num="8" startayah="59" endayah="64"/>
+				<ruku num="9" startayah="65" endayah="72"/>
+				<ruku num="10" startayah="73" endayah="84"/>
+				<ruku num="11" startayah="85" endayah="93"/>
+				<ruku num="12" startayah="94" endayah="99"/>
+				<ruku num="13" startayah="100" endayah="108"/>
+				<ruku num="14" startayah="109" endayah="126"/>
+				<ruku num="15" startayah="127" endayah="129"/>
+				<ruku num="16" startayah="130" endayah="141"/>
+				<ruku num="17" startayah="142" endayah="147"/>
+				<ruku num="18" startayah="148" endayah="151"/>
+				<ruku num="19" startayah="152" endayah="157"/>
+				<ruku num="20" startayah="158" endayah="162"/>
+				<ruku num="21" startayah="163" endayah="171"/>
+				<ruku num="22" startayah="172" endayah="181"/>
+				<ruku num="23" startayah="182" endayah="188"/>
+				<ruku num="24" startayah="189" endayah="206"/>
+			</rukus>
+		</sura>
+		<sura num="8" ayahcount="75">
+			<name language="literal">Al-Anfal</name>
+			<revealed num="88" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="19"/>
+				<ruku num="3" startayah="20" endayah="28"/>
+				<ruku num="4" startayah="29" endayah="37"/>
+				<ruku num="5" startayah="38" endayah="44"/>
+				<ruku num="6" startayah="45" endayah="48"/>
+				<ruku num="7" startayah="49" endayah="58"/>
+				<ruku num="8" startayah="59" endayah="64"/>
+				<ruku num="9" startayah="65" endayah="69"/>
+				<ruku num="10" startayah="70" endayah="75"/>
+			</rukus>
+		</sura>
+		<sura num="9" ayahcount="129">
+			<name language="literal">At-Tauba</name>
+			<revealed num="113" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="6"/>
+				<ruku num="2" startayah="7" endayah="16"/>
+				<ruku num="3" startayah="17" endayah="24"/>
+				<ruku num="4" startayah="25" endayah="29"/>
+				<ruku num="5" startayah="30" endayah="37"/>
+				<ruku num="6" startayah="38" endayah="42"/>
+				<ruku num="7" startayah="43" endayah="59"/>
+				<ruku num="8" startayah="60" endayah="66"/>
+				<ruku num="9" startayah="67" endayah="72"/>
+				<ruku num="10" startayah="73" endayah="80"/>
+				<ruku num="11" startayah="81" endayah="89"/>
+				<ruku num="12" startayah="90" endayah="99"/>
+				<ruku num="13" startayah="100" endayah="110"/>
+				<ruku num="14" startayah="111" endayah="118"/>
+				<ruku num="15" startayah="119" endayah="122"/>
+				<ruku num="16" startayah="123" endayah="129"/>
+			</rukus>
+		</sura>
+		<sura num="10" ayahcount="109">
+			<name language="literal">Yunus</name>
+			<revealed num="51" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="20"/>
+				<ruku num="3" startayah="21" endayah="30"/>
+				<ruku num="4" startayah="31" endayah="40"/>
+				<ruku num="5" startayah="41" endayah="53"/>
+				<ruku num="6" startayah="54" endayah="60"/>
+				<ruku num="7" startayah="61" endayah="70"/>
+				<ruku num="8" startayah="71" endayah="82"/>
+				<ruku num="9" startayah="83" endayah="92"/>
+				<ruku num="10" startayah="93" endayah="103"/>
+				<ruku num="11" startayah="104" endayah="109"/>
+			</rukus>
+		</sura>
+		<sura num="11" ayahcount="123">
+			<name language="literal">Hud</name>
+			<revealed num="52" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="8"/>
+				<ruku num="2" startayah="9" endayah="24"/>
+				<ruku num="3" startayah="25" endayah="35"/>
+				<ruku num="4" startayah="36" endayah="49"/>
+				<ruku num="5" startayah="50" endayah="60"/>
+				<ruku num="6" startayah="61" endayah="68"/>
+				<ruku num="7" startayah="69" endayah="83"/>
+				<ruku num="8" startayah="84" endayah="95"/>
+				<ruku num="9" startayah="96" endayah="109"/>
+				<ruku num="10" startayah="110" endayah="123"/>
+			</rukus>
+		</sura>
+		<sura num="12" ayahcount="111">
+			<name language="literal">Yusuf</name>
+			<revealed num="53" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="6"/>
+				<ruku num="2" startayah="7" endayah="20"/>
+				<ruku num="3" startayah="21" endayah="29"/>
+				<ruku num="4" startayah="30" endayah="35"/>
+				<ruku num="5" startayah="36" endayah="42"/>
+				<ruku num="6" startayah="43" endayah="49"/>
+				<ruku num="7" startayah="50" endayah="57"/>
+				<ruku num="8" startayah="58" endayah="68"/>
+				<ruku num="9" startayah="69" endayah="79"/>
+				<ruku num="10" startayah="80" endayah="93"/>
+				<ruku num="11" startayah="94" endayah="104"/>
+				<ruku num="12" startayah="105" endayah="111"/>
+			</rukus>
+		</sura>
+		<sura num="13" ayahcount="43">
+			<name language="literal">Ar-Ra'd</name>
+			<revealed num="96" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="7"/>
+				<ruku num="2" startayah="8" endayah="18"/>
+				<ruku num="3" startayah="19" endayah="26"/>
+				<ruku num="4" startayah="27" endayah="31"/>
+				<ruku num="5" startayah="32" endayah="37"/>
+				<ruku num="6" startayah="38" endayah="43"/>
+			</rukus>
+		</sura>
+		<sura num="14" ayahcount="52">
+			<name language="literal">Ibrahim</name>
+			<revealed num="72" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="6"/>
+				<ruku num="2" startayah="7" endayah="12"/>
+				<ruku num="3" startayah="13" endayah="21"/>
+				<ruku num="4" startayah="22" endayah="27"/>
+				<ruku num="5" startayah="28" endayah="34"/>
+				<ruku num="6" startayah="35" endayah="41"/>
+				<ruku num="7" startayah="42" endayah="52"/>
+			</rukus>
+		</sura>
+		<sura num="15" ayahcount="99">
+			<name language="literal">Al-Hijr</name>
+			<revealed num="54" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="15"/>
+				<ruku num="2" startayah="16" endayah="25"/>
+				<ruku num="3" startayah="26" endayah="44"/>
+				<ruku num="4" startayah="45" endayah="60"/>
+				<ruku num="5" startayah="61" endayah="79"/>
+				<ruku num="6" startayah="80" endayah="99"/>
+			</rukus>
+		</sura>
+		<sura num="16" ayahcount="128">
+			<name language="literal">An-Nahl</name>
+			<revealed num="70" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="9"/>
+				<ruku num="2" startayah="10" endayah="21"/>
+				<ruku num="3" startayah="22" endayah="25"/>
+				<ruku num="4" startayah="26" endayah="34"/>
+				<ruku num="5" startayah="35" endayah="40"/>
+				<ruku num="6" startayah="41" endayah="50"/>
+				<ruku num="7" startayah="51" endayah="60"/>
+				<ruku num="8" startayah="61" endayah="65"/>
+				<ruku num="9" startayah="66" endayah="70"/>
+				<ruku num="10" startayah="71" endayah="76"/>
+				<ruku num="11" startayah="77" endayah="83"/>
+				<ruku num="12" startayah="84" endayah="89"/>
+				<ruku num="13" startayah="90" endayah="100"/>
+				<ruku num="14" startayah="101" endayah="110"/>
+				<ruku num="15" startayah="111" endayah="119"/>
+				<ruku num="16" startayah="120" endayah="128"/>
+			</rukus>
+		</sura>
+		<sura num="17" ayahcount="111">
+			<name language="literal">Al-Israa</name>
+			<revealed num="50" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="22"/>
+				<ruku num="3" startayah="23" endayah="30"/>
+				<ruku num="4" startayah="31" endayah="40"/>
+				<ruku num="5" startayah="41" endayah="52"/>
+				<ruku num="6" startayah="53" endayah="60"/>
+				<ruku num="7" startayah="61" endayah="70"/>
+				<ruku num="8" startayah="71" endayah="77"/>
+				<ruku num="9" startayah="78" endayah="84"/>
+				<ruku num="10" startayah="85" endayah="93"/>
+				<ruku num="11" startayah="94" endayah="100"/>
+				<ruku num="12" startayah="101" endayah="111"/>
+			</rukus>
+		</sura>
+		<sura num="18" ayahcount="110">
+			<name language="literal">Al-Kahf</name>
+			<revealed num="69" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="12"/>
+				<ruku num="2" startayah="13" endayah="17"/>
+				<ruku num="3" startayah="18" endayah="22"/>
+				<ruku num="4" startayah="23" endayah="31"/>
+				<ruku num="5" startayah="32" endayah="44"/>
+				<ruku num="6" startayah="45" endayah="49"/>
+				<ruku num="7" startayah="50" endayah="53"/>
+				<ruku num="8" startayah="54" endayah="59"/>
+				<ruku num="9" startayah="60" endayah="70"/>
+				<ruku num="10" startayah="71" endayah="82"/>
+				<ruku num="11" startayah="83" endayah="101"/>
+				<ruku num="12" startayah="102" endayah="110"/>
+			</rukus>
+		</sura>
+		<sura num="19" ayahcount="98">
+			<name language="literal">Maryam</name>
+			<revealed num="44" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="15"/>
+				<ruku num="2" startayah="16" endayah="40"/>
+				<ruku num="3" startayah="41" endayah="50"/>
+				<ruku num="4" startayah="51" endayah="65"/>
+				<ruku num="5" startayah="66" endayah="82"/>
+				<ruku num="6" startayah="83" endayah="98"/>
+			</rukus>
+		</sura>
+		<sura num="20" ayahcount="135">
+			<name language="literal">Ta-ha</name>
+			<revealed num="45" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="24"/>
+				<ruku num="2" startayah="25" endayah="54"/>
+				<ruku num="3" startayah="55" endayah="76"/>
+				<ruku num="4" startayah="77" endayah="89"/>
+				<ruku num="5" startayah="90" endayah="104"/>
+				<ruku num="6" startayah="105" endayah="115"/>
+				<ruku num="7" startayah="116" endayah="135"/>
+			</rukus>
+		</sura>
+		<sura num="21" ayahcount="112">
+			<name language="literal">Al-Anbiyaa</name>
+			<revealed num="73" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="29"/>
+				<ruku num="3" startayah="30" endayah="41"/>
+				<ruku num="4" startayah="42" endayah="50"/>
+				<ruku num="5" startayah="51" endayah="75"/>
+				<ruku num="6" startayah="76" endayah="93"/>
+				<ruku num="7" startayah="94" endayah="112"/>
+			</rukus>
+		</sura>
+		<sura num="22" ayahcount="78">
+			<name language="literal">Al-Hajj</name>
+			<revealed num="103" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="22"/>
+				<ruku num="3" startayah="23" endayah="25"/>
+				<ruku num="4" startayah="26" endayah="33"/>
+				<ruku num="5" startayah="34" endayah="38"/>
+				<ruku num="6" startayah="39" endayah="48"/>
+				<ruku num="7" startayah="49" endayah="57"/>
+				<ruku num="8" startayah="58" endayah="64"/>
+				<ruku num="9" startayah="65" endayah="72"/>
+				<ruku num="10" startayah="73" endayah="78"/>
+			</rukus>
+		</sura>
+		<sura num="23" ayahcount="118">
+			<name language="literal">Al-Muminun</name>
+			<revealed num="74" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="22"/>
+				<ruku num="2" startayah="23" endayah="32"/>
+				<ruku num="3" startayah="33" endayah="50"/>
+				<ruku num="4" startayah="51" endayah="77"/>
+				<ruku num="5" startayah="78" endayah="92"/>
+				<ruku num="6" startayah="93" endayah="118"/>
+			</rukus>
+		</sura>
+		<sura num="24" ayahcount="64">
+			<name language="literal">An-Nur</name>
+			<revealed num="102" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="20"/>
+				<ruku num="3" startayah="21" endayah="26"/>
+				<ruku num="4" startayah="27" endayah="34"/>
+				<ruku num="5" startayah="35" endayah="40"/>
+				<ruku num="6" startayah="41" endayah="50"/>
+				<ruku num="7" startayah="51" endayah="57"/>
+				<ruku num="8" startayah="58" endayah="61"/>
+				<ruku num="9" startayah="62" endayah="64"/>
+			</rukus>
+		</sura>
+		<sura num="25" ayahcount="77">
+			<name language="literal">Al-Furqan</name>
+			<revealed num="42" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="9"/>
+				<ruku num="2" startayah="10" endayah="20"/>
+				<ruku num="3" startayah="21" endayah="34"/>
+				<ruku num="4" startayah="35" endayah="44"/>
+				<ruku num="5" startayah="45" endayah="60"/>
+				<ruku num="6" startayah="61" endayah="77"/>
+			</rukus>
+		</sura>
+		<sura num="26" ayahcount="227">
+			<name language="literal">Ash-Shu'araa</name>
+			<revealed num="47" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="9"/>
+				<ruku num="2" startayah="10" endayah="33"/>
+				<ruku num="3" startayah="34" endayah="52"/>
+				<ruku num="4" startayah="53" endayah="69"/>
+				<ruku num="5" startayah="70" endayah="104"/>
+				<ruku num="6" startayah="105" endayah="122"/>
+				<ruku num="7" startayah="123" endayah="140"/>
+				<ruku num="8" startayah="141" endayah="159"/>
+				<ruku num="9" startayah="160" endayah="175"/>
+				<ruku num="10" startayah="176" endayah="191"/>
+				<ruku num="11" startayah="192" endayah="227"/>
+			</rukus>
+		</sura>
+		<sura num="27" ayahcount="93">
+			<name language="literal">An-Naml</name>
+			<revealed num="48" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="14"/>
+				<ruku num="2" startayah="15" endayah="31"/>
+				<ruku num="3" startayah="32" endayah="44"/>
+				<ruku num="4" startayah="45" endayah="58"/>
+				<ruku num="5" startayah="59" endayah="66"/>
+				<ruku num="6" startayah="67" endayah="82"/>
+				<ruku num="7" startayah="83" endayah="93"/>
+			</rukus>
+		</sura>
+		<sura num="28" ayahcount="88">
+			<name language="literal">Al-Qasas</name>
+			<revealed num="49" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="13"/>
+				<ruku num="2" startayah="14" endayah="21"/>
+				<ruku num="3" startayah="22" endayah="28"/>
+				<ruku num="4" startayah="29" endayah="42"/>
+				<ruku num="5" startayah="43" endayah="50"/>
+				<ruku num="6" startayah="51" endayah="60"/>
+				<ruku num="7" startayah="61" endayah="75"/>
+				<ruku num="8" startayah="76" endayah="82"/>
+				<ruku num="9" startayah="83" endayah="88"/>
+			</rukus>
+		</sura>
+		<sura num="29" ayahcount="69">
+			<name language="literal">Al-Ankabut</name>
+			<revealed num="85" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="13"/>
+				<ruku num="2" startayah="14" endayah="22"/>
+				<ruku num="3" startayah="23" endayah="30"/>
+				<ruku num="4" startayah="31" endayah="44"/>
+				<ruku num="5" startayah="45" endayah="51"/>
+				<ruku num="6" startayah="52" endayah="63"/>
+				<ruku num="7" startayah="64" endayah="69"/>
+			</rukus>
+		</sura>
+		<sura num="30" ayahcount="60">
+			<name language="literal">Ar-Rum</name>
+			<revealed num="84" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="19"/>
+				<ruku num="3" startayah="20" endayah="27"/>
+				<ruku num="4" startayah="28" endayah="40"/>
+				<ruku num="5" startayah="41" endayah="53"/>
+				<ruku num="6" startayah="54" endayah="60"/>
+			</rukus>
+		</sura>
+		<sura num="31" ayahcount="34">
+			<name language="literal">Luqman</name>
+			<revealed num="57" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="11"/>
+				<ruku num="2" startayah="12" endayah="19"/>
+				<ruku num="3" startayah="20" endayah="30"/>
+				<ruku num="4" startayah="31" endayah="34"/>
+			</rukus>
+		</sura>
+		<sura num="32" ayahcount="30">
+			<name language="literal">As-Sajda</name>
+			<revealed num="75" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="11"/>
+				<ruku num="2" startayah="12" endayah="22"/>
+				<ruku num="3" startayah="23" endayah="30"/>
+			</rukus>
+		</sura>
+		<sura num="33" ayahcount="73">
+			<name language="literal">Al-Ahzab</name>
+			<revealed num="90" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="8"/>
+				<ruku num="2" startayah="9" endayah="20"/>
+				<ruku num="3" startayah="21" endayah="27"/>
+				<ruku num="4" startayah="28" endayah="34"/>
+				<ruku num="5" startayah="35" endayah="40"/>
+				<ruku num="6" startayah="41" endayah="52"/>
+				<ruku num="7" startayah="53" endayah="58"/>
+				<ruku num="8" startayah="59" endayah="68"/>
+				<ruku num="9" startayah="69" endayah="73"/>
+			</rukus>
+		</sura>
+		<sura num="34" ayahcount="54">
+			<name language="literal">Saba</name>
+			<revealed num="58" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="9"/>
+				<ruku num="2" startayah="10" endayah="21"/>
+				<ruku num="3" startayah="22" endayah="30"/>
+				<ruku num="4" startayah="31" endayah="36"/>
+				<ruku num="5" startayah="37" endayah="45"/>
+				<ruku num="6" startayah="46" endayah="54"/>
+			</rukus>
+		</sura>
+		<sura num="35" ayahcount="45">
+			<name language="literal">Fatir</name>
+			<revealed num="43" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="7"/>
+				<ruku num="2" startayah="8" endayah="14"/>
+				<ruku num="3" startayah="15" endayah="26"/>
+				<ruku num="4" startayah="27" endayah="37"/>
+				<ruku num="5" startayah="38" endayah="45"/>
+			</rukus>
+		</sura>
+		<sura num="36" ayahcount="83">
+			<name language="literal">Ya-Sin</name>
+			<revealed num="41" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="12"/>
+				<ruku num="2" startayah="13" endayah="32"/>
+				<ruku num="3" startayah="33" endayah="50"/>
+				<ruku num="4" startayah="51" endayah="67"/>
+				<ruku num="5" startayah="68" endayah="83"/>
+			</rukus>
+		</sura>
+		<sura num="37" ayahcount="182">
+			<name language="literal">As-Saffat</name>
+			<revealed num="56" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="21"/>
+				<ruku num="2" startayah="22" endayah="74"/>
+				<ruku num="3" startayah="75" endayah="113"/>
+				<ruku num="4" startayah="114" endayah="138"/>
+				<ruku num="5" startayah="139" endayah="182"/>
+			</rukus>
+		</sura>
+		<sura num="38" ayahcount="88">
+			<name language="literal">Sad</name>
+			<revealed num="38" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="14"/>
+				<ruku num="2" startayah="15" endayah="26"/>
+				<ruku num="3" startayah="27" endayah="40"/>
+				<ruku num="4" startayah="41" endayah="64"/>
+				<ruku num="5" startayah="65" endayah="88"/>
+			</rukus>
+		</sura>
+		<sura num="39" ayahcount="75">
+			<name language="literal">Az-Zumar</name>
+			<revealed num="59" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="9"/>
+				<ruku num="2" startayah="10" endayah="21"/>
+				<ruku num="3" startayah="22" endayah="31"/>
+				<ruku num="4" startayah="32" endayah="41"/>
+				<ruku num="5" startayah="42" endayah="52"/>
+				<ruku num="6" startayah="53" endayah="63"/>
+				<ruku num="7" startayah="64" endayah="70"/>
+				<ruku num="8" startayah="71" endayah="75"/>
+			</rukus>
+		</sura>
+		<sura num="40" ayahcount="85">
+			<name language="literal">Al-Mu'min</name>
+			<revealed num="60" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="9"/>
+				<ruku num="2" startayah="10" endayah="20"/>
+				<ruku num="3" startayah="21" endayah="27"/>
+				<ruku num="4" startayah="28" endayah="37"/>
+				<ruku num="5" startayah="38" endayah="50"/>
+				<ruku num="6" startayah="51" endayah="60"/>
+				<ruku num="7" startayah="61" endayah="68"/>
+				<ruku num="8" startayah="69" endayah="78"/>
+				<ruku num="9" startayah="79" endayah="85"/>
+			</rukus>
+		</sura>
+		<sura num="41" ayahcount="54">
+			<name language="literal">Ha-Mim</name>
+			<revealed num="61" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="8"/>
+				<ruku num="2" startayah="9" endayah="18"/>
+				<ruku num="3" startayah="19" endayah="25"/>
+				<ruku num="4" startayah="26" endayah="32"/>
+				<ruku num="5" startayah="33" endayah="44"/>
+				<ruku num="6" startayah="45" endayah="54"/>
+			</rukus>
+		</sura>
+		<sura num="42" ayahcount="53">
+			<name language="literal">Ash-Shura</name>
+			<revealed num="62" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="9"/>
+				<ruku num="2" startayah="10" endayah="19"/>
+				<ruku num="3" startayah="20" endayah="29"/>
+				<ruku num="4" startayah="30" endayah="43"/>
+				<ruku num="5" startayah="44" endayah="53"/>
+			</rukus>
+		</sura>
+		<sura num="43" ayahcount="89">
+			<name language="literal">Az-Zukhruf</name>
+			<revealed num="63" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="15"/>
+				<ruku num="2" startayah="16" endayah="25"/>
+				<ruku num="3" startayah="26" endayah="35"/>
+				<ruku num="4" startayah="36" endayah="45"/>
+				<ruku num="5" startayah="46" endayah="56"/>
+				<ruku num="6" startayah="57" endayah="67"/>
+				<ruku num="7" startayah="68" endayah="89"/>
+			</rukus>
+		</sura>
+		<sura num="44" ayahcount="59">
+			<name language="literal">Ad-Dukhan</name>
+			<revealed num="64" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="29"/>
+				<ruku num="2" startayah="30" endayah="42"/>
+				<ruku num="3" startayah="43" endayah="59"/>
+			</rukus>
+		</sura>
+		<sura num="45" ayahcount="37">
+			<name language="literal">Al-Jathiya</name>
+			<revealed num="65" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="11"/>
+				<ruku num="2" startayah="12" endayah="21"/>
+				<ruku num="3" startayah="22" endayah="26"/>
+				<ruku num="4" startayah="27" endayah="37"/>
+			</rukus>
+		</sura>
+		<sura num="46" ayahcount="35">
+			<name language="literal">Al-Ahqaf</name>
+			<revealed num="66" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="20"/>
+				<ruku num="3" startayah="21" endayah="26"/>
+				<ruku num="4" startayah="27" endayah="35"/>
+			</rukus>
+		</sura>
+		<sura num="47" ayahcount="38">
+			<name language="literal">Muhammad</name>
+			<revealed num="95" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="11"/>
+				<ruku num="2" startayah="12" endayah="19"/>
+				<ruku num="3" startayah="20" endayah="28"/>
+				<ruku num="4" startayah="29" endayah="38"/>
+			</rukus>
+		</sura>
+		<sura num="48" ayahcount="29">
+			<name language="literal">Al-Fat-h</name>
+			<revealed num="111" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="17"/>
+				<ruku num="3" startayah="18" endayah="26"/>
+				<ruku num="4" startayah="27" endayah="29"/>
+			</rukus>
+		</sura>
+		<sura num="49" ayahcount="18">
+			<name language="literal">Al-Hujurat</name>
+			<revealed num="106" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="18"/>
+			</rukus>
+		</sura>
+		<sura num="50" ayahcount="45">
+			<name language="literal">Qaf</name>
+			<revealed num="34" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="15"/>
+				<ruku num="2" startayah="16" endayah="29"/>
+				<ruku num="3" startayah="30" endayah="45"/>
+			</rukus>
+		</sura>
+		<sura num="51" ayahcount="60">
+			<name language="literal">Az-Zariyat</name>
+			<revealed num="67" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="23"/>
+				<ruku num="2" startayah="24" endayah="46"/>
+				<ruku num="3" startayah="47" endayah="60"/>
+			</rukus>
+		</sura>
+		<sura num="52" ayahcount="49">
+			<name language="literal">At-Tur</name>
+			<revealed num="76" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="28"/>
+				<ruku num="2" startayah="29" endayah="49"/>
+			</rukus>
+		</sura>
+		<sura num="53" ayahcount="62">
+			<name language="literal">An-Najm</name>
+			<revealed num="23" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="25"/>
+				<ruku num="2" startayah="26" endayah="32"/>
+				<ruku num="3" startayah="33" endayah="62"/>
+			</rukus>
+		</sura>
+		<sura num="54" ayahcount="55">
+			<name language="literal">Al-Qamar</name>
+			<revealed num="37" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="22"/>
+				<ruku num="2" startayah="23" endayah="40"/>
+				<ruku num="3" startayah="41" endayah="55"/>
+			</rukus>
+		</sura>
+		<sura num="55" ayahcount="78">
+			<name language="literal">Ar-Rahman</name>
+			<revealed num="97" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="25"/>
+				<ruku num="2" startayah="26" endayah="45"/>
+				<ruku num="3" startayah="46" endayah="78"/>
+			</rukus>
+		</sura>
+		<sura num="56" ayahcount="96">
+			<name language="literal">Al-Waqi'a</name>
+			<revealed num="46" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="38"/>
+				<ruku num="2" startayah="39" endayah="74"/>
+				<ruku num="3" startayah="75" endayah="96"/>
+			</rukus>
+		</sura>
+		<sura num="57" ayahcount="29">
+			<name language="literal">Al-Hadid</name>
+			<revealed num="94" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="19"/>
+				<ruku num="3" startayah="20" endayah="25"/>
+				<ruku num="4" startayah="26" endayah="29"/>
+			</rukus>
+		</sura>
+		<sura num="58" ayahcount="22">
+			<name language="literal">Al-Mujadila</name>
+			<revealed num="105" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="6"/>
+				<ruku num="2" startayah="7" endayah="13"/>
+				<ruku num="3" startayah="14" endayah="22"/>
+			</rukus>
+		</sura>
+		<sura num="59" ayahcount="24">
+			<name language="literal">Al-Hashr</name>
+			<revealed num="101" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="17"/>
+				<ruku num="3" startayah="18" endayah="24"/>
+			</rukus>
+		</sura>
+		<sura num="60" ayahcount="13">
+			<name language="literal">Al-Mumtahana</name>
+			<revealed num="91" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="6"/>
+				<ruku num="2" startayah="7" endayah="13"/>
+			</rukus>
+		</sura>
+		<sura num="61" ayahcount="14">
+			<name language="literal">As-Saff</name>
+			<revealed num="109" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="9"/>
+				<ruku num="2" startayah="10" endayah="14"/>
+			</rukus>
+		</sura>
+		<sura num="62" ayahcount="11">
+			<name language="literal">Al-Jamu'a</name>
+			<revealed num="110" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="8"/>
+				<ruku num="2" startayah="9" endayah="11"/>
+			</rukus>
+		</sura>
+		<sura num="63" ayahcount="11">
+			<name language="literal">Al-Munafiqun</name>
+			<revealed num="104" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="8"/>
+				<ruku num="2" startayah="9" endayah="11"/>
+			</rukus>
+		</sura>
+		<sura num="64" ayahcount="18">
+			<name language="literal">At-Tagabun</name>
+			<revealed num="108" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="10"/>
+				<ruku num="2" startayah="11" endayah="18"/>
+			</rukus>
+		</sura>
+		<sura num="65" ayahcount="12">
+			<name language="literal">At-Talaq</name>
+			<revealed num="99" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="7"/>
+				<ruku num="2" startayah="8" endayah="12"/>
+			</rukus>
+		</sura>
+		<sura num="66" ayahcount="12">
+			<name language="literal">At-Tahrim</name>
+			<revealed num="107" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="7"/>
+				<ruku num="2" startayah="8" endayah="12"/>
+			</rukus>
+		</sura>
+		<sura num="67" ayahcount="30">
+			<name language="literal">Al-Mulk</name>
+			<revealed num="77" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="14"/>
+				<ruku num="2" startayah="15" endayah="30"/>
+			</rukus>
+		</sura>
+		<sura num="68" ayahcount="52">
+			<name language="literal">Al-Qalam</name>
+			<revealed num="2" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="33"/>
+				<ruku num="2" startayah="34" endayah="52"/>
+			</rukus>
+		</sura>
+		<sura num="69" ayahcount="52">
+			<name language="literal">Al-Haqqa</name>
+			<revealed num="78" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="37"/>
+				<ruku num="2" startayah="38" endayah="52"/>
+			</rukus>
+		</sura>
+		<sura num="70" ayahcount="44">
+			<name language="literal">Al-Ma'arij</name>
+			<revealed num="79" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="35"/>
+				<ruku num="2" startayah="36" endayah="44"/>
+			</rukus>
+		</sura>
+		<sura num="71" ayahcount="28">
+			<name language="literal">Nuh</name>
+			<revealed num="71" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="20"/>
+				<ruku num="2" startayah="21" endayah="28"/>
+			</rukus>
+		</sura>
+		<sura num="72" ayahcount="28">
+			<name language="literal">Al-Jinn</name>
+			<revealed num="40" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="19"/>
+				<ruku num="2" startayah="20" endayah="28"/>
+			</rukus>
+		</sura>
+		<sura num="73" ayahcount="20">
+			<name language="literal">Al-Muzzammil</name>
+			<revealed num="3" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="19"/>
+				<ruku num="2" startayah="20" endayah="20"/>
+			</rukus>
+		</sura>
+		<sura num="74" ayahcount="56">
+			<name language="literal">Al-Muddaththir</name>
+			<revealed num="4" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="31"/>
+				<ruku num="2" startayah="32" endayah="56"/>
+			</rukus>
+		</sura>
+		<sura num="75" ayahcount="40">
+			<name language="literal">Al-Qiyamat</name>
+			<revealed num="31" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="30"/>
+				<ruku num="2" startayah="31" endayah="40"/>
+			</rukus>
+		</sura>
+		<sura num="76" ayahcount="31">
+			<name language="literal">Ad-Dahr</name>
+			<revealed num="98" city="Madina"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="22"/>
+				<ruku num="2" startayah="23" endayah="31"/>
+			</rukus>
+		</sura>
+		<sura num="77" ayahcount="50">
+			<name language="literal">Al-Mursalat</name>
+			<revealed num="33" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="40"/>
+				<ruku num="2" startayah="41" endayah="50"/>
+			</rukus>
+		</sura>
+		<sura num="78" ayahcount="40">
+			<name language="literal">An-Nabaa</name>
+			<revealed num="80" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="30"/>
+				<ruku num="2" startayah="31" endayah="40"/>
+			</rukus>
+		</sura>
+		<sura num="79" ayahcount="46">
+			<name language="literal">An-Nazi'at</name>
+			<revealed num="81" city="Mecca"/>
+			<rukus>
+				<ruku num="1" startayah="1" endayah="26"/>
+				<ruku num="2" startayah="27" endayah="46"/>
+			</rukus>
+		</sura>
+		<sura num="80" ayahcount="42">
+			<name language="literal">Abasa</name>
+			<revealed num="24" city="Mecca"/>
+		</sura>
+		<sura num="81" ayahcount="29">
+			<name language="literal">At-Takwir</name>
+			<revealed num="7" city="Mecca"/>
+		</sura>
+		<sura num="82" ayahcount="19">
+			<name language="literal">Al-Infitar</name>
+			<revealed num="82" city="Mecca"/>
+		</sura>
+		<sura num="83" ayahcount="36">
+			<name language="literal">Al-Mutaffifin</name>
+			<revealed num="86" city="Mecca"/>
+		</sura>
+		<sura num="84" ayahcount="25">
+			<name language="literal">Al-Inshiqaq</name>
+			<revealed num="83" city="Mecca"/>
+		</sura>
+		<sura num="85" ayahcount="22">
+			<name language="literal">Al-Buruj</name>
+			<revealed num="27" city="Mecca"/>
+		</sura>
+		<sura num="86" ayahcount="17">
+			<name language="literal">At-Tariq</name>
+			<revealed num="36" city="Mecca"/>
+		</sura>
+		<sura num="87" ayahcount="19">
+			<name language="literal">Al-A'la</name>
+			<revealed num="8" city="Mecca"/>
+		</sura>
+		<sura num="88" ayahcount="26">
+			<name language="literal">Al-Gashiya</name>
+			<revealed num="68" city="Mecca"/>
+		</sura>
+		<sura num="89" ayahcount="30">
+			<name language="literal">Al-Fajr</name>
+			<revealed num="10" city="Mecca"/>
+		</sura>
+		<sura num="90" ayahcount="20">
+			<name language="literal">Al-Balad</name>
+			<revealed num="35" city="Mecca"/>
+		</sura>
+		<sura num="91" ayahcount="15">
+			<name language="literal">Ash-Shams</name>
+			<revealed num="26" city="Mecca"/>
+		</sura>
+		<sura num="92" ayahcount="21">
+			<name language="literal">Al-Lail</name>
+			<revealed num="9" city="Mecca"/>
+		</sura>
+		<sura num="93" ayahcount="11">
+			<name language="literal">Adh-Dhuha</name>
+			<revealed num="11" city="Mecca"/>
+		</sura>
+		<sura num="94" ayahcount="8">
+			<name language="literal">Al-Sharh</name>
+			<revealed num="12" city="Mecca"/>
+		</sura>
+		<sura num="95" ayahcount="8">
+			<name language="literal">At-Tin</name>
+			<revealed num="28" city="Mecca"/>
+		</sura>
+		<sura num="96" ayahcount="19">
+			<name language="literal">Al-Alaq</name>
+			<revealed num="1" city="Mecca"/>
+		</sura>
+		<sura num="97" ayahcount="5">
+			<name language="literal">Al-Qadr</name>
+			<revealed num="25" city="Mecca"/>
+		</sura>
+		<sura num="98" ayahcount="8">
+			<name language="literal">Al-Baiyina</name>
+			<revealed num="100" city="Madina"/>
+		</sura>
+		<sura num="99" ayahcount="8">
+			<name language="literal">Al-Zalzalah</name>
+			<revealed num="93" city="Madina"/>
+		</sura>
+		<sura num="100" ayahcount="11">
+			<name language="literal">Al-Adiyat</name>
+			<revealed num="14" city="Mecca"/>
+		</sura>
+		<sura num="101" ayahcount="11">
+			<name language="literal">Al-Qari'a</name>
+			<revealed num="30" city="Mecca"/>
+		</sura>
+		<sura num="102" ayahcount="8">
+			<name language="literal">At-Takathur</name>
+			<revealed num="16" city="Mecca"/>
+		</sura>
+		<sura num="103" ayahcount="3">
+			<name language="literal">Al-Asr</name>
+			<revealed num="13" city="Mecca"/>
+		</sura>
+		<sura num="104" ayahcount="9">
+			<name language="literal">Al-Humaza</name>
+			<revealed num="32" city="Mecca"/>
+		</sura>
+		<sura num="105" ayahcount="5">
+			<name language="literal">Al-Fil</name>
+			<revealed num="19" city="Mecca"/>
+		</sura>
+		<sura num="106" ayahcount="4">
+			<name language="literal">Quraish</name>
+			<revealed num="29" city="Mecca"/>
+		</sura>
+		<sura num="107" ayahcount="7">
+			<name language="literal">Al-Ma'un</name>
+			<revealed num="17" city="Mecca"/>
+		</sura>
+		<sura num="108" ayahcount="3">
+			<name language="literal">Al-Kauthar</name>
+			<revealed num="15" city="Mecca"/>
+		</sura>
+		<sura num="109" ayahcount="6">
+			<name language="literal">Al-Kafirun</name>
+			<revealed num="18" city="Mecca"/>
+		</sura>
+		<sura num="110" ayahcount="3">
+			<name language="literal">An-Nasr</name>
+			<revealed num="114" city="Madina"/>
+		</sura>
+		<sura num="111" ayahcount="5">
+			<name language="literal">Al-Lahab</name>
+			<revealed num="6" city="Mecca"/>
+		</sura>
+		<sura num="112" ayahcount="4">
+			<name language="literal">Al-Ikhlaas</name>
+			<revealed num="22" city="Mecca"/>
+		</sura>
+		<sura num="113" ayahcount="5">
+			<name language="literal">Al-Falaq</name>
+			<revealed num="20" city="Mecca"/>
+		</sura>
+		<sura num="114" ayahcount="6">
+			<name language="literal">An-Nas</name>
+			<revealed num="21" city="Mecca"/>
+		</sura>
+	</suras>
+</quran>
+</aml>

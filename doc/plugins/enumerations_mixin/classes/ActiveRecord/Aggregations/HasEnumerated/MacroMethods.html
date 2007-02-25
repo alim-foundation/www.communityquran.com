@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: ActiveRecord::Aggregations::HasEnumerated::MacroMethods</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">ActiveRecord::Aggregations::HasEnumerated::MacroMethods</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../../../files/vendor/plugins/enumerations_mixin/lib/active_record/aggregations/has_enumerated_rb.html">
+                vendor/plugins/enumerations_mixin/lib/active_record/aggregations/has_enumerated.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000016">has_enumerated</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000016" class="method-detail">
+        <a name="M000016"></a>
+
+        <div class="method-heading">
+          <a href="#M000016" class="method-signature">
+          <span class="method-name">has_enumerated</span><span class="method-args">(part_id, options = {})</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000016-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000016-source">
+<pre>
+    <span class="ruby-comment cmt"># File vendor/plugins/enumerations_mixin/lib/active_record/aggregations/has_enumerated.rb, line 13</span>
+13:         <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">has_enumerated</span>(<span class="ruby-identifier">part_id</span>, <span class="ruby-identifier">options</span> = {})
+14:           <span class="ruby-identifier">options</span>.<span class="ruby-identifier">assert_valid_keys</span>(<span class="ruby-identifier">:class_name</span>, <span class="ruby-identifier">:foreign_key</span>, <span class="ruby-identifier">:on_lookup_failure</span>)
+15: 
+16:           <span class="ruby-identifier">name</span>        = <span class="ruby-identifier">part_id</span>.<span class="ruby-identifier">id2name</span>
+17:           <span class="ruby-identifier">class_name</span>  = (<span class="ruby-identifier">options</span>[<span class="ruby-identifier">:class_name</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">name</span>).<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">camelize</span>
+18:           <span class="ruby-identifier">foreign_key</span> = (<span class="ruby-identifier">options</span>[<span class="ruby-identifier">:foreign_key</span>] <span class="ruby-operator">||</span> <span class="ruby-node">&quot;#{name}_id&quot;</span>).<span class="ruby-identifier">to_s</span>             
+19:           <span class="ruby-identifier">failure</span>     = <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:on_lookup_failure</span>]
+20: 
+21:           <span class="ruby-identifier">module_eval</span> <span class="ruby-value str">&quot;def \#{name}\nrval = \#{class_name}.lookup_id(self.\#{foreign_key})\nif rval.nil? &amp;&amp; \#{!failure.nil?}\nreturn self.send(\#{failure.inspect}, :read, \#{name.inspect}, \#{foreign_key.inspect}, \#{class_name.inspect}, self.\#{foreign_key})\nend\nreturn rval\nend\n\ndef \#{name}=(arg)\ncase arg\nwhen \#{class_name}\nval = \#{class_name}.lookup_id(arg.id)\nwhen String\nval = \#{class_name}.lookup_name(arg)\nwhen Symbol\nval = \#{class_name}.lookup_name(arg.id2name)\nwhen Fixnum\nval = \#{class_name}.lookup_id(arg)\nwhen nil\nval = nil\nelse\nraise TypeError, \&quot;\#{self.name}: \#{name}= argument must be a \#{class_name}, String, Symbol or Fixnum but got a: \\\#{arg.class.name}\&quot;\nend\n\nif val.nil?\nif \#{failure.nil?}\nraise ArgumentError, \&quot;\#{self.name}: \#{name}= can't assign a \#{class_name} for a value of (\\\#{arg.inspect})\&quot;\nend\nself.send(\#{failure.inspect}, :write, \#{name.inspect}, \#{foreign_key.inspect}, \#{class_name.inspect}, arg)\nelse\nself.\#{foreign_key} = val.id\nend\nend\n&quot;</span>
+22:         <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

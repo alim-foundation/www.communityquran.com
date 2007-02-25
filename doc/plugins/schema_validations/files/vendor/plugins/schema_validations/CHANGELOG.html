@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: CHANGELOG</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>CHANGELOG</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>vendor/plugins/schema_validations/CHANGELOG
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Fri Feb 23 17:06:01 -0500 2007</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+[REVISION 20070224]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Removed useless assignment of class variable.
+
+</dd>
+</dl>
+<p>
+[REVISION 20070221]
+</p>
+<dl>
+<dt>NEW</dt><dd>Where possible, validates_uniqueness_of adds the :case_sensitivity option
+based on the presence of case-insensitive indexes.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061203]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Lazily load meta-data during allocate/new rather than inherited.
+
+</dd>
+<dt>FIXED</dt><dd>Explicit table name ignored.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061202]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Use Rails 1.2 alias_method_chain.
+
+</dd>
+<dt>CHANGED</dt><dd>Separate modules into individual files.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061114]
+</p>
+<dl>
+<dt>FIXED</dt><dd>NOT NULL columns with a default not marked as required for update.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061013]
+</p>
+<dl>
+<dt>NEW</dt><dd>install.rb informs user of missing dependencies.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061012]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Only read meta-data for base-classes.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061011]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Use include rather than extend in init.rb as this is more general. Plugin
+code can then determine if it needs to use extend or not.
+
+</dd>
+</dl>
+<p>
+[REVISION 20061020]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Breaks abstract class inheritance. If classes are named
+&#8216;AbstractXxx&#8217; they will be treated as abstract. This is
+somewhat of a work-around for the current implementation however I believe
+it is a sensible choice for now.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060924]
+</p>
+<dl>
+<dt>FIXED</dt><dd>validates_uniqueness_of causes new records to fail when nullable column is
+null and there exists another record where the value of the column is also
+null. NULL values should always be considered unique.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060915]
+</p>
+<dl>
+<dt>NEW</dt><dd>Multi-column unique indexes are converted to validates_uniqueness_of with
+scope. The column validated for uniqueness is either the last column not
+ending in &#8216;_id&#8217; or simply the last column. This follows the
+typical composite unique index column ordering where the scoping is
+specified first but will attempt to find the last non-foreign-key column
+just-in-case. Eg, both add_index :states, [:country_id, :name], :unique
+=&gt; true and add_index :states, [:name, :country_id], :unique =&gt; true
+would result in &lt;code&gt;validates_uniqueness_of :name, :scope =&gt;
+[:country_id].
+
+</dd>
+</dl>
+<p>
+[REVISION 20060914]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Removed unnecessary condition from validates_presence_of for associations.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060913]
+</p>
+<dl>
+<dt>FIXED</dt><dd>validates_presence_of for associations causes new records to fail.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060912]
+</p>
+<dl>
+<dt>FIXED</dt><dd>&#8216;Before updating scaffolding from new DB schema, try creating a table
+for your model (&lt;model&gt;)&#8217; when running ./script/generate
+scaffold &lt;model&gt;. Seems the scaffold sandbox dynamically creates
+classes which have no name.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060911]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Revert to nil defaults&#8212;as opposed to blank&#8212;now that the MySQL
+behaviour has been patched in redhillonrails_core.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060909]
+</p>
+<dl>
+<dt>NEW</dt><dd>Dependency on RedHill on Rails Core.
+
+</dd>
+<dt>NEW</dt><dd>validates_uniqueness_of for associations.
+
+</dd>
+<dt>FIXED</dt><dd>validates_presence_of for associations.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060908]
+</p>
+<dl>
+<dt>FIXED</dt><dd>validates_presence_of not being applied under MySQL; empty defaults are
+represented as blank rather than nil.
+
+</dd>
+<dt>NEW</dt><dd>validates_uniqueness_of for associations.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060818]
+</p>
+<dl>
+<dt>FIXED</dt><dd>&#8216;Before updating scaffolding from new DB schema, try creating a table
+for your model (&lt;model&gt;)&#8217; when running ./script/generate
+scaffold &lt;model&gt;.
+
+</dd>
+<dt>FIXED</dt><dd>&#8216;relation &quot;system_settings&quot; does not exist&#8217; when
+running a migrate with system_settings plugin installed.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060816]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Overly greedy regex ignoring all date/time columns.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060812]
+</p>
+<dl>
+<dt>CHANGED</dt><dd>Documentation updated to reflect the fact that no further action is
+required once the plugin is installed.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060812]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Documentation mentions :integer =&gt; true options; this should have read
+:only_integer =&gt; true.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060803]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Revision 50 comments out the validates_presence_of magic on line 13 in
+belongs_to_with_schema_validations.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060802]
+</p>
+<dl>
+<dt>NEW</dt><dd>Support for validates_uniqueness_of for single-column unique indexes.
+
+</dd>
+<dt>CHANGED</dt><dd>Error message for boolean fields to be the same as the default for
+validates_presence_of
+
+</dd>
+</dl>
+<p>
+[REVISION 20060723]
+</p>
+<dl>
+<dt>FIXED</dt><dd>Workaround for a &quot;feature&quot; of the way validates_presence_of
+handles boolean fields. See <a
+href="http://dev.rubyonrails.org/ticket/5090">dev.rubyonrails.org/ticket/5090</a>
+and <a
+href="http://dev.rubyonrails.org/ticket/3334">dev.rubyonrails.org/ticket/3334</a>
+
+</dd>
+</dl>
+<p>
+[REVISION 20060719]
+</p>
+<dl>
+<dt>NEW</dt><dd>Support validates_presence_of for belongs_to associations.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060718]
+</p>
+<dl>
+<dt>FIXED</dt><dd>String test checks class instead of klass
+
+</dd>
+<dt>CHANGED</dt><dd>Separated out check for null from validation of numericality. This means
+you&#8216;ll get a &quot;xxx can&#8216;t be blank&quot; rather than an
+&quot;xx isn&#8216;t a number&quot; which seems more intuitive to me.
+
+</dd>
+<dt>FIXED</dt><dd>Default check should consider nil explicitly to allow for false.
+
+</dd>
+</dl>
+<p>
+[REVISION 20060717]
+</p>
+<dl>
+<dt>NEW</dt><dd>Initial version.
+
+</dd>
+<dt>FIXED</dt><dd>Ignore columns ending in: _id, _count, _at, _on.
+
+</dd>
+<dt>NEW</dt><dd>Support validates_numericality_of for numbers (including :integer =&gt;
+true)
+
+</dd>
+<dt>NEW</dt><dd>Support validates_length_of for strings
+
+</dd>
+</dl>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

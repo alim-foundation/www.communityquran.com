@@ -1,0 +1,12 @@
+APPLICATION PLUGINS:
+ruby script\plugin install svn://rubyforge.org/var/svn/rav/stable
+ruby script\plugin install http://svn.pragprog.com/Public/plugins/annotate_models
+ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/cascading_javascripts
+ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/cascading_stylesheets
+ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/foreign_key_associations
+ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/foreign_key_migrations
+ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/redhillonrails_core
+ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/row_version_migrations
+ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/schema_validations
+ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/system_settings
+ruby script\plugin install svn://rubyforge.org/var/svn/redhillonrails/trunk/vendor/plugins/environment_check

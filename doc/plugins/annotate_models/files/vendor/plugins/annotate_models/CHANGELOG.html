@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>File: CHANGELOG</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+  <div id="fileHeader">
+    <h1>CHANGELOG</h1>
+    <table class="header-table">
+    <tr class="top-aligned-row">
+      <td><strong>Path:</strong></td>
+      <td>vendor/plugins/annotate_models/CHANGELOG
+      </td>
+    </tr>
+    <tr class="top-aligned-row">
+      <td><strong>Last Update:</strong></td>
+      <td>Sat Feb 24 13:27:02 -0500 2007</td>
+    </tr>
+    </table>
+  </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+2006-07-13: Dave Thomas &lt;dave@pragprog.com&gt;
+</p>
+<pre>
+   * Support :scale for decimal columns
+</pre>
+<p>
+2006-07-13: Wes Gamble
+</p>
+<pre>
+  * Don't annotate abstract models
+</pre>
+<p>
+2006-06-13: Dave Thomas &lt;dave@pragprog.com&gt;
+</p>
+<pre>
+  * Fix bug where we corrupted the PREFIX string and therefore duplicated
+    the header
+  * No longer include the datetime, so we don't trigger a commit
+    back into repos
+
+    -- NOTE -- just this once, you'll get a duplicate header after you run
+    a_m on an already-annotated model. Sorry.... Dave
+</pre>
+<p>
+2006-06-11 Dave Thomas &lt;dave@pragprog.com&gt;
+</p>
+<pre>
+  * lib/annotate_models.rb: At Kian Wright's suggestion, document the table
+    name and primary key. Also make the timestamp prettier
+</pre>
+<p>
+2006-04-17 Dave Thomas &lt;dave@pragprog.com&gt;
+</p>
+<pre>
+        * lib/annnotate_models.rb: Include Bruce William's patch to allow
+                  models in subdirectories
+</pre>
+<p>
+2006-03-11 Dave Thomas &lt;dave@pragprog.com&gt;
+</p>
+<pre>
+        * lib/annotate_models.rb: Use camelize, not classify, to construct
+          class names (Grant Hollingworth)
+</pre>
+<p>
+3/3/06 Now annotates fixture files too (thanks to Josha Susser)
+</p>
+
+    </div>
+
+
+   </div>
+
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

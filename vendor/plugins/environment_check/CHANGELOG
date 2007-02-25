@@ -1,0 +1,19 @@
+[REVISION 20061202]
+
+[CHANGED] Separate modules into individual files.
+
+[REVISION 20061127]
+
+[FIXED] NPE if no database record exists.
+
+[REVISION 20061013]
+
+[NEW] install.rb informs user of missing dependencies.
+
+[REVISION 20060717]
+
+[CHANGED] Placed code into module named after the class to which the mixin will be applied.
+
+[REVISION 20060704]
+
+[NEW] Initial revision.

@@ -1,0 +1,22 @@
+= Environment Check
+
+Environment Check is a plugin that checks to ensure the application
+environment +RAILS_ENV+ matches the database environment. In the event that the
+application environment doesn't match the database environment (say by
+accidentally running development against production) an exception is thrown
+along the lines of:
+
+  Incorrect database 'production'; expected 'development'
+
+The plugin assumes you have a model class named +SystemSetting+ which supports
+looking up values using standard enumeration-like indexing and that the record
+containing the value for the database environment is named +environment+.
+
+=== Dependencies
+
+* System Settings (system_settings)--unless you choose to implement the functionality yourself.
+
+=== License
+
+This plugin is copyright 2006 by RedHill Consulting, Pty. Ltd. and is released
+under the MIT license.
