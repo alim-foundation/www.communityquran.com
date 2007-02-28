@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 5
+# Schema version: 2
 #
 # Table name: quran_struct_juz
 #
@@ -12,5 +12,5 @@
 #
 
 class QuranStructJuz < ActiveRecord::Base
-  self.primary_key = "juz_num"
+    self.primary_key = "juz_num"
 end

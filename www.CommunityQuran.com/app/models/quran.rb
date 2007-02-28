@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 5
+# Schema version: 2
 #
 # Table name: quran
 #
@@ -22,37 +22,27 @@
 require 'rexml/document'
 
 class Quran < ActiveRecord::Base
-  has_many :surahs, :class_name => "QuranSurah"
-  has_many :subjects, :class_name => "QuranSubject"
-  
-  def get_subject(topic, subtopic)
-    #self.subjects.find_by_full_topic_path(:first)
-  end
-  
-  def import_from_xml(source)
-    doc = REXML::Document.new(source)
-    
-    isSuraInfo = false
-    catalogElem = doc.elements['aml/quran/catalog']
-    
-    if catalogElem.nil?
-      catalogElem = doc.elements['aml/surainfo/catalog']
-      isSuraInfo = true
+    has_many :surahs, :class_name => "QuranSurah"
+    has_many :subjects, :class_name => "QuranSubject"
+
+    def add_subject_location(topic, subtopic, surah_num, ayah_num)
+        if subtopic
+            fullPath = "#{topic}::#{subtopic}"
+            subject = subjects.find_by_full_topic_path(fullPath)
+            if subject
+                subject.locations.create(:surah_num => surah_num, :ayah_num => ayah_num)
+            else
+                subject = subjects.find_by_topic_and_parent_id(topic, nil) ||
+                          subjects.create(:topic => topic, :full_topic_path => topic)
+                subject.locations.create(:surah_num => surah_num, :ayah_num => ayah_num) unless subject.locations.find_by_surah_num_and_ayah_num(surah_num, ayah_num)
+
+                child = subject.children.create(:quran_id => subject.quran_id, :topic => subtopic, :full_topic_path => fullPath)
+                child.locations.create(:surah_num => surah_num, :ayah_num => ayah_num)
+            end
+        else
+            subject = subjects.find_by_topic_and_parent_id(topic, nil) ||
+                      subjects.create(:topic => topic, :full_topic_path => topic)
+            subject.locations.create(:surah_num => surah_num, :ayah_num => ayah_num) unless subject.locations.find_by_surah_num_and_ayah_num(surah_num, ayah_num)
+        end
     end
-    
-    namesElem = catalogElem.elements['names'];
-    
-    self.code = catalogElem.attributes['id'];
-    self.short_name = namesElem.attributes['short'];
-    self.full_name = namesElem.attributes['full'];    
-    save!
-    
-    puts "Importing #{full_name} (#{code}, #{short_name}) from #{source.to_s}.\n"    
-    
-    doc.elements.each(isSuraInfo ? 'aml/surainfo/sura[@num = 1]' : 'aml/quran/sura[@num = 1]') do |surahElem|
-      surah = self.surahs.build.import_from_xml(surahElem, isSuraInfo)
-      puts "  Imported #{short_name} Surah #{surahElem.attributes['num']}.\n"    
-    end    
-    puts "  Done importing from #{source.to_s}.\n"    
-  end
 end

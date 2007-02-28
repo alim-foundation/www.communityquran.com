@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 5
+# Schema version: 2
 #
 # Table name: quran_struct_surah_ruku
 #
@@ -14,5 +14,5 @@
 #
 
 class QuranStructSurahRuku < ActiveRecord::Base
-  belongs_to :surah, :class_name => "QuranStructSurah", :foreign_key => :surah_num
+    belongs_to :surah, :class_name => "QuranStructSurah", :foreign_key => :surah_num
 end

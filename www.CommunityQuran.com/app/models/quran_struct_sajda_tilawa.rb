@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 5
+# Schema version: 2
 #
 # Table name: quran_struct_sajda_tilawa
 #
@@ -12,5 +12,5 @@
 #
 
 class QuranStructSajdaTilawa < ActiveRecord::Base
-  self.primary_key = "sajda_num"
+    self.primary_key = "sajda_num"
 end

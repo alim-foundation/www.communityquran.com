@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 5
+# Schema version: 2
 #
 # Table name: quran_ayahs_theme
 #
@@ -14,5 +14,5 @@
 #
 
 class QuranAyahsTheme < ActiveRecord::Base
-  belongs_to :surah, :class_name => "QuranSurah"  
+    belongs_to :surah, :class_name => "QuranSurah"
 end

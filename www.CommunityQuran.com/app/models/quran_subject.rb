@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 5
+# Schema version: 2
 #
 # Table name: quran_subject
 #
@@ -14,7 +14,8 @@
 #
 
 class QuranSubject < ActiveRecord::Base
-  belongs_to :quran, :class_name => "Quran"
-  has_many :subtopics, :class_name => "QuranSubject", :foreign_key => :parent_id
-  has_many :locations, :class_name => "QuranSubjectLocation"
+    belongs_to :quran, :class_name => "Quran"
+    has_many :locations, :class_name => "QuranSubjectLocation"
+
+    acts_as_tree
 end

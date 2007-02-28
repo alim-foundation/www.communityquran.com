@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 5
+# Schema version: 2
 #
 # Table name: quran_struct_surah
 #
@@ -14,11 +14,11 @@
 #
 
 class QuranStructSurah < ActiveRecord::Base
-  self.primary_key = "surah_num"
+    self.primary_key = "surah_num"
 
-  has_many :rukus, :class_name => "QuranStructSurahRuku", :foreign_key => :sura_num
-  has_many :ajza, :class_name => "QuranStructJuz", :foreign_key => :sura_num
-  has_many :sajdas, :class_name => "QuranStructSajdaTilawa", :foreign_key => :sura_num
-  has_many :surahs, :class_name => "QuranSurah", :foreign_key => :sura_num
-  has_many :pages, :class_name => "QuranPageImage", :foreign_key => :sura_num
+    has_many :rukus, :class_name => "QuranStructSurahRuku", :foreign_key => :sura_num
+    has_many :ajza, :class_name => "QuranStructJuz", :foreign_key => :sura_num
+    has_many :sajdas, :class_name => "QuranStructSajdaTilawa", :foreign_key => :sura_num
+    has_many :surahs, :class_name => "QuranSurah", :foreign_key => :sura_num
+    has_many :pages, :class_name => "QuranPageImage", :foreign_key => :sura_num
 end
