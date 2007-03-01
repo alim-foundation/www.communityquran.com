@@ -1,0 +1,17 @@
+<div class="index">
+    <div class="welcome-message">Welcome to Community Qur'an.</div>
+
+    <p/>
+
+    <div class="search">Search: <input/></div>
+
+    <div class="browse">
+        Surah: <select>
+        <% for surah in @surahs %>
+        <option class="entry" >
+        <%= surah.name %><br>
+        </option>
+        <% end %>
+        </select>
+    </div>
+</div>

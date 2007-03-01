@@ -20,5 +20,4 @@ class QuranStructSurah < ActiveRecord::Base
     has_many :ajza, :class_name => "QuranStructJuz", :foreign_key => :sura_num
     has_many :sajdas, :class_name => "QuranStructSajdaTilawa", :foreign_key => :sura_num
     has_many :surahs, :class_name => "QuranSurah", :foreign_key => :sura_num
-    has_many :pages, :class_name => "QuranPageImage", :foreign_key => :sura_num
 end

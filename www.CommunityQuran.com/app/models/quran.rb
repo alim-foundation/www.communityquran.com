@@ -9,6 +9,7 @@
 #  full_name                   :string(255)   not null
 #  author                      :string(255)   
 #  description                 :text          
+#  contains_page_images        :boolean(1)    
 #  contains_surah_elaborations :boolean(1)    
 #  contains_ayahs              :boolean(1)    
 #  contains_ayah_elaborations  :boolean(1)    
@@ -24,6 +25,8 @@ require 'rexml/document'
 class Quran < ActiveRecord::Base
     has_many :surahs, :class_name => "QuranSurah"
     has_many :subjects, :class_name => "QuranSubject"
+    has_one :page_images_info, :class_name => "QuranPageImagesInfo"
+    has_many :pages, :class_name => "QuranPageImage"
 
     def add_subject_location(topic, subtopic, surah_num, ayah_num)
         if subtopic

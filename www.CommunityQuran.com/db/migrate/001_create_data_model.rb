@@ -11,6 +11,9 @@ class CreateDataModel < ActiveRecord::Migration
         end
         add_index :system_setting, [:name], :unique => true
 
+        # see the basic environment data we need to run in development mode (needed by environment_check plugin)
+        SystemSetting.create(:name => 'environment', :value => 'development')
+
         create_table :quran_struct_surah, :primary_key => :surah_num do |t|
             t.column :name, :string, :null => false
             t.column :ayah_count, :integer, :null => false
@@ -41,24 +44,13 @@ class CreateDataModel < ActiveRecord::Migration
             t.foreign_key :surah_num, :quran_struct_surah, :surah_num
         end
 
-        create_table :quran_page_image do |t|
-            t.column :surah_num, :integer, :null => false
-            t.column :ayah_num, :integer, :null => false
-            t.column :page_num, :integer, :null => false
-            t.column :xstart, :integer, :null => false
-            t.column :xend, :integer, :null => false
-            t.column :ystart, :integer, :null => false
-            t.column :yend, :integer, :null => false
-
-            t.foreign_key :surah_num, :quran_struct_surah, :surah_num
-        end
-
         create_table :quran do |t|
             t.column :code, :string, :limit => 16, :null => false
             t.column :short_name, :string, :null => false
             t.column :full_name, :string, :null => false
             t.column :author, :string
             t.column :description, :text
+            t.column :contains_page_images, :boolean
             t.column :contains_surah_elaborations, :boolean
             t.column :contains_ayahs, :boolean
             t.column :contains_ayah_elaborations, :boolean
@@ -68,6 +60,27 @@ class CreateDataModel < ActiveRecord::Migration
         add_index :quran, :code, :name => "unique_quran_code", :unique => true
         add_index :quran, :short_name, :name => "unique_quran_short_name", :unique => true
         add_index :quran, :full_name, :name => "unique_quran_full_name", :unique => true
+
+        create_table :quran_page_images_info do |t|
+            t.column :quran_id, :integer, :null => false, :on_delete => :cascade
+            t.column :page_image_name_format, :string
+            t.column :image_width, :integer
+            t.column :line_height, :integer
+            t.column :min_line_height, :integer
+        end
+
+        create_table :quran_page_image do |t|
+            t.column :quran_id, :integer, :null => false, :on_delete => :cascade
+            t.column :page_num, :integer, :null => false
+            t.column :surah_num, :integer, :null => false
+            t.column :ayah_num, :integer, :null => false
+            t.column :x_start, :integer, :null => false
+            t.column :x_end, :integer, :null => false
+            t.column :y_start, :integer, :null => false
+            t.column :y_end, :integer, :null => false
+
+            t.foreign_key :surah_num, :quran_struct_surah, :surah_num
+        end
 
         create_table :quran_surah do |t|
             t.column :quran_id, :integer, :null => false, :on_delete => :cascade
@@ -99,7 +112,7 @@ class CreateDataModel < ActiveRecord::Migration
 
         create_table :quran_subject do |t|
             t.column :quran_id, :integer, :null => false, :on_delete => :cascade
-            t.column :parent_id, :integer, :references => :quran_subject
+            t.column :parent_id, :integer, :references => :quran_subject, :on_delete => :cascade
             t.column :topic, :string, :limit => 384, :null => false
             t.column :full_topic_path, :string, :limit => 1024, :null => false      # combination of topic::subtopic::subtopic, etc
         end
