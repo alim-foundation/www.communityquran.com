@@ -1,0 +1,421 @@
+/*********************************************************************
+ ** BODY, OUTER BORDERS AND SHADOWS                                 **
+ *********************************************************************/
+
+body.page
+{
+	margin: 0px 0px 0px 0px;
+	height: 100%;
+	background: #f1f1f1;
+	padding: 0;
+	margin-bottom: 1px;
+}
+
+div.center
+{
+  text-align: center;
+}
+
+div.wrapper {
+  background: #fff;
+  margin: auto;
+  min-width: 750px;
+  max-width: 1600px;
+  width: expression(document.body.clientWidth > 1600? "1600px": "auto" );
+}
+
+table.main
+{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+table.inner {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+table.main td.left_shadow {
+  width: 10px;
+  background: url(../images/navigation/shadow-left.png) repeat-y;
+}
+
+table.main td.right_shadow {
+  width: 10px;
+  background: url(../images/navigation/shadow-right.png) repeat-y;
+}
+
+table.main td.left_top_shadow {
+  width: 10px;
+  height: 10px;
+  background: url(../images/navigation/shadow-left-t.png) no-repeat bottom left;
+}
+
+table.main td.right_top_shadow {
+  width: 20px;
+  height: 10px;
+  background: url(../images/navigation/shadow-right-t.png) no-repeat bottom left;
+}
+
+table.main td.top {
+  text-align: center;
+  height: 10px;
+  line-height: 10px;
+  vertical-align: top;
+  background: url(../images/navigation/shadow-t2.png) bottom left repeat-x;
+}
+
+table.main div.top_l {
+	height: 10px;
+	width: 20px;
+	background: url(../images/navigation/shadow-t1.png) bottom left no-repeat;
+}
+
+table.main div.top_r {
+	height: 10px;
+	width: 20px;
+	background: url(../images/navigation/shadow-t3.png) bottom right no-repeat;
+}
+
+table.main td.left_bot_shadow {
+  width: 10px;
+  height: 20px;
+  background: url(../images/navigation/shadow-left-b.png) no-repeat;
+}
+
+table.main td.right_bot_shadow {
+  width: 20px;
+  height: 20px;
+  background: url(../images/navigation/shadow-right-b.png) no-repeat;
+}
+
+table.main td.bottom {
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: top;
+  background: url(../images/navigation/shadow-b2.png) bottom left repeat-x;
+}
+
+table.main div.bottom_l {
+	height: 20px;
+	width: 20px;
+	background: url(../images/navigation/shadow-b1.png) bottom left no-repeat;
+}
+
+table.main div.bottom_r {
+	height: 20px;
+	width: 20px;
+	background: url(../images/navigation/shadow-b3.png) bottom right no-repeat;
+}
+
+/*********************************************************************
+ ** MASTHEAD                                                        **
+ *********************************************************************/
+
+div.masthead {
+	background: #e1e1e1 url(../images/navigation/masthead.jpg);
+	height: 63px;
+	font-size: 24pt;
+	font-family: Arial, Sans Serif;
+	font-weight: bold;
+	text-align: left;
+	padding-top: 10px;
+	padding-right: 10px;
+    padding-left: 10px;
+    color: #666666;
+}
+
+div.masthead div.tag-line {
+    font-size: 10pt;
+    font-style: italic;
+    color: #666666;
+}
+
+div.masthead-divider {
+    background: url(../images/navigation/main-menu-bg.png) repeat-x; height: 2px;
+    line-height: 2px;
+    }
+
+/*********************************************************************
+ ** MAIN MENU                                                       **
+ *********************************************************************/
+
+div.main-menu { background: url(../images/navigation/main-menu-bg.png) repeat-x; height: 29px; }
+div.main-menu a
+{
+    color: white;
+    display: block;
+	font-family: Tahoma, Helvetica, sans-serif;
+	float: left;
+	line-height: 25px;
+    padding: 0px 25px;
+    text-decoration:none;
+    font-size: 12px;
+    font-weight: bold;
+    border-right: 1px solid white;
+}
+
+div.main-menu a:link { color: white; text-decoration: none; }
+div.main-menu a:visited { color: white; text-decoration: none; }
+div.main-menu a:hover { background: url(../images/navigation/main-menu-hover-bg.png) repeat-x; color: black; }
+div.main-menu a.active { background: url(../images/navigation/main-menu-hover-bg.png) repeat-x; color: white; }
+
+div.main-menu span span
+{
+    color: white;
+    display: block;
+	font-family: Tahoma, Helvetica, sans-serif;
+	float: left;
+	line-height: 25px;
+    padding: 0px 25px;
+    text-decoration:none;
+    font-size: 12px;
+    font-weight: bold;
+    border-right: 1px solid white;
+}
+
+/*********************************************************************
+ ** VERTICAL MENU                                                   **
+ *********************************************************************/
+
+ul.vertical-menu
+{
+    font-family: verdana, arial, Helvetica, sans-serif;
+    font-size: 9pt;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.vertical-menu li
+{
+	line-height: 15px;
+	padding-left: 15px;
+	padding-bottom: 5px;
+	background-image: url(../images/navigation/vertical-menu-bullet.png);
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+}
+
+ul.vertical-menu li a { text-decoration: none; color: black; }
+ul.vertical-menu li a:link { text-decoration: none; color: black; }
+ul.vertical-menu li a:visited { text-decoration: none; color: black; }
+ul.vertical-menu li a:hover { text-decoration: underline; color: blue; }
+
+/*********************************************************************
+ ** ACTIVE USER PANEL                                               **
+ *********************************************************************/
+
+div.active-user-panel { font-family: tahoma, arial, Helvetica, sans-serif; font-size: 12px; background: url(../images/navigation/active-user-bg.png) no-repeat; width: 183px; height: 123px; color: #666666; }
+div.active-user-panel div.content { overflow: hidden; margin: 0 12px 10px 10px; padding-top: 3px; height: 108px; }
+div.active-user-panel div.content div.heading { padding-bottom: 3px;  padding-top: 5px }
+div.active-user-panel div.content div.user { font-weight: bold; }
+div.active-user-panel div.content div.organization { font-weight: bold; }
+
+
+/*********************************************************************
+ ** BREAD CRUMBS AND PAGE PATH                                      **
+ *********************************************************************/
+
+div.page-path { height: 33px; line-height: 33px; text-indent: 7px; font-family: tahoma, arial, Helvetica, sans-serif; font-size: 12px; }
+div.page-path a:link, a:visited { color: #D3330C; text-decoration: none; }
+div.page-path a:hover { color: #FD9800;	text-decoration: none; text-decoration: underline; color: black; }
+div.page-path a.first {  }
+div.page-path a.middle { background: url(../images/page-path/arrow-middle.gif) center left no-repeat; padding-left: 17px; }
+div.page-path a.last { background: url(../images/page-path/arrow-last.gif) center left no-repeat; padding-left: 17px; font-weight: bold; }
+
+/*********************************************************************
+ ** MAIN CONTENT PANEL                                              **
+ *********************************************************************/
+
+div.main-content-panel
+{
+  padding: 0px 5px 0px 7px;
+  width: auto !important;
+  width: 100%;
+}
+
+div.main-content-panel div.heading { padding-bottom: 15px; font-family: arial, Helvetica, sans-serif; font-size: 22px; font-weight: bold; }
+div.main-content-panel div.body { padding-bottom: 15px; font-family: verdana, arial, Helvetica, sans-serif; font-size: 9pt; }
+
+td.page-nav-and-main-content-separator { background: #EBEBEB; width: 1px; }
+
+/*********************************************************************
+ ** PAGE NAVIGATION PANEL                                           **
+ *********************************************************************/
+
+td.page-navigation-panel { padding: 10px; font-family: tahoma, arial, helvetica, sans serif; font-size: 9pt; }
+td.page-navigation-panel div.heading { font-weight: bold; border-bottom: 1px solid silver; margin-bottom: 5px;  padding-bottom: 5px;}
+
+/*********************************************************************
+ ** TIPS AND CONTEXT SENSITIVE CALLOUT PANEL                        **
+ *********************************************************************/
+
+td.callout-panel { border: 0px solid #0000cc; background: url(../images/navigation/callout-panel-bg.png) repeat-y; font-family: tahoma, arial, helvetica, sans serif; font-size: 9pt; }
+td.callout-panel div.top { background: transparent url(../images/navigation/callout-panel-top-bg.png) 0 0 no-repeat; height: 10px; width: 183px; }
+
+td.callout-panel div.content
+{
+    background: url(../images/navigation/callout-panel-fade-bg.png) no-repeat;
+    padding: 5px 17px 0 13px;
+    margin: 0 !important;
+    margin-top: -9px;
+    width: auto !important;
+}
+
+td.callout-panel-bottom { background: url(../images/navigation/callout-panel-bottom-bg.png) no-repeat; }
+
+/*********************************************************************
+ ** FORMS                                                           **
+ *********************************************************************/
+
+div.form-body input { font-family: Georgia; font-size: 10pt; }
+div.form-body select { font-family: Georgia; font-size: 9pt; }
+div.form-body fieldset legend { font-family: Georgia; font-size: 10pt; color: black; font-weight: bold; }
+
+div.form-body table.vertical-fields {padding: 5px; }
+div.form-body table.vertical-fields tr.field { }
+div.form-body table.vertical-fields td { font-family: Georgia; font-size: 10pt; color: black; }
+div.form-body table.vertical-fields td.label { padding: 5px; text-align: right; }
+div.form-body table.vertical-fields td.label-top { padding: 5px; text-align: center; }
+div.form-body table.vertical-fields td.control { padding: 5px; text-align: left; }
+div.form-body table.vertical-fields tr.director td.control { text-align: right; padding-top: 20px;}
+
+div.form-body input.focused { background-color: LightGoldenRodYellow; }
+div.form-body input.required { background: white url(../images/input-required-bg.gif) no-repeat right top; padding-left: 3px; border: solid 1px #009; }
+div.form-body input.required-focused { background: LightGoldenRodYellow url(../images/input-required-bg.gif) no-repeat right top; padding-left: 3px; border: solid 1px #009; }
+
+div.form-body label { color: #454545; padding-top: 1px; padding-bottom: 1px; padding-left: 2px; padding-right: 2px; }
+div.form-body label.focused { color: black; border: solid 1px silver; background-color: LightGoldenRodYellow; }
+div.form-body label.required { font-weight: bold; }
+div.form-body label.required-focused { font-weight: bold; color: black; border: solid 1px silver; background-color: LightGoldenRodYellow; }
+
+div.form-body fieldset.top-level { margin-top: 10px; }
+div.form-body table.container { margin-top: 10px; }
+div.form-body table.container td.container-separator { width: 20px; }
+
+div.form-body div.director { padding-top: 10px; text-align: center; }
+div.form-body div.director input.button { padding-left: 10px; padding-right: 10px; }
+
+/*********************************************************************
+ ** BODY PANEL                                                      **
+ *********************************************************************/
+
+table.panel { border-collapse: collapse; padding: 0px; }
+
+table.panel table.heading { border-collapse: collapse; padding: 0px; background-color: #f6f6f6; }
+table.panel table.heading td.unselected-label { background: url(../images/panel/tab-rule.png) repeat-x bottom;  background-color: white; }
+table.panel table.heading td.unselected-label a { text-decoration: none; font-size: 12px; color: #667766; font-family: tahoma, arial; }
+table.panel table.heading td.tab-left { background: url(../images/panel/tab-left.png) no-repeat left top; }
+table.panel table.heading td.label { padding-left: 10px; padding-right: 10px; font-weight: bold; background: url(../images/panel/shadow-horizontal-top.png) repeat-x top; height: 24px; font-size: 12px; color: #667766; font-family: tahoma, arial; }
+table.panel table.heading td.tab-right { background: url(../images/panel/tab-right.png) no-repeat right top; }
+table.panel table.heading td.rule { background: url(../images/panel/tab-rule.png) repeat-x bottom; width: 100%; background-color: white; }
+table.panel table.heading td.right { background: url(../images/panel/tab-rule-corner.png) no-repeat right bottom; background-color: white;}
+
+table.panel table.content { border-collapse: collapse; padding: 0px; width: 100%; background-color: #f6f6f6; }
+table.panel table.content tr.top td.left { background: url(../images/panel/shadow-corner-top-left.png) no-repeat left top; }
+table.panel table.content tr.top td.middle { background: url(../images/panel/shadow-horizontal-top.png) repeat-x; width: 100%; }
+table.panel table.content tr.top td.right { background: url(../images/panel/shadow-corner-top-right.png) no-repeat right top; }
+table.panel table.content tr.middle td.left { background: url(../images/panel/shadow-vertical-left.png) repeat-y; }
+table.panel table.content tr.middle td.middle { }
+table.panel table.content tr.middle td.middle div.body { font-family: verdana, arial, sans serif; font-size: 9pt; padding: 5px; }
+table.panel table.content tr.middle td.right { background: url(../images/panel/shadow-vertical-right.png) repeat-y right; }
+table.panel table.content tr.bottom td.left { background: url(../images/panel/shadow-corner-bottom-left.png) no-repeat left top; }
+table.panel table.content tr.bottom td.middle { background: url(../images/panel/shadow-horizontal-bottom.png) repeat-x; width: 100%; }
+table.panel table.content tr.bottom td.right { background: url(../images/panel/shadow-corner-bottom-right.png) no-repeat right top;}
+
+/*********************************************************************
+ ** ARTICLES                                                        **
+ *********************************************************************/
+
+div.article div.heading { padding-top: 5px; padding-bottom: 0px; font-family: arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; border-bottom: 1px dotted #666666 }
+
+/*********************************************************************
+ ** REPORTS                                                         **
+ *********************************************************************/
+
+table.report { }
+table.report tr.heading-descriptor { background-color: #DDDDDD; }
+table.report tr.heading-descriptor th { border-left: 1px solid silver; border-top: 1px solid silver; text-align: center; }
+table.report tr.heading { background-color: #DDDDDD; }
+table.report tr.heading th { padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 3px; border-left: 1px solid silver; border-bottom: 2px solid silver; text-align: center; }
+table.report tr { }
+table.report td { padding-left: 5px; padding-right: 5px; border-left: none; border-bottom: 1px solid silver; padding-top: 5px; padding-bottom: 5px; }
+table.report td.last { }
+table.report td.sequence { text-align: right; }
+table.report td.number { text-align: right; }
+table.report td.count { text-align: right; }
+table.report td.text {  }
+table.report td.currency { text-align: right; }
+table.report td.date { }
+table.report td a { color: blue; text-decoration: underline; } 
+table.report td a:visited { color: blue; text-decoration: underline;  } 
+table.report td a:link { color: blue; text-decoration: underline;  } 
+table.report td a:hover { color: white; background-color: blue; text-decoration: none; } 
+table.report a.action { border: 1px solid black; padding-left: 2px; padding-right: 2px; background-color: #999999; color: white; font-weight: bold; text-decoration: none; }
+table.report a.action:visited { border: 1px solid black; padding-left: 2px; padding-right: 2px; background-color: #999999; color: white; font-weight: bold; text-decoration: none; }
+table.report a.action:link { border: 1px solid black; padding-left: 2px; padding-right: 2px; background-color: #999999; color: white; font-weight: bold; text-decoration: none; }
+table.report a.action:hover { background-color: black; border: 1px solid #999999; }
+
+/*********************************************************************
+ ** FOOTER MENU                                                     **
+ *********************************************************************/
+
+td.footer-bar
+{
+  background: url(../images/navigation/footer-bar-bg.png) repeat-x;
+  padding-top: 4px;
+}
+
+td.footer-bar div.footer-menu
+{
+}
+
+div.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style:none;
+}
+
+div.footer-menu ul li {
+	float: left;
+	border-right: 1px solid #fff;
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.footer-menu a {
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  float:left;
+  display:block;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 15px;
+  color: #999;
+  text-decoration: none;
+}
+
+div.footer-menu a:visited { color: #999; }
+
+div.footer-menu a:hover {
+	background: #e1e1e1;
+	color: black;
+}
+
+td.footer-bar div.footer-content
+{
+  margin-top: 4px;
+  font-family: Tahoma, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #ADADAD;
+  float: right;
+  width: 400px;
+  text-align: center;
+
+}

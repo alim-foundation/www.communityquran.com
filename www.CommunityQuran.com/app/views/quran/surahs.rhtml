@@ -1,0 +1,40 @@
+<% content_for(:physical) do %>
+<table class="report">
+    <tr class="heading">
+        <th>Num</th>
+        <th>Surah</th>
+        <th colspan="2">Revealed</th>
+        <th>Ayahs</th>
+        <th>Rukus</th>
+    </tr>
+    <% for surah in surahs %>
+    <tr>
+        <td class="sequence"><a href="<%= surah.surah_num %>"><%= surah.surah_num %></a></td>
+        <td class="text"><a href="<%= surah.surah_num %>"><%= surah.name %></a></td>
+        <td class="text"><%= surah.revealed_city %></td>
+        <td class="sequence"><%= surah.revealed_num %></td>
+        <td class="count"><%= surah.ayah_count %></td>
+        <td class="count"><%= surah.ruku_count == 0 ? 1 : surah.ruku_count %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+
+<% overviewPanel = get_surah_elaborations_panel
+   content_for(:overview) do %>
+    <div class="article">
+    <%= Quran.find_by_code(params[:quran_code]).surahs.find_by_surah_num(params[:surah_num]).overview %>
+    </div>
+<% end %>
+<% overviewPanel.body = :overview %>
+
+<table>
+    <tr valign="top">
+        <td>
+            <%= render :partial => "shared/panel", :object => overviewPanel %>
+        </td>
+        <td>
+            <%= render :partial => "shared/panel", :object => Panel.new("Choose Surah", :physical) %>
+        </td>
+    </tr>
+</table>

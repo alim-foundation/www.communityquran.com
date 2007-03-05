@@ -15,4 +15,5 @@
 
 class QuranAyahElaboration < ActiveRecord::Base
     belongs_to :ayah, :class_name => "QuranAyah"
+    acts_as_ferret :fields => [:text]    
 end

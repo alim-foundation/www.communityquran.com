@@ -1,0 +1,62 @@
+<table class="panel" cellspacing="0" cellpadding="0">
+    <% if panel.tabs %>
+    <tr class="heading">
+        <td class="heading">
+            <table class="heading">
+                <tr class="tab">
+                    <% for tab in panel.tabs do %>
+                        <% if tab.active %>
+                        <td class="tab-left" width="9">&nbsp;</td>
+                        <td class="label" nowrap><%= tab.label %></td>
+                        <td class="tab-right" width="9">&nbsp;</td>
+                        <% else %>
+                        <td class="unselected-label" nowrap><a href="<%= tab.url %>"><%= tab.label %></a></td>
+                        <% end %>
+                    <% end %>
+                    <td class="rule"></td>
+                    <td class="right" width="9">&nbsp;</td>                    
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr class="content">
+        <td class="content">
+            <table class="content" cellspacing="0">
+                <tr class="middle">
+                    <td class="left" width="9">&nbsp;</td>
+                    <td class="middle"><div class="body"><%= yield panel.body %></div></td>
+                    <td class="right" width="9">&nbsp;</td>
+                </tr>
+                <tr class="bottom" height="10">
+                    <td class="left"></td>
+                    <td class="middle"></td>
+                    <td class="right"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <% else %>
+    <tr class="content">
+        <td class="content">
+            <table class="content" cellspacing="0">
+                <tr class="top" height="10">
+                    <td class="left"></td>
+                    <td class="middle"></td>
+                    <td class="right"></td>
+                </tr>
+                <tr class="middle">
+                    <td class="left" width="9">&nbsp;</td>
+                    <td class="middle"><div class="body"><%= yield panel.body %></div></td>
+                    <td class="right" width="9">&nbsp;</td>
+                </tr>
+                <tr class="bottom" height="10">
+                    <td class="left"></td>
+                    <td class="middle"></td>
+                    <td class="right"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <% end %>
+</table>

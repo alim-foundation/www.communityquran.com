@@ -15,8 +15,8 @@ development:
   adapter: mysql
   database: cq_development
   username: root
-  password: mobilis
-  host: localhost
+  password: 
+  host: vm_mysql
 
 # Warning: The database defined as 'test' will be erased and
 # re-generated from your development database when you run 'rake'.

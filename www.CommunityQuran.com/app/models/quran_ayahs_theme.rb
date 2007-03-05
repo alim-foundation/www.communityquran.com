@@ -15,4 +15,5 @@
 
 class QuranAyahsTheme < ActiveRecord::Base
     belongs_to :surah, :class_name => "QuranSurah"
+    acts_as_ferret :fields => [:theme]    
 end

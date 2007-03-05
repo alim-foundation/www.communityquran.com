@@ -18,4 +18,5 @@ class QuranSubject < ActiveRecord::Base
     has_many :locations, :class_name => "QuranSubjectLocation"
 
     acts_as_tree
+    acts_as_ferret :fields => [:topic]    
 end

@@ -17,4 +17,5 @@ class QuranSurah < ActiveRecord::Base
     belongs_to :surahStruct, :class_name => "QuranStructSurah", :foreign_key => :surah_num
     has_many :ayahs, :class_name => "QuranAyah"
     has_many :themes, :class_name => "QuranAyahsTheme"
+    acts_as_ferret :fields => [:overview]    
 end

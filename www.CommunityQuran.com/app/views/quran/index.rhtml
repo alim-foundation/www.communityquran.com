@@ -1,17 +1,49 @@
 <div class="index">
-    <div class="welcome-message">Welcome to Community Qur'an.</div>
+    <center>
+        <img src="/images/quran-page.jpg"/>
+    <table cellspacing="20">
+        <tr valign="top">
+            <td>
+                <% content_for(:search) do %>
+                    <div class="search">Search: <input/></div>
+                <% end %>
+                <%= render :partial => "shared/panel", :object => { "heading" => "Search Translations", "body" => :search } %>
+            </td>
 
-    <p/>
+            <td>
+                <% content_for(:arabic) do %>
+                    Surah: <%= render :partial => "shared/select_surah" %>
+                <% end %>
+                <%= render :partial => "shared/panel", :object => { "heading" => "Read the Arabic", "body" => :arabic  } %>
+            </td>
 
-    <div class="search">Search: <input/></div>
+            <td>
+                <% content_for(:translations) do %>
+                    Surah: <%= render :partial => "shared/select_surah" %>
+                <% end %>
+                <%= render :partial => "shared/panel", :object => { "heading" => "Compare Translations", "body" => :translations } %>
+            </td>
 
-    <div class="browse">
-        Surah: <select>
-        <% for surah in @surahs %>
-        <option class="entry" >
-        <%= surah.name %><br>
-        </option>
-        <% end %>
-        </select>
-    </div>
+        </tr>
+        <tr valign="top">
+            <td>
+                <%= render :partial => "shared/panel", :object => { "heading" => "Browse by Subject", "body" => "Body"  } %>
+            </td>
+
+            <td>
+                <% content_for(:surahs) do %>
+                    Surah: <%= render :partial => "shared/select_surah" %>
+                <% end %>
+                <%= render :partial => "shared/panel", :object => { "heading" => "Learn about the Surahs", "body" => :surahs } %>
+            </td>
+
+            <td>
+                <% content_for(:comments) do %>
+                    User comments...
+                <% end %>
+                <%= render :partial => "shared/panel", :object => { "heading" => "Recent Comments", "body" => :comments } %>
+            </td>
+        </tr>
+    </table>
+    </center>
 </div>

@@ -17,6 +17,7 @@ class CreateDataModel < ActiveRecord::Migration
         create_table :quran_struct_surah, :primary_key => :surah_num do |t|
             t.column :name, :string, :null => false
             t.column :ayah_count, :integer, :null => false
+            t.column :ruku_count, :integer, :null => false
             t.column :revealed_num, :integer, :null => false
             t.column :revealed_city, :string, :null => false
         end
@@ -148,19 +149,21 @@ class CreateDataModel < ActiveRecord::Migration
         surahCount = 0;
         quranStruct = REXML::Document.new(File.new('data/Quran/Quran Structure.xml'))
         quranStruct.elements.each('aml/quran/suras/sura') do |surahElem|
+            surahNum = surahElem.attributes['num']
             surah = QuranStructSurah.create(
-            :surah_num => surahElem.attributes['num'],
+            :surah_num => surahNum,
             :name => surahElem.elements['name'].text,
             :ayah_count => surahElem.attributes['ayahcount'],
+            :ruku_count => surahElem.get_elements('rukus/ruku').size,
             :revealed_num => surahElem.elements['revealed'].attributes['num'],
             :revealed_city => surahElem.elements['revealed'].attributes['city']);
 
             surahElem.elements.each('rukus/ruku') do |rukuElem|
                 ruku = surah.rukus.create(
+                :surah_num => surahNum,
                 :ruku_num => rukuElem.attributes['num'],
                 :start_ayah_num => rukuElem.attributes['startayah'],
-                :end_ayah_num => rukuElem.attributes['endayah']
-                );
+                :end_ayah_num => rukuElem.attributes['endayah']);
             end
 
             surahCount += 1
