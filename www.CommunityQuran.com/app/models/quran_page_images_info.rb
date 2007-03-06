@@ -16,4 +16,8 @@
 
 class QuranPageImagesInfo < ActiveRecord::Base
     belongs_to :quran, :class_name => "Quran"
+
+    def image_name(page)
+        return sprintf(page_image_name_format, page.page_num).downcase
+    end
 end

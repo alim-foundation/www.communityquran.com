@@ -31,13 +31,14 @@
                                             </div>
                                         </div>
                                         <div class="main-menu">
-                                            <a href="#">Home</a>
-                                            <a href="#">Search</a>
-                                            <a href="#">Arabic</a>
-                                            <a href="#">Compare</a>
-                                            <a href="#">Surahs</a>
-                                            <a href="#">Subjects</a>
-                                            <a href="#">Comments</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'index' %>">Home</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'search' %>">Search</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'arabic' %>">Arabic</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'compare' %>">Compare</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'surahs' %>">Surahs</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'subjects' %>">Subjects</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'comments' %>">Comments</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'structure' %>">Structure</a>
                                         </div>
                                         <% havePagePath = defined? page_path == "method" && page_path %>
                                         <% if havePagePath %>

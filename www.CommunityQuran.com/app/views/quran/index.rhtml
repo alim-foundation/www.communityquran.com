@@ -7,41 +7,41 @@
                 <% content_for(:search) do %>
                     <div class="search">Search: <input/></div>
                 <% end %>
-                <%= render :partial => "shared/panel", :object => { "heading" => "Search Translations", "body" => :search } %>
+                <%= render :partial => "shared/panel", :object => Panel.new("Search Translations", :search) %>
             </td>
 
             <td>
                 <% content_for(:arabic) do %>
                     Surah: <%= render :partial => "shared/select_surah" %>
                 <% end %>
-                <%= render :partial => "shared/panel", :object => { "heading" => "Read the Arabic", "body" => :arabic  } %>
+                <%= render :partial => "shared/panel", :object => Panel.new("Read the Arabic", :arabic) %>
             </td>
 
             <td>
                 <% content_for(:translations) do %>
                     Surah: <%= render :partial => "shared/select_surah" %>
                 <% end %>
-                <%= render :partial => "shared/panel", :object => { "heading" => "Compare Translations", "body" => :translations } %>
+                <%= render :partial => "shared/panel", :object => Panel.new("Compare Translations", :translations) %>
             </td>
 
         </tr>
         <tr valign="top">
             <td>
-                <%= render :partial => "shared/panel", :object => { "heading" => "Browse by Subject", "body" => "Body"  } %>
+                <%= render :partial => "shared/panel", :object => Panel.new("Browse by Subject", "Body") %>
             </td>
 
             <td>
                 <% content_for(:surahs) do %>
                     Surah: <%= render :partial => "shared/select_surah" %>
                 <% end %>
-                <%= render :partial => "shared/panel", :object => { "heading" => "Learn about the Surahs", "body" => :surahs } %>
+                <%= render :partial => "shared/panel", :object => Panel.new("Learn about the Surahs", :surahs) %>
             </td>
 
             <td>
                 <% content_for(:comments) do %>
                     User comments...
                 <% end %>
-                <%= render :partial => "shared/panel", :object => { "heading" => "Recent Comments", "body" => :comments } %>
+                <%= render :partial => "shared/panel", :object => Panel.new("Recent Comments", :comments) %>
             </td>
         </tr>
     </table>

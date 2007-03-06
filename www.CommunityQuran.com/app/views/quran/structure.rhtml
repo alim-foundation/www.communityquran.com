@@ -1,0 +1,71 @@
+<% content_for(:surahs) do %>
+<table class="report">
+    <tr class="heading">
+        <th>Surah</th>
+        <th>Name</th>
+        <th colspan="2">Revealed</th>
+        <th>Ayahs</th>
+        <th>Rukus</th>
+    </tr>
+    <% for surah_struct in QuranHelper::SURAH_STRUCTS %>
+    <tr>
+        <td class="sequence"><%= surah_struct.surah_num %></td>
+        <td class="text"><a href="surahs/QSI/<%= surah_struct.surah_num %>"><%= surah_struct.name %></a></td>
+        <td class="text"><%= surah_struct.revealed_city %></td>
+        <td class="sequence"><%= surah_struct.revealed_num %></td>
+        <td class="count"><%= surah_struct.ayah_count %></td>
+        <td class="count"><%= surah_struct.ruku_count == 0 ? 1 : surah_struct.ruku_count %></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+
+<% content_for(:ajza) do %>
+<table class="report">
+    <tr class="heading">
+        <th>Juz</th>
+        <th>Starting Surah</th>
+        <th>Ayah</th>
+    </tr>
+    <% for juz in QuranHelper::AJZA %>
+    <% surah_struct = QuranHelper::SURAH_STRUCTS[juz.surah_num-1] %>
+    <tr>
+        <td class="sequence"><%= juz.juz_num %></td>
+        <td class="text"><a href="surahs/QSI/<%= juz.surah_num %>"><%= surah_struct.name %></a></td>
+        <td class="sequence"><a href="arabic/<%= juz.surah_num %>/<%= juz.ayah_num %>"><%= juz.ayah_num %></a></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+
+<% content_for(:sajda) do %>
+<table class="report">
+    <tr class="heading">
+        <th>#</th>
+        <th>Starting Surah</th>
+        <th>Ayah</th>
+    </tr>
+    <% for sajda in QuranHelper::SAJDA_TILAWA %>
+    <% surah_struct = QuranHelper::SURAH_STRUCTS[sajda.surah_num-1] %>
+    <tr>
+        <td class="sequence"><%= sajda.sajda_num %></td>
+        <td class="text"><a href="surahs/QSI/<%= sajda.surah_num %>"><%= surah_struct.name %></a></td>
+        <td class="sequence"><a href="arabic/<%= sajda.surah_num %>/<%= sajda.ayah_num %>"><%= sajda.ayah_num %></a></td>
+    </tr>
+    <% end %>
+</table>
+<% end %>
+
+<table>
+    <tr valign="top">
+        <td>
+            <%= render :partial => "shared/panel", :object => Panel.new("Surahs", :surahs) %>
+        </td>
+        <td>
+            <%= render :partial => "shared/panel", :object => Panel.new("Ajza", :ajza) %>
+        </td>
+        <td>
+            <%= render :partial => "shared/panel", :object => Panel.new("Sajda Tilawa", :sajda) %>
+        </td>
+    </tr>
+</table>

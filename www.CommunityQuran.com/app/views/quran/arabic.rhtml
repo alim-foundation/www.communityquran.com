@@ -1,0 +1,25 @@
+<% page = get_active_quran_page %>
+
+<table>
+    <tr valign="top">
+        <td><img src="/arabic_quran_pages/<%= QuranHelper::ARABIC_QURAN.page_images_info.image_name(page) %>"></td>
+        <td>&nbsp;&nbsp;&nbsp;</td>
+        <td>
+            <% content_for(:pages) do %>
+                <nobr>
+                    &lt; <a href="<%= page.previous_page_num %>">Previous</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="<%= page.next_page_num %>">Next</a> &gt;
+                </nobr>
+            <% end %>
+
+            <% content_for(:surahs) do %>
+                <%= render :partial => "shared/select_surah" %>
+            <% end %>
+
+            <%= render :partial => "shared/panel", :object => Panel.new("Goto Page", :pages) %>
+            <p/>
+            <%= render :partial => "shared/panel", :object => Panel.new("Goto Surah", :surahs) %>
+        </td>
+    </tr>
+</table>

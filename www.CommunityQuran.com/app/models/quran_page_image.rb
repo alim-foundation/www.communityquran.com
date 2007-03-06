@@ -19,4 +19,20 @@
 
 class QuranPageImage < ActiveRecord::Base
     belongs_to :quran, :class_name => "Quran"
+
+    def is_first
+        return page_num == 1
+    end
+
+    def previous_page_num
+        return page_num == 1 ? 604 : page_num - 1  
+    end
+
+    def next_page_num
+        return is_last ? 1 : page_num + 1
+    end
+
+    def is_last
+        return page_num == 604
+    end
 end

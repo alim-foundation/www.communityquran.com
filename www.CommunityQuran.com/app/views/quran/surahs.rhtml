@@ -3,18 +3,15 @@
     <tr class="heading">
         <th>Num</th>
         <th>Surah</th>
-        <th colspan="2">Revealed</th>
-        <th>Ayahs</th>
-        <th>Rukus</th>
     </tr>
-    <% for surah in surahs %>
+    <% for surah_struct in QuranHelper::SURAH_STRUCTS %>
+    <%if surah_struct.surah_num == Integer(params[:surah_num]) %>
+    <tr class="active">
+    <% else %>
     <tr>
-        <td class="sequence"><a href="<%= surah.surah_num %>"><%= surah.surah_num %></a></td>
-        <td class="text"><a href="<%= surah.surah_num %>"><%= surah.name %></a></td>
-        <td class="text"><%= surah.revealed_city %></td>
-        <td class="sequence"><%= surah.revealed_num %></td>
-        <td class="count"><%= surah.ayah_count %></td>
-        <td class="count"><%= surah.ruku_count == 0 ? 1 : surah.ruku_count %></td>
+    <% end %>
+        <td class="sequence"><%= surah_struct.surah_num %></td>
+        <td class="text"><a href="<%= surah_struct.surah_num %>"><%= surah_struct.name %></a></td>
     </tr>
     <% end %>
 </table>
