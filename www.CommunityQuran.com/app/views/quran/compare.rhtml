@@ -1,0 +1,16 @@
+<% qac = get_active_quran_ayahs_comparison %>
+<%= debug params %>
+<table>
+<% for ayah in qac.ayahs %>
+    <%if ayah == nil %>
+    <tr valign="top">
+        <td><%= debug ayah %></td>
+    </tr>
+    <% else %>
+    <tr valign="top">
+        <td><%= ayah.surah.quran.short_name %></td>
+        <td><%= ayah.text %></td>
+    </tr>
+    <% end %>
+<% end %>
+</table>

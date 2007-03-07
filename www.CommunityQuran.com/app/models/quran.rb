@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 2
+# Schema version: 1
 #
 # Table name: quran
 #
@@ -24,9 +24,11 @@ require 'rexml/document'
 
 class Quran < ActiveRecord::Base
     has_many :surahs, :class_name => "QuranSurah"
+    has_many :ayahs, :class_name => "QuranAyah"
     has_many :subjects, :class_name => "QuranSubject"
     has_one :page_images_info, :class_name => "QuranPageImagesInfo"
-    has_many :pages, :class_name => "QuranPageImage"
+    has_many :pages, :class_name => "QuranPage"
+    has_many :page_ayahs, :class_name => "QuranPageAyah"
 
     def add_subject_location(topic, subtopic, surah_num, ayah_num)
         if subtopic

@@ -1,0 +1,22 @@
+<%
+quran = Quran.find_by_code(params[:quran_code])
+surahStruct = QuranHelper::SURAH_STRUCTS[Integer(params[:surah_num])-1]
+startAyahNum = 1
+endAyahNum = surahStruct.ayah_count
+if surahStruct.rukuh_count > 0
+    rukuh = surahStruct.rukuhs.find_by_rukuh_num(params[:rukuh_num])
+    if rukuh
+        startAyahNum = rukuh.start_ayah_num
+        endAyahNum = rukuh.end_ayah_num
+    end
+end
+ayahs = quran.ayahs.find(:all, :conditions => ["surah_num = ? and ayah_num >= ? and ayah_num <= ?", surahStruct.surah_num, startAyahNum, endAyahNum])
+%>
+<table>
+<% ayahs.each do |ayah| %>
+    <tr valign="top">
+        <td><%= ayah.ayah_num %></td>
+        <td><%= ayah.text %></td>
+    </tr>
+<% end %>
+</table>

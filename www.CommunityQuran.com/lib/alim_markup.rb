@@ -1,4 +1,3 @@
-
 module AlimMarkup
 
     def self.import_quran_page_images_data_from_aml(source)
@@ -19,30 +18,50 @@ module AlimMarkup
                              :full_name => namesElem.attributes['full'],
                              :contains_page_images => true)
 
-        quran.create_page_images_info(:page_image_name_format => contentElem.attributes['imgfmt'],
-                                      :image_width => contentElem.attributes['imgwidth'],
-                                      :line_height => contentElem.attributes['lineheight'],
-                                      :min_line_height => contentElem.attributes['minlineheight'])
-
         puts "Importing #{quran.full_name} (#{quran.code}, #{quran.short_name}) from #{source.to_s}.\n"
 
+        lastPageNum = nil
+        page = quran.pages.create!(:page_num => 1, :start_surah_num => 0, :start_ayah_num => 0, :end_surah_num => 0, :end_ayah_num => 0)
         doc.elements.each("aml/quran/sura") do |surahElem|
             surah_num = surahElem.attributes['num']
 
             surah = quran.surahs.create(:surah_num => surah_num)
 
             surahElem.elements.each('ayah') do |ayahElem|
-                quran.pages.create(:surah_num => surah_num,
+                pageNum = Integer(ayahElem.attributes['page'])
+                if page.page_num != pageNum
+                    page = quran.pages.create!(:page_num => pageNum, :start_surah_num => 0, :start_ayah_num => 0, :end_surah_num => 0, :end_ayah_num => 0)     
+                end
+
+                page.ayahs.create!(:quran_id => quran.id,    # denormalized for performance
+                                   :surah_num => surah_num,
                                    :ayah_num => ayahElem.attributes['num'],
                                    :page_num => ayahElem.attributes['page'],
                                    :x_start => ayahElem.attributes['xstart'],
                                    :x_end => ayahElem.attributes['xend'],
                                    :y_start => ayahElem.attributes['ystart'],
                                    :y_end => ayahElem.attributes['yend'])
+
+                lastPageNum = pageNum
             end
 
             puts "  Imported #{quran.short_name} Surah #{surah_num}.\n"
         end
+
+        for page in quran.pages.find(:all)
+            collection = page.ayahs.find(:all)
+            page.start_surah_num = collection.first.surah_num
+            page.start_ayah_num = collection.first.ayah_num
+            page.end_surah_num = collection.last.surah_num
+            page.end_ayah_num = collection.last.ayah_num
+            page.save!
+        end
+
+        quran.create_page_images_info(:page_count => lastPageNum,
+                                      :page_image_name_format => contentElem.attributes['imgfmt'],
+                                      :image_width => contentElem.attributes['imgwidth'],
+                                      :line_height => contentElem.attributes['lineheight'],
+                                      :min_line_height => contentElem.attributes['minlineheight'])
 
         puts "  Done importing #{quran.short_name}.\n"
     end
@@ -62,9 +81,9 @@ module AlimMarkup
         end
 
         quran = mergeWithQuran ||
-                Quran.create(:code => code,
-                             :short_name => namesElem.attributes['short'],
-                             :full_name => namesElem.attributes['full'])
+                Quran.create!(:code => code,
+                              :short_name => namesElem.attributes['short'],
+                              :full_name => namesElem.attributes['full'])
 
         quran.contains_surah_elaborations = true
 
@@ -85,8 +104,7 @@ module AlimMarkup
                 e.insert_before(e[0], h1)
             end
 
-            surah = quran.surahs.find_by_surah_num(:surah_num => surah_num) ||
-                    quran.surahs.build(:surah_num => surah_num)
+            surah = quran.surahs.find_or_create_by_surah_num(surah_num)
             surah.overview = surahElem.children.to_s
             surah.save!
 
@@ -112,22 +130,20 @@ module AlimMarkup
         end
 
         quran = mergeWithQuran ||
-                Quran.create(:code => code,
-                             :short_name => namesElem.attributes['short'],
-                             :full_name => namesElem.attributes['full'])
+                Quran.create!(:code => code,
+                              :short_name => namesElem.attributes['short'],
+                              :full_name => namesElem.attributes['full'])
 
         puts "#{mergeWithQuran ? 'Merging' : 'Importing'} #{quran.full_name} (#{quran.code}, #{quran.short_name}) from #{source.to_s}.\n"
 
         doc.elements.each("aml/quran/sura") do |surahElem|
             surah_num = surahElem.attributes['num']
 
-            surah = quran.surahs.find_by_surah_num(:surah_num => surah_num) ||
-                    quran.surahs.create(:surah_num => surah_num)
-
+            surah = quran.surahs.find_or_create_by_surah_num(surah_num)
             surahElem.elements.each('theme') do |themeElem|
-                surah.themes.create(:start_ayah_num => themeElem.attributes['startAyah'],
-                                    :end_ayah_num => themeElem.attributes['endAyah'],
-                                    :theme => themeElem.children.to_s)
+                surah.themes.create!(:start_ayah_num => themeElem.attributes['startAyah'] || themeElem.attributes['ayah'],
+                                     :end_ayah_num => themeElem.attributes['endAyah'] || themeElem.attributes['ayah'],
+                                     :theme => themeElem.children.to_s)
                 quran.contains_ayah_themes = true
             end
 
@@ -155,11 +171,13 @@ module AlimMarkup
                     e.add_attribute("class", "fn")
                 end
 
-                ayah = surah.ayahs.create(:ayah_num => ayah_num, :text => ayahElem.children.to_s)
+                # create the ayah and include quran_id and surah_num (denormalized) for app query performance 
+                ayah = surah.ayahs.create!(:quran_id => quran.id, :surah_num => surah_num,
+                                           :ayah_num => ayah_num, :text => ayahElem.children.to_s)
 
                 # now store the notes separately
                 elaborationElems.keys.each do |noteId|
-                    ayah.elaborations.create(:code => noteId, :text => elaborationElems[noteId])
+                    ayah.elaborations.create!(:code => noteId, :text => elaborationElems[noteId])
                     quran.contains_ayah_elaborations = true
                 end
 
@@ -187,10 +205,10 @@ module AlimMarkup
             puts "** Deleted existing #{code}."
         end
 
-        quran = Quran.create(:code => catalogElem.attributes['id'],
-                             :short_name => namesElem.attributes['short'],
-                             :full_name => namesElem.attributes['full'],
-                             :contains_subjects => true)
+        quran = Quran.create!(:code => catalogElem.attributes['id'],
+                              :short_name => namesElem.attributes['short'],
+                              :full_name => namesElem.attributes['full'],
+                              :contains_subjects => true)
 
         puts "Importing #{quran.full_name} (#{quran.code}, #{quran.short_name}) from #{source.to_s}.\n"
 

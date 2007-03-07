@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 2
+# Schema version: 1
 #
 # Table name: quran_subject
 #

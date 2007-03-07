@@ -5,7 +5,7 @@
         <th>Name</th>
         <th colspan="2">Revealed</th>
         <th>Ayahs</th>
-        <th>Rukus</th>
+        <th>Rukuhs</th>
     </tr>
     <% for surah_struct in QuranHelper::SURAH_STRUCTS %>
     <tr>
@@ -14,7 +14,7 @@
         <td class="text"><%= surah_struct.revealed_city %></td>
         <td class="sequence"><%= surah_struct.revealed_num %></td>
         <td class="count"><%= surah_struct.ayah_count %></td>
-        <td class="count"><%= surah_struct.ruku_count == 0 ? 1 : surah_struct.ruku_count %></td>
+        <td class="count"><%= surah_struct.rukuh_count == 0 ? 1 : surah_struct.rukuh_count %></td>
     </tr>
     <% end %>
 </table>

@@ -1,20 +1,30 @@
 <% page = get_active_quran_page %>
+<% imageInfo = QuranHelper::ARABIC_QURAN.page_images_info %>
 
-<table>
+<table class="arabic_quran">
     <tr valign="top">
-        <td><img src="/arabic_quran_pages/<%= QuranHelper::ARABIC_QURAN.page_images_info.image_name(page) %>"></td>
+        <td class="image">
+            <img src="/arabic_quran_pages/<%= imageInfo.image_name(page) %>">
+        </td>
         <td>&nbsp;&nbsp;&nbsp;</td>
-        <td>
+        <td class="navigation">
             <% content_for(:pages) do %>
                 <nobr>
-                    &lt; <a href="<%= page.previous_page_num %>">Previous</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="<%= page.next_page_num %>">Next</a> &gt;
+                    &lt; <a href="<%= imageInfo.previous_page_num(page) %>">Previous</a>
+                    &nbsp; <input name="goto_page_num" size="3" value="<%= params[:page_num] %>" title="Type in a page number and press enter"></input> &nbsp;
+                    <a href="<%= imageInfo.next_page_num(page) %>">Next</a> &gt;
                 </nobr>
             <% end %>
 
             <% content_for(:surahs) do %>
-                <%= render :partial => "shared/select_surah" %>
+                <select class="surahs" onchange="document.location = this.options[this.selectedIndex].value">
+                    <option class="message">Please select a Surah</option>
+                    <% for surah in QuranHelper::SURAH_STRUCTS %>
+                    <option value="<%= surah.surah_num %>/1">
+                    <%= surah.name %><br>
+                    </option>
+                    <% end %>
+                </select>
             <% end %>
 
             <%= render :partial => "shared/panel", :object => Panel.new("Goto Page", :pages) %>

@@ -12,7 +12,14 @@
 
             <td>
                 <% content_for(:arabic) do %>
-                    Surah: <%= render :partial => "shared/select_surah" %>
+                <select class="surahs" onchange="document.location = this.options[this.selectedIndex].value">
+                    <option class="message">Please select a Surah</option>
+                    <% for surah in QuranHelper::SURAH_STRUCTS %>
+                    <option value="<%= url_for :action => 'arabic', :surah_num => surah.surah_num, :ayah_num => 1 %>">
+                    <%= surah.name %><br>
+                    </option>
+                    <% end %>
+                </select>
                 <% end %>
                 <%= render :partial => "shared/panel", :object => Panel.new("Read the Arabic", :arabic) %>
             </td>
@@ -27,12 +34,17 @@
         </tr>
         <tr valign="top">
             <td>
-                <%= render :partial => "shared/panel", :object => Panel.new("Browse by Subject", "Body") %>
-            </td>
-
-            <td>
                 <% content_for(:surahs) do %>
-                    Surah: <%= render :partial => "shared/select_surah" %>
+                <select class="surahs" onchange="document.location = this.options[this.selectedIndex].value">
+                    <option class="message">Please select a Surah</option>
+                    <% for surah in QuranHelper::SURAH_STRUCTS %>
+                    <option value="<%= url_for :action => 'surahs', :surah_num => surah.surah_num %>">
+                    <%= surah.name %><br>
+                    </option>
+                    <% end %>
+                </select>
+                <br/><br/>
+                <a href="<%= url_for :action => 'structure' %>">How is the Quran Structured?</a>
                 <% end %>
                 <%= render :partial => "shared/panel", :object => Panel.new("Learn about the Surahs", :surahs) %>
             </td>
@@ -42,6 +54,13 @@
                     User comments...
                 <% end %>
                 <%= render :partial => "shared/panel", :object => Panel.new("Recent Comments", :comments) %>
+            </td>
+
+            <td>
+                <% content_for(:questions) do %>
+                    User questions...
+                <% end %>
+                <%= render :partial => "shared/panel", :object => Panel.new("Recent Questions", :questions) %>
             </td>
         </tr>
     </table>

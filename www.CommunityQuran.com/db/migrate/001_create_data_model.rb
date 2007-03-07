@@ -17,14 +17,14 @@ class CreateDataModel < ActiveRecord::Migration
         create_table :quran_struct_surah, :primary_key => :surah_num do |t|
             t.column :name, :string, :null => false
             t.column :ayah_count, :integer, :null => false
-            t.column :ruku_count, :integer, :null => false
+            t.column :rukuh_count, :integer, :null => false
             t.column :revealed_num, :integer, :null => false
             t.column :revealed_city, :string, :null => false
         end
 
-        create_table :quran_struct_surah_ruku do |t|
+        create_table :quran_struct_surah_rukuh do |t|
             t.column :surah_num, :integer, :null => false
-            t.column :ruku_num, :integer, :null => false
+            t.column :rukuh_num, :integer, :null => false
             t.column :start_ayah_num, :integer, :null => false
             t.column :end_ayah_num, :integer, :null => false
 
@@ -64,15 +64,26 @@ class CreateDataModel < ActiveRecord::Migration
 
         create_table :quran_page_images_info do |t|
             t.column :quran_id, :integer, :null => false, :on_delete => :cascade
+            t.column :page_count, :integer
             t.column :page_image_name_format, :string
             t.column :image_width, :integer
             t.column :line_height, :integer
             t.column :min_line_height, :integer
         end
 
-        create_table :quran_page_image do |t|
+        create_table :quran_page do |t|
             t.column :quran_id, :integer, :null => false, :on_delete => :cascade
             t.column :page_num, :integer, :null => false
+            t.column :start_surah_num, :integer, :null => false
+            t.column :start_ayah_num, :integer, :null => false
+            t.column :end_surah_num, :integer, :null => false
+            t.column :end_ayah_num, :integer, :null => false
+        end
+
+        create_table :quran_page_ayah do |t|
+            t.column :quran_page_id, :integer, :null => false, :on_delete => :cascade
+            t.column :quran_id, :integer, :null => false, :on_delete => :cascade # denormalized on purpose
+            t.column :page_num, :integer, :null => false   # denormalized on purpose
             t.column :surah_num, :integer, :null => false
             t.column :ayah_num, :integer, :null => false
             t.column :x_start, :integer, :null => false
@@ -92,7 +103,9 @@ class CreateDataModel < ActiveRecord::Migration
         end
 
         create_table :quran_ayah do |t|
+            t.column :quran_id, :integer, :null => false, :on_delete => :cascade # denormalized on purpose
             t.column :quran_surah_id, :integer, :null => false, :on_delete => :cascade
+            t.column :surah_num, :integer, :null => false # denormalized on purpose
             t.column :ayah_num, :integer, :null => false
             t.column :text, :text, :null => false
         end
@@ -132,7 +145,7 @@ class CreateDataModel < ActiveRecord::Migration
     def self.down
         drop_table :system_setting
         drop_table :quran_struct_surah
-        drop_table :quran_struct_surah_ruku
+        drop_table :quran_struct_surah_rukuh
         drop_table :quran_struct_juz
         drop_table :quran_struct_sajda_tilawa
         drop_table :quran_page_image
@@ -150,18 +163,18 @@ class CreateDataModel < ActiveRecord::Migration
         quranStruct = REXML::Document.new(File.new('data/Quran/Quran Structure.xml'))
         quranStruct.elements.each('aml/quran/suras/sura') do |surahElem|
             surahNum = surahElem.attributes['num']
-            surah = QuranStructSurah.create(
+            surah = QuranStructSurah.create!(
             :surah_num => surahNum,
             :name => surahElem.elements['name'].text,
             :ayah_count => surahElem.attributes['ayahcount'],
-            :ruku_count => surahElem.get_elements('rukus/ruku').size,
+            :rukuh_count => surahElem.get_elements('rukus/ruku').size,
             :revealed_num => surahElem.elements['revealed'].attributes['num'],
             :revealed_city => surahElem.elements['revealed'].attributes['city']);
 
             surahElem.elements.each('rukus/ruku') do |rukuElem|
-                ruku = surah.rukus.create(
+                surah.rukuhs.create!(
                 :surah_num => surahNum,
-                :ruku_num => rukuElem.attributes['num'],
+                :rukuh_num => rukuElem.attributes['num'],
                 :start_ayah_num => rukuElem.attributes['startayah'],
                 :end_ayah_num => rukuElem.attributes['endayah']);
             end
@@ -172,7 +185,7 @@ class CreateDataModel < ActiveRecord::Migration
 
         sajdaCount = 0
         quranStruct.elements.each('aml/quran/sajdatilawa/sajda') do |sajdaElem|
-            sajda = QuranStructSajdaTilawa.create(
+            sajda = QuranStructSajdaTilawa.create!(
             :surah_num => sajdaElem.attributes['sura'],
             :ayah_num => sajdaElem.attributes['ayah']);
 
@@ -182,7 +195,7 @@ class CreateDataModel < ActiveRecord::Migration
 
         juzCount = 0
         quranStruct.elements.each('aml/quran/ajza/juz') do |juzElem|
-            juz = QuranStructJuz.create(
+            juz = QuranStructJuz.create!(
             :surah_num => juzElem.attributes['sura'],
             :ayah_num => juzElem.attributes['ayah']);
 

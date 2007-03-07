@@ -13,24 +13,21 @@ ActionController::Routing::Routes.draw do |map|
   # -- just remember to delete public/index.html.
   map.connect '', :controller => "quran"
 
-  # Straight 'http://my.app/quran/' displays the index
   map.connect "quran/", :controller => "quran",  :action => "index"
 
+  map.connect "quran/arabic", :controller => "quran",  :action => "arabic", :page_num => 1
+  map.connect "quran/arabic/:page_num", :controller => "quran", :action => "arabic"
+  map.connect "quran/arabic/:surah_num.:ayah_num", :controller => "quran", :action => "arabic"
 
-  # Straight 'http://my.app/quran/arabic' displays the first surah
-  map.connect "quran/arabic", :controller => "quran",  :action => "arabic"
+  map.connect "quran/compare", :controller => "quran", :action => "compare", :surah_num => 1, :ayah_num => 1
+  map.connect "quran/compare/:surah_num.:ayah_num", :controller => "quran", :action => "compare"
 
-  # Return text for the arabic qur'an's specific page
-  map.connect "quran/arabic/:page_num", :controller => "quran", :action => "arabic" 
+  # send to quran comparison if no book code given
+  map.connect "quran/translate", :controller => "quran",  :action => "compare", :surah_num => 1, :ayah_num => 1
+  map.connect "quran/translate/:quran_code/:surah_num/:rukuh_num", :controller => "quran", :action => "translate"
+  map.connect "quran/translate/:quran_code/:surah_num.:ayah_num", :controller => "quran", :action => "translate"
 
-  # Return text for the arabic qur'an 'surah number and ayah number
-  map.connect "quran/arabic/:surah_num/:ayah_num", :controller => "quran", :action => "arabic"
-
-
-  # Straight 'http://my.app/quran/surahs' displays the first available sura introduction
   map.connect "quran/surahs", :controller => "quran",  :action => "surahs"
-
-  # Return surah introduction for a specific quran and surah number
   map.connect "quran/surahs/:quran_code/:surah_num", :controller => "quran", :action => "surahs"
 
 
