@@ -52,6 +52,23 @@ module QuranHelper
         url_for :action => action, :surah_num => surahNum, :ayah_num => ayahNum 
     end
 
+    def get_active_quran_ruku_ayahs
+        quran = Quran.find_by_code(params[:quran_code])
+        surahStruct = QuranHelper::QURAN_STRUCT.get_surah(get_active_surah_num)
+        startAyahNum = 1
+        endAyahNum = surahStruct.ayah_count
+        if surahStruct.rukuh_count > 0
+            rukuh = params[:rukuh_num] ? surahStruct.rukuhs.find_by_rukuh_num(params[:rukuh_num]) :
+                                         surahStruct.rukuhs.find(:first, :conditions => ["start_ayah_num >= ? and ? <= end_ayah_num", Integer(params[:ayah_num]), Integer(params[:ayah_num])])
+            if rukuh
+                startAyahNum = rukuh.start_ayah_num
+                endAyahNum = rukuh.end_ayah_num
+                params[:rukuh_num] = rukuh.rukuh_num
+            end
+        end
+        ayahs = quran.ayahs.find(:all, :conditions => ["surah_num = ? and ayah_num >= ? and ayah_num <= ?", surahStruct.surah_num, startAyahNum, endAyahNum])
+    end
+
     def get_active_quran_page
         return ARABIC_QURAN.pages.find_by_page_num(params[:page_num])
     end

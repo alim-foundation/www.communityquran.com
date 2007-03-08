@@ -328,6 +328,18 @@ table.panel table.content tr.bottom td.middle { background: url(../images/panel/
 table.panel table.content tr.bottom td.right { background: url(../images/panel/shadow-corner-bottom-right.png) no-repeat right top;}
 
 /*********************************************************************
+ ** Translations/Text                                               **
+ *********************************************************************/
+
+table.quran-comparison table.translations td.quran { font-family: Georgia, serif; font-size: 9pt; font-style: italic; text-align: right; line-height: 2.4em; padding-bottom: 10px; padding-right: 10px; }
+table.quran-comparison table.translations td.ayah-text { font-family: Georgia, serif; font-size: 14pt; line-height: 1.4em; padding-bottom: 10px; } 
+table.quran-comparison table.translations td.ayah-text span.fn { line-height: 1.0em; vertical-align: super; font-size: 9pt; }
+
+table.quran-translation table.translation td.ayah-num { padding-right: 10px; text-align: right; font-weight: lighter; font-family: Georgia, serif; font-size: 14pt; padding-bottom: 10px; }
+table.quran-translation table.translation td.ayah-text { font-family: Georgia, serif; font-size: 14pt; line-height: 1.4em; padding-bottom: 10px; }
+table.quran-translation table.translation td.ayah-text span.fn { line-height: 1.0em; vertical-align: super; font-size: 9pt; }
+
+/*********************************************************************
  ** ARTICLES                                                        **
  *********************************************************************/
 

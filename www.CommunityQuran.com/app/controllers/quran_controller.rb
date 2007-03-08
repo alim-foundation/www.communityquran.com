@@ -13,7 +13,13 @@ class QuranController < ApplicationController
         self.heading = QuranHelper::ARABIC_QURAN.pages.find_by_page_num(params[:page_num]).ayah_coverage_text
     end
 
+    def compare
+        self.heading = "Translations of Surah #{params[:surah_num]}, #{QuranHelper::QURAN_STRUCT.get_surah(Integer(params[:surah_num])).name} Ayah #{params[:ayah_num]}"        
+    end
+
     def translate
+        quran = Quran.find_by_code(params[:quran_code])
+        self.heading = "#{quran.short_name} translation of Surah #{QuranHelper::QURAN_STRUCT.get_surah(Integer(params[:surah_num])).name} Rukuh #{params[:rukuh_num]}"        
     end
 
     def surahs
@@ -22,7 +28,7 @@ class QuranController < ApplicationController
                         :quran_code => QuranHelper::QURANS_WITH_SURAH_ELABORATIONS[0].code,
                         :surah_num => 1
         else
-            self.heading = "Introductory Overview of Surah #{params[:surah_num]}, #{QuranHelper::QURAN_STRUCT.get_surah(params[:surah_num]).name}"
+            self.heading = "Introductory Overview of Surah #{params[:surah_num]}, #{QuranHelper::QURAN_STRUCT.get_surah(Integer(params[:surah_num])).name}"
         end
     end
 

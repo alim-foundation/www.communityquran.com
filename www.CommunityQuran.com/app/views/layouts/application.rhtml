@@ -33,9 +33,9 @@
                                         <div class="main-menu">
                                             <a href="<%= url_for :controller => 'quran', :action => 'index' %>">Home</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'search' %>">Search</a>
-                                            <a href="<%= url_for :controller => 'quran', :action => 'arabic' %>">Arabic</a>
-                                            <a href="<%= url_for :controller => 'quran', :action => 'compare' %>">Translations</a>
-                                            <a href="<%= url_for :controller => 'quran', :action => 'surahs' %>">Surahs</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'arabic', :surah_num => params[:surah_num], :ayah_num => params[:ayah_num] || 1 %>">Arabic</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'compare', :surah_num => params[:surah_num], :ayah_num => params[:ayah_num] || 1 %>">Translations</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'surahs', :surah_num => params[:surah_num] %>">Surahs</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'subjects' %>">Subjects</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'comments' %>">Comments</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'structure' %>">Structure</a>
