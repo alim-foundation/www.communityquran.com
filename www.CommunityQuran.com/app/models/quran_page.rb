@@ -21,9 +21,9 @@ class QuranPage < ActiveRecord::Base
 
     def ayah_coverage_text
         if start_surah_num == end_surah_num
-            "Surah #{QuranHelper::SURAH_STRUCTS[start_surah_num-1].name} Ayahs #{start_ayah_num} to #{end_ayah_num}"
+            "Surah #{QuranHelper::QURAN_STRUCT.get_surah(start_surah_num).name} Ayahs #{start_ayah_num} to #{end_ayah_num}"
         else
-            "Surah #{QuranHelper::SURAH_STRUCTS[start_surah_num-1].name} Ayah #{start_ayah_num} to #{QuranHelper::SURAH_STRUCTS[end_surah_num-1].name} Ayah #{end_ayah_num}"
+            "Surah #{QuranHelper::QURAN_STRUCT.get_surah(start_surah_num).name} Ayah #{start_ayah_num} to #{QuranHelper::QURAN_STRUCT.get_surah(end_surah_num).name} Ayah #{end_ayah_num}"
         end
     end
 end

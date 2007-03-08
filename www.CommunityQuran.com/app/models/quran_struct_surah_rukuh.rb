@@ -17,6 +17,6 @@ class QuranStructSurahRukuh < ActiveRecord::Base
     belongs_to :surah, :class_name => "QuranStructSurah", :foreign_key => :surah_num
 
     def ayah_coverage_text
-        "Surah #{QuranHelper::SURAH_STRUCTS[start_surah_num-1].name} Ayahs #{start_ayah_num} to #{end_ayah_num}"
+        "Surah #{QuranHelper::QURAN_STRUCT.get_surah(start_surah_num).name} Ayahs #{start_ayah_num} to #{end_ayah_num}"
     end
 end

@@ -1,6 +1,6 @@
 <%
 quran = Quran.find_by_code(params[:quran_code])
-surahStruct = QuranHelper::SURAH_STRUCTS[Integer(params[:surah_num])-1]
+surahStruct = QuranHelper::QURAN_STRUCT.get_surah(params[:surah_num])
 startAyahNum = 1
 endAyahNum = surahStruct.ayah_count
 if surahStruct.rukuh_count > 0

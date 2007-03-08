@@ -14,7 +14,14 @@ class CreateDataModel < ActiveRecord::Migration
         # see the basic environment data we need to run in development mode (needed by environment_check plugin)
         SystemSetting.create(:name => 'environment', :value => 'development')
 
+        create_table :quran_struct do |t|
+            t.column :surah_count, :integer, :null => false
+            t.column :juz_count, :integer, :null => false
+            t.column :sajda_count, :integer, :null => false
+        end
+
         create_table :quran_struct_surah, :primary_key => :surah_num do |t|
+            t.column :quran_struct_id, :integer, :null => false
             t.column :name, :string, :null => false
             t.column :ayah_count, :integer, :null => false
             t.column :rukuh_count, :integer, :null => false
@@ -32,6 +39,7 @@ class CreateDataModel < ActiveRecord::Migration
         end
 
         create_table :quran_struct_juz, :primary_key => :juz_num do |t|
+            t.column :quran_struct_id, :integer, :null => false
             t.column :surah_num, :integer, :null => false
             t.column :ayah_num, :integer, :null => false
 
@@ -39,6 +47,7 @@ class CreateDataModel < ActiveRecord::Migration
         end
 
         create_table :quran_struct_sajda_tilawa, :primary_key => :sajda_num do |t|
+            t.column :quran_struct_id, :integer, :null => false
             t.column :surah_num, :integer, :null => false
             t.column :ayah_num, :integer, :null => false
 
@@ -160,10 +169,12 @@ class CreateDataModel < ActiveRecord::Migration
 
     def self.import_quran_structure_data
         surahCount = 0;
+        qs = QuranStruct.create!(:surah_count => 0, :juz_count => 0, :sajda_count => 0)
+
         quranStruct = REXML::Document.new(File.new('data/Quran/Quran Structure.xml'))
         quranStruct.elements.each('aml/quran/suras/sura') do |surahElem|
             surahNum = surahElem.attributes['num']
-            surah = QuranStructSurah.create!(
+            surah = qs.surahs.create!(
             :surah_num => surahNum,
             :name => surahElem.elements['name'].text,
             :ayah_count => surahElem.attributes['ayahcount'],
@@ -186,6 +197,7 @@ class CreateDataModel < ActiveRecord::Migration
         sajdaCount = 0
         quranStruct.elements.each('aml/quran/sajdatilawa/sajda') do |sajdaElem|
             sajda = QuranStructSajdaTilawa.create!(
+            :quran_struct_id => qs.id,
             :surah_num => sajdaElem.attributes['sura'],
             :ayah_num => sajdaElem.attributes['ayah']);
 
@@ -196,11 +208,17 @@ class CreateDataModel < ActiveRecord::Migration
         juzCount = 0
         quranStruct.elements.each('aml/quran/ajza/juz') do |juzElem|
             juz = QuranStructJuz.create!(
+            :quran_struct_id => qs.id,
             :surah_num => juzElem.attributes['sura'],
             :ayah_num => juzElem.attributes['ayah']);
 
             juzCount += 1
         end
         puts "Imported #{juzCount} Juz definitions.\n"
+
+        qs.surah_count = surahCount;
+        qs.sajda_count = sajdaCount;
+        qs.juz_count = juzCount;
+        qs.save!
     end
 end

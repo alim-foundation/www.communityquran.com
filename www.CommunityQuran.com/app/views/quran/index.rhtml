@@ -11,42 +11,22 @@
             </td>
 
             <td>
-                <% content_for(:arabic) do %>
-                <select class="surahs" onchange="document.location = this.options[this.selectedIndex].value">
-                    <option class="message">Please select a Surah</option>
-                    <% for surah in QuranHelper::SURAH_STRUCTS %>
-                    <option value="<%= url_for :action => 'arabic', :surah_num => surah.surah_num, :ayah_num => 1 %>">
-                    <%= surah.name %><br>
-                    </option>
-                    <% end %>
-                </select>
-                <% end %>
-                <%= render :partial => "shared/panel", :object => Panel.new("Read the Arabic", :arabic) %>
+                <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:action => 'arabic', :panel_heading => 'View Arabic') %>
             </td>
 
             <td>
-                <% content_for(:translations) do %>
-                    Surah: <%= render :partial => "shared/select_surah" %>
-                <% end %>
-                <%= render :partial => "shared/panel", :object => Panel.new("Compare Translations", :translations) %>
+                <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:action => 'translate', :panel_heading => 'View Translation') %>
             </td>
 
         </tr>
         <tr valign="top">
             <td>
                 <% content_for(:surahs) do %>
-                <select class="surahs" onchange="document.location = this.options[this.selectedIndex].value">
-                    <option class="message">Please select a Surah</option>
-                    <% for surah in QuranHelper::SURAH_STRUCTS %>
-                    <option value="<%= url_for :action => 'surahs', :surah_num => surah.surah_num %>">
-                    <%= surah.name %><br>
-                    </option>
-                    <% end %>
-                </select>
+                <%= render :partial => "shared/surah_navigator", :object => SurahNavigator.new(:action => 'surahs') %>
                 <br/><br/>
                 <a href="<%= url_for :action => 'structure' %>">How is the Quran Structured?</a>
                 <% end %>
-                <%= render :partial => "shared/panel", :object => Panel.new("Learn about the Surahs", :surahs) %>
+                <%= render :partial => "shared/panel", :object => Panel.new("Learn about Surahs", :surahs) %>
             </td>
 
             <td>

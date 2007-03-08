@@ -4,7 +4,7 @@
         <th>Num</th>
         <th>Surah</th>
     </tr>
-    <% for surah_struct in QuranHelper::SURAH_STRUCTS %>
+    <% for surah_struct in QuranHelper::QURAN_STRUCT.surahs %>
     <%if surah_struct.surah_num == Integer(params[:surah_num]) %>
     <tr class="active">
     <% else %>

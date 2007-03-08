@@ -13,23 +13,14 @@
                     &lt; <a href="<%= imageInfo.previous_page_num(page) %>">Previous</a>
                     &nbsp; <input name="goto_page_num" size="3" value="<%= params[:page_num] %>" title="Type in a page number and press enter"></input> &nbsp;
                     <a href="<%= imageInfo.next_page_num(page) %>">Next</a> &gt;
-                </nobr>
-            <% end %>
-
-            <% content_for(:surahs) do %>
-                <select class="surahs" onchange="document.location = this.options[this.selectedIndex].value">
-                    <option class="message">Please select a Surah</option>
-                    <% for surah in QuranHelper::SURAH_STRUCTS %>
-                    <option value="<%= surah.surah_num %>/1">
-                    <%= surah.name %><br>
-                    </option>
-                    <% end %>
-                </select>
+                </nobr><br/>
+                <br/>Type in a page number<br/> (1 to <%= imageInfo.page_count %>) or a Surah.Ayah<br/> number combination like
+                2.1 <br/>to go to Surah 2, Ayah 1. 
             <% end %>
 
             <%= render :partial => "shared/panel", :object => Panel.new("Goto Page", :pages) %>
             <p/>
-            <%= render :partial => "shared/panel", :object => Panel.new("Goto Surah", :surahs) %>
+            <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:action => 'arabic') %>
         </td>
     </tr>
 </table>

@@ -7,7 +7,7 @@
         <th>Ayahs</th>
         <th>Rukuhs</th>
     </tr>
-    <% for surah_struct in QuranHelper::SURAH_STRUCTS %>
+    <% for surah_struct in QuranHelper::QURAN_STRUCT.surahs %>
     <tr>
         <td class="sequence"><%= surah_struct.surah_num %></td>
         <td class="text"><a href="surahs/QSI/<%= surah_struct.surah_num %>"><%= surah_struct.name %></a></td>
@@ -27,8 +27,8 @@
         <th>Starting Surah</th>
         <th>Ayah</th>
     </tr>
-    <% for juz in QuranHelper::AJZA %>
-    <% surah_struct = QuranHelper::SURAH_STRUCTS[juz.surah_num-1] %>
+    <% for juz in QuranHelper::QURAN_STRUCT.ajza %>
+    <% surah_struct = QuranHelper::QURAN_STRUCT.get_surah(juz.surah_num) %>
     <tr>
         <td class="sequence"><%= juz.juz_num %></td>
         <td class="text"><a href="surahs/QSI/<%= juz.surah_num %>"><%= surah_struct.name %></a></td>
@@ -45,8 +45,8 @@
         <th>Starting Surah</th>
         <th>Ayah</th>
     </tr>
-    <% for sajda in QuranHelper::SAJDA_TILAWA %>
-    <% surah_struct = QuranHelper::SURAH_STRUCTS[sajda.surah_num-1] %>
+    <% for sajda in QuranHelper::QURAN_STRUCT.sajdas %>
+    <% surah_struct = QuranHelper::QURAN_STRUCT.get_surah(sajda.surah_num) %>
     <tr>
         <td class="sequence"><%= sajda.sajda_num %></td>
         <td class="text"><a href="surahs/QSI/<%= sajda.surah_num %>"><%= surah_struct.name %></a></td>

@@ -1,0 +1,19 @@
+<select class="surah-navigator" onchange="document.location = this.options[this.selectedIndex].value">
+    <option class="message"><%= surah_navigator.label || "Please select a Surah" %></option>
+    <% for surah in QuranHelper::QURAN_STRUCT.surahs
+       surahNum = get_active_surah_num %>
+    <option value="<%= url_for :action => surah_navigator.action, :surah_num => surah.surah_num, :ayah_num => surah_navigator.ayah_num || 1 %>"
+            <%= surah.surah_num == surahNum ? 'selected' : '' %>>
+    <%= surah.surah_num %>. <%= surah.name %>
+    </option>
+    <% end %>
+</select>
+
+<% if surah_navigator.ayahs_navigator %>
+    <%= surah_navigator.ayahs_navigator_separator %>
+    <nobr>
+        &lt; <a href="<%= get_previous_ayah_url(surah_navigator.action) %>">Previous</a>
+        &nbsp; <input name="goto_page_num" size="6" value='<%= "#{params[:surah_num]}.#{params[:ayah_num]}" %>' title="Type in an Surah.Ayah number and press enter"></input> &nbsp;
+        <a href="<%= get_next_ayah_url(surah_navigator.action) %>">Next</a> &gt;
+    </nobr>
+<% end %>

@@ -10,4 +10,5 @@ class QuranAyahsComparison
         @ayah_num = ayahNum
         @ayahs = qurans.collect { |quran| quran.ayahs.find_by_surah_num_and_ayah_num(surahNum, ayahNum) }
     end
+
 end

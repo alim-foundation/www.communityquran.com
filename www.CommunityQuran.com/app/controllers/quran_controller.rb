@@ -22,7 +22,7 @@ class QuranController < ApplicationController
                         :quran_code => QuranHelper::QURANS_WITH_SURAH_ELABORATIONS[0].code,
                         :surah_num => 1
         else
-            self.heading = "Introductory Overview of Surah #{params[:surah_num]}, #{QuranHelper::SURAH_STRUCTS[Integer(params[:surah_num])-1].name}"
+            self.heading = "Introductory Overview of Surah #{params[:surah_num]}, #{QuranHelper::QURAN_STRUCT.get_surah(params[:surah_num]).name}"
         end
     end
 

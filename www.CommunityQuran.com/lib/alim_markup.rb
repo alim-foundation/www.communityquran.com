@@ -156,14 +156,14 @@ module AlimMarkup
                 ayahElem.elements.each('note') do |noteElem|
                     elaborationElems[noteElem.attributes['id']] = noteElem.children.to_s
                 end
-                ayahElem.elements.delete('note')
+                ayahElem.elements.delete_all('note')
 
                 ayahElem.elements.each('index') do |indexElem|
                     quran.add_subject_location(indexElem.attributes['topic'], indexElem.attributes['subtopic'],
                                                surah_num, ayah_num)
                     quran.contains_subjects = true
                 end
-                ayahElem.elements.delete('index')
+                ayahElem.elements.delete_all('index')
 
                 # switch <fn> tags to be <span class='fn'>
                 ayahElem.elements.each('fn') do |e|

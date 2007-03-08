@@ -1,16 +1,25 @@
 <% qac = get_active_quran_ayahs_comparison %>
-<%= debug params %>
 <table>
-<% for ayah in qac.ayahs %>
-    <%if ayah == nil %>
     <tr valign="top">
-        <td><%= debug ayah %></td>
-    </tr>
-    <% else %>
-    <tr valign="top">
-        <td><%= ayah.surah.quran.short_name %></td>
-        <td><%= ayah.text %></td>
-    </tr>
-    <% end %>
-<% end %>
+        <td>
+            <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:action => 'compare', :ayahs_navigator => true, :ayahs_navigator_separator => "<br/><br/>") %>
+        </td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>
+            <table>
+            <% for ayah in qac.ayahs %>
+                <%if ayah == nil %>
+                <tr valign="top">
+                    <td><%= debug ayah %></td>
+                </tr>
+                <% else %>
+                <tr valign="top">
+                    <td><%= ayah.surah.quran.short_name %></td>
+                    <td><%= ayah.text %></td>
+                </tr>
+                <% end %>
+            <% end %>
+            </table>
+        </td>
+    <tr
 </table>
