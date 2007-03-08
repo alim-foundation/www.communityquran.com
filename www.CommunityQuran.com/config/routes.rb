@@ -20,14 +20,18 @@ ActionController::Routing::Routes.draw do |map|
   map.connect "quran/arabic/:surah_num.:ayah_num", :controller => "quran", :action => "arabic"
 
   map.connect "quran/compare", :controller => "quran", :action => "compare", :surah_num => 1, :ayah_num => 1
+  map.connect "quran/compare/:surah_num", :controller => "quran", :action => "compare", :ayah_num => 1
   map.connect "quran/compare/:surah_num.:ayah_num", :controller => "quran", :action => "compare"
 
   # send to quran comparison if no book code given
   map.connect "quran/translate", :controller => "quran",  :action => "compare", :surah_num => 1, :ayah_num => 1
+  map.connect "quran/translate/:surah_num", :controller => "quran", :action => "translate", :quran_code => "MAL", :ayah_num => 1
+  map.connect "quran/translate/:surah_num.:ayah_num", :controller => "quran", :action => "translate", :quran_code => "MAL"
   map.connect "quran/translate/:quran_code/:surah_num/:rukuh_num", :controller => "quran", :action => "translate"
   map.connect "quran/translate/:quran_code/:surah_num.:ayah_num", :controller => "quran", :action => "translate"
 
   map.connect "quran/surahs", :controller => "quran",  :action => "surahs"
+  map.connect "quran/surahs/:surah_num", :controller => "quran",  :action => "surahs", :quran_code => "MAL"
   map.connect "quran/surahs/:quran_code/:surah_num", :controller => "quran", :action => "surahs"
 
 

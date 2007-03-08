@@ -70,7 +70,10 @@ module QuranHelper
     end
 
     def get_active_quran_page
-        return ARABIC_QURAN.pages.find_by_page_num(params[:page_num])
+        page = ARABIC_QURAN.pages.find_by_page_num(params[:page_num])
+        params[:surah_num] = page.start_surah_num
+        params[:ayah_num] = page.start_ayah_num
+        return page
     end
 
     def get_active_quran_ayahs_comparison
