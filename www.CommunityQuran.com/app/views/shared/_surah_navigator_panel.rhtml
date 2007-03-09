@@ -1,5 +1,6 @@
-<% content_for(:navigator) do %>
+<% saveIntoVarName = "V#{rand 9999}"
+   content_for(saveIntoVarName) do %>
     <%= render :partial => "shared/surah_navigator", :object => surah_navigator_panel %>
 <% end %>
 
-<%= render :partial => "shared/panel", :object => Panel.new(surah_navigator_panel.panel_heading || "Goto Surah", :navigator) %>
+<%= render :partial => "shared/panel", :object => Panel.new(surah_navigator_panel.panel_heading || "Goto Surah", saveIntoVarName) %>

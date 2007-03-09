@@ -26,4 +26,74 @@ class QuranPage < ActiveRecord::Base
             "Surah #{QuranHelper::QURAN_STRUCT.get_surah(start_surah_num).name} Ayah #{start_ayah_num} to #{QuranHelper::QURAN_STRUCT.get_surah(end_surah_num).name} Ayah #{end_ayah_num}"
         end
     end
+
+    PAGE_IMAGE_WIDTH = 456;
+    SURA_NAME_BOX_HEIGHT = 115;
+    ONE_LINE_HEIGHT = 45;
+    MINIMUM_LINE_HEIGHT = 25;
+
+    class AyahBoundingBox
+        attr_accessor :left;
+        attr_accessor :right;
+        attr_accessor :top;
+        attr_accessor :bottom;
+
+        def initialize(x, y)
+            if x < PAGE_IMAGE_WIDTH
+              @left = x - 17
+              @right = x + 17
+            else
+              @left = PAGE_IMAGE_WIDTH
+              @right = PAGE_IMAGE_WIDTH
+            end
+            if y > 0
+              @top = y - 7
+              @bottom = y + 37
+            else
+              @top = 0
+              @bottom = 0
+            end
+        end
+    end
+
+    class AyahsImageMapData
+        attr_reader :surah_num
+        attr_reader :ayah_num
+        attr_reader :box
+
+        def initialize(ayah, box)
+            puts "#{ayah.surah_num}, #{ayah.ayah_num}, #{ayah.x_start}"
+            @surah_num = ayah.surah_num
+            @ayah_num = ayah.ayah_num
+            @box = box
+        end
+    end
+
+    def create_image_map_data
+        mapData = []
+
+        self.ayahs.each do |ayah|
+          # starting ayahs have the sura name block above them
+          if ayah.ayah_num == 1
+            startRect = AyahBoundingBox.new(PAGE_IMAGE_WIDTH, ayah.y_start + SURA_NAME_BOX_HEIGHT)
+          else
+            startRect = AyahBoundingBox.new(ayah.x_start, ayah.y_start)
+          end
+          endRect = AyahBoundingBox.new(ayah.x_end, ayah.y_end)
+
+          # if the ayah doesn't start on the same line as it "number block", go to the next line
+          if (startRect.left < 50) and (startRect.left > 0)
+            startRect.left = PAGE_IMAGE_WIDTH
+            startRect.right = PAGE_IMAGE_WIDTH
+            startRect.top = startRect.top + ONE_LINE_HEIGHT
+          end
+
+          #ayahImgHeight = endRect.bottom - startRect.top;
+          #if(ayahImgHeight >= MINIMUM_LINE_HEIGHT)
+              mapData << AyahsImageMapData.new(ayah, endRect);
+          #end
+        end
+
+        return mapData
+    end
 end

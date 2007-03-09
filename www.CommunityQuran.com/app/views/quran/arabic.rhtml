@@ -4,7 +4,16 @@
 <table class="arabic_quran">
     <tr valign="top">
         <td class="image">
-            <img src="/arabic_quran_pages/<%= imageInfo.image_name(page) %>">
+            <MAP NAME="ayahs">
+                <% page.create_image_map_data.each do |data| %>
+                <AREA NAME="surah_<%= data.surah_num %>_ayah_<%= data.ayah_num %>"
+                      COORDS="<%= sprintf '%d,%d,%d,%d', data.box.left, data.box.top, data.box.right, data.box.bottom %>"
+                      TITLE="Surah <%= data.surah_num %> Ayah <%= data.ayah_num %>"
+                      HREF="<%= url_for :action => 'compare', :surah_num => data.surah_num, :ayah_num => data.ayah_num %>">
+                <% end %>
+            </MAP>
+
+            <img src="/arabic_quran_pages/<%= imageInfo.image_name(page) %>" usemap="ayahs" border="0">
         </td>
         <td>&nbsp;&nbsp;&nbsp;</td>
         <td class="navigation">

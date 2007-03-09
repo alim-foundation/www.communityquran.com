@@ -23,6 +23,12 @@ class QuranController < ApplicationController
     end
 
     def surahs
+        if ! QuranHelper::QURANS_WITH_SURAH_ELABORATIONS_CODES.include?(params[:quran_code])
+            redirect_to :action => "surahs",
+                        :quran_code => QuranHelper::QURANS_WITH_SURAH_ELABORATIONS[0].code,
+                        :surah_num => params[:surah_num]
+            return
+        end
         if ! (params[:quran_code] && params[:surah_num])
             redirect_to :action => "surahs",
                         :quran_code => QuranHelper::QURANS_WITH_SURAH_ELABORATIONS[0].code,

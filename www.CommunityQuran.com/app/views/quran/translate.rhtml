@@ -6,11 +6,25 @@
         <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td class="text">
             <table class="translation">
-            <% get_active_quran_ruku_ayahs.each do |ayah| %>
+            <% rukuAyahs = get_active_quran_ruku_ayahs %>
+            <% rukuAyahs.each do |ayah| %>
                 <tr valign="top">
                     <td class="ayah-num"><a href="<%= url_for :action => 'compare', :surah_num => params[:surah_num], :ayah_num => ayah.ayah_num %>"><%= ayah.ayah_num %></a></td>
                     <td class="ayah-text"><%= ayah.text %></td>
                 </tr>
+            <% end %>
+            </table>
+            <table class="elaborations">
+            <% first = true %>
+            <% for ayah in rukuAyahs %>
+                <% for note in ayah.elaborations %>
+                <tr class="<%= first ? 'first' : 'subsequent' %>" valign="top">
+                    <% nodeId = note.num || note.code %>
+                    <td class="note-id"><a target="N<%= nodeId %>"><%= nodeId %></a></td>
+                    <td class="note-text"><%= note.text %></td>
+                </tr>
+                <% first = false %>
+                <% end %>
             <% end %>
             </table>
         </td>

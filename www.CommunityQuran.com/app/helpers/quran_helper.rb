@@ -2,7 +2,9 @@ module QuranHelper
     QURAN_STRUCT = QuranStruct.find(:first)
     ARABIC_QURAN = Quran.find_by_contains_page_images(true)
     QURANS_WITH_AYAH_TEXT = Quran.find_all_by_contains_ayahs(true)
+
     QURANS_WITH_SURAH_ELABORATIONS = Quran.find_all_by_contains_surah_elaborations(true)
+    QURANS_WITH_SURAH_ELABORATIONS_CODES = QURANS_WITH_SURAH_ELABORATIONS.collect { |quran| quran.code } 
 
     def get_active_surah_num
         return Integer(params[:surah_num])
