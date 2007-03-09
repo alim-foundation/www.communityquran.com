@@ -12,10 +12,10 @@
                 %>
                 <AREA NAME="surah_<%= data.surah_num %>_ayah_<%= data.ayah_num %>"
                       COORDS="<%= sprintf '%d,%d,%d,%d', data.box.left, data.box.top, data.box.right, data.box.bottom %>"
-                      TITLE="<%= data.surah_num %>.<%= data.ayah_num %>: <%= tltAyahs.last.text %>"
                       HREF="<%= url_for :action => 'compare', :surah_num => data.surah_num, :ayah_num => data.ayah_num %>"
                       onmouseover='document.getElementById("transliteration").innerHTML = document.getElementById("transliteration_<%= name %>").innerHTML; document.getElementById("transliteration").style.display = "block"'
                       onmouseout='document.getElementById("transliteration").style.display = "none"'
+                      TITLE="<%= data.surah_num %>.<%= data.ayah_num %>: <%= tltAyahs.last.text %>"
                         >
                 <% end %>
             </MAP>
