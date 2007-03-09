@@ -331,6 +331,8 @@ table.panel table.content tr.bottom td.right { background: url(../images/panel/s
  ** Translations/Text                                               **
  *********************************************************************/
 
+table.arabic-quran div.transliteration { font-family: Georgia, serif; font-size: 12pt; line-height: 1.4em; padding: 10px; border: #999999 1px dotted; display: none; background-color: bisque; }
+
 table.quran-comparison table.translations td.quran { font-family: Georgia, serif; font-size: 9pt; font-style: italic; text-align: right; line-height: 2.4em; padding-bottom: 10px; padding-right: 10px; }
 table.quran-comparison table.translations td.ayah-text { font-family: Georgia, serif; font-size: 14pt; line-height: 1.4em; padding-bottom: 10px; } 
 table.quran-comparison table.translations td.ayah-text span.fn { line-height: 1.0em; vertical-align: super; font-size: 9pt; }
