@@ -13,6 +13,13 @@ class QuranController < ApplicationController
         self.heading = QuranHelper::ARABIC_QURAN.pages.find_by_page_num(params[:page_num]).ayah_coverage_text
     end
 
+    def search
+    end
+
+    def subjects
+        
+    end
+
     def compare
         self.heading = "Translations of Surah #{params[:surah_num]}, #{QuranHelper::QURAN_STRUCT.get_surah(Integer(params[:surah_num])).name} Ayah #{params[:ayah_num]}"        
     end

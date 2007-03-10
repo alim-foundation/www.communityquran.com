@@ -32,12 +32,12 @@
                                         </div>
                                         <div class="main-menu">
                                             <a href="<%= url_for :controller => 'quran', :action => 'index' %>">Home</a>
-                                            <a href="<%= url_for :controller => 'quran', :action => 'search' %>">Search</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'arabic', :surah_num => params[:surah_num], :ayah_num => params[:ayah_num] %>">Arabic</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'compare', :surah_num => params[:surah_num], :ayah_num => params[:ayah_num] %>">Translations</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'surahs', :surah_num => params[:surah_num] %>">Surahs</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'subjects' %>">Subjects</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'comments' %>">Comments</a>
+                                            <a href="<%= url_for :controller => 'quran', :action => 'clippings' %>">Clippings</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'structure' %>">Structure</a>
                                         </div>
                                         <% havePagePath = defined? page_path == "method" && page_path %>
@@ -55,10 +55,12 @@
                                             <div class="content">
                                                 <div class="heading">Search for</div>
                                                 <div class="search">
+                                                    <form action="<%= url_for :controller => 'quran', :action => 'search' %>" method="get">
                                                     <input name="expression" size="17"/><br/>
                                                     In <select name="in">
                                                         <option value="ayahs">Qur'an Ayahs</option>
                                                     </select>
+                                                    </form>
                                                 </div>
                                                 <div class="heading">User</div>
                                                 <div class="user">Shahid N. Shah</div>

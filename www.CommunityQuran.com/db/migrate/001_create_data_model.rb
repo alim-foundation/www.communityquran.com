@@ -133,12 +133,20 @@ class CreateDataModel < ActiveRecord::Migration
             t.column :theme, :text, :null => false
         end
 
+        create_table :quran_subject_letter do |t|
+            t.column :quran_id, :integer, :null => false, :on_delete => :cascade
+            t.column :letter, :string, :limit => 3, :null => false
+        end
+        add_index :quran_subject_letter, :letter, :name => "quran_subject_letter"
+
         create_table :quran_subject do |t|
             t.column :quran_id, :integer, :null => false, :on_delete => :cascade
+            t.column :quran_subject_letter_id, :integer, :references => :quran_subject_letter, :on_delete => :cascade
             t.column :parent_id, :integer, :references => :quran_subject, :on_delete => :cascade
             t.column :topic, :string, :limit => 384, :null => false
             t.column :full_topic_path, :string, :limit => 1024, :null => false      # combination of topic::subtopic::subtopic, etc
         end
+        add_index :quran_subject, :topic, :name => "quran_subject_topic"
         #TODO: create a unique index -- mysql is erroring saying that the index size is being exceeded; see http://dev.mysql.com/doc/mysql/en/CREATE_INDEX.html
         #add_index :quran_subject, [:quran_id, :full_topic_path], :name => "unique_quran_subject", :unique => true
 

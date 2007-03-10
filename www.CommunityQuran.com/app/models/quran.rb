@@ -26,6 +26,7 @@ class Quran < ActiveRecord::Base
     has_many :surahs, :class_name => "QuranSurah"
     has_many :ayahs, :class_name => "QuranAyah"
     has_many :subjects, :class_name => "QuranSubject"
+    has_many :subject_letters, :class_name => "QuranSubjectLetter"
     has_one :page_images_info, :class_name => "QuranPageImagesInfo"
     has_many :pages, :class_name => "QuranPage"
     has_many :page_ayahs, :class_name => "QuranPageAyah"
@@ -35,19 +36,24 @@ class Quran < ActiveRecord::Base
             fullPath = "#{topic}::#{subtopic}"
             subject = subjects.find_by_full_topic_path(fullPath)
             if subject
-                subject.locations.create(:surah_num => surah_num, :ayah_num => ayah_num)
+                subject.locations.create!(:surah_num => surah_num, :ayah_num => ayah_num)
             else
                 subject = subjects.find_by_topic_and_parent_id(topic, nil) ||
-                          subjects.create(:topic => topic, :full_topic_path => topic)
-                subject.locations.create(:surah_num => surah_num, :ayah_num => ayah_num) unless subject.locations.find_by_surah_num_and_ayah_num(surah_num, ayah_num)
+                          add_subject(topic)
+                subject.locations.create!(:surah_num => surah_num, :ayah_num => ayah_num) unless subject.locations.find_by_surah_num_and_ayah_num(surah_num, ayah_num)
 
                 child = subject.children.create(:quran_id => subject.quran_id, :topic => subtopic, :full_topic_path => fullPath)
-                child.locations.create(:surah_num => surah_num, :ayah_num => ayah_num)
+                child.locations.create!(:surah_num => surah_num, :ayah_num => ayah_num)
             end
         else
             subject = subjects.find_by_topic_and_parent_id(topic, nil) ||
-                      subjects.create(:topic => topic, :full_topic_path => topic)
-            subject.locations.create(:surah_num => surah_num, :ayah_num => ayah_num) unless subject.locations.find_by_surah_num_and_ayah_num(surah_num, ayah_num)
+                      add_subject(topic)
+            subject.locations.create!(:surah_num => surah_num, :ayah_num => ayah_num) unless subject.locations.find_by_surah_num_and_ayah_num(surah_num, ayah_num)
         end
+    end
+
+    def add_subject(topic)
+        letter = subject_letters.find_or_create_by_letter(topic[0..0].upcase)
+        subject = subjects.create!(:topic => topic, :full_topic_path => topic, :quran_subject_letter_id => letter.id)
     end
 end

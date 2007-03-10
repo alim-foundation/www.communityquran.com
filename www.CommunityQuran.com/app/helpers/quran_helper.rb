@@ -6,6 +6,11 @@ module QuranHelper
     QURANS_WITH_SURAH_ELABORATIONS = Quran.find_all_by_contains_surah_elaborations(true)
     QURANS_WITH_SURAH_ELABORATIONS_CODES = QURANS_WITH_SURAH_ELABORATIONS.collect { |quran| quran.code } 
 
+    def search_for_expression
+        return QuranAyah.find_id_by_contents(params[:expression])
+
+    end
+
     def get_active_surah_num
         return Integer(params[:surah_num])
     end

@@ -15,6 +15,9 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect "quran/", :controller => "quran",  :action => "index"
 
+  map.connect "quran/search/:expression", :controller => "quran",  :action => "search"
+  map.connect "quran/subjects/:letter", :controller => "quran",  :action => "subjects"
+
   map.connect "quran/arabic", :controller => "quran",  :action => "arabic", :page_num => 1
   map.connect "quran/arabic/:page_num", :controller => "quran", :action => "arabic"
   map.connect "quran/arabic/:surah_num.:ayah_num", :controller => "quran", :action => "arabic"

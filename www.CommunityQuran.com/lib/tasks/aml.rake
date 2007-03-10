@@ -1,8 +1,8 @@
 namespace :aml do
     desc "Import Alim Markup Language (AML) data files"
     task :import => :environment do
-        AlimMarkup.import_quran_page_images_data_from_aml(File.new('data/Quran/Arabic Quran Pages.xml'))
         AlimMarkup.import_quran_text_from_aml(File.new('data/Quran/Yusuf Ali Translation.xml'))
+        AlimMarkup.import_quran_page_images_data_from_aml(File.new('data/Quran/Arabic Quran Pages.xml'))
         malik = AlimMarkup.import_quran_text_from_aml(File.new('data/Quran/Malik Translation.xml'))
         AlimMarkup.import_quran_text_from_aml(File.new('data/Quran/Malik Themes.xml'), malik)
         AlimMarkup.import_quran_sura_intros_from_aml(File.new('data/Quran/Malik Sura Introductions.xml'), malik)

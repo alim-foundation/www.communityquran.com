@@ -1,0 +1,9 @@
+
+Go to: <select class="index-navigator" onchange="document.location = this.options[this.selectedIndex].value">
+<% ['A'..'Z'].each do |letter| %>
+    <option value='<%= letter %>'><%= letter %></option>
+<% end %>
+</select>
+
+<% if params[:letter] %>
+<% end %>

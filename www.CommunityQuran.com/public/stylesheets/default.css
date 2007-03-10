@@ -351,6 +351,11 @@ table.quran-translation table.elaborations td.quran { font-family: Georgia, seri
 table.quran-translation table.elaborations td.note-id { font-family: Georgia, serif; font-size: 11pt; vertical-align: super; }
 table.quran-translation table.elaborations td.note-text { font-family: Georgia, serif; font-size: 11pt; line-height: 1.4em; padding-bottom: 10px; } 
 
+table.search-results tr.quran-translation td.quran { font-family: Georgia, serif; font-size: 9pt; font-style: italic; text-align: right; padding-bottom: 10px; padding-right: 10px; border-top: #666666 1px dotted; }
+table.search-results tr.quran-translation td.ayah-id { font-family: Georgia, serif; font-size: 11pt; vertical-align: super; border-top: #666666 1px dotted; }
+table.search-results tr.quran-translation td.ayah-text { font-family: Georgia, serif; font-size: 11pt; line-height: 1.4em; padding-bottom: 10px; } 
+table.search-results tr.quran-translation td.ayah-text span.fn { line-height: 1.0em; vertical-align: super; font-size: 9pt; }
+
 /*********************************************************************
  ** ARTICLES                                                        **
  *********************************************************************/

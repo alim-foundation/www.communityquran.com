@@ -30,7 +30,7 @@ test:
 
 production:
   adapter: mysql
-  database: cq_development
+  database: cq_production
   username: root
   password: 
   host: vm_mysql
