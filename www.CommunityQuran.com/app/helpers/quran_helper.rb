@@ -2,6 +2,7 @@ module QuranHelper
     QURAN_STRUCT = QuranStruct.find(:first)
     ARABIC_QURAN = Quran.find_by_contains_page_images(true)
     QURANS_WITH_AYAH_TEXT = Quran.find_all_by_contains_ayahs(true)
+    QURANS_WITH_SUBJECTS = Quran.find_all_by_contains_subjects(true)
     QURAN_TRANSLITERATION = Quran.find_by_code('TLT')
     QURANS_WITH_SURAH_ELABORATIONS = Quran.find_all_by_contains_surah_elaborations(true)
     QURANS_WITH_SURAH_ELABORATIONS_CODES = QURANS_WITH_SURAH_ELABORATIONS.collect { |quran| quran.code } 
@@ -57,6 +58,12 @@ module QuranHelper
             ayahNum = 1
         end
         url_for :action => action, :surah_num => surahNum, :ayah_num => ayahNum 
+    end
+
+    def get_active_quran_subjects
+        quran = Quran.find_by_code(params[:quran_code])
+        letter = params[:letter] || 'A'
+        return quran.subject_letters.find_by_letter(letter).subjects.find(:all, :order => 'topic', :conditions => 'parent_id is null')
     end
 
     def get_active_quran_ruku_ayahs
