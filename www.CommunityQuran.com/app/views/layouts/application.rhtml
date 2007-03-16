@@ -32,13 +32,13 @@
                                         </div>
                                         <div class="main-menu">
                                             <a href="<%= url_for :controller => 'quran', :action => 'index' %>">Home</a>
-                                            <a href="<%= url_for :controller => 'quran', :action => 'arabic', :surah_num => params[:surah_num], :ayah_num => params[:ayah_num] %>">Arabic</a>
-                                            <a href="<%= url_for :controller => 'quran', :action => 'compare', :surah_num => params[:surah_num], :ayah_num => params[:ayah_num] %>">Translations</a>
-                                            <a href="<%= url_for :controller => 'quran', :action => 'surahs', :surah_num => params[:surah_num] %>">Surahs</a>
-                                            <a href="<%= url_for :controller => 'quran', :action => 'subjects' %>">Subjects</a>
+                                            <a href="<%= url_for :controller => 'Quran::Arabic', :action => 'ayah', :surah_num => params[:surah_num] || 1, :ayah_num => params[:ayah_num] || 1 %>">Arabic</a>
+                                            <a href="<%= url_for :controller => 'Quran::Compare', :action => 'ayah', :surah_num => params[:surah_num] || 1, :ayah_num => params[:ayah_num] || 1 %>">Translations</a>
+                                            <a href="<%= url_for :controller => 'Quran::Surahs', :surah_num => params[:surah_num] || 1 %>">Surahs</a>
+                                            <a href="<%= url_for :controller => 'Quran::Subjects', :surah_num => params[:surah_num] || 1, :ayah_num => params[:ayah_num] || 1 %>">Subjects</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'comments' %>">Comments</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'clippings' %>">Clippings</a>
-                                            <a href="<%= url_for :controller => 'quran', :action => 'structure' %>">Structure</a>
+                                            <a href="<%= url_for :controller => 'Quran::Structure' %>">Structure</a>
                                         </div>
                                         <% havePagePath = defined? page_path == "method" && page_path %>
                                         <% if havePagePath %>
@@ -55,7 +55,7 @@
                                             <div class="content">
                                                 <div class="heading">Search for</div>
                                                 <div class="search">
-                                                    <form action="<%= url_for :controller => 'quran', :action => 'search' %>" method="get">
+                                                    <form action="<%= url_for :controller => 'Quran::Search', :action => 'search' %>" method="get">
                                                     <input name="expression" size="17"/><br/>
                                                     In <select name="in">
                                                         <option value="ayahs">Qur'an Ayahs</option>

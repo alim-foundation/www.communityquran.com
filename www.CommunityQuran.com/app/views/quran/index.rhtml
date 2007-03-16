@@ -6,27 +6,27 @@
             <td>
                 <% content_for(:search) do %>
                     <div class="search">
-                        <form method="get" action="<%= url_for :controller => 'quran', :action => 'search' %>">Search for: <input size="10" name="expression"/></form>                        
+                        <form method="get" action="<%= url_for :controller => 'Quran::Search', :action => 'search' %>">Search for: <input size="10" name="expression"/></form>
                     </div>
                 <% end %>
                 <%= render :partial => "shared/panel", :object => Panel.new("Search Translations", :search) %>
             </td>
 
             <td>
-                <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:action => 'arabic', :panel_heading => 'View Arabic') %>
+                <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:controller => 'Quran::Arabic', :action => 'ayah', :panel_heading => 'View Arabic') %>
             </td>
 
             <td>
-                <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:action => 'translate', :panel_heading => 'View Translation') %>
+                <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:controller => 'Quran::Arabic', :action => 'compare_surah_ayah', :panel_heading => 'View Translation') %>
             </td>
 
         </tr>
         <tr valign="top">
             <td>
                 <% content_for(:surahs) do %>
-                <%= render :partial => "shared/surah_navigator", :object => SurahNavigator.new(:action => 'surahs') %>
+                <%= render :partial => "shared/surah_navigator", :object => SurahNavigator.new(:controller => 'Quran::Surahs', :action => 'elaborate') %>
                 <br/><br/>
-                <a href="<%= url_for :action => 'structure' %>">How is the Quran Structured?</a>
+                <a href="<%= url_for :controller => 'Quran::Structure', :action => 'index' %>">How is the Quran Structured?</a>
                 <% end %>
                 <%= render :partial => "shared/panel", :object => Panel.new("Learn about Surahs", :surahs) %>
             </td>

@@ -356,6 +356,18 @@ table.search-results tr.quran-translation td.ayah-id { font-family: Georgia, ser
 table.search-results tr.quran-translation td.ayah-text { font-family: Georgia, serif; font-size: 11pt; line-height: 1.4em; padding-bottom: 10px; } 
 table.search-results tr.quran-translation td.ayah-text span.fn { line-height: 1.0em; vertical-align: super; font-size: 9pt; }
 
+table.subjects-of-letter td.topic { font-family: Georgia, serif; font-size: 11pt; font-weight: bold; padding-top: 10px;}
+table.subjects-of-letter td.topic span.ayah-count { color: #999999; }
+table.subjects-of-letter td.subtopic-indent { padding-right: 15px; }
+table.subjects-of-letter td.subtopic { font-family: Georgia, serif; font-size: 10pt; }
+table.subjects-of-letter td.subtopic span.ayah-count { color: #999999; }
+
+table.subjects-explorer td.topic { font-family: Georgia, serif; font-size: 11pt; font-weight: bold; padding-top: 10px;}
+table.subjects-explorer td.topic span.ayah-count { color: #999999; }
+table.subjects-explorer td.subtopic-indent { padding-right: 15px; }
+table.subjects-explorer td.subtopic { font-family: Georgia, serif; font-size: 10pt; }
+table.subjects-explorer td.subtopic span.ayah-count { color: #999999; }
+
 /*********************************************************************
  ** ARTICLES                                                        **
  *********************************************************************/

@@ -1,22 +1,21 @@
 <table class="quran-translation">
     <tr valign="top">
         <td class="navigation">
-            <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:action => 'translate', :ayahs_navigator => true, :ayahs_navigator_separator => "<br/><br/>") %>
+            <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:controller => 'Quran::Translate', :action => 'translate_surah_ayah', :ayahs_navigator => true, :ayahs_navigator_separator => "<br/><br/>") %>
         </td>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
         <td class="text">
             <table class="translation">
-            <% rukuAyahs = get_active_quran_ruku_ayahs %>
-            <% rukuAyahs.each do |ayah| %>
+            <% @ayahs.each do |ayah| %>
                 <tr valign="top">
-                    <td class="ayah-num"><a href="<%= url_for :action => 'compare', :surah_num => params[:surah_num], :ayah_num => ayah.ayah_num %>"><%= ayah.ayah_num %></a></td>
+                    <td class="ayah-num"><a href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => params[:surah_num], :ayah_num => ayah.ayah_num %>"><%= ayah.ayah_num %></a></td>
                     <td class="ayah-text"><%= ayah.text %></td>
                 </tr>
             <% end %>
             </table>
             <table class="elaborations">
             <% first = true %>
-            <% for ayah in rukuAyahs %>
+            <% @ayahs.each do |ayah| %>
                 <% for note in ayah.elaborations %>
                 <tr class="<%= first ? 'first' : 'subsequent' %>" valign="top">
                     <% nodeId = note.num || note.code %>

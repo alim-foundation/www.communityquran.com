@@ -1,9 +1,6 @@
 module QuranHelper
     QURAN_STRUCT = QuranStruct.find(:first)
-    ARABIC_QURAN = Quran.find_by_contains_page_images(true)
-    QURANS_WITH_AYAH_TEXT = Quran.find_all_by_contains_ayahs(true)
     QURANS_WITH_SUBJECTS = Quran.find_all_by_contains_subjects(true)
-    QURAN_TRANSLITERATION = Quran.find_by_code('TLT')
     QURANS_WITH_SURAH_ELABORATIONS = Quran.find_all_by_contains_surah_elaborations(true)
     QURANS_WITH_SURAH_ELABORATIONS_CODES = QURANS_WITH_SURAH_ELABORATIONS.collect { |quran| quran.code } 
 
@@ -81,13 +78,6 @@ module QuranHelper
             end
         end
         ayahs = quran.ayahs.find(:all, :conditions => ["surah_num = ? and ayah_num >= ? and ayah_num <= ?", surahStruct.surah_num, startAyahNum, endAyahNum])
-    end
-
-    def get_active_quran_page
-        page = ARABIC_QURAN.pages.find_by_page_num(params[:page_num])
-        params[:surah_num] = page.start_surah_num
-        params[:ayah_num] = page.start_ayah_num
-        return page
     end
 
     def get_active_quran_ayahs_comparison

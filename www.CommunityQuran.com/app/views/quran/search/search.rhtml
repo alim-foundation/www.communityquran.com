@@ -1,0 +1,58 @@
+<form method="get">
+Search for: <input size="35" value="<%= params[:expression] %>" name="expression"/>
+</form>
+
+<%if params[:expression] %>
+    <p/>
+    <p/>
+    <table class="search-results">
+        <tr valign="top">
+            <% ayahs = QuranAyah.find_by_contents(params[:expression]) %>
+            <td class="collection">
+                <%= ayahs.total_hits %> references in Quran translations.
+            </td>
+            <td class="results">
+                <table class="quran-translation">
+                    <% for ayah in ayahs %>
+                        <tr class="ayah" valign="top">
+                            <td class="quran">
+                                <%= ayah.quran.short_name %>
+                            </td>
+                            <td class="ayah-id">
+                                <a href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => ayah.surah_num, :ayah_num => ayah.ayah_num %>">
+                                    <%= ayah.surah_num %>.<%= ayah.ayah_num %>
+                                </a>
+                            </td>
+                            <td class="ayah-text"><%= ayah.text %></td>
+                        </tr>
+                    <% end %>
+                </table>
+            </td>
+        </tr>
+
+        <tr valign="top">
+            <% elaborations = QuranAyahElaboration.find_by_contents(params[:expression]) %>
+            <td class="collection">
+                <%= elaborations.total_hits %> references in Quran ayah elaborations.
+            </td>
+            <td class="results">
+                <table class="quran-translation">
+                    <% for elaboration in elaborations %>
+                        <tr class="elaboration" valign="top">
+                            <td class="quran">
+                                <%= elaboration.ayah.quran.short_name %>
+                            </td>
+                            <td class="note-id">
+                                <a href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => ayah.surah_num, :ayah_num => ayah.ayah_num %>">
+                                    <%= elaboration.ayah.surah_num %>.<%= elaboration.ayah.ayah_num %>
+                                </a>
+                                Note <%= elaboration.num || elaboration.code %>
+                            </td>
+                            <td class="note-text"><%= elaboration.text %></td>
+                        </tr>
+                    <% end %>
+                </table>
+            </td>
+        </tr>
+    </table>
+<% end %>

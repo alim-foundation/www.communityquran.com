@@ -1,6 +1,7 @@
 class SurahNavigator
     attr_accessor :panel_heading
     attr_accessor :label
+    attr_accessor :controller
     attr_accessor :action
     attr_accessor :ayah_num
     attr_accessor :ayahs_navigator

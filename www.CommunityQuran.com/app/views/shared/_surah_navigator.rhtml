@@ -2,7 +2,7 @@
     <option class="message"><%= surah_navigator.label || "Please select a Surah" %></option>
     <% for surah in QuranHelper::QURAN_STRUCT.surahs
        surahNum = get_active_surah_num %>
-    <option value="<%= url_for :action => surah_navigator.action, :surah_num => surah.surah_num, :ayah_num => surah_navigator.ayah_num || 1 %>"
+    <option value="<%= url_for :controller => surah_navigator.controller, :action => surah_navigator.action, :surah_num => surah.surah_num, :ayah_num => surah_navigator.ayah_num || 1 %>"
             <%= surah.surah_num == surahNum ? 'selected' : '' %>>
     <%= surah.surah_num %>. <%= surah.name %>
     </option>

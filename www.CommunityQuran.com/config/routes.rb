@@ -14,33 +14,36 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '', :controller => "quran"
 
   map.connect "quran/", :controller => "quran",  :action => "index"
+  map.connect "quran/structure", :controller => "Quran::Structure",  :action => "index"
 
-  map.connect "quran/search/:expression", :controller => "quran",  :action => "search"
+  map.connect "quran/arabic", :controller => "Quran::Arabic", :action => "index"
+  map.connect "quran/arabic/page/:page_num", :controller => "Quran::Arabic", :action => "page"
+  map.connect "quran/arabic/ayah/:surah_num.:ayah_num", :controller => "Quran::Arabic", :action => "ayah"
 
-  map.connect "quran/subjects", :controller => "quran",  :action => "subjects", :quran_code => 'QSB', :letter => 'A'
-  map.connect "quran/subjects/:letter", :controller => "quran",  :action => "subjects", :quran_code => 'QSB'
-  map.connect "quran/subjects/:quran_code/:letter", :controller => "quran",  :action => "subjects"
-  map.connect "quran/subjects/:quran_code/:letter/:subject_id", :controller => "quran",  :action => "subjects"
+  map.connect "quran/compare", :controller => "Quran::Translate", :action => "compare"
+  map.connect "quran/compare/:surah_num", :controller => "Quran::Translate", :action => "redirect_compare_surah"
+  map.connect "quran/compare/:surah_num.:ayah_num", :controller => "Quran::Translate", :action => "compare_surah_ayah"
 
-  map.connect "quran/arabic", :controller => "quran",  :action => "arabic", :page_num => 1
-  map.connect "quran/arabic/:page_num", :controller => "quran", :action => "arabic"
-  map.connect "quran/arabic/:surah_num.:ayah_num", :controller => "quran", :action => "arabic"
+  map.connect "quran/translate", :controller => "Quran::Translate",  :action => "translate"
+  map.connect "quran/translate/surah/:surah_num", :controller => "Quran::Translate", :action => "redirect_translate_surah"
+  map.connect "quran/translate/rukuh/:surah_num.:rukuh_num", :controller => "Quran::Translate", :action => "redirect_translate_surah_rukuh"
+  map.connect "quran/translate/ayah/:surah_num.:ayah_num", :controller => "Quran::Translate", :action => "redirect_translate_surah_ayah"
+  map.connect "quran/translate/:quran_code/surah/:surah_num", :controller => "Quran::Translate", :action => "translate_surah"
+  map.connect "quran/translate/:quran_code/rukuh/:surah_num.:rukuh_num", :controller => "Quran::Translate", :action => "translate_surah_rukuh"
+  map.connect "quran/translate/:quran_code/ayah/:surah_num.:ayah_num", :controller => "Quran::Translate", :action => "translate_surah_ayah"
 
-  map.connect "quran/compare", :controller => "quran", :action => "compare", :surah_num => 1, :ayah_num => 1
-  map.connect "quran/compare/:surah_num", :controller => "quran", :action => "compare", :ayah_num => 1
-  map.connect "quran/compare/:surah_num.:ayah_num", :controller => "quran", :action => "compare"
+  map.connect "quran/subjects", :controller => "Quran::Subjects",  :action => "index"
+  map.connect "quran/subjects/:letter", :controller => "Quran::Subjects",  :action => "redirect_letter"
+  map.connect "quran/subjects/:quran_code/:letter", :controller => "Quran::Subjects",  :action => "letter"
+  map.connect "quran/subjects/:subject_id/locations", :controller => "Quran::Subjects",  :action => "locations"
+  map.connect "quran/subjects/:subject_id/ayahs", :controller => "Quran::Subjects",  :action => "ayahs"
 
-  # send to quran comparison if no book code given
-  map.connect "quran/translate", :controller => "quran",  :action => "compare", :surah_num => 1, :ayah_num => 1
-  map.connect "quran/translate/:surah_num", :controller => "quran", :action => "translate", :quran_code => "MAL", :ayah_num => 1
-  map.connect "quran/translate/:surah_num.:ayah_num", :controller => "quran", :action => "translate", :quran_code => "MAL"
-  map.connect "quran/translate/:quran_code/:surah_num/:rukuh_num", :controller => "quran", :action => "translate"
-  map.connect "quran/translate/:quran_code/:surah_num.:ayah_num", :controller => "quran", :action => "translate"
+  map.connect "quran/surahs", :controller => "Quran::Surah",  :action => "index"
+  map.connect "quran/surahs/:surah_num", :controller => "Quran::Surah",  :action => "redirect_surah_num"
+  map.connect "quran/surahs/:quran_code/:surah_num", :controller => "Quran::Surah", :action => "surahs"
 
-  map.connect "quran/surahs", :controller => "quran",  :action => "surahs"
-  map.connect "quran/surahs/:surah_num", :controller => "quran",  :action => "surahs", :quran_code => "MAL"
-  map.connect "quran/surahs/:quran_code/:surah_num", :controller => "quran", :action => "surahs"
-
+  map.connect "quran/search", :controller => "Quran::Search",  :action => "index"
+  map.connect "quran/search/:expression", :controller => "Quran::Search",  :action => "search"
 
   # Allow downloading Web Service WSDL as a file with an extension
   # instead of a file named 'wsdl'
