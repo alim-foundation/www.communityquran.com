@@ -1,0 +1,21 @@
+<%= render :partial => 'category_navigator' %>
+<table class="subjects-of-letter">
+    <% @category_subjects.each do |subject| %>
+    <tr>
+        <td class="topic" colspan="2">
+            <%= link_to subject.topic, :controller => 'Quran::Subject', :action => 'topic', :subject_id => subject.id, :letter => params[:letter], :quran_code => params[:quran_code] %>
+            <span class="ayah-count">(<%= subject.locations.count %>)</span>
+        </td>
+    </tr>
+    <% subject.children.each do |subtopic| %>
+    <tr>
+        <td class="subtopic-indent">&nbsp;</td>
+        <td class="subtopic">
+            <%= link_to subtopic.topic, :controller => 'Quran::Subject', :action => 'redirect_ayahs', :subject_id => subtopic.id, :letter => params[:letter], :quran_code => params[:quran_code] %>
+            <span class="ayah-count">(<%= subtopic.locations.count %>)</span>
+        </td>
+    </tr>
+    <% end %>
+    <% end %>
+</table>
+        

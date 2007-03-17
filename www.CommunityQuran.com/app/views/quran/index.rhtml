@@ -24,7 +24,7 @@
         <tr valign="top">
             <td>
                 <% content_for(:surahs) do %>
-                <%= render :partial => "shared/surah_navigator", :object => SurahNavigator.new(:controller => 'Quran::Surahs', :action => 'elaborate') %>
+                <%= render :partial => "shared/surah_navigator", :object => SurahNavigator.new(:controller => 'Quran::Surah', :action => 'elaborate_surah_num') %>
                 <br/><br/>
                 <a href="<%= url_for :controller => 'Quran::Structure', :action => 'index' %>">How is the Quran Structured?</a>
                 <% end %>

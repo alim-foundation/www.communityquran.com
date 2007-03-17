@@ -28,7 +28,7 @@
                         </a>
                     </td>
                     <% nodeId = note.num || note.code %>
-                    <td class="note-id"><a target="N<%= nodeId %>"><%= nodeId %></a></td>
+                    <td class="note-id"><a target="N_<%= ayah.quran.code %>_<%= nodeId %>"><%= nodeId %></a></td>
                     <td class="note-text"><%= note.text %></td>
                 </tr>
                 <% first = false %>

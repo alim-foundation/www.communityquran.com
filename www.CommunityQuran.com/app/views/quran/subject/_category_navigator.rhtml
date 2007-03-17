@@ -1,0 +1,7 @@
+Go to: <select class="index-navigator" onchange="document.location = this.options[this.selectedIndex].value">
+    <option>Please choose a letter</option>
+<% @subject_letters.each do |letter| %>
+    <option value='<%= url_for :controller => "Quran::Subject", :action => "category", :letter => letter.letter %>'><%= letter.letter %></option>
+<% end %>
+</select>
+<p/>

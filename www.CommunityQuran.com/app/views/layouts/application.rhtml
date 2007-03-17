@@ -33,9 +33,9 @@
                                         <div class="main-menu">
                                             <a href="<%= url_for :controller => 'quran', :action => 'index' %>">Home</a>
                                             <a href="<%= url_for :controller => 'Quran::Arabic', :action => 'ayah', :surah_num => params[:surah_num] || 1, :ayah_num => params[:ayah_num] || 1 %>">Arabic</a>
-                                            <a href="<%= url_for :controller => 'Quran::Compare', :action => 'ayah', :surah_num => params[:surah_num] || 1, :ayah_num => params[:ayah_num] || 1 %>">Translations</a>
-                                            <a href="<%= url_for :controller => 'Quran::Surahs', :surah_num => params[:surah_num] || 1 %>">Surahs</a>
-                                            <a href="<%= url_for :controller => 'Quran::Subjects', :surah_num => params[:surah_num] || 1, :ayah_num => params[:ayah_num] || 1 %>">Subjects</a>
+                                            <a href="<%= url_for :controller => 'Quran::Translate', :action => 'translate_surah_ayah', :surah_num => params[:surah_num] || 1, :ayah_num => params[:ayah_num] || 1 %>">Translations</a>
+                                            <a href="<%= url_for :controller => 'Quran::Surah', :action => 'elaborate_surah_num', :surah_num => params[:surah_num] || 1 %>">Surahs</a>
+                                            <a href="<%= url_for :controller => 'Quran::Subject', :action => 'index' %>">Subjects</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'comments' %>">Comments</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'clippings' %>">Clippings</a>
                                             <a href="<%= url_for :controller => 'Quran::Structure' %>">Structure</a>

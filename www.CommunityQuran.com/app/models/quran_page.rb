@@ -62,7 +62,6 @@ class QuranPage < ActiveRecord::Base
         attr_reader :box
 
         def initialize(ayah, box)
-            puts "#{ayah.surah_num}, #{ayah.ayah_num}, #{ayah.x_start}"
             @surah_num = ayah.surah_num
             @ayah_num = ayah.ayah_num
             @box = box

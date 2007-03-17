@@ -19,4 +19,8 @@ class QuranAyah < ActiveRecord::Base
     belongs_to :surah, :class_name => "QuranSurah"
     has_many :elaborations, :class_name => "QuranAyahElaboration"
     acts_as_ferret :fields => [:text]
+
+    def anchor_name
+        "S#{surah_num}A#{ayah_num}"
+    end
 end

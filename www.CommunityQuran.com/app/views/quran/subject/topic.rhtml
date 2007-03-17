@@ -1,0 +1,38 @@
+<%= render :partial => 'category_navigator' %>
+<table class="subjects-explorer">
+    <%if @subject.has_parent? %>
+    <tr>
+        <td class="parent" colspan="3">
+             <%= link_to "Return to Topic '#{@subject.parent.topic}'", :controller => 'Quran::Subject', :action => 'topic', :subject_id => @subject.parent.id, :quran_code => params[:quran_code] %>
+         </td>
+    </tr>
+    <% end %>
+    <tr>
+        <td class="topic" colspan="3">
+             <%= link_to @subject.topic, :controller => 'Quran::Subject', :action => 'redirect_ayahs', :subject_id => @subject.id, :quran_code => params[:quran_code] %>
+             <span class="ayah-count">(<%= @subject.locations.count %>)</span>
+         </td>
+    </tr>
+    <tr>
+        <td class="subtopic-indent">&nbsp;</td>
+        <td class="topic-locations" colspan="2">
+            <% @subject.locations.each do |location| %>
+                <%= link_to "#{location.surah_num}.#{location.ayah_num}", :controller => "Quran::Translate", :action => "compare_surah_ayah", :surah_num => location.surah_num, :ayah_num => location.ayah_num %>,
+            <% end %>
+        </td>
+    </tr>
+    <% @subject.children.each do |subtopic| %>
+    <tr>
+        <td class="subtopic-indent">&nbsp;</td>
+        <td class="subtopic">
+            <%= link_to subtopic.topic, :controller => 'Quran::Subject', :action => 'redirect_ayahs', :subject_id => subtopic.id, :quran_code => params[:quran_code] %>
+            <span class="ayah-count">(<%= subtopic.locations.count %>)</span>
+        </td>
+        <td class="locations">
+            <% subtopic.locations.each do |location| %>
+                <%= link_to "#{location.surah_num}.#{location.ayah_num}", :controller => "Quran::Translate", :action => "compare_surah_ayah", :surah_num => location.surah_num, :ayah_num => location.ayah_num %>,
+            <% end %>
+        </td>
+    </tr>
+    <% end %>
+</table>

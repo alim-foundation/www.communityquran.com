@@ -1,0 +1,29 @@
+<table class="quran-translation">
+    <tr valign="top">
+        <td class="navigation">
+            <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:controller => 'Quran::Translate', :action => 'translate_surah_ayah', :ayahs_navigator => true, :ayahs_navigator_separator => "<br/><br/>") %>
+            <p/>
+            <a href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => @ayah.surah_num, :ayah_num => @ayah.ayah_num %>">Compare this ayah with other translations</a><p/>
+            <a href="<%= url_for :controller => 'Quran::Translate', :action => 'translate_surah_position_ayah', :surah_num => @ayah.surah_num, :ayah_num => @ayah.ayah_num %>">View the entire Surah</a>
+        </td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td class="text">
+            <table class="translation">
+                <tr valign="top">
+                    <td class="ayah-text"><%= @ayah.text %></td>
+                </tr>
+            </table>
+            <table class="elaborations">
+            <% first = true %>
+            <% for note in @ayah.elaborations %>
+            <tr class="<%= first ? 'first' : 'subsequent' %>" valign="top">
+                <% nodeId = note.num || note.code %>
+                <td class="note-id"><a target="N<%= nodeId %>"><%= nodeId %></a></td>
+                <td class="note-text"><%= note.text %></td>
+            </tr>
+            <% first = false %>
+            <% end %>
+            </table>
+        </td>
+    </tr>
+</table>

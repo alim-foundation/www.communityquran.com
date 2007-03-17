@@ -1,0 +1,30 @@
+<%= render :partial => 'category_navigator' %>
+<table class="subjects-explorer">
+    <tr>
+        <td class="topic" colspan="2">
+             <%= link_to "Return to index", :controller => 'Quran::Subject', :action => 'topic', :subject_id => @subject.id, :quran_code => params[:quran_code] %>
+         </td>
+    </tr>
+</table>
+
+<table class="translation">
+<% @ayahs.each do |ayah| %>
+    <tr valign="top">
+        <td class="ayah-num"><a href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => ayah.surah_num, :ayah_num => ayah.ayah_num %>"><%= "#{ayah.surah_num}.#{ayah.ayah_num}" %></a></td>
+        <td class="ayah-text"><%= ayah.text %></td>
+    </tr>
+<% end %>
+</table>
+<table class="elaborations">
+<% first = true %>
+<% @ayahs.each do |ayah| %>
+    <% for note in ayah.elaborations %>
+    <tr class="<%= first ? 'first' : 'subsequent' %>" valign="top">
+        <% nodeId = note.num || note.code %>
+        <td class="note-id"><a target="N<%= nodeId %>"><%= nodeId %></a></td>
+        <td class="note-text"><%= note.text %></td>
+    </tr>
+    <% first = false %>
+    <% end %>
+<% end %>
+</table>
