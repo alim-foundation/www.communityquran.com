@@ -1,36 +1,3 @@
-<% content_for(:physical) do %>
-<table class="report">
-    <tr class="heading">
-        <th>Num</th>
-        <th>Surah</th>
-    </tr>
-    <% for surah_struct in QuranHelper::QURAN_STRUCT.surahs %>
-    <%if surah_struct.surah_num == Integer(params[:surah_num]) %>
-    <tr class="active">
-    <% else %>
-    <tr>
-    <% end %>
-        <td class="sequence"><%= surah_struct.surah_num %></td>
-        <td class="text"><a href="<%= surah_struct.surah_num %>"><%= surah_struct.name %></a></td>
-    </tr>
-    <% end %>
-</table>
-<% end %>
-
-<% content_for(:overview) do %>
-    <div class="article">
+<div class="article">
     <%= @surah.overview %>
-    </div>
-<% end %>
-<% @panel.body = :overview %>
-
-<table>
-    <tr valign="top">
-        <td>
-            <%= render :partial => "shared/panel", :object => @panel %>
-        </td>
-        <td>
-            <%= render :partial => "shared/panel", :object => Panel.new("Choose Surah", :physical) %>
-        </td>
-    </tr>
-</table>
+</div>

@@ -1,12 +1,14 @@
 <script>
     function enterAyah(surahNum, ayahNum)
     {
-
+        document.getElementById('S'+ surahNum +'A' + ayahNum).className = 'selected'
     }
 
     function exitAyah(surahNum, ayahNum)
     {
-
+        <% @transliterated_ayahs.each do |ayah| %>
+        document.getElementById("S<%= ayah.surah_num %>A<%= ayah.ayah_num %>").className = '';
+        <% end %>
     }
 </script>
 
@@ -27,7 +29,7 @@
         </td>
         <td>&nbsp;&nbsp;&nbsp;</td>
         <td id="transliteration" class="transliteration">
-            <table>
+            <table class="transliteration">
                 <% @transliterated_ayahs.each do |ayah| %>
                 <tr valign="top" id="S<%= ayah.surah_num %>A<%= ayah.ayah_num %>">
                     <td class="ayah-id"><a HREF="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => ayah.surah_num, :ayah_num => ayah.ayah_num %>"><%= ayah.surah_num %>.<%= ayah.ayah_num %></a></td>
@@ -35,24 +37,6 @@
                 </tr>
                 <% end %>
             </table>
-        </td>
-        <td class="navigation">
-            <% content_for(:pages) do %>
-                <nobr>
-                    &lt; <a href="<%= @image_info.previous_page_num(@page) %>">Previous</a>
-                    &nbsp; <input name="goto_page_num" size="3" value="<%= params[:page_num] %>" title="Type in a page number and press enter"></input> &nbsp;
-                    <a href="<%= @image_info.next_page_num(@page) %>">Next</a> &gt;
-                </nobr><br/>
-                <br/>Type in a page number<br/> (1 to <%= @image_info.page_count %>) or a Surah.Ayah<br/> number combination like
-                2.1 <br/>to go to Surah 2, Ayah 1.
-            <% end %>
-
-            <%= render :partial => "shared/panel", :object => Panel.new("Goto Page", :pages) %>
-            <p/>
-            <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:controller => 'Quran::Arabic', :action => 'ayah') %>
-            <p/>
-            Click on an ayah number to<br/>
-            view the translation.
         </td>
     </tr>
 </table>

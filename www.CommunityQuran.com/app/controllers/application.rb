@@ -5,11 +5,9 @@ class ApplicationController < ActionController::Base
     # Pick a unique cookie name to distinguish our session data from others'
     session :session_key => '_www.CommunityQuran.com_session_id'
 
-    #{The title of a page, what shows up in the <title> tag.}
-    @title = nil
-
-    #{The heading of a page, what shows up in the content/layout.}
-    @heading = nil
+    attr_accessor :title
+    attr_accessor :heading
+    attr_accessor :page_navigation
 
 protected
     def title=(title)
@@ -20,5 +18,9 @@ protected
     def heading=(heading)
         @heading = heading
         @title = heading unless @title
+    end
+
+    def page_navigation=(pn)
+        @page_navigation = pn
     end
 end

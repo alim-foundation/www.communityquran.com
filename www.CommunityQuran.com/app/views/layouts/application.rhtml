@@ -33,8 +33,8 @@
                                         <div class="main-menu">
                                             <a href="<%= url_for :controller => 'quran', :action => 'index' %>">Home</a>
                                             <a href="<%= url_for :controller => 'Quran::Arabic', :action => 'ayah', :surah_num => params[:surah_num] || 1, :ayah_num => params[:ayah_num] || 1 %>">Arabic</a>
-                                            <a href="<%= url_for :controller => 'Quran::Translate', :action => 'translate_surah_ayah', :surah_num => params[:surah_num] || 1, :ayah_num => params[:ayah_num] || 1 %>">Translations</a>
-                                            <a href="<%= url_for :controller => 'Quran::Surah', :action => 'elaborate_surah_num', :surah_num => params[:surah_num] || 1 %>">Surahs</a>
+                                            <a href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => params[:surah_num] || 1, :ayah_num => params[:ayah_num] || 1 %>">Translations</a>
+                                            <a href="<%= url_for :controller => 'Quran::Surah', :action => 'redirect_elaborate_surah_num' %>">Surahs</a>
                                             <a href="<%= url_for :controller => 'Quran::Subject', :action => 'index' %>">Subjects</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'comments' %>">Comments</a>
                                             <a href="<%= url_for :controller => 'quran', :action => 'clippings' %>">Clippings</a>
@@ -72,17 +72,36 @@
                                     <td class="main-content-cell" colspan="<%= haveCalloutPanel ? 1 : 2 %>">
                                         <table cellpadding="0" cellspacing="0" width="100%">
                                             <tr valign="top">
-                                                <% havePageNavPanel = defined? show_page_navg_panel == "method" && show_page_navg_panel %>
-                                                <% if havePageNavPanel %>
+                                                <% if @page_navigation %>
                                                 <td class="page-navigation-panel" width="164">
-                                                    <div class="heading">A Heading</div>
-
-                                                    Some text right underneath the left heading.
-                                                    We can put a page-sensitive menu or other information here.
-                                                    <br/>
+                                                    <% if @page_navigation.root.label %>
+                                                    <div class="heading"><%= @page_navigation.root.label %></div>
+                                                    <% end %>
                                                     <ul class="vertical-menu">
-                                                        <li><a href="#">Revenge of the Sith</a></li>
-                                                        <li><a href="#">Newsflash 1</a></li>
+                                                        <% @page_navigation.root.children.each do |c1| %>
+                                                            <li>
+                                                                <% if c1.style == :pull_down_menu %>
+                                                                    <select id="<%= c1.id %>" onchange="document.location = this.options[this.selectedIndex].value">
+                                                                    <% if c1.label %>
+                                                                        <option class='label' value='#'><%= c1.label %></option>
+                                                                    <% end %>
+                                                                    <% c1.children.each do |c2| %>
+                                                                        <% if c2.is_separator? %>
+                                                                        <option class="separator">----------</option>
+                                                                        <% else %>
+                                                                        <option id="<%= c2.id %>" value="<%= c2.url %>"><%= c2.label %></option>
+                                                                        <% end %>
+                                                                    <% end %>
+                                                                    </select>
+                                                                <% else %>
+                                                                    <% if c1.link %>
+                                                                        <%= c1.link %>
+                                                                    <% else %>
+                                                                        <a href="<%= c1.url %>"><%= c1.label %></a>
+                                                                    <% end %>
+                                                                <% end %>
+                                                            </li>
+                                                        <% end %>
                                                     </ul>
 
                                                     <div style="height: 1px; width: 164px"></div>

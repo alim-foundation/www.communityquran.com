@@ -331,25 +331,26 @@ table.panel table.content tr.bottom td.right { background: url(../images/panel/s
  ** Translations/Text                                               **
  *********************************************************************/
 
-table.arabic-quran div.transliteration { font-family: Georgia, serif; font-size: 12pt; line-height: 1.4em; padding: 10px; border: #999999 1px dotted; display: none; background-color: bisque; }
+table.arabic-quran table.transliteration td { font-family: Georgia, serif; font-size: 12pt; line-height: 1.2em; padding: 3px; border-top: 1px solid white; border-bottom: 1px solid white; }
+table.arabic-quran table.transliteration tr.selected td { background-color: lightyellow; border-top: 1px solid silver; border-bottom: 1px solid silver; }
 
-table.quran-comparison table.translations td.quran { font-family: Georgia, serif; font-size: 9pt; font-style: italic; text-align: right; line-height: 2.4em; padding-bottom: 10px; padding-right: 10px; }
-table.quran-comparison table.translations td.ayah-text { font-family: Georgia, serif; font-size: 14pt; line-height: 1.4em; padding-bottom: 10px; } 
-table.quran-comparison table.translations td.ayah-text span.fn { line-height: 1.0em; vertical-align: super; font-size: 9pt; }
+div.quran-comparison table.translations td.quran { font-family: Georgia, serif; font-size: 9pt; font-style: italic; text-align: right; line-height: 2.4em; padding-bottom: 10px; padding-right: 10px; }
+div.quran-comparison table.translations td.ayah-text { font-family: Georgia, serif; font-size: 14pt; line-height: 1.4em; padding-bottom: 10px; }
+div.quran-comparison table.translations td.ayah-text span.fn { line-height: 1.0em; vertical-align: super; font-size: 9pt; }
 
-table.quran-comparison table.elaborations tr.first td { border-top: #666666 1px dotted; padding-top: 10px;  }
-table.quran-comparison table.elaborations td.quran { font-family: Georgia, serif; font-size: 9pt; font-style: italic; text-align: right; padding-bottom: 10px; padding-right: 10px; }
-table.quran-comparison table.elaborations td.note-id { font-family: Georgia, serif; font-size: 11pt; vertical-align: super; }
-table.quran-comparison table.elaborations td.note-text { font-family: Georgia, serif; font-size: 11pt; line-height: 1.4em; padding-bottom: 10px; } 
+div.quran-comparison table.elaborations tr.first td { border-top: #666666 1px dotted; padding-top: 10px;  }
+div.quran-comparison table.elaborations td.quran { font-family: Georgia, serif; font-size: 9pt; font-style: italic; text-align: right; padding-bottom: 10px; padding-right: 10px; }
+div.quran-comparison table.elaborations td.note-id { font-family: Georgia, serif; font-size: 11pt; vertical-align: super; }
+div.quran-comparison table.elaborations td.note-text { font-family: Georgia, serif; font-size: 11pt; line-height: 1.4em; padding-bottom: 10px; }
 
-table.quran-translation table.translation td.ayah-num { padding-right: 10px; text-align: right; font-weight: lighter; font-family: Georgia, serif; font-size: 14pt; padding-bottom: 10px; }
-table.quran-translation table.translation td.ayah-text { font-family: Georgia, serif; font-size: 14pt; line-height: 1.4em; padding-bottom: 10px; }
-table.quran-translation table.translation td.ayah-text span.fn { line-height: 1.0em; vertical-align: super; font-size: 9pt; }
+div.quran-translation table.translation td.ayah-num { padding-right: 10px; text-align: right; font-weight: lighter; font-family: Georgia, serif; font-size: 14pt; padding-bottom: 10px; }
+div.quran-translation table.translation td.ayah-text { font-family: Georgia, serif; font-size: 14pt; line-height: 1.4em; padding-bottom: 10px; }
+div.quran-translation table.translation td.ayah-text span.fn { line-height: 1.0em; vertical-align: super; font-size: 9pt; }
 
-table.quran-translation table.elaborations tr.first td { border-top: #666666 1px dotted; padding-top: 10px;  }
-table.quran-translation table.elaborations td.quran { font-family: Georgia, serif; font-size: 9pt; font-style: italic; text-align: right; padding-bottom: 10px; padding-right: 10px; }
-table.quran-translation table.elaborations td.note-id { font-family: Georgia, serif; font-size: 11pt; vertical-align: super; }
-table.quran-translation table.elaborations td.note-text { font-family: Georgia, serif; font-size: 11pt; line-height: 1.4em; padding-bottom: 10px; } 
+div.quran-translation table.elaborations tr.first td { border-top: #666666 1px dotted; padding-top: 10px;  }
+div.quran-translation table.elaborations td.quran { font-family: Georgia, serif; font-size: 9pt; font-style: italic; text-align: right; padding-bottom: 10px; padding-right: 10px; }
+div.quran-translation table.elaborations td.note-id { font-family: Georgia, serif; font-size: 11pt; vertical-align: super; }
+div.quran-translation table.elaborations td.note-text { font-family: Georgia, serif; font-size: 11pt; line-height: 1.4em; padding-bottom: 10px; } 
 
 table.search-results tr.quran-translation td.quran { font-family: Georgia, serif; font-size: 9pt; font-style: italic; text-align: right; padding-bottom: 10px; padding-right: 10px; border-top: #666666 1px dotted; }
 table.search-results tr.quran-translation td.ayah-id { font-family: Georgia, serif; font-size: 11pt; vertical-align: super; border-top: #666666 1px dotted; }

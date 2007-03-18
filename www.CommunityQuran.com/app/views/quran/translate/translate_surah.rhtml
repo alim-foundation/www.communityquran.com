@@ -1,31 +1,23 @@
-<table class="quran-translation">
-    <tr valign="top">
-        <td class="navigation">
-            <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:controller => 'Quran::Translate', :action => 'translate_surah_ayah', :ayahs_navigator => true, :ayahs_navigator_separator => "<br/><br/>") %>
-        </td>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td class="text">
-            <table class="translation">
-            <% @surah.ayahs.each do |ayah| %>
-                <tr valign="top">
-                    <td class="ayah-num"><a name='<%= ayah.anchor_name %>' href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => params[:surah_num], :ayah_num => ayah.ayah_num %>"><%= ayah.ayah_num %></a></td>
-                    <td class="ayah-text"><%= ayah.text %></td>
-                </tr>
-            <% end %>
-            </table>
-            <table class="elaborations">
-            <% first = true %>
-            <% @surah.ayahs.each do |ayah| %>
-                <% for note in ayah.elaborations %>
-                <tr class="<%= first ? 'first' : 'subsequent' %>" valign="top">
-                    <% nodeId = note.num || note.code %>
-                    <td class="note-id"><a target="N<%= nodeId %>" href="<%= url_for :controller => 'Quran::Translate', :action => 'translate_surah_ayah', :surah_num => params[:surah_num], :ayah_num => ayah.ayah_num, :quran_code => ayah.quran.code %>"><%= nodeId %></a></td>
-                    <td class="note-text"><%= note.text %></td>
-                </tr>
-                <% first = false %>
-                <% end %>
-            <% end %>
-            </table>
-        </td>
-    </tr>
-</table>
+<div class="quran-translation">
+    <table class="translation">
+    <% @surah.ayahs.each do |ayah| %>
+        <tr valign="top">
+            <td class="ayah-num"><a name='<%= ayah.anchor_name %>' href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => params[:surah_num], :ayah_num => ayah.ayah_num %>"><%= ayah.ayah_num %></a></td>
+            <td class="ayah-text"><%= ayah.text %></td>
+        </tr>
+    <% end %>
+    </table>
+    <table class="elaborations">
+    <% first = true %>
+    <% @surah.ayahs.each do |ayah| %>
+        <% for note in ayah.elaborations %>
+        <tr class="<%= first ? 'first' : 'subsequent' %>" valign="top">
+            <% nodeId = note.num || note.code %>
+            <td class="note-id"><a target="N<%= nodeId %>" href="<%= url_for :controller => 'Quran::Translate', :action => 'translate_surah_ayah', :surah_num => params[:surah_num], :ayah_num => ayah.ayah_num, :quran_code => ayah.quran.code %>"><%= nodeId %></a></td>
+            <td class="note-text"><%= note.text %></td>
+        </tr>
+        <% first = false %>
+        <% end %>
+    <% end %>
+    </table>
+</div>

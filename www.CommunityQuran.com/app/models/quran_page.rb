@@ -19,11 +19,11 @@ class QuranPage < ActiveRecord::Base
     belongs_to :quran, :class_name => "Quran"
     has_many :ayahs, :class_name => "QuranPageAyah"
 
-    def ayah_coverage_text
+    def ayah_coverage_text(quranStruct)  
         if start_surah_num == end_surah_num
-            "Surah #{QuranHelper::QURAN_STRUCT.get_surah(start_surah_num).name} Ayahs #{start_ayah_num} to #{end_ayah_num}"
+            "Surah #{quranStruct.get_surah(start_surah_num).name} Ayahs #{start_ayah_num} to #{end_ayah_num}"
         else
-            "Surah #{QuranHelper::QURAN_STRUCT.get_surah(start_surah_num).name} Ayah #{start_ayah_num} to #{QuranHelper::QURAN_STRUCT.get_surah(end_surah_num).name} Ayah #{end_ayah_num}"
+            "Surah #{quranStruct.get_surah(start_surah_num).name} Ayah #{start_ayah_num} to #{quranStruct.get_surah(end_surah_num).name} Ayah #{end_ayah_num}"
         end
     end
 

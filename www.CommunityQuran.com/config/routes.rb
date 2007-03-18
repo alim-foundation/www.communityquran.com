@@ -31,7 +31,9 @@ ActionController::Routing::Routes.draw do |map|
   map.connect "quran/translate/ayah/:surah_num.:ayah_num", :controller => "Quran::Translate", :action => "redirect_translate_surah_ayah"
   map.connect "quran/translate/:quran_code/surah/:surah_num", :controller => "Quran::Translate", :action => "translate_surah"
   map.connect "quran/translate/:quran_code/surah/:surah_num.:ayah_num", :controller => "Quran::Translate", :action => "translate_surah_position_ayah"
+  map.connect "quran/translate/:quran_code/rukuh/:surah_num", :controller => "Quran::Translate", :action => "redirect_translate_surah_rukuh_no_rukuh_num"
   map.connect "quran/translate/:quran_code/rukuh/:surah_num.:rukuh_num", :controller => "Quran::Translate", :action => "translate_surah_rukuh"
+  map.connect "quran/translate/:quran_code/ayah/:surah_num", :controller => "Quran::Translate", :action => "redirect_translate_surah_ayah_no_ayah_num"
   map.connect "quran/translate/:quran_code/ayah/:surah_num.:ayah_num", :controller => "Quran::Translate", :action => "translate_surah_ayah"
 
   map.connect "quran/subject", :controller => "Quran::Subject",  :action => "index"
@@ -56,3 +58,4 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id.:format'
   map.connect ':controller/:action/:id'
 end
+

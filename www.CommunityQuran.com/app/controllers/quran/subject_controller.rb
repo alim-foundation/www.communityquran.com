@@ -57,7 +57,7 @@ class Quran::SubjectController < QuranController
 
 private
     def get_active_subjects_index
-        @quran = Quran.find_by_code(params[:quran_code])
+        @quran = Quran.find_by_code(active_quran_code)
         if ! @quran
             return false
         end
