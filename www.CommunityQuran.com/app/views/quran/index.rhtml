@@ -13,18 +13,15 @@
             </td>
 
             <td>
-                <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:controller => 'Quran::Arabic', :action => 'ayah', :panel_heading => 'View Arabic') %>
             </td>
 
             <td>
-                <%= render :partial => "shared/surah_navigator_panel", :object => SurahNavigator.new(:controller => 'Quran::Arabic', :action => 'compare_surah_ayah', :panel_heading => 'View Translation') %>
             </td>
 
         </tr>
         <tr valign="top">
             <td>
                 <% content_for(:surahs) do %>
-                <%= render :partial => "shared/surah_navigator", :object => SurahNavigator.new(:controller => 'Quran::Surah', :action => 'elaborate_surah_num') %>
                 <br/><br/>
                 <a href="<%= url_for :controller => 'Quran::Structure', :action => 'index' %>">How is the Quran Structured?</a>
                 <% end %>
