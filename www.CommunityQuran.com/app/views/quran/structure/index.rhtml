@@ -7,14 +7,14 @@
         <th>Ayahs</th>
         <th>Rukuhs</th>
     </tr>
-    <% for surah_struct in QURAN_STRUCT.surahs %>
+    <% for surah_struct in @quran_struct.surahs %>
     <tr>
         <td class="sequence"><%= surah_struct.surah_num %></td>
-        <td class="text"><a href="surahs/QSI/<%= surah_struct.surah_num %>"><%= surah_struct.name %></a></td>
+        <td class="text"><%= link_to surah_struct.name, :controller => "Quran::Surah", :action => "redirect_elaborate_surah_num", :surah_num => surah_struct.surah_num %></td>
         <td class="text"><%= surah_struct.revealed_city %></td>
         <td class="sequence"><%= surah_struct.revealed_num %></td>
-        <td class="count"><%= surah_struct.ayah_count %></td>
-        <td class="count"><%= surah_struct.rukuh_count == 0 ? 1 : surah_struct.rukuh_count %></td>
+        <td class="count"><%= link_to surah_struct.ayah_count, :controller => "Quran::Translate", :action => "redirect_compare_surah", :surah_num => surah_struct.surah_num %></td>
+        <td class="count"><%= link_to surah_struct.rukuh_count == 0 ? 1 : surah_struct.rukuh_count, :controller => "Quran::Translate", :action => "redirect_translate_surah_rukuh", :surah_num => surah_struct.surah_num, :rukuh_num => 1 %></td>
     </tr>
     <% end %>
 </table>
@@ -27,12 +27,12 @@
         <th>Starting Surah</th>
         <th>Ayah</th>
     </tr>
-    <% for juz in QURAN_STRUCT.ajza %>
-    <% surah_struct = QURAN_STRUCT.get_surah(juz.surah_num) %>
+    <% for juz in @quran_struct.ajza %>
+    <% surah_struct = @quran_struct.get_surah(juz.surah_num) %>
     <tr>
         <td class="sequence"><%= juz.juz_num %></td>
-        <td class="text"><a href="surahs/QSI/<%= juz.surah_num %>"><%= surah_struct.name %></a></td>
-        <td class="sequence"><a href="arabic/<%= juz.surah_num %>/<%= juz.ayah_num %>"><%= juz.ayah_num %></a></td>
+        <td class="text"><%= link_to surah_struct.name, :controller => "Quran::Surah", :action => "redirect_elaborate_surah_num", :surah_num => surah_struct.surah_num %></td>
+        <td class="sequence"><%= link_to juz.ayah_num, :controller => "Quran::Translate", :action => "compare_surah_ayah", :surah_num => juz.surah_num, :ayah_num => juz.ayah_num %></td>
     </tr>
     <% end %>
 </table>
@@ -45,12 +45,12 @@
         <th>Starting Surah</th>
         <th>Ayah</th>
     </tr>
-    <% for sajda in QURAN_STRUCT.sajdas %>
-    <% surah_struct = QURAN_STRUCT.get_surah(sajda.surah_num) %>
+    <% for sajda in @quran_struct.sajdas %>
+    <% surah_struct = @quran_struct.get_surah(sajda.surah_num) %>
     <tr>
         <td class="sequence"><%= sajda.sajda_num %></td>
-        <td class="text"><a href="surahs/QSI/<%= sajda.surah_num %>"><%= surah_struct.name %></a></td>
-        <td class="sequence"><a href="arabic/<%= sajda.surah_num %>/<%= sajda.ayah_num %>"><%= sajda.ayah_num %></a></td>
+        <td class="text"><%= link_to surah_struct.name, :controller => "Quran::Surah", :action => "redirect_elaborate_surah_num", :surah_num => surah_struct.surah_num %></td>
+        <td class="sequence"><%= link_to sajda.ayah_num, :controller => "Quran::Translate", :action => "compare_surah_ayah", :surah_num => sajda.surah_num, :ayah_num => sajda.ayah_num %></td>
     </tr>
     <% end %>
 </table>

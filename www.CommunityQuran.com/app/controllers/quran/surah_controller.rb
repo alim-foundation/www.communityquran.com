@@ -22,7 +22,7 @@ class Quran::SurahController < QuranController
 
         self.heading = "#{@quran.short_name} Introductory Overview of Surah #{@surah.surah_num}, #{QURAN_STRUCT.get_surah(@surah.surah_num).name}"
         self.page_navigation = Sparx::Navigate::Tree.new("page") do |p|
-            add_surah_paths(p, "elaborate_surah_num")
+            add_surah_paths(p, "elaborate_surah_num", true, nil, true)
             for other in QURANS_WITH_SURAH_ELABORATIONS
                 if other.code != @quran.code then
                     p.add_path "compare_#{other.code}", :label => "View in #{other.full_name}",

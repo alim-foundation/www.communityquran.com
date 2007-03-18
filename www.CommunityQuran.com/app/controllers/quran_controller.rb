@@ -25,8 +25,9 @@ class QuranController < ApplicationController
         return QURAN_STRUCT.get_surah(active_surah_num)
     end
 
-    def add_surah_paths(path, action, prevNext = true, ayahNum = nil)
+    def add_surah_paths(path, action, prevNext = true, ayahNum = nil, hideIntro = false)
         activeSurahNum = active_surah_num
+        path.add_path 'view-surah-intro', :label => "View Surah Introduction", :url => url_for(:controller => 'Quran::Surah', :action => 'redirect_elaborate_surah_num') unless hideIntro
         path.add_path 'goto-surah', :label => 'Goto Surah', :style => :pull_down_menu do |c|
             if prevNext then
                 c.add_path 'prev-surah', :label => "Previous Surah", :url => get_previous_surah_url(action, ayahNum)
