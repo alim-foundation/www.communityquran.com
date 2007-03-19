@@ -15,7 +15,8 @@
 
 class QuranAyahsTheme < ActiveRecord::Base
     belongs_to :surah, :class_name => "QuranSurah"
-    acts_as_ferret :fields => [:theme]    
+    acts_as_ferret :fields => { :theme => {:store => :yes} }
+    acts_as_ferret :fields => { :theme => {:store => :yes}, :surah_num => { :store => :yes }, :start_ayah_num => { :store => :yes }, :end_ayah_num => { :store => :yes } }
 
     def self.full_text_search(q, options = {})
         return nil if q.nil? or q==""

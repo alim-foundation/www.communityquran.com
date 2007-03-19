@@ -128,6 +128,7 @@ class CreateDataModel < ActiveRecord::Migration
 
         create_table :quran_ayahs_theme do |t|
             t.column :quran_surah_id, :integer, :null => false, :on_delete => :cascade
+            t.column :surah_num, :integer, :null => false # denormalized on purpose
             t.column :start_ayah_num, :integer, :null => false
             t.column :end_ayah_num, :integer, :null => false
             t.column :theme, :text, :null => false

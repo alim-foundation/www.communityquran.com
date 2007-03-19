@@ -1,5 +1,5 @@
 <form method="get">
-Search for: <input size="35" value="<%= @query %>" name="q"/> <input name="submit" type="submit"/>
+Search for: <input size="35" value="<%= @query %>" name="q"/> <input name="do" type="submit" value="Search"/>
 </form>
 
 <%if @query %>
@@ -51,6 +51,18 @@ Search for: <input size="35" value="<%= @query %>" name="q"/> <input name="submi
             </td>
             <td class="results">
                 <%= render :partial => "ayahs_themes_results" %>
+            </td>
+        </tr>
+
+        <tr valign="top">
+            <td class="collection">
+                references in Quran Surah introductions.
+                <% if @more_surah_elaborations_url %>
+                    <br><a href="<%= @more_surah_elaborations_url %>">See All</a>
+                <% end %>
+            </td>
+            <td class="results">
+                <%= render :partial => "surah_elaboration_results" %>
             </td>
         </tr>
 

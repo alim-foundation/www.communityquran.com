@@ -9,7 +9,7 @@
                     <%= ayah.surah_num %>.<%= ayah.ayah_num %>
                 </a>
             </td>
-            <td class="ayah-text"><%= ayah.text %></td>
+            <td class="ayah-text"><%= highlight(ayah.text, @query) %></td>
         </tr>
     <% end %>
 </table>

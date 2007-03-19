@@ -30,8 +30,8 @@ class Quran::SearchController < QuranController
         @more_ayah_themes_available = @ayah_themes.total_hits > 0 && @ayah_themes.length < @ayah_themes.total_hits
         @more_ayah_themes_url = @more_ayah_themes_available ? url_for(:action => "search_ayah_themes", :q => @query) : nil
 
-        @surah_elaborations = QuranSurah.find_by_contents(@query)
-        @more_surah_elaborations_available = @surah_elaborations.total_hits > 0 && @surah_elaborations.length < @surah_elaborations.total_hits
+        total_hits, @surah_elaboration_results = QuranSurah.full_text_search_by_storage(@query)
+        @more_surah_elaborations_available = total_hits > 0 && @surah_elaboration_results.length < total_hits
         @more_surah_elaborations_url = @more_surah_elaborations_available ? url_for(:action => "search_surah_elaborations", :q => @query) : nil
     end
 
@@ -71,7 +71,8 @@ class Quran::SearchController < QuranController
         @query = params[:q]
         self.title = "'#{@query}' search results in Qur'an Surah Elaborations"
 
-        @total, @surah_elaborations = QuranAyahsTheme.full_text_search(@query, :page => (params[:page]||1))
-        @pages = pages_for(@total)
+        @total_hits, @surah_elaboration_results = QuranSurah.full_text_search_by_storage(@query, :page => (params[:page]||1))
+        @pages = pages_for(@total_hits)
     end
+
 end

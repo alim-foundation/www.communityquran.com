@@ -18,7 +18,11 @@ class QuranAyah < ActiveRecord::Base
     belongs_to :quran, :class_name => "Quran"
     belongs_to :surah, :class_name => "QuranSurah"
     has_many :elaborations, :class_name => "QuranAyahElaboration"
-    acts_as_ferret :fields => [:text]
+    acts_as_ferret :fields => { :text => {:store => :yes}, :quran_code => { :store => :yes }, :surah_num => { :store => :yes }, :ayah_num => { :store => :yes } }
+
+    def quran_code
+        return quran.code
+    end
 
     def anchor_name
         "S#{surah_num}A#{ayah_num}"

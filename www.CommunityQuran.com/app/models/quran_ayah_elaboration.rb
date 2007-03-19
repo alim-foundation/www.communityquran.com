@@ -15,7 +15,7 @@
 
 class QuranAyahElaboration < ActiveRecord::Base
     belongs_to :ayah, :class_name => "QuranAyah"
-    acts_as_ferret :fields => [:text]    
+    acts_as_ferret :fields => { :text => {:store => :yes} }
 
     def self.full_text_search(q, options = {})
         return nil if q.nil? or q==""

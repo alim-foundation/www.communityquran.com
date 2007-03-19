@@ -141,7 +141,8 @@ module AlimMarkup
 
             surah = quran.surahs.find_or_create_by_surah_num(surah_num)
             surahElem.elements.each('theme') do |themeElem|
-                surah.themes.create!(:start_ayah_num => themeElem.attributes['startAyah'] || themeElem.attributes['ayah'],
+                surah.themes.create!(:surah_num => surah_num,
+                                     :start_ayah_num => themeElem.attributes['startAyah'] || themeElem.attributes['ayah'],
                                      :end_ayah_num => themeElem.attributes['endAyah'] || themeElem.attributes['ayah'],
                                      :theme => themeElem.children.to_s)
                 quran.contains_ayah_themes = true

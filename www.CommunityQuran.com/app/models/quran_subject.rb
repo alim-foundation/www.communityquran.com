@@ -19,7 +19,11 @@ class QuranSubject < ActiveRecord::Base
     has_many :locations, :class_name => "QuranSubjectLocation"
 
     acts_as_tree
-    acts_as_ferret :fields => [:topic]    
+    acts_as_ferret :fields => { :topic => {:store => :yes}, :quran_code => {:store => :yes} }
+
+    def quran_code
+        return quran.code
+    end
 
     def self.full_text_search(q, options = {})
         return nil if q.nil? or q==""
