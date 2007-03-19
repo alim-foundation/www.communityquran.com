@@ -1,0 +1,11 @@
+<div class="search-form">
+<form method="get">
+Search for: <input size="35" value="<%= @query %>" name="q"/> <input name="submit" type="submit" value="Search"/> <input type="hidden" name="page" value="1"/>
+</form>
+</div>
+
+<%if @query %>        
+<div class="search-results-summary">
+    Displaying results <%= @pages.current.first_item %> to <%= @pages.current.last_item %> of <%= @pages.item_count %>.
+</div>
+<% end %>

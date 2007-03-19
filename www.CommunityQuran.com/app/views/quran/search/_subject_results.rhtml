@@ -1,0 +1,14 @@
+<table class="subjects">
+    <% for subject in @subjects %>
+        <tr class="subject" valign="top">
+            <td class="quran">
+                <%= subject.quran.short_name %>
+            </td>
+            <td class="topic">
+                <a href="<%= url_for :controller => 'Quran::Subject', :action => 'topic', :quran_code => subject.quran.code, :subject_id => subject.id %>">
+                    <%= subject.full_topic_path %>
+                </a>
+            </td>
+        </tr>
+    <% end %>
+</table>

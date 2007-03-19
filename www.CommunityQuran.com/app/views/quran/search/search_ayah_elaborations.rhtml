@@ -1,0 +1,7 @@
+<%= render :partial => "search_header" %>
+<%if @query %>
+    <div class="search-results">
+        <%= render :partial => "ayah_elaborations_results" %>
+    </div>
+<% end %>
+<%= render :partial => "search_footer" %>        

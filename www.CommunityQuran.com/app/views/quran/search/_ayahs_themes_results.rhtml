@@ -1,0 +1,16 @@
+<table class="quran-ayah-themes">
+    <% for theme in @ayah_themes %>
+        <tr class="theme" valign="top">
+            <td class="ayah-id" nobr>
+                <a href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => theme.surah.surah_num, :ayah_num => theme.start_ayah_num %>">
+                    <%= theme.surah.surah_num %>.<%= theme.start_ayah_num %>
+                </a>
+                to
+                <a href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => theme.surah.surah_num, :ayah_num => theme.end_ayah_num %>">
+                    <%= theme.surah.surah_num %>.<%= theme.end_ayah_num %>
+                </a>
+            </td>
+            <td class="theme-text"><%= theme.theme %></td>
+        </tr>
+    <% end %>
+</table>

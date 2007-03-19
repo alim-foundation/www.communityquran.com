@@ -1,0 +1,7 @@
+<% if @query %>
+<div class="search-results-navigator">
+    <%= link_to 'Previous page', { :page => @pages.current.previous, :q => @query }, { :class => 'prev' } if @pages.current.previous %>
+    <%= pagination_links(@pages, :params => { :q=> @query }) %>
+    <%= link_to 'Next page', { :page => @pages.current.next, :q => @query }, { :class => 'next' } if @pages.current.next %>
+</div>
+<% end %>
