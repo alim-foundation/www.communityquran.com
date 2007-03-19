@@ -1,9 +1,16 @@
 class Quran::TranslateController < QuranController
-    DEFAULT_QURAN_TRANSLATION = 'MAL'
-    QURANS_WITH_AYAH_TEXT = Quran.find_all_by_contains_ayahs(true)
+    @qurans_with_ayah_text = nil
 
     def compare
         redirect_to :action => 'compare_surah_ayah', :surah_num => 1, :ayah_num => 1
+    end
+
+    def qurans_with_ayah_text
+        @qurans_with_ayah_text ||= Quran.find_all_by_contains_ayahs(true)
+    end
+
+    def default_translation_quran_code
+        return "MAL"
     end
 
     def redirect_compare_surah
@@ -12,7 +19,7 @@ class Quran::TranslateController < QuranController
 
     def compare_surah_ayah
         self.heading = "Translations of Surah #{active_surah_num}, #{active_surah_struct.name} Ayah #{active_ayah_num}"
-        @qac = QuranAyahsComparison.new(QURANS_WITH_AYAH_TEXT, active_surah_num, active_ayah_num)
+        @qac = QuranAyahsComparison.new(qurans_with_ayah_text, active_surah_num, active_ayah_num)
         self.page_navigation = Sparx::Navigate::Tree.new("page") do |p|
             add_surah_paths(p, "redirect_compare_surah")
             add_surah_ayah_paths(p, "compare_surah_ayah")
@@ -20,11 +27,11 @@ class Quran::TranslateController < QuranController
     end
 
     def translate
-        redirect_to :action => 'translate_surah_ayah', :quran_code => DEFAULT_QURAN_TRANSLATION, :surah_num => 1, :ayah_num => 1
+        redirect_to :action => 'translate_surah_ayah', :quran_code => default_translation_quran_code, :surah_num => 1, :ayah_num => 1
     end
 
     def redirect_translate_surah
-        redirect_to :action => 'translate_surah', :quran_code => DEFAULT_QURAN_TRANSLATION
+        redirect_to :action => 'translate_surah', :quran_code => default_translation_quran_code
     end
 
     def redirect_translate_surah_rukuh_no_rukuh_num
@@ -32,22 +39,22 @@ class Quran::TranslateController < QuranController
     end
 
     def redirect_translate_surah_rukuh
-        redirect_to :action => 'translate_surah_rukuh', :quran_code => DEFAULT_QURAN_TRANSLATION
+        redirect_to :action => 'translate_surah_rukuh', :quran_code => default_translation_quran_code
     end
 
     def redirect_translate_surah_ayah
-        redirect_to :action => 'translate_surah_ayah', :quran_code => DEFAULT_QURAN_TRANSLATION
+        redirect_to :action => 'translate_surah_ayah', :quran_code => default_translation_quran_code
     end
 
     def translate_surah
         @quran = Quran.find_by_code(active_quran_code)
         if ! @quran
-            redirect_to :action => 'translate_surah', :quran_code => DEFAULT_QURAN_TRANSLATION
+            redirect_to :action => 'translate_surah', :quran_code => default_translation_quran_code
             return
         end
 
         @surah = @quran.surahs.find_by_surah_num(active_surah_num)
-        self.heading = "#{@quran.short_name} translation of Surah #{QURAN_STRUCT.get_surah(@surah.surah_num).name}"
+        self.heading = "#{@quran.short_name} translation of Surah #{quran_struct.get_surah(@surah.surah_num).name}"
 
         self.page_navigation = Sparx::Navigate::Tree.new("page") do |p|
             add_surah_paths(p, "translate_surah")
@@ -61,12 +68,12 @@ class Quran::TranslateController < QuranController
     def translate_surah_rukuh
         @quran = Quran.find_by_code(active_quran_code)
         if ! @quran
-            redirect_to :action => 'translate_surah_rukuh', :quran_code => DEFAULT_QURAN_TRANSLATION
+            redirect_to :action => 'translate_surah_rukuh', :quran_code => default_translation_quran_code
             return
         end
 
         surahNum = active_surah_num
-        surahStruct = QURAN_STRUCT.get_surah(surahNum)
+        surahStruct = quran_struct.get_surah(surahNum)
         startAyahNum = 1
         endAyahNum = surahStruct.ayah_count
         if surahStruct.rukuh_count > 0
@@ -97,12 +104,12 @@ class Quran::TranslateController < QuranController
     def translate_surah_ayah
         @quran = Quran.find_by_code(active_quran_code)
         if ! @quran
-            redirect_to :action => 'translate_surah_ayah', :quran_code => DEFAULT_QURAN_TRANSLATION
+            redirect_to :action => 'translate_surah_ayah', :quran_code => default_translation_quran_code
             return            
         end
 
         @ayah = @quran.ayahs.find_by_surah_num_and_ayah_num(active_surah_num, active_ayah_num)
-        self.heading = "#{@quran.short_name} translation of Surah #{QURAN_STRUCT.get_surah(@ayah.surah_num).name} Ayah #{@ayah.ayah_num}"
+        self.heading = "#{@quran.short_name} translation of Surah #{quran_struct.get_surah(@ayah.surah_num).name} Ayah #{@ayah.ayah_num}"
 
         self.page_navigation = Sparx::Navigate::Tree.new("page") do |p|
             add_surah_paths(p, "redirect_translate_surah_ayah_no_ayah_num")

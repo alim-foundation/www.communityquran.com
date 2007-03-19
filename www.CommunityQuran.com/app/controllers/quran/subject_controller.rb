@@ -1,18 +1,26 @@
 class Quran::SubjectController < QuranController
-    QURANS_WITH_SUBJECTS = Quran.find_all_by_contains_subjects(true)
-    DEFAULT_INDEX_QURAN_CODE = QURANS_WITH_SUBJECTS[0].code
+    @qurans_with_subjects = nil
+
+    def qurans_with_subjects
+        @qurans_with_subjects ||= Quran.find_all_by_contains_subjects(true)
+        return @qurans_with_subjects
+    end
+
+    def default_index_quran_code
+        return "QSB"
+    end
 
     def index
-        redirect_to :action => 'category', :letter => 'A', :quran_code => DEFAULT_INDEX_QURAN_CODE
+        redirect_to :action => 'category', :letter => 'A', :quran_code => default_index_quran_code
     end
 
     def redirect_category
-        redirect_to :action => 'category', :letter => params[:letter] || 'A', :quran_code => DEFAULT_INDEX_QURAN_CODE
+        redirect_to :action => 'category', :letter => params[:letter] || 'A', :quran_code => default_index_quran_code
     end
 
     def category
         unless get_active_subjects_index
-            redirect_to :action => 'category', :quran_code => DEFAULT_INDEX_QURAN_CODE, :letter => params[:letter]
+            redirect_to :action => 'category', :quran_code => default_index_quran_code, :letter => params[:letter]
             return
         end
 

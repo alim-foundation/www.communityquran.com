@@ -1,13 +1,13 @@
 <form method="get">
-Search for: <input size="35" value="<%= params[:expression] %>" name="expression"/>
+Search for: <input size="35" value="<%= params[:q] %>" name="q"/>
 </form>
 
-<%if params[:expression] %>
+<%if params[:q] %>
     <p/>
     <p/>
     <table class="search-results">
         <tr valign="top">
-            <% ayahs = QuranAyah.find_by_contents(params[:expression]) %>
+            <% ayahs = QuranAyah.find_by_contents(params[:q]) %>
             <td class="collection">
                 <%= ayahs.total_hits %> references in Quran translations.
             </td>
@@ -31,7 +31,7 @@ Search for: <input size="35" value="<%= params[:expression] %>" name="expression
         </tr>
 
         <tr valign="top">
-            <% elaborations = QuranAyahElaboration.find_by_contents(params[:expression]) %>
+            <% elaborations = QuranAyahElaboration.find_by_contents(params[:q]) %>
             <td class="collection">
                 <%= elaborations.total_hits %> references in Quran ayah elaborations.
             </td>

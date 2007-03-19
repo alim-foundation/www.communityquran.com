@@ -1,47 +1,83 @@
-<div class="index">
-    <center>
-        <img src="/images/quran-page.jpg"/>
-    <table cellspacing="20">
-        <tr valign="top">
-            <td>
-                <% content_for(:search) do %>
-                    <div class="search">
-                        <form method="get" action="<%= url_for :controller => 'Quran::Search', :action => 'search' %>">Search for: <input size="10" name="expression"/></form>
-                    </div>
-                <% end %>
-                <%= render :partial => "shared/panel", :object => Panel.new("Search Translations", :search) %>
-            </td>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-            <td>
-            </td>
-
-            <td>
-            </td>
-
-        </tr>
-        <tr valign="top">
-            <td>
-                <% content_for(:surahs) do %>
-                <br/><br/>
-                <a href="<%= url_for :controller => 'Quran::Structure', :action => 'index' %>">How is the Quran Structured?</a>
-                <% end %>
-                <%= render :partial => "shared/panel", :object => Panel.new("Learn about Surahs", :surahs) %>
-            </td>
-
-            <td>
-                <% content_for(:comments) do %>
-                    User comments...
-                <% end %>
-                <%= render :partial => "shared/panel", :object => Panel.new("Recent Comments", :comments) %>
-            </td>
-
-            <td>
-                <% content_for(:questions) do %>
-                    User questions...
-                <% end %>
-                <%= render :partial => "shared/panel", :object => Panel.new("Recent Questions", :questions) %>
-            </td>
-        </tr>
-    </table>
-    </center>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <%= javascript_include_tag :defaults %>
+    <%= stylesheet_link_tag "default", :media => "all" %>
+    <title>Community Qur'an -- Assalam-u-alaikum!</title>
+    <style>
+        div.heading { font-family: Georgia, serif; font-size: 18pt; text-align: center; padding-top: 5px; padding-bottom: 10px; }
+        input { font-family: Georgia, serif; font-size: 16pt; }
+        div.action
+        {
+            font-family: Georgia, serif; font-size: 14pt;
+            margin-top: 20px; padding: 5px; margin-bottom: 5px;
+            border: 1px solid #999999;
+            background-color: #DCDCDC;
+            width: 70%;
+        }
+        div.action a { color: black; text-decoration: none; }
+        div.action a:hover { text-decoration: underline; color: navy; }
+    </style>
+</head>
+<body>
+<p/>
+<div class="heading">
+    Welcome to the Community Qur'an<br/><br/>
+    <img src="/images/quran-page.jpg"/>
 </div>
+<center>
+<table class="panel" cellspacing="0" cellpadding="0" width="560">
+    <tr class="content">
+        <td class="content">
+            <table class="content" cellspacing="0">
+                <tr class="top" height="10">
+                    <td class="left"></td>
+                    <td class="middle"></td>
+                    <td class="right"></td>
+                </tr>
+                <tr class="middle">
+                    <td class="left" width="9">&nbsp;</td>
+                    <td class="middle">
+                        <div class="body">
+                            <center>
+                                <p/>
+                                <div class="search">
+                                <form method="get" action="<%= url_for :controller => 'Quran::Search', :action => 'search' %>">
+                                    <input size="35" name="q"/>
+                                    <input name="submit" type="submit" value="Search">
+                                </form>
+                                </div>
+
+                                <div class="action">
+                                    <%= link_to "Explore the Qur'an in Arabic", :controller => "Quran::Arabic", :action => "index" %>
+                                </div>
+                                <div class="action">
+                                    <%= link_to "Compare Qur'an Translations", :controller => "Quran::Translate", :action => "compare" %>
+                                </div>
+                                <div class="action">
+                                    <%= link_to "View Comments, Tags, & Notes", :controller => "Quran::Subject", :action => "index" %>
+                                </div>
+                                <div class="action">
+                                    <%= link_to "Browse Subjects Index", :controller => "Quran::Subject", :action => "index" %>
+                                </div>
+                                <div class="action">
+                                    <%= link_to "Review Qur'an Structure", :controller => "Quran::Structure", :action => "index" %>
+                                </div>
+                            </center>
+                        </div>
+                    </td>
+                    <td class="right" width="9">&nbsp;</td>
+                </tr>
+                <tr class="bottom" height="10">
+                    <td class="left"></td>
+                    <td class="middle"></td>
+                    <td class="right"></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</center>
+</body>
+</html>

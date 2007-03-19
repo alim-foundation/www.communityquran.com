@@ -1,8 +1,13 @@
-class QuranController < ApplicationController   
-    QURAN_STRUCT = QuranStruct.find(:first)
-           
+class QuranController < ApplicationController
+    @quran_struct = nil
+
     def index
-        self.heading = "Welcome to the Community Qur'an"
+        render(:layout => false) 
+    end
+
+    def quran_struct
+        @quran_struct ||= QuranStruct.find(:first)
+        return @quran_struct
     end
 
     def active_quran_code
@@ -22,7 +27,7 @@ class QuranController < ApplicationController
     end
 
     def active_surah_struct
-        return QURAN_STRUCT.get_surah(active_surah_num)
+        return quran_struct.get_surah(active_surah_num)
     end
 
     def add_surah_paths(path, action, prevNext = true, ayahNum = nil, hideIntro = false)
@@ -34,7 +39,7 @@ class QuranController < ApplicationController
                 c.add_path 'next-surah', :label => "Next Surah", :url => get_next_surah_url(action, ayahNum)
                 c.add_separator
             end
-            QURAN_STRUCT.surahs.each do |surah|
+            quran_struct.surahs.each do |surah|
                 c.add_path "Surah_#{surah.surah_num}",
                           :label => "#{surah.surah_num}. #{surah.name}",
                           :url => ayahNum ? url_for(:action => action, :surah_num => surah.surah_num, :ayah_num => ayahNum) : url_for(:action => action, :surah_num => surah.surah_num),
@@ -82,14 +87,14 @@ class QuranController < ApplicationController
         if surahNum > 1
             surahNum -= 1
         else
-            surahNum = QURAN_STRUCT.surah_count
+            surahNum = quran_struct.surah_count
         end
         return ayahNum ? url_for(:action => action, :surah_num => surahNum, :ayah_num => ayahNum) : url_for(:action => action, :surah_num => surahNum)
     end
 
     def get_next_surah_url(action, ayahNum)
         surahNum = active_surah_num
-        if surahNum < QURAN_STRUCT.surah_count
+        if surahNum < quran_struct.surah_count
             surahNum += 1
         else
             surahNum = 1
@@ -106,9 +111,9 @@ class QuranController < ApplicationController
             if surahNum > 1
                 surahNum -= 1
             else
-                surahNum = QURAN_STRUCT.surah_count
+                surahNum = quran_struct.surah_count
             end
-            ayahNum =QURAN_STRUCT.get_surah(surahNum).ayah_count
+            ayahNum = quran_struct.get_surah(surahNum).ayah_count
         end
         url_for :action => action, :surah_num => surahNum, :ayah_num => ayahNum
     end
@@ -116,10 +121,10 @@ class QuranController < ApplicationController
     def get_next_ayah_url(action)
         surahNum = active_surah_num
         ayahNum = active_ayah_num
-        if ayahNum < QURAN_STRUCT.get_surah(surahNum).ayah_count
+        if ayahNum < quran_struct.get_surah(surahNum).ayah_count
             ayahNum += 1
         else
-            if surahNum < QURAN_STRUCT.surah_count
+            if surahNum < quran_struct.surah_count
                 surahNum += 1
             else
                 surahNum = 1

@@ -47,8 +47,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect "quran/surah/:surah_num", :controller => "Quran::Surah", :action => "redirect_elaborate_surah_num"
   map.connect "quran/surah/:quran_code/:surah_num", :controller => "Quran::Surah", :action => "elaborate_surah_num"
 
-  map.connect "quran/search", :controller => "Quran::Search",  :action => "index"
-  map.connect "quran/search/:expression", :controller => "Quran::Search",  :action => "search"
+  map.connect "quran/search", :controller => "Quran::Search",  :action => "search"
 
   # Allow downloading Web Service WSDL as a file with an extension
   # instead of a file named 'wsdl'
