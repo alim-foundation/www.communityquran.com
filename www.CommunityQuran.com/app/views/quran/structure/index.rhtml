@@ -10,7 +10,7 @@
     <% for surah_struct in @quran_struct.surahs %>
     <tr>
         <td class="sequence"><%= surah_struct.surah_num %></td>
-        <td class="text"><%= link_to surah_struct.name, :controller => "Quran::Surah", :action => "redirect_elaborate_surah_num", :surah_num => surah_struct.surah_num %></td>
+        <td class="text"><%= link_to surah_struct.name, :controller => "Quran::Surah", :action => "redirect_elaborate_surah", :surah_num => surah_struct.surah_num %></td>
         <td class="text"><%= surah_struct.revealed_city %></td>
         <td class="sequence"><%= surah_struct.revealed_num %></td>
         <td class="count"><%= link_to surah_struct.ayah_count, :controller => "Quran::Translate", :action => "redirect_compare_surah", :surah_num => surah_struct.surah_num %></td>
@@ -31,7 +31,7 @@
     <% surah_struct = @quran_struct.get_surah(juz.surah_num) %>
     <tr>
         <td class="sequence"><%= juz.juz_num %></td>
-        <td class="text"><%= link_to surah_struct.name, :controller => "Quran::Surah", :action => "redirect_elaborate_surah_num", :surah_num => surah_struct.surah_num %></td>
+        <td class="text"><%= link_to surah_struct.name, :controller => "Quran::Surah", :action => "redirect_elaborate_surah", :surah_num => surah_struct.surah_num %></td>
         <td class="sequence"><%= link_to juz.ayah_num, :controller => "Quran::Translate", :action => "compare_surah_ayah", :surah_num => juz.surah_num, :ayah_num => juz.ayah_num %></td>
     </tr>
     <% end %>
@@ -49,7 +49,7 @@
     <% surah_struct = @quran_struct.get_surah(sajda.surah_num) %>
     <tr>
         <td class="sequence"><%= sajda.sajda_num %></td>
-        <td class="text"><%= link_to surah_struct.name, :controller => "Quran::Surah", :action => "redirect_elaborate_surah_num", :surah_num => surah_struct.surah_num %></td>
+        <td class="text"><%= link_to surah_struct.name, :controller => "Quran::Surah", :action => "redirect_elaborate_surah", :surah_num => surah_struct.surah_num %></td>
         <td class="sequence"><%= link_to sajda.ayah_num, :controller => "Quran::Translate", :action => "compare_surah_ayah", :surah_num => sajda.surah_num, :ayah_num => sajda.ayah_num %></td>
     </tr>
     <% end %>

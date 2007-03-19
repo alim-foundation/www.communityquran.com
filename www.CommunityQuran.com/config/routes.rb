@@ -44,8 +44,10 @@ ActionController::Routing::Routes.draw do |map|
   map.connect "quran/subject/:quran_code/:subject_id/ayahs/:view_quran_code", :controller => "Quran::Subject",  :action => "ayahs"
 
   map.connect "quran/surah", :controller => "Quran::Surah", :action => "index"
-  map.connect "quran/surah/:surah_num", :controller => "Quran::Surah", :action => "redirect_elaborate_surah_num"
-  map.connect "quran/surah/:quran_code/:surah_num", :controller => "Quran::Surah", :action => "elaborate_surah_num"
+  map.connect "quran/surah/:surah_num", :controller => "Quran::Surah", :action => "redirect_elaborate_surah"
+  map.connect "quran/surah/:surah_num/themes", :controller => "Quran::Surah", :action => "redirect_elaborate_surah_themes"
+  map.connect "quran/surah/:quran_code/:surah_num", :controller => "Quran::Surah", :action => "elaborate_surah"
+  map.connect "quran/surah/:quran_code/:surah_num/themes", :controller => "Quran::Surah", :action => "ayah_themes"
 
   map.connect "quran/search", :controller => "Quran::Search",  :action => "search"
   map.connect "quran/search/ayahs", :controller => "Quran::Search",  :action => "search_ayahs"
