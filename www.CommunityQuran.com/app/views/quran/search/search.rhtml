@@ -1,70 +1,32 @@
+<div class="search-form">
 <form method="get">
 Search for: <input size="35" value="<%= @query %>" name="q"/> <input name="do" type="submit" value="Search"/>
 </form>
+</div>    
 
 <%if @query %>
     <p/>
     <p/>
-    <table class="search-results-summary">
-        <tr valign="top">
-            <td class="collection">
-                <%= @ayahs.total_hits %> references in Quran translations.
-                <% if @more_ayahs_url %>
-                    <br><a href="<%= @more_ayahs_url %>">See All</a>
-                <% end %>
-            </td>
-            <td class="results">
-                <%= render :partial => "ayah_results" %>
-            </td>
+    <table class="report">
+        <tr class="heading">
+            <th>Found</th>
+            <th>In</th>
         </tr>
-
+        <% @results_summary.each do |summary| %>
         <tr valign="top">
-            <td class="collection">
-                <%= @subjects.total_hits %> references in Quran subject indexes.
-                <% if @more_subjects_url %>
-                    <br><a href="<%= @more_subjects_url %>">See All</a>
-                <% end %>
-            </td>
-            <td class="results">
-                <%= render :partial => "subject_results" %>
-            </td>
+            <td class="count"><%= summary.total_hits %></td>
+            <td class="text"><%= link_to summary.collection, :action => summary.collection_search_action, :q => summary.query %></td>
         </tr>
-
-        <tr valign="top">
-            <td class="collection">
-                <%= @ayah_elaborations.total_hits %> references in Quran ayah elaborations.
-                <% if @more_ayah_elaborations_url %>
-                    <br><a href="<%= @more_ayah_elaborations_url %>">See All</a>
-                <% end %>
-            </td>
-            <td class="results">
-                <%= render :partial => "ayah_elaborations_results" %>
-            </td>
-        </tr>
-
-        <tr valign="top">
-            <td class="collection">
-                <%= @ayah_themes.total_hits %> references in Quran ayah themes.
-                <% if @more_ayah_themes_url %>
-                    <br><a href="<%= @more_ayah_themes_url %>">See All</a>
-                <% end %>
-            </td>
-            <td class="results">
-                <%= render :partial => "ayahs_themes_results" %>
-            </td>
-        </tr>
-
-        <tr valign="top">
-            <td class="collection">
-                references in Quran Surah introductions.
-                <% if @more_surah_elaborations_url %>
-                    <br><a href="<%= @more_surah_elaborations_url %>">See All</a>
-                <% end %>
-            </td>
-            <td class="results">
-                <%= render :partial => "surah_elaboration_results" %>
-            </td>
-        </tr>
-
+        <% end %>
     </table>
+
+    <div span="search-results-summary">
+        <% @results_summary.each do |summary| %>
+            <div span="heading"><%= summary.collection %></div>
+            <div span="results">
+                <%= render :partial => summary.renderer, :object => summary.results %>
+            </div>
+        <% end %>
+    </div>
+
 <% end %>

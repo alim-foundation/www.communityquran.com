@@ -1,0 +1,19 @@
+<div class="search-form">
+<form method="get">
+Search for: <input size="35" value="<%= @results.query %>" name="q"/> <input name="do" type="submit" value="Search"/> <input type="hidden" name="page" value="1"/>
+</form>
+</div>
+
+<%if @results.query %>
+<div class="search-results-summary">
+    Displaying results <%= @results.pages.current.first_item %> to <%= @results.pages.current.last_item %> of <%= @results.pages.item_count %>.
+</div>
+
+<%= render :partial => @results.renderer, :object => @results.results %>
+
+<div class="search-results-navigator">
+    <%= link_to 'Previous page', { :page => @results.pages.current.previous, :q => @results.query }, { :class => 'prev' } if @results.pages.current.previous %>
+    <%= pagination_links(@results.pages, :params => { :q=> @results.query }) %>
+    <%= link_to 'Next page', { :page => @results.pages.current.next, :q => @results.query }, { :class => 'next' } if @results.pages.current.next %>
+</div>
+<% end %>

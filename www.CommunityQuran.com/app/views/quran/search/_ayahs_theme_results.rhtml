@@ -1,0 +1,22 @@
+<table class="search-results">
+    <% for result in ayahs_theme_results %>
+        <tr valign="top">
+            <td class="location" nobr>
+                <% if result[:start_ayah_num] != result[:end_ayah_num] %>
+                <a href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => result[:surah_num], :ayah_num => result[:start_ayah_num] %>">
+                    <%= result[:start_ayah_num] %>
+                </a>
+                to
+                <a href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => result[:surah_num], :ayah_num => result[:end_ayah_num] %>">
+                    <%= result[:end_ayah_num] %>
+                </a>
+                <% else %>
+                <a href="<%= url_for :controller => 'Quran::Translate', :action => 'compare_surah_ayah', :surah_num => result[:surah_num], :ayah_num => result[:start_ayah_num] %>">
+                    <%= result[:start_ayah_num] %>
+                </a>
+                <% end %>
+            </td>
+            <td class="excerpt"><%= result[:excerpt] %></td>
+        </tr>
+    <% end %>
+</table>

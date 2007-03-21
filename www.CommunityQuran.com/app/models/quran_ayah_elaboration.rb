@@ -15,18 +15,25 @@
 
 class QuranAyahElaboration < ActiveRecord::Base
     belongs_to :ayah, :class_name => "QuranAyah"
-    acts_as_ferret :fields => { :text => {:store => :yes} }
+    acts_as_ferret :fields => { :text => {:store => :yes}, :quran_code => { :store => :yes }, :note_id => { :store => :yes }, :surah_num => { :store => :yes }, :ayah_num => { :store => :yes } }
 
-    def self.full_text_search(q, options = {})
-        return nil if q.nil? or q==""
-        default_options = {:limit => 10, :page => 1}
-        options = default_options.merge options
+    def quran_code
+        return ayah.quran.code
+    end
 
-        # get the offset based on what page we're on
-        options[:offset] = options[:limit] * (options.delete(:page).to_i-1)
+    def surah_num
+        return ayah.surah_num
+    end
 
-        # now do the query with our options
-        results = self.find_by_contents(q, options)
-        return [results.total_hits, results]
+    def ayah_num
+        return ayah.ayah_num
+    end
+
+    def note_id
+        num || code
+    end
+
+    def self.ferret_index_collection_name
+        "Qur'an Ayah Translator Commentary/Elaborations"
     end
 end

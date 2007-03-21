@@ -1,12 +1,12 @@
-<table class="subjects">
-    <% for result in @surah_elaboration_results %>
-        <tr class="subject" valign="top">
+<table class="search-results">
+    <% for result in surah_elaboration_results %>
+        <tr valign="top">
             <td class="location">
                 <a href="<%= url_for :controller => 'Quran::Surah', :action => 'elaborate_surah', :quran_code => result[:quran_code], :surah_num => result[:surah_num] %>">
                     Surah <%= result[:surah_num] %>
                 </a>
             </td>
-            <td class="topic">
+            <td class="excerpt">
                 <%= result[:excerpt] %>
             </td>
         </tr>

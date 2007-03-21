@@ -1,18 +1,18 @@
-<table class="quran-translation">
-    <% for elaboration in @ayah_elaborations %>
-        <tr class="elaboration" valign="top">
-            <td class="quran">
-                <%= elaboration.ayah.quran.short_name %>
+<table class="search-results">
+    <% for result in ayah_elaborations_results %>
+        <tr valign="top">
+            <td class="book">
+                <%= result[:quran_code] %>
             </td>
-            <td class="ayah-id" nobr>
-                <a href="<%= url_for :controller => 'Quran::Translate', :action => 'translate_surah_ayah', :quran_code => elaboration.ayah.quran.code, :surah_num => elaboration.ayah.surah_num, :ayah_num => elaboration.ayah.ayah_num %>">
-                    <%= elaboration.ayah.surah_num %>.<%= elaboration.ayah.ayah_num %>
+            <td class="location" nobr>
+                <a href="<%= url_for :controller => 'Quran::Translate', :action => 'translate_surah_ayah', :quran_code => result[:quran_code], :surah_num => result[:surah_num], :ayah_num => result[:ayah_num] %>">
+                    <%= result[:surah_num] %>.<%= result[:ayah_num] %>
                 </a>
             </td>
-            <td class="note-id" nobr>
-                Note <%= elaboration.num || elaboration.code %>
+            <td class="location" nobr>
+                Note <%= result[:note_id] %>
             </td>
-            <td class="note-text"><%= elaboration.text %></td>
+            <td class="excerpt"><%= result[:excerpt] %></td>
         </tr>
     <% end %>
 </table>

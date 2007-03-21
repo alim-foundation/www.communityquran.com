@@ -1,15 +1,15 @@
-<table class="quran-translation">
-    <% for ayah in @ayahs %>
-        <tr class="ayah" valign="top">
-            <td class="quran">
-                <%= ayah.quran.short_name %>
+<table class="search-results">
+    <% for result in ayah_results %>
+        <tr valign="top">
+            <td class="book">
+                <%= result[:quran_code] %>
             </td>
-            <td class="ayah-id">
-                <a href="<%= url_for :controller => 'Quran::Translate', :action => 'translate_surah_ayah', :quran_code => ayah.quran.code, :surah_num => ayah.surah_num, :ayah_num => ayah.ayah_num %>">
-                    <%= ayah.surah_num %>.<%= ayah.ayah_num %>
+            <td class="location">
+                <a href="<%= url_for :controller => 'Quran::Translate', :action => 'translate_surah_ayah', :quran_code => result[:quran_code], :surah_num => result[:surah_num], :ayah_num => result[:ayah_num] %>">
+                    <%= result[:surah_num] %>.<%= result[:ayah_num] %>
                 </a>
             </td>
-            <td class="ayah-text"><%= highlight(ayah.text, @query) %></td>
+            <td class="excerpt"><%= result[:excerpt] %></td>
         </tr>
     <% end %>
 </table>
