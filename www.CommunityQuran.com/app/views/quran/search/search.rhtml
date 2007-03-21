@@ -15,13 +15,20 @@ Search for: <input size="35" value="<%= @query %>" name="q"/> <input name="do" t
         <% @results_summary.each do |summary| %>
         <tr valign="top">
             <td class="count"><%= summary.total_hits %></td>
-            <td class="text"><%= link_to summary.collection, :action => summary.collection_search_action, :q => summary.query %></td>
+            <td class="text">
+                <% if summary.total_hits > 0 %>
+                <%= link_to summary.collection, :action => summary.collection_search_action, :q => summary.query %>
+                <% else %>
+                <%= summary.collection %>
+                <% end %>
+            </td>
         </tr>
         <% end %>
     </table>
 
     <div span="search-results-summary">
         <% @results_summary.each do |summary| %>
+            <% next unless summary.total_hits > 0 %>
             <div span="heading"><%= summary.collection %></div>
             <div span="results">
                 <%= render :partial => summary.renderer, :object => summary.results %>
