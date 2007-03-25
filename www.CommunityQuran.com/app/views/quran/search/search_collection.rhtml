@@ -1,19 +1,38 @@
 <div class="search-form">
 <form method="get">
-Search for: <input size="35" value="<%= @results.query %>" name="q"/> <input name="do" type="submit" value="Search"/> <input type="hidden" name="page" value="1"/>
+Search for: <input size="35" value="<%= @results.query %>" name="q"/>
+    Results per page: <% rpp = Integer(params['rpp']) %>
+    <select name="rpp">
+        <% results_per_page_options.each do |item| %>
+        <option value="<%= item %>" <%= item == rpp ? 'selected' : '' %>><%= item %></option>
+        <% end %>
+    </select>
+    <input name="do" type="submit" value="Search"/>
+    <input type="hidden" name="page" value="1"/>
 </form>
 </div>
 
 <%if @results.query %>
-<div class="search-results-summary">
-    Displaying results <%= @results.pages.current.first_item %> to <%= @results.pages.current.last_item %> of <%= @results.pages.item_count %>.
-</div>
+<div class="search-results">
+    <div class="collection">
+        Displaying results <%= @results.pages.current.first_item %> to <%= @results.pages.current.last_item %> of <%= @results.pages.item_count %> in
+        <%= collection_name %>.
+        <select onchange="document.location.href = this.options[this.selectedIndex].value">
+            <option>View other results from...</option>
+            <% collection_actions.each do |item| %>
+                <option value="<%= url_for :action => item[1], :q => @results.query %>"><%= item[0] %></option>
+            <% end %>
+        </select>
+    </div>
 
-<%= render :partial => @results.renderer, :object => @results.results %>
+    <div class="items">
+        <%= render :partial => @results.renderer, :object => @results.results %>
+    </div>
 
-<div class="search-results-navigator">
-    <%= link_to 'Previous page', { :page => @results.pages.current.previous, :q => @results.query }, { :class => 'prev' } if @results.pages.current.previous %>
-    <%= pagination_links(@results.pages, :params => { :q=> @results.query }) %>
-    <%= link_to 'Next page', { :page => @results.pages.current.next, :q => @results.query }, { :class => 'next' } if @results.pages.current.next %>
+    <div class="navigator">
+        <%= link_to 'Previous page', { :page => @results.pages.current.previous, :q => @results.query, :rpp => params[:rpp] }, { :class => 'prev' } if @results.pages.current.previous %>
+        <%= pagination_links(@results.pages, :params => { :q=> @results.query, :rpp => params[:rpp] }) %>
+        <%= link_to 'Next page', { :page => @results.pages.current.next, :q => @results.query, :rpp => params[:rpp] }, { :class => 'next' } if @results.pages.current.next %>
+    </div>
 </div>
 <% end %>

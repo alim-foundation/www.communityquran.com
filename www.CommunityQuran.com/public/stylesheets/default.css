@@ -378,6 +378,23 @@ div.article div.heading { padding-top: 5px; padding-bottom: 0px; font-family: ar
 
 
 /*********************************************************************
+ ** SEARCH RESULTS                                                  **
+ *********************************************************************/
+
+div.search-form { font-family: Georgia, serif; font-size: 14pt; }
+div.search-form input { font-family: Georgia, serif; font-size: 14pt; }
+div.search-form select { font-family: Georgia, serif; font-size: 14pt; }
+div.search-results-summary { font-family: Georgia, serif; font-size: 12pt; }
+div.search-results { font-family: Georgia, serif; font-size: 12pt; padding-top: 10px; }
+div.search-results div.collection { font-style: italic; margin-top: 10px; background-color: lightyellow; border-bottom: 1px dotted #333333; padding-bottom: 5px; border-top: 1px dotted #333333; padding-top: 5px; }
+div.search-results div.items td { padding-top: 10px; }
+div.search-results div.items td.book { padding-right: 15px; color: silver }
+div.search-results div.items span.fn { line-height: 1.0em; vertical-align: super; font-size: 9pt; }
+div.search-results div.navigator { padding-top: 15px; text-align:center; font-family: verdana, sans-serif; font-size: 9pt}
+div.search-results div.navigator a { border: 1px solid #666666; padding: 3px; background-color: lightyellow; color: #333333; text-decoration: none; }
+
+
+/*********************************************************************
  ** REPORTS                                                         **
  *********************************************************************/
 

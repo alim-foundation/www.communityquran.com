@@ -1,5 +1,4 @@
 class Quran::SearchController < QuranController
-
     def index
     end
 
@@ -45,11 +44,15 @@ class Quran::SearchController < QuranController
         return params[:q]
     end
 
-    def results_per_page
-        return 10
+    def summarizing
+        action_name == 'search'
     end
 
-protected    
+    def results_per_page
+        Integer(params['rpp'] || 10)
+    end
+
+protected
     class SearchResults
         attr_accessor :controller
         attr_accessor :query
@@ -83,7 +86,7 @@ protected
         def full_text_search_by_storage(index, query, query_options = {}, excerpt_options = {}, other_fields_to_assign = [])
             return nil if query.nil? or query == ""
 
-            default_query_options = {:limit => @controller.results_per_page, :page => @controller.params[:page] || 1}
+            default_query_options = {:limit => @controller.summarizing ? 5 : @controller.results_per_page, :page => @controller.summarizing ? 1 : (@controller.params[:page] || 1) }
             query_options = default_query_options.merge query_options
 
             # get the offset based on what page we're on

@@ -5,35 +5,51 @@ Search for: <input size="35" value="<%= @query %>" name="q"/> <input name="do" t
 </div>    
 
 <%if @query %>
-    <p/>
-    <p/>
-    <table class="report">
-        <tr class="heading">
-            <th>Found</th>
-            <th>In</th>
-        </tr>
-        <% @results_summary.each do |summary| %>
+    <table>
         <tr valign="top">
-            <td class="count"><%= summary.total_hits %></td>
-            <td class="text">
-                <% if summary.total_hits > 0 %>
-                <%= link_to summary.collection, :action => summary.collection_search_action, :q => summary.query %>
-                <% else %>
-                <%= summary.collection %>
-                <% end %>
+            <td>
+                <div class="search-results">
+                    <% @results_summary.each do |summary| %>
+                        <% next unless summary.total_hits > 0 %>
+                        <div class="collection">
+                            <%if summary.total_hits > summary.results.length %>
+                                First <%= summary.results.length %> results of <%= summary.total_hits %> from
+                            <% else %>
+                                All results from
+                            <% end %>
+                            <%= summary.collection %>.
+                            <%if summary.total_hits > summary.results.length %>
+                                <%= link_to "View all the results.", :action => summary.collection_search_action, :q => summary.query %>
+                            <% end %>
+                        </div>
+                        <div class="items">
+                            <%= render :partial => summary.renderer, :object => summary.results %>
+                        </div>
+                    <% end %>
+                </div>
+            </td>
+            <td>&nbsp;&nbsp;&nbsp;</td>
+            <td>
+                <br/>
+                <table class="report">
+                    <tr class="heading">
+                        <th>Found</th>
+                        <th>In</th>
+                    </tr>
+                    <% @results_summary.each do |summary| %>
+                    <tr valign="top">
+                        <td class="count"><%= summary.total_hits %></td>
+                        <td class="text">
+                            <% if summary.total_hits > 0 %>
+                            <%= link_to summary.collection, :action => summary.collection_search_action, :q => summary.query %>
+                            <% else %>
+                            <%= summary.collection %>
+                            <% end %>
+                        </td>
+                    </tr>
+                    <% end %>
+                </table>
             </td>
         </tr>
-        <% end %>
     </table>
-
-    <div span="search-results-summary">
-        <% @results_summary.each do |summary| %>
-            <% next unless summary.total_hits > 0 %>
-            <div span="heading"><%= summary.collection %></div>
-            <div span="results">
-                <%= render :partial => summary.renderer, :object => summary.results %>
-            </div>
-        <% end %>
-    </div>
-
 <% end %>

@@ -29,6 +29,6 @@ class QuranAyah < ActiveRecord::Base
     end
 
     def self.ferret_index_collection_name
-        "Qur'an Ayah Translation"
+        "Qur'an Ayah Translations"
     end
 end
