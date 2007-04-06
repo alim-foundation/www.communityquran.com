@@ -13,30 +13,37 @@ class Quran::SearchController < QuranController
             @results_summary << SearchResults.new(self, QuranAyahsTheme.ferret_index_collection_name, QuranAyahsTheme.ferret_index, {}, { :field => :theme }, [:quran_code, :surah_num, :start_ayah_num, :end_ayah_num], "search_ayah_themes", "ayahs_theme_results")
             @results_summary << SearchResults.new(self, QuranSurah.ferret_index_collection_name, QuranSurah.ferret_index, {}, { :field => :overview_text }, [:quran_code, :surah_num], "search_surah_elaborations", "surah_elaboration_results")
         end
+
+        self.heading = "Search"
     end
 
     def search_ayahs
         @results = SearchResults.new(self, QuranAyah.ferret_index_collection_name, QuranAyah.ferret_index, {}, { :field => :text }, [:quran_code, :surah_num, :ayah_num], "search_ayahs", "ayah_results")
+        self.heading = "Search #{QuranAyah.ferret_index_collection_name}"
         render :template => "quran/search/search_collection"
     end
 
     def search_subjects
         @results = SearchResults.new(self, QuranSubject.ferret_index_collection_name, QuranSubject.ferret_index, {}, { :field => :topic }, [:quran_code, :id], "search_subjects", "subject_results")
+        heading = "Search #{QuranSubject.ferret_index_collection_name}"
         render :template => "quran/search/search_collection"
     end
 
     def search_ayah_elaborations
         @results = SearchResults.new(self, QuranAyahElaboration.ferret_index_collection_name, QuranAyahElaboration.ferret_index, {}, { :field => :text }, [:quran_code, :surah_num, :ayah_num, :note_id], "search_ayah_elaborations", "ayah_elaborations_results")
+        self.heading = "Search #{QuranAyahElaboration.ferret_index_collection_name}"
         render :template => "quran/search/search_collection"
     end
 
     def search_ayah_themes
         @results = SearchResults.new(self, QuranAyahsTheme.ferret_index_collection_name, QuranAyahsTheme.ferret_index, {}, { :field => :theme }, [:quran_code, :surah_num, :start_ayah_num, :end_ayah_num], "search_ayah_themes", "ayahs_theme_results")
+        self.heading = "Search #{QuranAyahsTheme.ferret_index_collection_name}"
         render :template => "quran/search/search_collection"
     end
 
     def search_surah_elaborations
-        @results = SearchResults.new(self, "Surah Introduction (Translator Elaborations)", QuranSurah.ferret_index, {}, { :field => :overview_text }, [:quran_code, :surah_num], "search_surah_elaborations", "surah_elaboration_results")
+        @results = SearchResults.new(self, QuranSurah.ferret_index_collection_name, QuranSurah.ferret_index, {}, { :field => :overview_text }, [:quran_code, :surah_num], "search_surah_elaborations", "surah_elaboration_results")
+        self.heading = "Search #{QuranSurah.ferret_index_collection_name}"
         render :template => "quran/search/search_collection"
     end
 

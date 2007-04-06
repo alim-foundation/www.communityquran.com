@@ -10,5 +10,10 @@ class QuranAyahsComparison
         @surah_num = surahNum
         @ayah_num = ayahNum
         @ayahs = qurans.collect { |quran| quran.ayahs.find_by_surah_num_and_ayah_num(surahNum, ayahNum) }
-    end        
+    end
+
+    def theme
+        quran = Quran.find_by_contains_ayah_themes(true)
+        quran.surahs.find_by_surah_num(@surah_num).themes.find(:first, :conditions => ["start_ayah_num >= ? and ? <= end_ayah_num", @ayah_num, @ayah_num])
+    end
 end

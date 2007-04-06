@@ -89,5 +89,13 @@ module Sparx::Navigate
         end
     end
 
+    class Callout
+        attr_accessor :body
+
+        def initialize(options = {})
+            @body = options[:body]
+        end
+    end
+
 end    
     

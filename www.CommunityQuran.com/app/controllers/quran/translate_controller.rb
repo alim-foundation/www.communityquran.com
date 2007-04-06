@@ -24,6 +24,10 @@ class Quran::TranslateController < QuranController
             add_surah_paths(p, "redirect_compare_surah")
             add_surah_ayah_paths(p, "compare_surah_ayah")
         end
+        if @qac.theme then
+            self.page_callout = Sparx::Navigate::Callout.new(
+                :body => "<div class='ayah-themes'><div class='heading'>#{active_surah_struct.name} Ayah #{active_ayah_num} Theme</div>#{@qac.theme.theme}</div>")
+        end            
     end
 
     def translate

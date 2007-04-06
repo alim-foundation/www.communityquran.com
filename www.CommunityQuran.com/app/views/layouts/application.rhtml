@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<% haveCalloutPanel = defined? show_callout_panel == "method" && show_callout_panel %>
+<% havePageCallout = @page_callout != nil %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -68,7 +68,7 @@
                                     </td>
                                 </tr>
                                 <tr valign="top">
-                                    <td class="main-content-cell" colspan="<%= haveCalloutPanel ? 1 : 2 %>">
+                                    <td class="main-content-cell" colspan="<%= havePageCallout ? 1 : 2 %>">
                                         <table cellpadding="0" cellspacing="0" width="100%">
                                             <tr valign="top">
                                                 <% if @page_navigation %>
@@ -121,20 +121,11 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <% if haveCalloutPanel %>
+                                    <% if havePageCallout %>
                                     <td class="callout-panel">
                                         <div class="top"></div>
                                         <div class="content">
-                                             This is some text (perhaps help or otherwise) that we can put on the right side.
-                                             It could be other context-sensitive help, tips, pointers, etc.
-                                             When the text grows the box will grow with it and fade out appropriately.
-                                             See how the box is darker at the top than the bottom.
-                                            <p/>
-
-                                            <ul class="vertical-menu">
-                                                <li><a href="#">Revenge of the Sith</a></li>
-                                                <li><a href="#">Newsflash 1</a></li>
-                                            </ul>
+                                            <%= @page_callout.body %>
                                         </div>
                                     </td>
                                     <% end %>
@@ -142,7 +133,7 @@
                                 </tr>
 
                                 <tr valign="top">
-                                    <td class="footer-bar" colspan="<%= haveCalloutPanel ? 1 : 2 %>">
+                                    <td class="footer-bar" colspan="<%= havePageCallout ? 1 : 2 %>">
                                         <div class="footer-menu">
                                             <ul>
                                                 <li><a href="#">Links</a></li>
@@ -153,7 +144,7 @@
                                         </div>
                                         <div class="footer-content">{ant.build.version} ({ant.build.date})</div>
                                     </td>
-                                    <% if haveCalloutPanel %>
+                                    <% if havePageCallout %>
                                     <td class="callout-panel-bottom"><div style="height: 50px; width: 183px"></div></td>
                                     <% end %>
                                 </tr>

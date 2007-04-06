@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
     attr_accessor :title
     attr_accessor :heading
     attr_accessor :page_navigation
+    attr_accessor :page_callout
 
 protected
     def title=(title)
@@ -22,5 +23,9 @@ protected
 
     def page_navigation=(pn)
         @page_navigation = pn
+    end
+
+    def page_callout=(pc)
+        @page_callout = pc
     end
 end
