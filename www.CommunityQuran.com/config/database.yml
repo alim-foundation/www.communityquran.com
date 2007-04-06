@@ -16,7 +16,7 @@ development:
   database: cq_development
   username: root
   password: 
-  host: vm_mysql
+  host: 192.168.0.126
 
 # Warning: The database defined as 'test' will be erased and
 # re-generated from your development database when you run 'rake'.
@@ -26,11 +26,11 @@ test:
   database: cq_test
   username: root
   password: mobilis
-  host: localhost
+  host: 192.168.0.126
 
 production:
   adapter: mysql
   database: cq_production
   username: root
   password: 
-  host: vm_mysql
+  host: 192.168.0.126
