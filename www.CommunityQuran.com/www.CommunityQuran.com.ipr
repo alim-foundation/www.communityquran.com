@@ -259,7 +259,140 @@
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
   <component name="ProjectRunConfigurationManager" />
-  <component name="RAILS_PROJECT_VIEW_PANE" />
+  <component name="RAILS_PROJECT_VIEW_PANE">
+    <subPane>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectRootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="www.CommunityQuran.com" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectModuleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectRootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="www.CommunityQuran.com" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Controllers" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.folders.RailsControllerslFolderNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectRootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="www.CommunityQuran.com" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Controllers" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.folders.RailsControllerslFolderNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="quran" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.folders.ControllerSubFolderNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectRootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="www.CommunityQuran.com" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Controllers" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.folders.RailsControllerslFolderNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="quran" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.folders.ControllerSubFolderNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="SubjectController" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.ControllerClassNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectRootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="www.CommunityQuran.com" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Controllers" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.folders.RailsControllerslFolderNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="quran" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.folders.ControllerSubFolderNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ArabicController" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.ControllerClassNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectRootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="www.CommunityQuran.com" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Controllers" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.folders.RailsControllerslFolderNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="quran" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.folders.ControllerSubFolderNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ArabicController" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.ControllerClassNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="page" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.ActionNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectRootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="www.CommunityQuran.com" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.RailsProjectModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Application" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.folders.RailsApplicationFolderNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ApplicationController" />
+          <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.module.view.nodes.ControllerClassNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </subPane>
+  </component>
   <component name="RUBY_DOC_SETTINGS">
     <RUBY_DOC NAME="DEFAULTS" VALUE="TRUE" />
     <RUBY_DOC NAME="NUMBER" VALUE="0" />
