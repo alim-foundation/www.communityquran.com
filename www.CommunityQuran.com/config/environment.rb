@@ -59,3 +59,8 @@ end
 
 # Include your application configuration below
 ActiveRecord::Base.pluralize_table_names = false
+
+# Google Analytics Plugin Configuration
+Rubaidh::GoogleAnalytics.tracker_id = 'UA-1636477-1'
+Rubaidh::GoogleAnalytics.domain_name  = 'http://communityquran.com'
+Rubaidh::GoogleAnalytics.environments = ['production']
