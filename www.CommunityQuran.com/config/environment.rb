@@ -2,7 +2,7 @@
 
 # Uncomment below to force Rails into production mode when 
 # you don't control web/app server and can't set it the proper way
-# ENV['RAILS_ENV'] ||= 'production'
+ENV['RAILS_ENV'] ||= 'production'
 
 # Specifies gem version of Rails to use when vendor/rails is not present
 RAILS_GEM_VERSION = '1.2.3' unless defined? RAILS_GEM_VERSION
@@ -43,7 +43,7 @@ Rails::Initializer.run do |config|
   
   # See Rails::Configuration for more options
 end
-
+require 'acts_as_ferret'
 # Add new inflection rules using the following format 
 # (all these examples are active by default):
 # Inflector.inflections do |inflect|
@@ -62,5 +62,4 @@ ActiveRecord::Base.pluralize_table_names = false
 
 # Google Analytics Plugin Configuration
 Rubaidh::GoogleAnalytics.tracker_id = 'UA-1636477-1'
-Rubaidh::GoogleAnalytics.domain_name  = 'http://www.communityquran.com'
 Rubaidh::GoogleAnalytics.environments = ['production']

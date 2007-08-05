@@ -30,7 +30,7 @@ test:
 
 production:
   adapter: mysql
-  database: cq_production
-  username: root
-  password: 
-  host: 192.168.0.126
+  database: communi0_cqprod
+  username: communi0_app
+  password: cqapp
+  host: localhost

@@ -108,8 +108,6 @@ protected
             excerpt_options = default_excerpt_options.merge excerpt_options
 
             results = []
-            puts excerpt_options
-
 
             # search_each is the core search function from Ferret, which Acts_as_ferret hides
             total_hits = index.search_each(query, query_options) do |doc, score|
